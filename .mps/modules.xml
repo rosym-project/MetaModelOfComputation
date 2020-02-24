@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/Algorithm/Algorithm.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Algorithm.build/Algorithm.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Sandbox/Sandbox.msd" folder="" />
     </projectModules>
   </component>
