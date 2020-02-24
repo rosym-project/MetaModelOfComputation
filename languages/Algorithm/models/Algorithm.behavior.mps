@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:172690fd-5286-4218-b525-cadaaf47af22(MetaModelOfComputation.behavior)">
+<model ref="r:172690fd-5286-4218-b525-cadaaf47af22(Algorithm.behavior)">
   <persistence version="9" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />

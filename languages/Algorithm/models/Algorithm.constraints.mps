@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2da95a0b-8fb4-43b5-81b9-1ccab7cff51c(MetaModelOfComputation.constraints)">
+<model ref="r:2da95a0b-8fb4-43b5-81b9-1ccab7cff51c(Algorithm.constraints)">
   <persistence version="9" />
   <languages>
     <use id="5dae8159-ab99-46bb-a40d-0cee30ee7018" name="jetbrains.mps.lang.constraints.rules.kinds" version="0" />

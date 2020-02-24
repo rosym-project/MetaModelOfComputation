@@ -5,9 +5,14 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
+  </facets>
   <sourcePath />
   <languageVersions>
-    <language slang="l:a8f70f9e-ef01-499f-885c-c79273fa1695:MetaModelOfComputation" version="0" />
+    <language slang="l:a8f70f9e-ef01-499f-885c-c79273fa1695:Algorithm" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
   </languageVersions>
   <dependencyVersions>
