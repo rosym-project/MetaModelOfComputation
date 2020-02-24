@@ -2,7 +2,7 @@
 <model ref="r:012ceac2-8243-47b3-8141-9cc45e4ef785(Sandbox.Test)">
   <persistence version="9" />
   <languages>
-    <use id="a8f70f9e-ef01-499f-885c-c79273fa1695" name="MetaModelOfComputation" version="0" />
+    <use id="a8f70f9e-ef01-499f-885c-c79273fa1695" name="Algorithm" version="0" />
   </languages>
   <imports />
   <registry>
@@ -10,44 +10,44 @@
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
     </language>
-    <language id="a8f70f9e-ef01-499f-885c-c79273fa1695" name="MetaModelOfComputation">
-      <concept id="2483553733153713492" name="MetaModelOfComputation.structure.DataBlock" flags="ng" index="vjVuy">
+    <language id="a8f70f9e-ef01-499f-885c-c79273fa1695" name="Algorithm">
+      <concept id="2483553733153713492" name="Algorithm.structure.DataBlock" flags="ng" index="vjVuy">
         <child id="7268768516384887968" name="ports" index="1ptsVk" />
       </concept>
-      <concept id="2483553733153713493" name="MetaModelOfComputation.structure.SchedulerBlock" flags="ng" index="vjVuz">
+      <concept id="2483553733153713493" name="Algorithm.structure.SchedulerBlock" flags="ng" index="vjVuz">
         <child id="7374807014778514693" name="trigger_ports" index="1OHzVH" />
       </concept>
-      <concept id="2483553733153713489" name="MetaModelOfComputation.structure.FunctionBlockDefinition" flags="ng" index="vjVuB" />
-      <concept id="65996431592360841" name="MetaModelOfComputation.structure.TriggerPortRef" flags="ng" index="2_qZNI">
+      <concept id="2483553733153713489" name="Algorithm.structure.FunctionBlockDefinition" flags="ng" index="vjVuB" />
+      <concept id="65996431592360841" name="Algorithm.structure.TriggerPortRef" flags="ng" index="2_qZNI">
         <reference id="65996431592360842" name="trigger_port" index="2_qZNH" />
       </concept>
-      <concept id="65996431592056450" name="MetaModelOfComputation.structure.CompileTimeDataFlowSchedulerBlock" flags="ng" index="2__D7_">
+      <concept id="65996431592056450" name="Algorithm.structure.CompileTimeDataFlowSchedulerBlock" flags="ng" index="2__D7_">
         <child id="65996431592056451" name="schedule" index="2__D7$" />
       </concept>
-      <concept id="65996431591631847" name="MetaModelOfComputation.structure.DataBlockDefinition" flags="ng" index="2_B1M0" />
-      <concept id="7268768516385108286" name="MetaModelOfComputation.structure.TriggerConnector" flags="ng" index="1psEHa">
+      <concept id="65996431591631847" name="Algorithm.structure.DataBlockDefinition" flags="ng" index="2_B1M0" />
+      <concept id="7268768516385108286" name="Algorithm.structure.TriggerConnector" flags="ng" index="1psEHa">
         <reference id="7268768516385108289" name="port2" index="1psEGP" />
         <reference id="7268768516385108287" name="port1" index="1psEHb" />
       </concept>
-      <concept id="7268768516385006770" name="MetaModelOfComputation.structure.TriggerPort" flags="ng" index="1pt3V6">
+      <concept id="7268768516385006770" name="Algorithm.structure.TriggerPort" flags="ng" index="1pt3V6">
         <property id="65996431591721054" name="direction" index="2_BrWT" />
       </concept>
-      <concept id="9203943671252516488" name="MetaModelOfComputation.structure.FunctionBlock" flags="ng" index="1u3Ki9">
+      <concept id="9203943671252516488" name="Algorithm.structure.FunctionBlock" flags="ng" index="1u3Ki9">
         <child id="699628973897357004" name="data_ports" index="16388k" />
         <child id="7268768516385032102" name="trigger_ports" index="1psTRi" />
       </concept>
-      <concept id="9203943671252472483" name="MetaModelOfComputation.structure.FunctionBlockModel" flags="ng" index="1u3Uyy">
+      <concept id="9203943671252472483" name="Algorithm.structure.FunctionBlockModel" flags="ng" index="1u3Uyy">
         <child id="7268768516385108292" name="triggers" index="1psEGK" />
         <child id="4953108030111323919" name="function_blocks" index="3SlQUd" />
         <child id="4953108030111323921" name="scheduler_blocks" index="3SlQUj" />
         <child id="4953108030111323924" name="data_blocks" index="3SlQUm" />
         <child id="4953108030111323928" name="closures" index="3SlQUq" />
       </concept>
-      <concept id="7374807014778505743" name="MetaModelOfComputation.structure.DataConnector" flags="ng" index="1OHxBB">
+      <concept id="7374807014778505743" name="Algorithm.structure.DataConnector" flags="ng" index="1OHxBB">
         <reference id="7374807014778505744" name="port1" index="1OHxBS" />
         <reference id="7374807014778516593" name="port2" index="1OHyup" />
       </concept>
-      <concept id="7374807014778505746" name="MetaModelOfComputation.structure.DataPort" flags="ng" index="1OHxBU">
+      <concept id="7374807014778505746" name="Algorithm.structure.DataPort" flags="ng" index="1OHxBU">
         <property id="7374807014778505758" name="direction" index="1OHxBQ" />
         <child id="7374807014778509153" name="type" index="1OHwi9" />
       </concept>
