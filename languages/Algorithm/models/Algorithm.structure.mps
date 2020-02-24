@@ -64,27 +64,6 @@
     <node concept="PrWs8" id="29RmJoXeePf" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="6po$YwiVEmt" role="1TKVEi">
-      <property role="IQ2ns" value="7374807014778512797" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="function_blocks" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2z1_MYMoUiW" resolve="FunctionBlockRef" />
-    </node>
-    <node concept="1TJgyj" id="6po$YwiVyep" role="1TKVEi">
-      <property role="IQ2ns" value="7374807014778479513" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="data_blocks" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6jvQBgXExi$" resolve="DataBlockRef" />
-    </node>
-    <node concept="1TJgyj" id="6po$YwiVyet" role="1TKVEi">
-      <property role="IQ2ns" value="7374807014778479517" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="scheduler_blocks" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6jvQBgXExjk" resolve="SchedulerBlockRef" />
-    </node>
   </node>
   <node concept="1TIwiD" id="29RmJoXeePk">
     <property role="EcuMT" value="2483553733153713492" />
@@ -184,17 +163,6 @@
       <ref role="20lvS9" node="6jvQBgXEYiM" resolve="TriggerPort" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2z1_MYMoUiW">
-    <property role="EcuMT" value="2936794663134405820" />
-    <property role="TrG5h" value="FunctionBlockRef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2z1_MYMoUiX" role="1TKVEi">
-      <property role="IQ2ns" value="2936794663134405821" />
-      <property role="20kJfa" value="function" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="3EtQu_uQFi" resolve="FunctionBlock" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7YUYw4xHlaz">
     <property role="EcuMT" value="9203943671252472483" />
     <property role="TrG5h" value="FunctionBlockModel" />
@@ -234,26 +202,6 @@
       <property role="20kJfa" value="triggers" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6jvQBgXFn4Y" resolve="TriggerConnector" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6jvQBgXExi$">
-    <property role="EcuMT" value="7268768516384887972" />
-    <property role="TrG5h" value="DataBlockRef" />
-    <node concept="1TJgyj" id="6jvQBgXExi_" role="1TKVEi">
-      <property role="20lbJX" value="fLJekj4/1" />
-      <property role="IQ2ns" value="7268768516384887973" />
-      <property role="20kJfa" value="data" />
-      <ref role="20lvS9" node="29RmJoXeePk" resolve="DataBlock" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6jvQBgXExjk">
-    <property role="EcuMT" value="7268768516384888020" />
-    <property role="TrG5h" value="SchedulerBlockRef" />
-    <node concept="1TJgyj" id="6jvQBgXExjl" role="1TKVEi">
-      <property role="20lbJX" value="fLJekj4/1" />
-      <property role="IQ2ns" value="7268768516384888021" />
-      <property role="20kJfa" value="scheduler" />
-      <ref role="20lvS9" node="29RmJoXeePl" resolve="SchedulerBlock" />
     </node>
   </node>
   <node concept="1TIwiD" id="6jvQBgXEYiM">

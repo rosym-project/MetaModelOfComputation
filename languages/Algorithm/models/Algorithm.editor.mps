@@ -60,42 +60,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="24kQdi" id="6jvQBgXExiA">
-    <ref role="1XX52x" to="yvgz:6jvQBgXExi$" resolve="DataBlockRef" />
-    <node concept="1iCGBv" id="6jvQBgXExiB" role="2wV5jI">
-      <ref role="1NtTu8" to="yvgz:6jvQBgXExi_" resolve="data" />
-      <node concept="1sVBvm" id="6jvQBgXExiC" role="1sWHZn">
-        <node concept="3F0A7n" id="6jvQBgXExiD" role="2wV5jI">
-          <property role="1Intyy" value="true" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="6jvQBgXExiM">
-    <ref role="1XX52x" to="yvgz:2z1_MYMoUiW" resolve="FunctionBlockRef" />
-    <node concept="1iCGBv" id="6jvQBgXExiV" role="2wV5jI">
-      <ref role="1NtTu8" to="yvgz:2z1_MYMoUiX" resolve="function" />
-      <node concept="1sVBvm" id="6jvQBgXExiX" role="1sWHZn">
-        <node concept="3F0A7n" id="6jvQBgXExj4" role="2wV5jI">
-          <property role="1Intyy" value="true" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="6jvQBgXExjm">
-    <ref role="1XX52x" to="yvgz:6jvQBgXExjk" resolve="SchedulerBlockRef" />
-    <node concept="1iCGBv" id="6jvQBgXExjn" role="2wV5jI">
-      <ref role="1NtTu8" to="yvgz:6jvQBgXExjl" resolve="scheduler" />
-      <node concept="1sVBvm" id="6jvQBgXExjo" role="1sWHZn">
-        <node concept="3F0A7n" id="6jvQBgXExjp" role="2wV5jI">
-          <property role="1Intyy" value="true" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="6jvQBgXGnU9">
     <ref role="1XX52x" to="yvgz:6po$YwiVCCi" resolve="DataPort" />
     <node concept="3EZMnI" id="6jvQBgXGnUb" role="2wV5jI">
