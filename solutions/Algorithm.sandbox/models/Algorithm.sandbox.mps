@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:012ceac2-8243-47b3-8141-9cc45e4ef785(Sandbox.Test)">
+<model ref="r:b595511b-fd81-49af-8a11-1c419344a1b4(Algorithm.sandbox)">
   <persistence version="9" />
   <languages>
     <use id="a8f70f9e-ef01-499f-885c-c79273fa1695" name="Algorithm" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports />
   <registry>
@@ -127,16 +128,16 @@
       <ref role="1OHyup" node="6jvQBgXEKCq" resolve="bar-in" />
     </node>
     <node concept="1OHxBB" id="6jvQBgXEYd0" role="3SlQUq">
-      <ref role="1OHxBS" node="6jvQBgXEKCx" resolve="bar-out" />
       <ref role="1OHyup" node="3EtQu_tLu6" resolve="dat-access" />
+      <ref role="1OHxBS" node="6jvQBgXEKCx" resolve="bar-out" />
     </node>
     <node concept="1OHxBB" id="6jvQBgXEYd3" role="3SlQUq">
       <ref role="1OHyup" node="6jvQBgXEKD7" resolve="baz-in1" />
       <ref role="1OHxBS" node="3EtQu_tLu6" resolve="dat-access" />
     </node>
     <node concept="1OHxBB" id="6jvQBgXEYd7" role="3SlQUq">
-      <ref role="1OHxBS" node="6jvQBgXEKC4" resolve="foo-in2" />
       <ref role="1OHyup" node="6jvQBgXEKDn" resolve="baz-in2" />
+      <ref role="1OHxBS" node="6jvQBgXEKC4" resolve="foo-in2" />
     </node>
     <node concept="1OHxBB" id="6jvQBgXEYdc" role="3SlQUq">
       <ref role="1OHxBS" node="6jvQBgXEKDe" resolve="baz-out" />
@@ -155,8 +156,8 @@
       <ref role="1psEHb" node="3EtQu_wAOA" resolve="sched-bar" />
     </node>
     <node concept="1psEHa" id="6jvQBgXFINq" role="1psEGK">
-      <ref role="1psEGP" node="6jvQBgXFz8Q" resolve="baz-trigger" />
       <ref role="1psEHb" node="3EtQu_wAOD" resolve="sched-baz" />
+      <ref role="1psEGP" node="6jvQBgXFz8Q" resolve="baz-trigger" />
     </node>
     <node concept="2__D7_" id="3EtQu_vAe7" role="3SlQUj">
       <property role="TrG5h" value="foo-sched" />
@@ -279,12 +280,12 @@
       <node concept="10P55v" id="6jvQBgXFUx$" role="1OHwi9" />
     </node>
     <node concept="1psEHa" id="6jvQBgXFUxc" role="1psEGK">
-      <ref role="1psEHb" node="6jvQBgXFUvF" resolve="p-trigger" />
       <ref role="1psEGP" node="3EtQu_yvpe" resolve="p-sched-trigger" />
+      <ref role="1psEHb" node="6jvQBgXFUvF" resolve="p-trigger" />
     </node>
     <node concept="1psEHa" id="6jvQBgXFUxe" role="1psEGK">
-      <ref role="1psEGP" node="6jvQBgXFUuD" resolve="kp-trigger" />
       <ref role="1psEHb" node="3EtQu_yvpg" resolve="sched-p" />
+      <ref role="1psEGP" node="6jvQBgXFUuD" resolve="kp-trigger" />
     </node>
     <node concept="1OHxBB" id="6jvQBgXFUxq" role="3SlQUq">
       <ref role="1OHyup" node="6jvQBgXFUuz" resolve="kp-in" />
