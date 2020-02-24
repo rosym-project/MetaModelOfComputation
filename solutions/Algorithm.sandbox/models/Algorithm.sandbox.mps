@@ -284,8 +284,12 @@
       <ref role="1psEHb" node="6jvQBgXFUvF" resolve="p-trigger" />
     </node>
     <node concept="1psEHa" id="6jvQBgXFUxe" role="1psEGK">
-      <ref role="1psEHb" node="3EtQu_yvpg" resolve="sched-p" />
+      <ref role="1psEHb" node="3EtQu_yvpg" resolve="kp" />
       <ref role="1psEGP" node="6jvQBgXFUuD" resolve="kp-trigger" />
+    </node>
+    <node concept="1psEHa" id="6AIJmsJYK3P" role="1psEGK">
+      <ref role="1psEHb" node="3EtQu_zmNR" resolve="compute-error" />
+      <ref role="1psEGP" node="3EtQu_zmN9" resolve="compute-error-trigger" />
     </node>
     <node concept="1OHxBB" id="6jvQBgXFUxq" role="3SlQUq">
       <ref role="1OHyup" node="6jvQBgXFUuz" resolve="kp-in" />
@@ -306,21 +310,21 @@
     <node concept="2__D7_" id="3EtQu_yvp8" role="3SlQUj">
       <property role="TrG5h" value="p-sched" />
       <node concept="2_qZNI" id="3EtQu_zmNY" role="2__D7$">
-        <ref role="2_qZNH" node="3EtQu_zmNR" resolve="sched-compute-error" />
+        <ref role="2_qZNH" node="3EtQu_zmNR" resolve="compute-error" />
       </node>
       <node concept="2_qZNI" id="3EtQu_yvpl" role="2__D7$">
-        <ref role="2_qZNH" node="3EtQu_yvpg" resolve="sched-p" />
+        <ref role="2_qZNH" node="3EtQu_yvpg" resolve="kp" />
       </node>
       <node concept="1pt3V6" id="3EtQu_yvpe" role="1OHzVH">
         <property role="TrG5h" value="p-sched-trigger" />
         <property role="2_BrWT" value="3EtQu_uj5h/In" />
       </node>
       <node concept="1pt3V6" id="3EtQu_zmNR" role="1OHzVH">
-        <property role="TrG5h" value="sched-compute-error" />
+        <property role="TrG5h" value="compute-error" />
         <property role="2_BrWT" value="3EtQu_uj5i/Out" />
       </node>
       <node concept="1pt3V6" id="3EtQu_yvpg" role="1OHzVH">
-        <property role="TrG5h" value="sched-p" />
+        <property role="TrG5h" value="kp" />
         <property role="2_BrWT" value="3EtQu_uj5i/Out" />
       </node>
     </node>
