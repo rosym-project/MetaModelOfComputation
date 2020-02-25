@@ -451,11 +451,11 @@
     </node>
   </node>
   <node concept="24kQdi" id="3EtQu_xWtD">
-    <ref role="1XX52x" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockModel" />
+    <ref role="1XX52x" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
     <node concept="3EZMnI" id="3EtQu_xWtF" role="2wV5jI">
       <node concept="l2Vlx" id="3EtQu_xWtG" role="2iSdaV" />
       <node concept="3F0ifn" id="3EtQu_xWtH" role="3EZMnx">
-        <property role="3F0ifm" value="function block model" />
+        <property role="3F0ifm" value="function block container" />
       </node>
       <node concept="3F0A7n" id="3EtQu_xWtI" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

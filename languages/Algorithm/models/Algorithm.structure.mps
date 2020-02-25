@@ -165,7 +165,7 @@
   </node>
   <node concept="1TIwiD" id="7YUYw4xHlaz">
     <property role="EcuMT" value="9203943671252472483" />
-    <property role="TrG5h" value="FunctionBlockModel" />
+    <property role="TrG5h" value="FunctionBlockContainer" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="3EtQu_uQFi" resolve="FunctionBlock" />
     <node concept="1TJgyj" id="4iWYoaWUTsf" role="1TKVEi">

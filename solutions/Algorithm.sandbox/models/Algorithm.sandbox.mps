@@ -37,7 +37,7 @@
         <child id="699628973897357004" name="data_ports" index="16388k" />
         <child id="7268768516385032102" name="trigger_ports" index="1psTRi" />
       </concept>
-      <concept id="9203943671252472483" name="Algorithm.structure.FunctionBlockModel" flags="ng" index="1u3Uyy">
+      <concept id="9203943671252472483" name="Algorithm.structure.FunctionBlockContainer" flags="ng" index="1u3Uyy">
         <child id="7268768516385108292" name="triggers" index="1psEGK" />
         <child id="4953108030111323919" name="function_blocks" index="3SlQUd" />
         <child id="4953108030111323921" name="scheduler_blocks" index="3SlQUj" />
