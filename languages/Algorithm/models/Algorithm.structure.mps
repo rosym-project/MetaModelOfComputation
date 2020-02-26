@@ -312,5 +312,62 @@
       <ref role="20lvS9" node="6jvQBgXEYiM" resolve="TriggerPort" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5o1iPWxUlYn">
+    <property role="EcuMT" value="6197317434201431959" />
+    <property role="TrG5h" value="SchedulerBlockContainer" />
+    <ref role="1TJDcQ" node="29RmJoXeePl" resolve="SchedulerBlock" />
+    <node concept="1TJgyj" id="5o1iPWxUlYo" role="1TKVEi">
+      <property role="IQ2ns" value="6197317434201431960" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="scheduler_blocks" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="29RmJoXeePl" resolve="SchedulerBlock" />
+    </node>
+    <node concept="1TJgyj" id="5o1iPWxUlYq" role="1TKVEi">
+      <property role="IQ2ns" value="6197317434201431962" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="closures" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6po$YwiVCCf" resolve="DataConnector" />
+    </node>
+    <node concept="1TJgyj" id="5o1iPWxUlYt" role="1TKVEi">
+      <property role="IQ2ns" value="6197317434201431965" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="triggers" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6jvQBgXFn4Y" resolve="TriggerConnector" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5o1iPWxUm1h">
+    <property role="EcuMT" value="6197317434201432145" />
+    <property role="TrG5h" value="DataBlockContainer" />
+    <ref role="1TJDcQ" node="29RmJoXeePk" resolve="DataBlock" />
+    <node concept="1TJgyj" id="5o1iPWxUm1i" role="1TKVEi">
+      <property role="IQ2ns" value="6197317434201432146" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="data_blocks" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="29RmJoXeePk" resolve="DataBlock" />
+    </node>
+    <node concept="1TJgyj" id="5o1iPWxUm1k" role="1TKVEi">
+      <property role="IQ2ns" value="6197317434201432148" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="closures" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6po$YwiVCCf" resolve="DataConnector" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5o1iPWxU$71">
+    <property role="EcuMT" value="6197317434201489857" />
+    <property role="TrG5h" value="AlgorithmBlockContainer" />
+    <ref role="1TJDcQ" node="29RmJoXeePe" resolve="AlgorithmBlock" />
+    <node concept="1TJgyj" id="5o1iPWxU$72" role="1TKVEi">
+      <property role="IQ2ns" value="6197317434201489858" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="algorithm_blocks" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="29RmJoXeePe" resolve="AlgorithmBlock" />
+    </node>
+  </node>
 </model>
 
