@@ -304,11 +304,11 @@
   </node>
   <node concept="24kQdi" id="3EtQu_xHwQ">
     <property role="3GE5qa" value="definitions" />
-    <ref role="1XX52x" to="yvgz:29RmJoXeePh" resolve="FunctionBlockDefinition" />
+    <ref role="1XX52x" to="yvgz:29RmJoXeePh" resolve="EmptyFunctionBlock" />
     <node concept="3EZMnI" id="3EtQu_xHwS" role="2wV5jI">
       <node concept="l2Vlx" id="3EtQu_xHwT" role="2iSdaV" />
       <node concept="3F0ifn" id="3EtQu_xHwU" role="3EZMnx">
-        <property role="3F0ifm" value="function block definition" />
+        <property role="3F0ifm" value="empty function block" />
       </node>
       <node concept="3F0A7n" id="3EtQu_xHwV" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -393,11 +393,11 @@
   </node>
   <node concept="24kQdi" id="3EtQu_xWsP">
     <property role="3GE5qa" value="definitions" />
-    <ref role="1XX52x" to="yvgz:3EtQu_tAJB" resolve="DataBlockDefinition" />
+    <ref role="1XX52x" to="yvgz:3EtQu_tAJB" resolve="EmtpyDataBlock" />
     <node concept="3EZMnI" id="3EtQu_xWsR" role="2wV5jI">
       <node concept="l2Vlx" id="3EtQu_xWsS" role="2iSdaV" />
       <node concept="3F0ifn" id="3EtQu_xWsT" role="3EZMnx">
-        <property role="3F0ifm" value="data block definition" />
+        <property role="3F0ifm" value="empty data block" />
       </node>
       <node concept="3F0A7n" id="3EtQu_xWsU" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -690,11 +690,11 @@
   </node>
   <node concept="24kQdi" id="3EtQu_yd$B">
     <property role="3GE5qa" value="definitions" />
-    <ref role="1XX52x" to="yvgz:3EtQu_tAJA" resolve="SchedulerBlockDefinition" />
+    <ref role="1XX52x" to="yvgz:3EtQu_tAJA" resolve="EmptySchedulerBlock" />
     <node concept="3EZMnI" id="3EtQu_yd$D" role="2wV5jI">
       <node concept="l2Vlx" id="3EtQu_yd$E" role="2iSdaV" />
       <node concept="3F0ifn" id="3EtQu_yd$F" role="3EZMnx">
-        <property role="3F0ifm" value="scheduler block definition" />
+        <property role="3F0ifm" value="empty scheduler block" />
       </node>
       <node concept="3F0A7n" id="3EtQu_yd$G" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

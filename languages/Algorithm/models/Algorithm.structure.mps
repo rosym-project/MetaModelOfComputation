@@ -99,7 +99,7 @@
   </node>
   <node concept="1TIwiD" id="29RmJoXeePh">
     <property role="EcuMT" value="2483553733153713489" />
-    <property role="TrG5h" value="FunctionBlockDefinition" />
+    <property role="TrG5h" value="EmptyFunctionBlock" />
     <property role="3GE5qa" value="definitions" />
     <ref role="1TJDcQ" node="3EtQu_uQFi" resolve="FunctionBlock" />
   </node>
@@ -244,14 +244,14 @@
   </node>
   <node concept="1TIwiD" id="3EtQu_tAJA">
     <property role="EcuMT" value="65996431591631846" />
-    <property role="TrG5h" value="SchedulerBlockDefinition" />
+    <property role="TrG5h" value="EmptySchedulerBlock" />
     <property role="3GE5qa" value="definitions" />
     <ref role="1TJDcQ" node="29RmJoXeePl" resolve="SchedulerBlock" />
   </node>
   <node concept="1TIwiD" id="3EtQu_tAJB">
     <property role="EcuMT" value="65996431591631847" />
     <property role="3GE5qa" value="definitions" />
-    <property role="TrG5h" value="DataBlockDefinition" />
+    <property role="TrG5h" value="EmtpyDataBlock" />
     <ref role="1TJDcQ" node="29RmJoXeePk" resolve="DataBlock" />
   </node>
   <node concept="25R3W" id="3EtQu_uj5g">
