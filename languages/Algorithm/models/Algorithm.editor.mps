@@ -340,7 +340,7 @@
           </node>
         </node>
         <node concept="3F2HdR" id="3EtQu_xHx6" role="3EZMnx">
-          <ref role="1NtTu8" to="yvgz:AP_dxfIhrc" resolve="data_ports" />
+          <ref role="1NtTu8" to="yvgz:3eP8Zudp5G8" resolve="data_ports" />
           <node concept="l2Vlx" id="3EtQu_xHx7" role="2czzBx" />
           <node concept="pj6Ft" id="3EtQu_xHx8" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -370,7 +370,7 @@
           </node>
         </node>
         <node concept="3F2HdR" id="3EtQu_xHxh" role="3EZMnx">
-          <ref role="1NtTu8" to="yvgz:6jvQBgXF4uA" resolve="trigger_ports" />
+          <ref role="1NtTu8" to="yvgz:3eP8Zudp5Gb" resolve="trigger_ports" />
           <node concept="l2Vlx" id="3EtQu_xHxi" role="2czzBx" />
           <node concept="pj6Ft" id="3EtQu_xHxj" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -487,7 +487,7 @@
           </node>
         </node>
         <node concept="3F2HdR" id="3EtQu_xWuK" role="3EZMnx">
-          <ref role="1NtTu8" to="yvgz:AP_dxfIhrc" resolve="data_ports" />
+          <ref role="1NtTu8" to="yvgz:3eP8Zudp5G8" resolve="data_ports" />
           <node concept="l2Vlx" id="3EtQu_xWuL" role="2czzBx" />
           <node concept="pj6Ft" id="3EtQu_xWuM" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -517,7 +517,7 @@
           </node>
         </node>
         <node concept="3F2HdR" id="3EtQu_xWuV" role="3EZMnx">
-          <ref role="1NtTu8" to="yvgz:6jvQBgXF4uA" resolve="trigger_ports" />
+          <ref role="1NtTu8" to="yvgz:3eP8Zudp5Gb" resolve="trigger_ports" />
           <node concept="l2Vlx" id="3EtQu_xWuW" role="2czzBx" />
           <node concept="pj6Ft" id="3EtQu_xWuX" role="3F10Kt">
             <property role="VOm3f" value="true" />
