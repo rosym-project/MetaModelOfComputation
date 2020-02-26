@@ -170,11 +170,11 @@
   </node>
   <node concept="24kQdi" id="3EtQu_vqj0">
     <property role="3GE5qa" value="definitions" />
-    <ref role="1XX52x" to="yvgz:3EtQu_veq2" resolve="CompileTimeDataFlowSchedulerBlock" />
+    <ref role="1XX52x" to="yvgz:3EtQu_veq2" resolve="FixedDataFlowSchedulerBlock" />
     <node concept="3EZMnI" id="3EtQu_vZ4h" role="2wV5jI">
       <node concept="l2Vlx" id="3EtQu_vZ4i" role="2iSdaV" />
       <node concept="3F0ifn" id="3EtQu_vZ4j" role="3EZMnx">
-        <property role="3F0ifm" value="compile time data flow scheduler block" />
+        <property role="3F0ifm" value="fixed data flow scheduler block" />
       </node>
       <node concept="3F0A7n" id="3EtQu_vZ4k" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

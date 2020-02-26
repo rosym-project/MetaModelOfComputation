@@ -292,7 +292,7 @@
   <node concept="1TIwiD" id="3EtQu_veq2">
     <property role="EcuMT" value="65996431592056450" />
     <property role="3GE5qa" value="definitions" />
-    <property role="TrG5h" value="CompileTimeDataFlowSchedulerBlock" />
+    <property role="TrG5h" value="FixedDataFlowSchedulerBlock" />
     <ref role="1TJDcQ" node="29RmJoXeePl" resolve="SchedulerBlock" />
     <node concept="1TJgyj" id="3EtQu_veq3" role="1TKVEi">
       <property role="IQ2ns" value="65996431592056451" />
