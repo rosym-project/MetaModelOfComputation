@@ -122,6 +122,9 @@
     <node concept="55IIr" id="1byp$lDFZv6" role="auvoZ" />
     <node concept="1l3spV" id="1byp$lDFZv7" role="1l3spN">
       <node concept="3981dG" id="1byp$lDFZvF" role="39821P">
+        <node concept="L2wRC" id="1byp$lDFZwF" role="39821P">
+          <ref role="L2wRA" node="1byp$lDFZ_Z" resolve="Algorithm.build" />
+        </node>
         <node concept="3_J27D" id="1byp$lDFZvG" role="Nbhlr">
           <node concept="3Mxwew" id="1byp$lDFZvJ" role="3MwsjC">
             <property role="3MwjfP" value="algorithm.zip" />
@@ -131,9 +134,6 @@
           <ref role="m_rDy" node="1byp$lDFZvl" resolve="algorithm" />
           <node concept="pUk6x" id="1byp$lDFZvP" role="pUk7w" />
         </node>
-      </node>
-      <node concept="L2wRC" id="1byp$lDFZwF" role="39821P">
-        <ref role="L2wRA" node="1byp$lDFZ_Z" resolve="Algorithm.build" />
       </node>
     </node>
     <node concept="10PD9b" id="1byp$lDFZv8" role="10PD9s" />
@@ -217,45 +217,45 @@
           </node>
         </node>
       </node>
-      <node concept="1E1JtA" id="1byp$lDFZ_Z" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="Algorithm.build" />
-        <property role="3LESm3" value="c8eb9ca9-64f1-4b49-9730-34f074cf9d5b" />
-        <node concept="55IIr" id="1byp$lDFZQw" role="3LF7KH">
-          <node concept="2Ry0Ak" id="1byp$lDFZRc" role="iGT6I">
-            <property role="2Ry0Am" value="solutions" />
-            <node concept="2Ry0Ak" id="1byp$lDFZRh" role="2Ry0An">
-              <property role="2Ry0Am" value="Algorithm.build" />
-              <node concept="2Ry0Ak" id="1byp$lDFZRm" role="2Ry0An">
-                <property role="2Ry0Am" value="Algorithm.build.msd" />
-              </node>
+    </node>
+    <node concept="1E1JtA" id="1byp$lDFZ_Z" role="3989C9">
+      <property role="BnDLt" value="true" />
+      <property role="TrG5h" value="Algorithm.build" />
+      <property role="3LESm3" value="c8eb9ca9-64f1-4b49-9730-34f074cf9d5b" />
+      <node concept="55IIr" id="1byp$lDFZQw" role="3LF7KH">
+        <node concept="2Ry0Ak" id="1byp$lDFZRc" role="iGT6I">
+          <property role="2Ry0Am" value="solutions" />
+          <node concept="2Ry0Ak" id="1byp$lDFZRh" role="2Ry0An">
+            <property role="2Ry0Am" value="Algorithm.build" />
+            <node concept="2Ry0Ak" id="1byp$lDFZRm" role="2Ry0An">
+              <property role="2Ry0Am" value="Algorithm.build.msd" />
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="1byp$lDFZVO" role="3bR37C">
-          <node concept="3bR9La" id="1byp$lDFZVP" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
-          </node>
+      </node>
+      <node concept="1SiIV0" id="1byp$lDFZVO" role="3bR37C">
+        <node concept="3bR9La" id="1byp$lDFZVP" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
         </node>
-        <node concept="1BupzO" id="1byp$lDFZVU" role="3bR31x">
-          <property role="3ZfqAx" value="models" />
-          <property role="1Hdu6h" value="true" />
-          <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="1byp$lDFZVV" role="1HemKq">
-            <node concept="55IIr" id="1byp$lDFZVQ" role="3LXTmr">
-              <node concept="2Ry0Ak" id="1byp$lDFZVR" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="1byp$lDFZVS" role="2Ry0An">
-                  <property role="2Ry0Am" value="Algorithm.build" />
-                  <node concept="2Ry0Ak" id="1byp$lDFZVT" role="2Ry0An">
-                    <property role="2Ry0Am" value="models" />
-                  </node>
+      </node>
+      <node concept="1BupzO" id="1byp$lDFZVU" role="3bR31x">
+        <property role="3ZfqAx" value="models" />
+        <property role="1Hdu6h" value="true" />
+        <property role="1HemKv" value="true" />
+        <node concept="3LXTmp" id="1byp$lDFZVV" role="1HemKq">
+          <node concept="55IIr" id="1byp$lDFZVQ" role="3LXTmr">
+            <node concept="2Ry0Ak" id="1byp$lDFZVR" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="1byp$lDFZVS" role="2Ry0An">
+                <property role="2Ry0Am" value="Algorithm.build" />
+                <node concept="2Ry0Ak" id="1byp$lDFZVT" role="2Ry0An">
+                  <property role="2Ry0Am" value="models" />
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="1byp$lDFZVW" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
+          </node>
+          <node concept="3qWCbU" id="1byp$lDFZVW" role="3LXTna">
+            <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
           </node>
         </node>
       </node>
