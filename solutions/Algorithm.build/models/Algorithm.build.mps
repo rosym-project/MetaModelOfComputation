@@ -211,6 +211,16 @@
           </node>
         </node>
       </node>
+      <node concept="1SiIV0" id="7FkahUZo3ug" role="3bR37C">
+        <node concept="3bR9La" id="7FkahUZo3uh" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:3qkjbZn4_1I" resolve="jetbrains.mps.lang.constraints.rules.kinds" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="7FkahUZo3ui" role="3bR37C">
+        <node concept="3bR9La" id="7FkahUZo3uj" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="1byp$lDFZ_Z" role="3989C9">
       <property role="BnDLt" value="true" />
