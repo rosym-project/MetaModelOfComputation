@@ -278,10 +278,14 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="3EtQu_woI9" resolve="TriggerPortRef" />
     </node>
+    <node concept="PrWs8" id="71WlwW$ynsy" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3EtQu_woI9">
     <property role="EcuMT" value="65996431592360841" />
     <property role="TrG5h" value="TriggerPortRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3EtQu_woIa" role="1TKVEi">
       <property role="20lbJX" value="fLJekj4/1" />
       <property role="IQ2ns" value="65996431592360842" />
