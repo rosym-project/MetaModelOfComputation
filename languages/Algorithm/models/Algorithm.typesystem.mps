@@ -62,6 +62,9 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
+        <child id="1185788644032" name="normalType" index="mwGJk" />
+      </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -75,11 +78,18 @@
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
+      <concept id="1174643105530" name="jetbrains.mps.lang.typesystem.structure.InferenceRule" flags="ig" index="1YbPZF" />
       <concept id="1174648085619" name="jetbrains.mps.lang.typesystem.structure.AbstractRule" flags="ng" index="1YuPPy">
         <child id="1174648101952" name="applicableNode" index="1YuTPh" />
       </concept>
       <concept id="1174650418652" name="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" flags="nn" index="1YBJjd">
         <reference id="1174650432090" name="applicableNode" index="1YBMHb" />
+      </concept>
+      <concept id="1174658326157" name="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" flags="nn" index="1Z5TYs" />
+      <concept id="1174660718586" name="jetbrains.mps.lang.typesystem.structure.AbstractEquationStatement" flags="nn" index="1Zf1VF">
+        <property id="1206359757216" name="checkOnly" index="3wDh2S" />
+        <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
+        <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -91,6 +101,9 @@
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
@@ -193,6 +206,48 @@
     <node concept="1YaCAy" id="5jlbthjHQSQ" role="1YuTPh">
       <property role="TrG5h" value="schedulerBlock" />
       <ref role="1YaFvo" to="yvgz:29RmJoXeePl" resolve="SchedulerBlock" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="WUr5EYI42K">
+    <property role="TrG5h" value="typeof_DataConnector" />
+    <node concept="3clFbS" id="WUr5EYI42L" role="18ibNy">
+      <node concept="1Z5TYs" id="2FsRs4zBOx5" role="3cqZAp">
+        <property role="3wDh2S" value="true" />
+        <node concept="mw_s8" id="2FsRs4zBOx7" role="1ZfhK$">
+          <node concept="2OqwBi" id="2FsRs4zC2oT" role="mwGJk">
+            <node concept="2OqwBi" id="2FsRs4zBOx8" role="2Oq$k0">
+              <node concept="1YBJjd" id="2FsRs4zBOx9" role="2Oq$k0">
+                <ref role="1YBMHb" node="WUr5EYI42N" resolve="dataConnector" />
+              </node>
+              <node concept="3TrEf2" id="2FsRs4zBOxa" role="2OqNvi">
+                <ref role="3Tt5mk" to="yvgz:6po$YwiVCCg" resolve="port1" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="2FsRs4zC2_r" role="2OqNvi">
+              <ref role="3Tt5mk" to="yvgz:6po$YwiVDtx" resolve="type" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2FsRs4zBOxb" role="1ZfhKB">
+          <node concept="2OqwBi" id="2FsRs4zC2Ch" role="mwGJk">
+            <node concept="2OqwBi" id="2FsRs4zBOxc" role="2Oq$k0">
+              <node concept="1YBJjd" id="2FsRs4zBOxd" role="2Oq$k0">
+                <ref role="1YBMHb" node="WUr5EYI42N" resolve="dataConnector" />
+              </node>
+              <node concept="3TrEf2" id="2FsRs4zBOxe" role="2OqNvi">
+                <ref role="3Tt5mk" to="yvgz:6po$YwiVFhL" resolve="port2" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="2FsRs4zC2RB" role="2OqNvi">
+              <ref role="3Tt5mk" to="yvgz:6po$YwiVDtx" resolve="type" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="WUr5EYI42N" role="1YuTPh">
+      <property role="TrG5h" value="dataConnector" />
+      <ref role="1YaFvo" to="yvgz:6po$YwiVCCf" resolve="DataConnector" />
     </node>
   </node>
 </model>
