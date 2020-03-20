@@ -7,8 +7,8 @@
   </languages>
   <imports>
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -70,8 +70,8 @@
     <property role="TrG5h" value="DataBlock" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="29RmJoXeePo" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="5Tr1VsJyfAx" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
     </node>
     <node concept="1TJgyj" id="6jvQBgXExiw" role="1TKVEi">
       <property role="IQ2ns" value="7268768516384887968" />
@@ -124,8 +124,8 @@
     <property role="EcuMT" value="7374807014778505746" />
     <property role="TrG5h" value="DataPort" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6po$YwiVCCj" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="5Tr1VsJyfAu" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
     </node>
     <node concept="1TJgyi" id="6po$YwiVCCu" role="1TKVEl">
       <property role="IQ2nx" value="7374807014778505758" />
@@ -355,9 +355,6 @@
     <property role="TrG5h" value="FunctionBlock" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3eP8Zudp5G5" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="1TJgyj" id="3eP8Zudp5G8" role="1TKVEi">
       <property role="IQ2ns" value="3725923812855012104" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -371,6 +368,9 @@
       <property role="20kJfa" value="trigger_ports" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6jvQBgXEYiM" resolve="TriggerPort" />
+    </node>
+    <node concept="PrWs8" id="5Tr1VsJyfAp" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
     </node>
   </node>
 </model>

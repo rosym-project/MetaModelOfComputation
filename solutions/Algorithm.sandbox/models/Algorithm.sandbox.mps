@@ -68,12 +68,12 @@
         <property role="2_BrWT" value="3EtQu_uj5h/In" />
       </node>
       <node concept="1OHxBU" id="3eP8ZudpjMB" role="2YOnzZ">
-        <property role="TrG5h" value="bar-in" />
+        <property role="TrG5h" value="barIn" />
         <property role="1OHxBQ" value="6po$YwiVCCm/In" />
         <node concept="10Oyi0" id="3eP8ZudpjMH" role="1OHwi9" />
       </node>
       <node concept="1OHxBU" id="3eP8ZudpjML" role="2YOnzZ">
-        <property role="TrG5h" value="bar-out" />
+        <property role="TrG5h" value="barOut" />
         <property role="1OHxBQ" value="6po$YwiVCCn/Out" />
         <node concept="10Oyi0" id="3eP8ZudpjMV" role="1OHwi9" />
       </node>
@@ -81,17 +81,17 @@
     <node concept="vjVuB" id="6jvQBgXEKCZ" role="3SlQUd">
       <property role="TrG5h" value="baz" />
       <node concept="1OHxBU" id="3eP8ZudpjN6" role="2YOnzZ">
-        <property role="TrG5h" value="baz-in1" />
+        <property role="TrG5h" value="bazIn1" />
         <property role="1OHxBQ" value="6po$YwiVCCm/In" />
         <node concept="10Oyi0" id="3eP8ZudpjNc" role="1OHwi9" />
       </node>
       <node concept="1OHxBU" id="3eP8ZudpjNg" role="2YOnzZ">
-        <property role="TrG5h" value="baz-in2" />
+        <property role="TrG5h" value="bazIn2" />
         <property role="1OHxBQ" value="6po$YwiVCCm/In" />
         <node concept="10Oyi0" id="3eP8ZudpjNq" role="1OHwi9" />
       </node>
       <node concept="1OHxBU" id="3eP8ZudpjNu" role="2YOnzZ">
-        <property role="TrG5h" value="baz-out" />
+        <property role="TrG5h" value="bazOut" />
         <property role="1OHxBQ" value="6po$YwiVCCn/Out" />
         <node concept="10Oyi0" id="3eP8ZudpjNG" role="1OHwi9" />
       </node>
@@ -103,30 +103,30 @@
     <node concept="2_B1M0" id="3EtQu_tLu1" role="3SlQUm">
       <property role="TrG5h" value="dat" />
       <node concept="1OHxBU" id="3EtQu_tLu6" role="1ptsVk">
-        <property role="TrG5h" value="dat-access" />
+        <property role="TrG5h" value="datAccess" />
         <property role="1OHxBQ" value="6po$YwiVCCq/InOut" />
         <node concept="10Oyi0" id="3EtQu_tLua" role="1OHwi9" />
       </node>
     </node>
     <node concept="1OHxBB" id="6jvQBgXES32" role="3SlQUq">
-      <ref role="1OHyup" node="3eP8ZudpjMB" resolve="bar-in" />
-      <ref role="1OHxBS" node="3eP8ZudpjLM" resolve="foo-in1" />
+      <ref role="1OHyup" node="3eP8ZudpjMB" resolve="barIn" />
+      <ref role="1OHxBS" node="3eP8ZudpjLM" resolve="fooIn1" />
     </node>
     <node concept="1OHxBB" id="6jvQBgXEYd0" role="3SlQUq">
-      <ref role="1OHyup" node="3EtQu_tLu6" resolve="dat-access" />
-      <ref role="1OHxBS" node="3eP8ZudpjML" resolve="bar-out" />
+      <ref role="1OHyup" node="3EtQu_tLu6" resolve="datAccess" />
+      <ref role="1OHxBS" node="3eP8ZudpjML" resolve="barOut" />
     </node>
     <node concept="1OHxBB" id="6jvQBgXEYd3" role="3SlQUq">
-      <ref role="1OHxBS" node="3EtQu_tLu6" resolve="dat-access" />
-      <ref role="1OHyup" node="3eP8ZudpjN6" resolve="baz-in1" />
+      <ref role="1OHxBS" node="3EtQu_tLu6" resolve="datAccess" />
+      <ref role="1OHyup" node="3eP8ZudpjN6" resolve="bazIn1" />
     </node>
     <node concept="1OHxBB" id="6jvQBgXEYd7" role="3SlQUq">
-      <ref role="1OHyup" node="3eP8ZudpjNg" resolve="baz-in2" />
-      <ref role="1OHxBS" node="3eP8ZudpjLW" resolve="foo-in2" />
+      <ref role="1OHyup" node="3eP8ZudpjNg" resolve="bazIn2" />
+      <ref role="1OHxBS" node="3eP8ZudpjLW" resolve="fooIn2" />
     </node>
     <node concept="1OHxBB" id="6jvQBgXEYdc" role="3SlQUq">
-      <ref role="1OHyup" node="3eP8ZudpjMa" resolve="foo-out" />
-      <ref role="1OHxBS" node="3eP8ZudpjNu" resolve="baz-out" />
+      <ref role="1OHyup" node="3eP8ZudpjMa" resolve="fooOut" />
+      <ref role="1OHxBS" node="3eP8ZudpjNu" resolve="bazOut" />
     </node>
     <node concept="1psEHa" id="6jvQBgXFtjz" role="1psEGK">
       <ref role="1psEGP" node="3EtQu_wAO$" resolve="foo-sched-trigger" />
@@ -162,17 +162,17 @@
       </node>
     </node>
     <node concept="1OHxBU" id="3eP8ZudpjLM" role="2YOnzZ">
-      <property role="TrG5h" value="foo-in1" />
+      <property role="TrG5h" value="fooIn1" />
       <property role="1OHxBQ" value="6po$YwiVCCm/In" />
       <node concept="10Oyi0" id="3eP8ZudpjLS" role="1OHwi9" />
     </node>
     <node concept="1OHxBU" id="3eP8ZudpjLW" role="2YOnzZ">
-      <property role="TrG5h" value="foo-in2" />
+      <property role="TrG5h" value="fooIn2" />
       <property role="1OHxBQ" value="6po$YwiVCCm/In" />
       <node concept="10Oyi0" id="3eP8ZudpjM6" role="1OHwi9" />
     </node>
     <node concept="1OHxBU" id="3eP8ZudpjMa" role="2YOnzZ">
-      <property role="TrG5h" value="foo-out" />
+      <property role="TrG5h" value="fooOut" />
       <property role="1OHxBQ" value="6po$YwiVCCn/Out" />
       <node concept="10Oyi0" id="3eP8ZudpjMo" role="1OHwi9" />
     </node>
@@ -182,45 +182,45 @@
     </node>
   </node>
   <node concept="1u3Uyy" id="6jvQBgXFODe">
-    <property role="TrG5h" value="p-controller" />
+    <property role="TrG5h" value="pController" />
     <node concept="1pt3V6" id="3eP8ZudpjRd" role="2YOnzW">
       <property role="TrG5h" value="p-trigger" />
       <property role="2_BrWT" value="3EtQu_uj5h/In" />
     </node>
     <node concept="1OHxBU" id="3eP8ZudpjPP" role="2YOnzZ">
-      <property role="TrG5h" value="p-setpoint" />
+      <property role="TrG5h" value="pSetpoint" />
       <property role="1OHxBQ" value="6po$YwiVCCm/In" />
       <node concept="10P55v" id="3eP8ZudpjPV" role="1OHwi9" />
     </node>
     <node concept="1OHxBU" id="3eP8ZudpjPZ" role="2YOnzZ">
-      <property role="TrG5h" value="p-measurement" />
+      <property role="TrG5h" value="pMeasurement" />
       <property role="1OHxBQ" value="6po$YwiVCCm/In" />
       <node concept="10P55v" id="3eP8ZudpjQ9" role="1OHwi9" />
     </node>
     <node concept="1OHxBU" id="3eP8ZudpjQd" role="2YOnzZ">
-      <property role="TrG5h" value="p-actuation" />
+      <property role="TrG5h" value="pActuation" />
       <property role="1OHxBQ" value="6po$YwiVCCn/Out" />
       <node concept="10P55v" id="3eP8ZudpjQr" role="1OHwi9" />
     </node>
     <node concept="1OHxBU" id="3eP8ZudpjQv" role="2YOnzZ">
-      <property role="TrG5h" value="p-gain" />
+      <property role="TrG5h" value="pGain" />
       <property role="1OHxBQ" value="6po$YwiVCCq/InOut" />
       <node concept="10P55v" id="3eP8ZudpjQL" role="1OHwi9" />
     </node>
     <node concept="1OHxBB" id="3EtQu_zmNy" role="3SlQUq">
       <ref role="1OHyup" node="3eP8ZudpjOd" resolve="setpoint" />
-      <ref role="1OHxBS" node="3eP8ZudpjPP" resolve="p-setpoint" />
+      <ref role="1OHxBS" node="3eP8ZudpjPP" resolve="pSetpoint" />
     </node>
     <node concept="1OHxBB" id="3EtQu_zmNC" role="3SlQUq">
       <ref role="1OHyup" node="3eP8ZudpjO3" resolve="measurement" />
-      <ref role="1OHxBS" node="3eP8ZudpjPZ" resolve="p-measurement" />
+      <ref role="1OHxBS" node="3eP8ZudpjPZ" resolve="pMeasurement" />
     </node>
     <node concept="1OHxBB" id="3EtQu_zmNJ" role="3SlQUq">
-      <ref role="1OHyup" node="3EtQu_tLuD" resolve="error-access" />
+      <ref role="1OHyup" node="3EtQu_tLuD" resolve="errorAccess" />
       <ref role="1OHxBS" node="3eP8ZudpjOr" resolve="error" />
     </node>
     <node concept="vjVuB" id="3EtQu_zmMU" role="3SlQUd">
-      <property role="TrG5h" value="compute-error" />
+      <property role="TrG5h" value="computeError" />
       <node concept="1OHxBU" id="3eP8ZudpjO3" role="2YOnzZ">
         <property role="TrG5h" value="measurement" />
         <property role="1OHxBQ" value="6po$YwiVCCm/In" />
@@ -244,7 +244,7 @@
     <node concept="2_B1M0" id="3EtQu_tLuz" role="3SlQUm">
       <property role="TrG5h" value="error" />
       <node concept="1OHxBU" id="3EtQu_tLuD" role="1ptsVk">
-        <property role="TrG5h" value="error-access" />
+        <property role="TrG5h" value="errorAccess" />
         <property role="1OHxBQ" value="6po$YwiVCCq/InOut" />
         <node concept="10P55v" id="3EtQu_tLuH" role="1OHwi9" />
       </node>
@@ -252,7 +252,7 @@
     <node concept="2_B1M0" id="3EtQu_tLug" role="3SlQUm">
       <property role="TrG5h" value="gain" />
       <node concept="1OHxBU" id="3EtQu_tLuk" role="1ptsVk">
-        <property role="TrG5h" value="gain-access" />
+        <property role="TrG5h" value="gainAccess" />
         <property role="1OHxBQ" value="6po$YwiVCCq/InOut" />
         <node concept="10P55v" id="3EtQu_tLuo" role="1OHwi9" />
       </node>
@@ -264,17 +264,17 @@
         <property role="2_BrWT" value="3EtQu_uj5h/In" />
       </node>
       <node concept="1OHxBU" id="3eP8ZudpjOW" role="2YOnzZ">
-        <property role="TrG5h" value="kp-gain" />
+        <property role="TrG5h" value="kpGain" />
         <property role="1OHxBQ" value="6po$YwiVCCm/In" />
         <node concept="10P55v" id="3eP8ZudpjP2" role="1OHwi9" />
       </node>
       <node concept="1OHxBU" id="3eP8ZudpjP6" role="2YOnzZ">
-        <property role="TrG5h" value="kp-in" />
+        <property role="TrG5h" value="kpIn" />
         <property role="1OHxBQ" value="6po$YwiVCCm/In" />
         <node concept="10P55v" id="3eP8ZudpjPg" role="1OHwi9" />
       </node>
       <node concept="1OHxBU" id="3eP8ZudpjPk" role="2YOnzZ">
-        <property role="TrG5h" value="kp-out" />
+        <property role="TrG5h" value="kpOut" />
         <property role="1OHxBQ" value="6po$YwiVCCn/Out" />
         <node concept="10P55v" id="3eP8ZudpjPy" role="1OHwi9" />
       </node>
@@ -292,20 +292,20 @@
       <ref role="1psEGP" node="3eP8ZudpjOH" resolve="compute-error-trigger" />
     </node>
     <node concept="1OHxBB" id="6jvQBgXFUxq" role="3SlQUq">
-      <ref role="1OHxBS" node="3EtQu_tLuD" resolve="error-access" />
-      <ref role="1OHyup" node="3eP8ZudpjP6" resolve="kp-in" />
+      <ref role="1OHxBS" node="3EtQu_tLuD" resolve="errorAccess" />
+      <ref role="1OHyup" node="3eP8ZudpjP6" resolve="kpIn" />
     </node>
     <node concept="1OHxBB" id="6jvQBgXFUyC" role="3SlQUq">
-      <ref role="1OHyup" node="3EtQu_tLuk" resolve="gain-access" />
-      <ref role="1OHxBS" node="3eP8ZudpjQv" resolve="p-gain" />
+      <ref role="1OHyup" node="3EtQu_tLuk" resolve="gainAccess" />
+      <ref role="1OHxBS" node="3eP8ZudpjQv" resolve="pGain" />
     </node>
     <node concept="1OHxBB" id="6jvQBgXFUyL" role="3SlQUq">
-      <ref role="1OHxBS" node="3EtQu_tLuk" resolve="gain-access" />
-      <ref role="1OHyup" node="3eP8ZudpjOW" resolve="kp-gain" />
+      <ref role="1OHxBS" node="3EtQu_tLuk" resolve="gainAccess" />
+      <ref role="1OHyup" node="3eP8ZudpjOW" resolve="kpGain" />
     </node>
     <node concept="1OHxBB" id="6jvQBgXFUzf" role="3SlQUq">
-      <ref role="1OHxBS" node="3eP8ZudpjPk" resolve="kp-out" />
-      <ref role="1OHyup" node="3eP8ZudpjQd" resolve="p-actuation" />
+      <ref role="1OHxBS" node="3eP8ZudpjPk" resolve="kpOut" />
+      <ref role="1OHyup" node="3eP8ZudpjQd" resolve="pActuation" />
     </node>
     <node concept="2__D7_" id="3EtQu_yvp8" role="3SlQUj">
       <property role="TrG5h" value="p-sched" />
