@@ -101,6 +101,9 @@
         <property id="2889113830911481881" name="deployFolderName" index="3ZfqAx" />
         <child id="8137134783396676835" name="location" index="1HemKq" />
       </concept>
+      <concept id="4278635856200794926" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyExtendLanguage" flags="ng" index="1Busua">
+        <reference id="4278635856200794928" name="language" index="1Busuk" />
+      </concept>
       <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA" />
       <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD" />
       <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
@@ -180,11 +183,6 @@
           </node>
         </node>
       </node>
-      <node concept="1SiIV0" id="1byp$lDFZYq" role="3bR37C">
-        <node concept="3bR9La" id="1byp$lDFZYr" role="1SiIV1">
-          <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
-        </node>
-      </node>
       <node concept="1SiIV0" id="1byp$lDFZYs" role="3bR37C">
         <node concept="3bR9La" id="1byp$lDFZYt" role="1SiIV1">
           <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
@@ -219,6 +217,11 @@
       <node concept="1SiIV0" id="7FkahUZo3ui" role="3bR37C">
         <node concept="3bR9La" id="7FkahUZo3uj" role="1SiIV1">
           <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="7wiBUqZMTuD" role="3bR37C">
+        <node concept="1Busua" id="7wiBUqZMTuE" role="1SiIV1">
+          <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
         </node>
       </node>
     </node>
