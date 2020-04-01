@@ -596,9 +596,6 @@
             <ref role="v9R2y" node="5Tr1VsJKqPj" resolve="switch_FunctionCall" />
           </node>
         </node>
-        <node concept="356sEF" id="5Tr1VsJDHZu" role="356sEH">
-          <property role="TrG5h" value=";" />
-        </node>
         <node concept="2EixSi" id="5Tr1VsJDHYE" role="2EinRH" />
         <node concept="1WS0z7" id="5Tr1VsJDHZz" role="lGtFl">
           <node concept="3JmXsc" id="5Tr1VsJDHZ$" role="3Jn$fo">
@@ -1165,7 +1162,7 @@
           </node>
         </node>
         <node concept="356sEF" id="5Tr1VsJMgP8" role="356sEH">
-          <property role="TrG5h" value=")" />
+          <property role="TrG5h" value=");" />
         </node>
       </node>
       <node concept="raruj" id="5Tr1VsJEoGu" role="lGtFl" />
