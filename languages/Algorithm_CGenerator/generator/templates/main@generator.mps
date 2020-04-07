@@ -243,6 +243,7 @@
       <ref role="3lhOvi" node="5Tr1VsJDsug" resolve="function_name" />
     </node>
     <node concept="3lhOvk" id="44Cv2OMJcBk" role="3lj3bC">
+      <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
       <ref role="3lhOvi" node="44Cv2OMJcBn" resolve="function_name" />
     </node>
