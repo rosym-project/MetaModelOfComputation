@@ -70,7 +70,6 @@
         <name>algorithm</name>
         <version>1.0</version>
         <depends>jetbrains.mps.core</depends>
-        <depends>jetbrains.mps.build</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
