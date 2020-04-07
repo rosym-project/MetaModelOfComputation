@@ -156,5 +156,20 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="44Cv2OMFua_">
+    <ref role="1M2myG" to="yvgz:6po$YwiVCCf" resolve="DataConnector" />
+    <node concept="1N5Pfh" id="44Cv2OMFuaA" role="1Mr941">
+      <ref role="1N5Vy1" to="yvgz:6po$YwiVCCg" resolve="port1" />
+      <node concept="1dDu$B" id="44Cv2OMFud1" role="1N6uqs">
+        <ref role="1dDu$A" to="yvgz:6po$YwiVCCi" resolve="DataPort" />
+      </node>
+    </node>
+    <node concept="1N5Pfh" id="44Cv2OMFueD" role="1Mr941">
+      <ref role="1N5Vy1" to="yvgz:6po$YwiVFhL" resolve="port2" />
+      <node concept="1dDu$B" id="44Cv2OMFugj" role="1N6uqs">
+        <ref role="1dDu$A" to="yvgz:6po$YwiVCCi" resolve="DataPort" />
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="yvgz" ref="r:3b411c10-569a-4299-9505-176144359d3b(Algorithm.structure)" implicit="true" />
+    <import index="ixp9" ref="r:172690fd-5286-4218-b525-cadaaf47af22(Algorithm.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -44,16 +45,22 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -99,6 +106,22 @@
       <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
         <reference id="4705942098322467736" name="decl" index="21nZrZ" />
       </concept>
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
+      </concept>
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS" />
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -110,6 +133,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -120,6 +146,7 @@
       </concept>
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
     </language>
   </registry>
   <node concept="18kY7G" id="5jlbthjHQSN">
@@ -248,6 +275,111 @@
     <node concept="1YaCAy" id="WUr5EYI42N" role="1YuTPh">
       <property role="TrG5h" value="dataConnector" />
       <ref role="1YaFvo" to="yvgz:6po$YwiVCCf" resolve="DataConnector" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5Tr1VsJGw_T">
+    <property role="TrG5h" value="check_FixedDataFlowSchedulerBlock" />
+    <property role="3GE5qa" value="definitions" />
+    <node concept="3clFbS" id="5Tr1VsJGw_U" role="18ibNy">
+      <node concept="3cpWs8" id="5Tr1VsJG_zw" role="3cqZAp">
+        <node concept="3cpWsn" id="5Tr1VsJG_zz" role="3cpWs9">
+          <property role="TrG5h" value="parentContainer" />
+          <node concept="3Tqbb2" id="5Tr1VsJG_zu" role="1tU5fm">
+            <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+          </node>
+          <node concept="1PxgMI" id="5Tr1VsJGAbJ" role="33vP2m">
+            <property role="1BlNFB" value="true" />
+            <node concept="chp4Y" id="5Tr1VsJGAgx" role="3oSUPX">
+              <ref role="cht4Q" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+            </node>
+            <node concept="2OqwBi" id="5Tr1VsJG_JZ" role="1m5AlR">
+              <node concept="1YBJjd" id="5Tr1VsJG_$F" role="2Oq$k0">
+                <ref role="1YBMHb" node="5Tr1VsJGw_W" resolve="fixedDataFlowSchedulerBlock" />
+              </node>
+              <node concept="1mfA1w" id="5Tr1VsJGA3y" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbF" id="5Tr1VsJGwA1" role="3cqZAp">
+        <node concept="2OqwBi" id="5Tr1VsJGyyP" role="3clFbG">
+          <node concept="2OqwBi" id="5Tr1VsJGwJe" role="2Oq$k0">
+            <node concept="1YBJjd" id="5Tr1VsJGwA0" role="2Oq$k0">
+              <ref role="1YBMHb" node="5Tr1VsJGw_W" resolve="fixedDataFlowSchedulerBlock" />
+            </node>
+            <node concept="3Tsc0h" id="5Tr1VsJGwUo" role="2OqNvi">
+              <ref role="3TtcxE" to="yvgz:3EtQu_veq3" resolve="schedule" />
+            </node>
+          </node>
+          <node concept="2es0OD" id="5Tr1VsJG$aF" role="2OqNvi">
+            <node concept="1bVj0M" id="5Tr1VsJG$aH" role="23t8la">
+              <node concept="3clFbS" id="5Tr1VsJG$aI" role="1bW5cS">
+                <node concept="3cpWs8" id="5Tr1VsJGBRr" role="3cqZAp">
+                  <node concept="3cpWsn" id="5Tr1VsJGBRs" role="3cpWs9">
+                    <property role="TrG5h" value="connectedTrigPorts" />
+                    <node concept="2I9FWS" id="5Tr1VsJGBRq" role="1tU5fm" />
+                    <node concept="2OqwBi" id="5Tr1VsJGABK" role="33vP2m">
+                      <node concept="37vLTw" id="5Tr1VsJGAkf" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5Tr1VsJG_zz" resolve="parentContainer" />
+                      </node>
+                      <node concept="2qgKlT" id="5Tr1VsJGAPk" role="2OqNvi">
+                        <ref role="37wK5l" to="ixp9:2RC7aVK84L5" resolve="findConnectedTriggerPorts" />
+                        <node concept="2OqwBi" id="5Tr1VsJGB7o" role="37wK5m">
+                          <node concept="37vLTw" id="5Tr1VsJGAW2" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5Tr1VsJG$aJ" resolve="trigPortRef" />
+                          </node>
+                          <node concept="3TrEf2" id="5Tr1VsJGBox" role="2OqNvi">
+                            <ref role="3Tt5mk" to="yvgz:3EtQu_woIa" resolve="trigger_port" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="5Tr1VsJG$lH" role="3cqZAp">
+                  <node concept="3y3z36" id="5Tr1VsJGFeD" role="3clFbw">
+                    <node concept="3cmrfG" id="5Tr1VsJGFGq" role="3uHU7w">
+                      <property role="3cmrfH" value="1" />
+                    </node>
+                    <node concept="2OqwBi" id="5Tr1VsJG$_c" role="3uHU7B">
+                      <node concept="37vLTw" id="5Tr1VsJGCiD" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5Tr1VsJGBRs" resolve="connectedTrigPorts" />
+                      </node>
+                      <node concept="34oBXx" id="5Tr1VsJGDXz" role="2OqNvi" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="5Tr1VsJG$lJ" role="3clFbx">
+                    <node concept="2MkqsV" id="5Tr1VsJGIsI" role="3cqZAp">
+                      <node concept="37vLTw" id="5Tr1VsJGI_Q" role="1urrMF">
+                        <ref role="3cqZAo" node="5Tr1VsJG$aJ" resolve="trigPortRef" />
+                      </node>
+                      <node concept="3cpWs3" id="5Tr1VsJE5UC" role="2MkJ7o">
+                        <node concept="2OqwBi" id="5Tr1VsJE8jo" role="3uHU7w">
+                          <node concept="37vLTw" id="5Tr1VsJGGBG" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5Tr1VsJGBRs" resolve="connectedTrigPorts" />
+                          </node>
+                          <node concept="34oBXx" id="5Tr1VsJEaga" role="2OqNvi" />
+                        </node>
+                        <node concept="Xl_RD" id="5Tr1VsJE4_K" role="3uHU7B">
+                          <property role="Xl_RC" value="expected exactly 1 connected trigger port, found: " />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="Rh6nW" id="5Tr1VsJG$aJ" role="1bW2Oz">
+                <property role="TrG5h" value="trigPortRef" />
+                <node concept="2jxLKc" id="5Tr1VsJG$aK" role="1tU5fm" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5Tr1VsJGw_W" role="1YuTPh">
+      <property role="TrG5h" value="fixedDataFlowSchedulerBlock" />
+      <ref role="1YaFvo" to="yvgz:3EtQu_veq2" resolve="FixedDataFlowSchedulerBlock" />
     </node>
   </node>
 </model>

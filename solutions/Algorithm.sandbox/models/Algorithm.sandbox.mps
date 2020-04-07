@@ -4,6 +4,7 @@
   <languages>
     <use id="a8f70f9e-ef01-499f-885c-c79273fa1695" name="Algorithm" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <engage id="8d7c3baa-c6d4-442a-843a-34b7b957af1e" name="Algorithm_CGenerator" />
   </languages>
   <imports />
   <registry>
@@ -51,6 +52,10 @@
       <concept id="7374807014778505746" name="Algorithm.structure.DataPort" flags="ng" index="1OHxBU">
         <property id="7374807014778505758" name="direction" index="1OHxBQ" />
         <child id="7374807014778509153" name="type" index="1OHwi9" />
+      </concept>
+      <concept id="6197317434201432145" name="Algorithm.structure.DataBlockContainer" flags="ng" index="1RU2Ge">
+        <child id="6197317434201432148" name="closures" index="1RU2Gb" />
+        <child id="6197317434201432146" name="data_blocks" index="1RU2Gd" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -326,6 +331,97 @@
       <node concept="1pt3V6" id="3EtQu_yvpg" role="1OHzVH">
         <property role="TrG5h" value="kp" />
         <property role="2_BrWT" value="3EtQu_uj5i/Out" />
+      </node>
+    </node>
+  </node>
+  <node concept="1u3Uyy" id="44Cv2OMEdIf">
+    <property role="TrG5h" value="testDataContainer" />
+    <node concept="1OHxBB" id="44Cv2OMIBDP" role="3SlQUq">
+      <ref role="1OHxBS" node="44Cv2OMIBDG" resolve="funcContainerPort" />
+      <ref role="1OHyup" node="44Cv2OMFVOU" resolve="parent_a_port" />
+    </node>
+    <node concept="1OHxBU" id="44Cv2OMIBDG" role="2YOnzZ">
+      <property role="TrG5h" value="funcContainerPort" />
+      <property role="1OHxBQ" value="6po$YwiVCCm/In" />
+      <node concept="10P55v" id="44Cv2OMIBDM" role="1OHwi9" />
+    </node>
+    <node concept="1RU2Ge" id="44Cv2OMEdIi" role="3SlQUm">
+      <property role="TrG5h" value="parentContainer" />
+      <node concept="1OHxBB" id="44Cv2OMFVPl" role="1RU2Gb">
+        <ref role="1OHxBS" node="44Cv2OMFVON" resolve="c_port" />
+        <ref role="1OHyup" node="44Cv2OMFVPa" resolve="parent_c_port" />
+      </node>
+      <node concept="1OHxBB" id="44Cv2OMFVPq" role="1RU2Gb">
+        <ref role="1OHxBS" node="44Cv2OMFVIU" resolve="child_port_a" />
+        <ref role="1OHyup" node="44Cv2OMFVOU" resolve="parent_a_port" />
+      </node>
+      <node concept="1OHxBB" id="44Cv2OMFVPw" role="1RU2Gb">
+        <ref role="1OHxBS" node="44Cv2OMFVJ9" resolve="child_port_b" />
+        <ref role="1OHyup" node="44Cv2OMFVP1" resolve="parent_b_port" />
+      </node>
+      <node concept="1OHxBU" id="44Cv2OMFVOU" role="1ptsVk">
+        <property role="TrG5h" value="parent_a_port" />
+        <property role="1OHxBQ" value="6po$YwiVCCq/InOut" />
+        <node concept="10P55v" id="44Cv2OMFVOY" role="1OHwi9" />
+      </node>
+      <node concept="1OHxBU" id="44Cv2OMFVP1" role="1ptsVk">
+        <property role="TrG5h" value="parent_b_port" />
+        <property role="1OHxBQ" value="6po$YwiVCCn/Out" />
+        <node concept="10P55v" id="44Cv2OMFVP7" role="1OHwi9" />
+      </node>
+      <node concept="1OHxBU" id="44Cv2OMFVPa" role="1ptsVk">
+        <property role="TrG5h" value="parent_c_port" />
+        <property role="1OHxBQ" value="6po$YwiVCCq/InOut" />
+        <node concept="10P55v" id="44Cv2OMFVPi" role="1OHwi9" />
+      </node>
+      <node concept="1RU2Ge" id="44Cv2OMEdIn" role="1RU2Gd">
+        <property role="TrG5h" value="childContainer" />
+        <node concept="1OHxBU" id="44Cv2OMFVIU" role="1ptsVk">
+          <property role="TrG5h" value="child_port_a" />
+          <property role="1OHxBQ" value="6po$YwiVCCq/InOut" />
+          <node concept="10P55v" id="44Cv2OMFVJ4" role="1OHwi9" />
+        </node>
+        <node concept="1OHxBU" id="44Cv2OMFVJ9" role="1ptsVk">
+          <property role="TrG5h" value="child_port_b" />
+          <property role="1OHxBQ" value="6po$YwiVCCn/Out" />
+          <node concept="10P55v" id="44Cv2OMFVJf" role="1OHwi9" />
+        </node>
+        <node concept="1OHxBB" id="44Cv2OMEZZq" role="1RU2Gb">
+          <ref role="1OHxBS" node="44Cv2OMFVIU" resolve="child_port_a" />
+          <ref role="1OHyup" node="44Cv2OMEdIA" resolve="a_port" />
+        </node>
+        <node concept="2_B1M0" id="44Cv2OMEdIs" role="1RU2Gd">
+          <property role="TrG5h" value="a" />
+          <node concept="1OHxBU" id="44Cv2OMEdIA" role="1ptsVk">
+            <property role="TrG5h" value="a_port" />
+            <property role="1OHxBQ" value="6po$YwiVCCq/InOut" />
+            <node concept="10P55v" id="44Cv2OMEdIE" role="1OHwi9" />
+          </node>
+        </node>
+        <node concept="2_B1M0" id="44Cv2OMEdIy" role="1RU2Gd">
+          <property role="TrG5h" value="b" />
+          <node concept="1OHxBU" id="44Cv2OMEdIH" role="1ptsVk">
+            <property role="TrG5h" value="b_port" />
+            <property role="1OHxBQ" value="6po$YwiVCCn/Out" />
+            <node concept="10P55v" id="44Cv2OMEdIL" role="1OHwi9" />
+          </node>
+        </node>
+      </node>
+      <node concept="2_B1M0" id="44Cv2OMFVO$" role="1RU2Gd">
+        <property role="TrG5h" value="c" />
+        <node concept="1OHxBU" id="44Cv2OMFVON" role="1ptsVk">
+          <property role="TrG5h" value="c_port" />
+          <property role="1OHxBQ" value="6po$YwiVCCq/InOut" />
+          <node concept="10P55v" id="44Cv2OMFVOR" role="1OHwi9" />
+        </node>
+      </node>
+    </node>
+    <node concept="2_B1M0" id="5QQcZL$IhTP" role="3SlQUm">
+      <property role="TrG5h" value="emptyBlock" />
+      <node concept="1OHxBU" id="5QQcZL$Ii93" role="1ptsVk">
+        <property role="TrG5h" value="pInt" />
+        <property role="1OHxBQ" value="6po$YwiVCCm/In" />
+        <node concept="10Oyi0" id="5QQcZL$Ii97" role="1OHwi9" />
       </node>
     </node>
   </node>

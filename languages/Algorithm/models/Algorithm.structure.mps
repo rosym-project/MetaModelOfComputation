@@ -203,6 +203,9 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6jvQBgXFn4Y" resolve="TriggerConnector" />
     </node>
+    <node concept="PrWs8" id="44Cv2OMGVBt" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6jvQBgXEYiM">
     <property role="EcuMT" value="7268768516385006770" />
@@ -336,6 +339,9 @@
       <property role="20kJfa" value="closures" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6po$YwiVCCf" resolve="DataConnector" />
+    </node>
+    <node concept="PrWs8" id="44Cv2OMEeIc" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="5o1iPWxU$71">
