@@ -213,8 +213,8 @@
       <node concept="10P55v" id="3eP8ZudpjQL" role="1OHwi9" />
     </node>
     <node concept="1OHxBB" id="3EtQu_zmNy" role="3SlQUq">
-      <ref role="1OHyup" node="3eP8ZudpjOd" resolve="setpoint" />
       <ref role="1OHxBS" node="3eP8ZudpjPP" resolve="pSetpoint" />
+      <ref role="1OHyup" node="3eP8ZudpjOd" resolve="setpoint" />
     </node>
     <node concept="1OHxBB" id="3EtQu_zmNC" role="3SlQUq">
       <ref role="1OHyup" node="3eP8ZudpjO3" resolve="measurement" />
@@ -259,7 +259,7 @@
       <node concept="1OHxBU" id="3EtQu_tLuk" role="1ptsVk">
         <property role="TrG5h" value="gainAccess" />
         <property role="1OHxBQ" value="6po$YwiVCCq/InOut" />
-        <node concept="10P55v" id="3EtQu_tLuo" role="1OHwi9" />
+        <node concept="10P55v" id="58QN4$b1Qwj" role="1OHwi9" />
       </node>
     </node>
     <node concept="vjVuB" id="6jvQBgXFODf" role="3SlQUd">
@@ -318,7 +318,7 @@
         <property role="TrG5h" value="p-sched-trigger" />
         <property role="2_BrWT" value="3EtQu_uj5h/In" />
       </node>
-      <node concept="2_qZNI" id="71WlwW$_Tln" role="2__D7$">
+      <node concept="2_qZNI" id="58QN4$b1Qwq" role="2__D7$">
         <ref role="2_qZNH" node="3EtQu_zmNR" resolve="compute-error" />
       </node>
       <node concept="2_qZNI" id="3EtQu_yvpl" role="2__D7$">
