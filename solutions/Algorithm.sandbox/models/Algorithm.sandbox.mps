@@ -146,7 +146,7 @@
       <ref role="1psEGP" node="3eP8ZudpjNK" resolve="baz-trigger" />
     </node>
     <node concept="2__D7_" id="3EtQu_vAe7" role="3SlQUj">
-      <property role="TrG5h" value="foo-sched" />
+      <property role="TrG5h" value="fooSched" />
       <node concept="1pt3V6" id="3EtQu_wAO$" role="1OHzVH">
         <property role="TrG5h" value="foo-sched-trigger" />
         <property role="2_BrWT" value="3EtQu_uj5h/In" />
@@ -313,7 +313,7 @@
       <ref role="1OHyup" node="3eP8ZudpjQd" resolve="pActuation" />
     </node>
     <node concept="2__D7_" id="3EtQu_yvp8" role="3SlQUj">
-      <property role="TrG5h" value="p-sched" />
+      <property role="TrG5h" value="pSched" />
       <node concept="1pt3V6" id="6F0tY7D9MDu" role="1OHzVH">
         <property role="TrG5h" value="p-sched-trigger" />
         <property role="2_BrWT" value="3EtQu_uj5h/In" />
