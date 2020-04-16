@@ -101,6 +101,9 @@
         <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
       </concept>
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj" />
+      <concept id="5005282049925926521" name="jetbrains.mps.lang.generator.structure.TemplateArgumentParameterExpression" flags="nn" index="v3LJS">
+        <reference id="5005282049925926522" name="parameter" index="v3LJV" />
+      </concept>
       <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ng" index="v9R3L">
         <reference id="1722980698497626483" name="template" index="v9R2y" />
         <child id="1722980698497626405" name="actualArgument" index="v9R3O" />
@@ -363,14 +366,14 @@
         </node>
         <node concept="5jKBG" id="58QN4$b2BYk" role="lGtFl">
           <ref role="v9R2y" node="58QN4$b2$hR" resolve="include_SchedulerBlock" />
-          <node concept="1PxgMI" id="58QN4$b2OhQ" role="v9R3O">
+          <node concept="1PxgMI" id="7akAd_TxkMF" role="v9R3O">
             <property role="1BlNFB" value="true" />
-            <node concept="chp4Y" id="58QN4$b2Oja" role="3oSUPX">
+            <node concept="chp4Y" id="7akAd_TxkO7" role="3oSUPX">
               <ref role="cht4Q" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
             </node>
             <node concept="2OqwBi" id="58QN4$b2NX1" role="1m5AlR">
               <node concept="30H73N" id="58QN4$b2Ntr" role="2Oq$k0" />
-              <node concept="1mfA1w" id="58QN4$b2Oax" role="2OqNvi" />
+              <node concept="1mfA1w" id="7akAd_TxkFq" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -449,6 +452,12 @@
   <node concept="13MO4I" id="5Tr1VsJDHgU">
     <property role="TrG5h" value="reduce_FixedDataFlowSchedulerBlock" />
     <ref role="3gUMe" to="yvgz:3EtQu_veq2" resolve="FixedDataFlowSchedulerBlock" />
+    <node concept="1N15co" id="58QN4$b5Z0w" role="1s_3oS">
+      <property role="TrG5h" value="parentFunction" />
+      <node concept="3Tqbb2" id="58QN4$b6055" role="1N15GL">
+        <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+      </node>
+    </node>
     <node concept="356WMU" id="5Tr1VsJDHh3" role="13RCb5">
       <node concept="356sEK" id="5Tr1VsJDHhb" role="383Ya9">
         <node concept="356sEF" id="5Tr1VsJDHhc" role="356sEH">
@@ -461,6 +470,9 @@
           <property role="TrG5h" value="functionCall()" />
           <node concept="1sPUBX" id="5Tr1VsJKrD4" role="lGtFl">
             <ref role="v9R2y" node="5Tr1VsJKqPj" resolve="switch_FunctionCall" />
+            <node concept="v3LJS" id="7akAd_TzHrh" role="v9R3O">
+              <ref role="v3LJV" node="58QN4$b5Z0w" resolve="parentFunction" />
+            </node>
           </node>
         </node>
         <node concept="356sEF" id="5Tr1VsJDHZu" role="356sEH">
@@ -470,24 +482,6 @@
         <node concept="1WS0z7" id="5Tr1VsJDHZz" role="lGtFl">
           <node concept="3JmXsc" id="5Tr1VsJDHZ$" role="3Jn$fo">
             <node concept="3clFbS" id="5Tr1VsJDHZ_" role="2VODD2">
-              <node concept="3cpWs8" id="5Tr1VsJDK5j" role="3cqZAp">
-                <node concept="3cpWsn" id="5Tr1VsJDK5m" role="3cpWs9">
-                  <property role="TrG5h" value="parent" />
-                  <node concept="3Tqbb2" id="5Tr1VsJDK5h" role="1tU5fm">
-                    <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
-                  </node>
-                  <node concept="1PxgMI" id="5Tr1VsJDKPh" role="33vP2m">
-                    <property role="1BlNFB" value="true" />
-                    <node concept="chp4Y" id="5Tr1VsJDKWl" role="3oSUPX">
-                      <ref role="cht4Q" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
-                    </node>
-                    <node concept="2OqwBi" id="5Tr1VsJDKuo" role="1m5AlR">
-                      <node concept="30H73N" id="5Tr1VsJDKfe" role="2Oq$k0" />
-                      <node concept="1mfA1w" id="5Tr1VsJDKEq" role="2OqNvi" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3cpWs8" id="5Tr1VsJDLlo" role="3cqZAp">
                 <node concept="3cpWsn" id="5Tr1VsJDLlr" role="3cpWs9">
                   <property role="TrG5h" value="functions" />
@@ -518,8 +512,11 @@
                           <node concept="3cpWsn" id="5Tr1VsJDTLk" role="3cpWs9">
                             <property role="TrG5h" value="connectedPorts" />
                             <node concept="2OqwBi" id="5Tr1VsJDQx6" role="33vP2m">
-                              <node concept="37vLTw" id="5Tr1VsJDQfJ" role="2Oq$k0">
-                                <ref role="3cqZAo" node="5Tr1VsJDK5m" resolve="parent" />
+                              <node concept="2OqwBi" id="58QN4$b61TJ" role="2Oq$k0">
+                                <node concept="1iwH7S" id="58QN4$b61rV" role="2Oq$k0" />
+                                <node concept="3cR$yn" id="58QN4$b62dg" role="2OqNvi">
+                                  <ref role="3cRzXn" node="58QN4$b5Z0w" resolve="parentFunction" />
+                                </node>
                               </node>
                               <node concept="2qgKlT" id="5Tr1VsJDQP4" role="2OqNvi">
                                 <ref role="37wK5l" to="ixp9:2RC7aVK84L5" resolve="findConnectedTriggerPorts" />
@@ -663,11 +660,11 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="2OqwBi" id="5Tr1VsJHP6s" role="3clFbw">
-                            <node concept="37vLTw" id="5Tr1VsJHNRi" role="2Oq$k0">
+                          <node concept="2OqwBi" id="7akAd_TzFNJ" role="3clFbw">
+                            <node concept="37vLTw" id="7akAd_TzFpo" role="2Oq$k0">
                               <ref role="3cqZAo" node="5Tr1VsJHEkp" resolve="connectedParent" />
                             </node>
-                            <node concept="3w_OXm" id="5Tr1VsJHPz6" role="2OqNvi" />
+                            <node concept="3w_OXm" id="7akAd_TzH0U" role="2OqNvi" />
                           </node>
                         </node>
                         <node concept="3clFbF" id="5Tr1VsJEbN4" role="3cqZAp">
@@ -709,6 +706,12 @@
   <node concept="13MO4I" id="5Tr1VsJEoGm">
     <property role="TrG5h" value="reduce_EmptyFunctionCall" />
     <ref role="3gUMe" to="yvgz:29RmJoXeePh" resolve="EmptyFunctionBlock" />
+    <node concept="1N15co" id="58QN4$b6aGm" role="1s_3oS">
+      <property role="TrG5h" value="parentFunction" />
+      <node concept="3Tqbb2" id="58QN4$b6aNp" role="1N15GL">
+        <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+      </node>
+    </node>
     <node concept="356WMU" id="5Tr1VsJEoGo" role="13RCb5">
       <node concept="356sEK" id="Ho3faVHPYv" role="383Ya9">
         <node concept="2EixSi" id="Ho3faVHPYx" role="2EinRH" />
@@ -735,6 +738,9 @@
           <property role="TrG5h" value="params" />
           <node concept="5jKBG" id="1SzGUGPLmh" role="lGtFl">
             <ref role="v9R2y" node="5Tr1VsJNE2J" resolve="include_FunctionCallArgs" />
+            <node concept="v3LJS" id="7akAd_TzORj" role="v9R3O">
+              <ref role="v3LJV" node="58QN4$b6aGm" resolve="parentFunction" />
+            </node>
           </node>
         </node>
       </node>
@@ -743,6 +749,12 @@
   </node>
   <node concept="jVnub" id="5Tr1VsJJAo1">
     <property role="TrG5h" value="switch_SchedulerBlock" />
+    <node concept="1N15co" id="58QN4$b5Yt7" role="1s_3oS">
+      <property role="TrG5h" value="parentFunction" />
+      <node concept="3Tqbb2" id="58QN4$b5Ytf" role="1N15GL">
+        <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+      </node>
+    </node>
     <node concept="3aamgX" id="5Tr1VsJJAxB" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="yvgz:3EtQu_tAJA" resolve="EmptySchedulerBlock" />
@@ -765,6 +777,9 @@
       <ref role="30HIoZ" to="yvgz:3EtQu_veq2" resolve="FixedDataFlowSchedulerBlock" />
       <node concept="j$656" id="5Tr1VsJJBjt" role="1lVwrX">
         <ref role="v9R2y" node="5Tr1VsJDHgU" resolve="reduce_FixedDataFlowSchedulerBlock" />
+        <node concept="v3LJS" id="7akAd_Tzx$i" role="v9R3O">
+          <ref role="v3LJV" node="58QN4$b5Yt7" resolve="parentFunction" />
+        </node>
       </node>
     </node>
   </node>
@@ -780,11 +795,19 @@
   </node>
   <node concept="jVnub" id="5Tr1VsJKqPj">
     <property role="TrG5h" value="switch_FunctionCall" />
+    <node concept="1N15co" id="58QN4$b6aw3" role="1s_3oS">
+      <property role="TrG5h" value="parentFunction" />
+      <node concept="3Tqbb2" id="58QN4$b6awd" role="1N15GL">
+        <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+      </node>
+    </node>
     <node concept="3aamgX" id="5Tr1VsJKqPk" role="3aUrZf">
-      <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="yvgz:29RmJoXeePh" resolve="EmptyFunctionBlock" />
       <node concept="j$656" id="5Tr1VsJKqPo" role="1lVwrX">
         <ref role="v9R2y" node="5Tr1VsJEoGm" resolve="reduce_EmptyFunctionCall" />
+        <node concept="v3LJS" id="7akAd_TzHr$" role="v9R3O">
+          <ref role="v3LJV" node="58QN4$b6aw3" resolve="parentFunction" />
+        </node>
       </node>
     </node>
   </node>
@@ -935,6 +958,12 @@
   <node concept="13MO4I" id="5Tr1VsJNE2J">
     <property role="TrG5h" value="include_FunctionCallArgs" />
     <ref role="3gUMe" to="yvgz:3eP8Zudp5G4" resolve="FunctionBlock" />
+    <node concept="1N15co" id="7akAd_TzOEr" role="1s_3oS">
+      <property role="TrG5h" value="parentFunction" />
+      <node concept="3Tqbb2" id="7akAd_TzORa" role="1N15GL">
+        <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+      </node>
+    </node>
     <node concept="356WMU" id="5Tr1VsJNE2L" role="13RCb5">
       <node concept="356sEK" id="1SzGUGPGMf" role="383Ya9">
         <node concept="356sEF" id="1SzGUGPGMg" role="356sEH">
@@ -1639,8 +1668,8 @@
     <property role="TrG5h" value="include_SchedulerBlock" />
     <ref role="3gUMe" to="yvgz:29RmJoXeePl" resolve="SchedulerBlock" />
     <node concept="1N15co" id="58QN4$b2Mji" role="1s_3oS">
-      <property role="TrG5h" value="parent" />
-      <node concept="3Tqbb2" id="58QN4$b2Mqs" role="1N15GL">
+      <property role="TrG5h" value="parentFunction" />
+      <node concept="3Tqbb2" id="7akAd_TxV8x" role="1N15GL">
         <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
       </node>
     </node>
@@ -1672,7 +1701,7 @@
                         <node concept="2OqwBi" id="58QN4$b2YnE" role="2Oq$k0">
                           <node concept="1iwH7S" id="58QN4$b2Y7G" role="2Oq$k0" />
                           <node concept="3cR$yn" id="58QN4$b2Yz_" role="2OqNvi">
-                            <ref role="3cRzXn" node="58QN4$b2Mji" resolve="parent" />
+                            <ref role="3cRzXn" node="58QN4$b2Mji" resolve="parentFunction" />
                           </node>
                         </node>
                         <node concept="3TrcHB" id="58QN4$b2Jlu" role="2OqNvi">
@@ -1696,7 +1725,7 @@
                   <node concept="2OqwBi" id="58QN4$b37zN" role="3clFbG">
                     <node concept="1iwH7S" id="58QN4$b37pL" role="2Oq$k0" />
                     <node concept="3cR$yn" id="58QN4$b37BI" role="2OqNvi">
-                      <ref role="3cRzXn" node="58QN4$b2Mji" resolve="parent" />
+                      <ref role="3cRzXn" node="58QN4$b2Mji" resolve="parentFunction" />
                     </node>
                   </node>
                 </node>
@@ -1731,7 +1760,7 @@
                       <node concept="2OqwBi" id="58QN4$b5awz" role="2Oq$k0">
                         <node concept="1iwH7S" id="58QN4$b5aki" role="2Oq$k0" />
                         <node concept="3cR$yn" id="58QN4$b5aAP" role="2OqNvi">
-                          <ref role="3cRzXn" node="58QN4$b2Mji" resolve="parent" />
+                          <ref role="3cRzXn" node="58QN4$b2Mji" resolve="parentFunction" />
                         </node>
                       </node>
                       <node concept="3Tsc0h" id="58QN4$b5b3k" role="2OqNvi">
@@ -1749,12 +1778,15 @@
           <node concept="356sEK" id="58QN4$b5agg" role="383Ya9">
             <node concept="2EixSi" id="58QN4$b5agi" role="2EinRH" />
           </node>
-          <node concept="356sEK" id="58QN4$b2$o6" role="383Ya9">
-            <node concept="2EixSi" id="58QN4$b2$o8" role="2EinRH" />
-            <node concept="356sEF" id="58QN4$b2$nO" role="356sEH">
+          <node concept="356sEK" id="7akAd_Tw_8R" role="383Ya9">
+            <node concept="356sEF" id="7akAd_Tw_8S" role="356sEH">
               <property role="TrG5h" value="schedule" />
-              <node concept="1sPUBX" id="58QN4$b2$ok" role="lGtFl">
-                <ref role="v9R2y" node="5Tr1VsJJAo1" resolve="switch_SchedulerBlock" />
+            </node>
+            <node concept="2EixSi" id="7akAd_Tw_8T" role="2EinRH" />
+            <node concept="1sPUBX" id="7akAd_Tw_9B" role="lGtFl">
+              <ref role="v9R2y" node="5Tr1VsJJAo1" resolve="switch_SchedulerBlock" />
+              <node concept="v3LJS" id="7akAd_TzqbS" role="v9R3O">
+                <ref role="v3LJV" node="58QN4$b2Mji" resolve="parentFunction" />
               </node>
             </node>
           </node>
