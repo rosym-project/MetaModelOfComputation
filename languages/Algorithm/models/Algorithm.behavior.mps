@@ -33,9 +33,6 @@
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
-        <child id="1082485599096" name="statements" index="9aQI4" />
-      </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
@@ -51,9 +48,6 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -64,7 +58,6 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
-      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -79,7 +72,6 @@
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
-        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
@@ -87,7 +79,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -482,91 +473,6 @@
         </node>
         <node concept="x79VA" id="2FsRs4zDsYT" role="3nqlJM">
           <property role="x79VB" value="port of DataBlok instance" />
-        </node>
-      </node>
-    </node>
-    <node concept="13i0hz" id="7VOfr8WpcKN" role="13h7CS">
-      <property role="TrG5h" value="getVariableName" />
-      <node concept="3Tm1VV" id="7VOfr8WpcKO" role="1B3o_S" />
-      <node concept="17QB3L" id="7VOfr8WpcNY" role="3clF45" />
-      <node concept="3clFbS" id="7VOfr8WpcKQ" role="3clF47">
-        <node concept="3clFbJ" id="5PE55GMNHrK" role="3cqZAp">
-          <node concept="3clFbS" id="5PE55GMNHrL" role="3clFbx">
-            <node concept="3cpWs8" id="5PE55GMNHrM" role="3cqZAp">
-              <node concept="3cpWsn" id="5PE55GMNHrN" role="3cpWs9">
-                <property role="TrG5h" value="connectedData" />
-                <node concept="3Tqbb2" id="5PE55GMNHrO" role="1tU5fm">
-                  <ref role="ehGHo" to="yvgz:29RmJoXeePk" resolve="DataBlock" />
-                </node>
-                <node concept="1PxgMI" id="5PE55GMNHrP" role="33vP2m">
-                  <property role="1BlNFB" value="true" />
-                  <node concept="chp4Y" id="5PE55GMNHrQ" role="3oSUPX">
-                    <ref role="cht4Q" to="yvgz:29RmJoXeePk" resolve="DataBlock" />
-                  </node>
-                  <node concept="2OqwBi" id="5PE55GMNHrR" role="1m5AlR">
-                    <node concept="13iPFW" id="7VOfr8Wpef3" role="2Oq$k0" />
-                    <node concept="1mfA1w" id="5PE55GMNHrV" role="2OqNvi" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs6" id="7VOfr8WpdsE" role="3cqZAp">
-              <node concept="3cpWs3" id="1SzGUGQ5ux" role="3cqZAk">
-                <node concept="2OqwBi" id="1SzGUGQ5X1" role="3uHU7w">
-                  <node concept="13iPFW" id="1SzGUGQ5AN" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="1SzGUGQ695" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                </node>
-                <node concept="3cpWs3" id="1SzGUGQ4Cp" role="3uHU7B">
-                  <node concept="2OqwBi" id="7VOfr8WpdHp" role="3uHU7B">
-                    <node concept="37vLTw" id="7VOfr8Wpdvw" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5PE55GMNHrN" resolve="connectedData" />
-                    </node>
-                    <node concept="3TrcHB" id="7VOfr8WpdQ6" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="1SzGUGQ4LF" role="3uHU7w">
-                    <property role="Xl_RC" value="_" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="5PE55GMNHs4" role="3clFbw">
-            <node concept="2OqwBi" id="5PE55GMNHs5" role="2Oq$k0">
-              <node concept="13iPFW" id="7VOfr8Wpdk2" role="2Oq$k0" />
-              <node concept="1mfA1w" id="5PE55GMNHs9" role="2OqNvi" />
-            </node>
-            <node concept="1mIQ4w" id="5PE55GMNHsa" role="2OqNvi">
-              <node concept="chp4Y" id="5PE55GMNHsb" role="cj9EA">
-                <ref role="cht4Q" to="yvgz:29RmJoXeePk" resolve="DataBlock" />
-              </node>
-            </node>
-          </node>
-          <node concept="9aQIb" id="6TAIVwhBQhI" role="9aQIa">
-            <node concept="3clFbS" id="6TAIVwhBQhJ" role="9aQI4">
-              <node concept="3cpWs6" id="6TAIVwhBQhK" role="3cqZAp">
-                <node concept="2OqwBi" id="6TAIVwhBQhL" role="3cqZAk">
-                  <node concept="13iPFW" id="6TAIVwhBQhM" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="6TAIVwhBQhN" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="P$JXv" id="7VOfr8Wpj_d" role="lGtFl">
-        <node concept="TZ5HA" id="7VOfr8Wpj_e" role="TZ5H$">
-          <node concept="1dT_AC" id="7VOfr8Wpj_f" role="1dT_Ay">
-            <property role="1dT_AB" value="get the appropriate variable name for the port" />
-          </node>
-        </node>
-        <node concept="x79VA" id="7VOfr8Wpj_g" role="3nqlJM">
-          <property role="x79VB" value="if parent is DataBlock -&gt; datablock name +" />
         </node>
       </node>
     </node>
