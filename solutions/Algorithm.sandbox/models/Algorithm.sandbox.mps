@@ -146,7 +146,7 @@
       <ref role="1psEGP" node="3eP8ZudpjNK" resolve="baz-trigger" />
     </node>
     <node concept="2__D7_" id="3EtQu_vAe7" role="3SlQUj">
-      <property role="TrG5h" value="foo-sched" />
+      <property role="TrG5h" value="fooSched" />
       <node concept="1pt3V6" id="3EtQu_wAO$" role="1OHzVH">
         <property role="TrG5h" value="foo-sched-trigger" />
         <property role="2_BrWT" value="3EtQu_uj5h/In" />
@@ -212,7 +212,7 @@
       <property role="1OHxBQ" value="6po$YwiVCCq/InOut" />
       <node concept="10P55v" id="3eP8ZudpjQL" role="1OHwi9" />
     </node>
-    <node concept="1OHxBB" id="3EtQu_zmNy" role="3SlQUq">
+    <node concept="1OHxBB" id="7akAd_T$g_V" role="3SlQUq">
       <ref role="1OHxBS" node="3eP8ZudpjPP" resolve="pSetpoint" />
       <ref role="1OHyup" node="3eP8ZudpjOd" resolve="setpoint" />
     </node>
@@ -251,7 +251,7 @@
       <node concept="1OHxBU" id="3EtQu_tLuD" role="1ptsVk">
         <property role="TrG5h" value="errorAccess" />
         <property role="1OHxBQ" value="6po$YwiVCCq/InOut" />
-        <node concept="10P55v" id="3EtQu_tLuH" role="1OHwi9" />
+        <node concept="10P55v" id="7akAd_T$gv$" role="1OHwi9" />
       </node>
     </node>
     <node concept="2_B1M0" id="3EtQu_tLug" role="3SlQUm">
@@ -313,7 +313,7 @@
       <ref role="1OHyup" node="3eP8ZudpjQd" resolve="pActuation" />
     </node>
     <node concept="2__D7_" id="3EtQu_yvp8" role="3SlQUj">
-      <property role="TrG5h" value="p-sched" />
+      <property role="TrG5h" value="pSched" />
       <node concept="1pt3V6" id="6F0tY7D9MDu" role="1OHzVH">
         <property role="TrG5h" value="p-sched-trigger" />
         <property role="2_BrWT" value="3EtQu_uj5h/In" />
