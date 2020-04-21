@@ -114,8 +114,8 @@
       </node>
     </node>
     <node concept="1OHxBB" id="6jvQBgXES32" role="3SlQUq">
-      <ref role="1OHyup" node="3eP8ZudpjMB" resolve="barIn" />
       <ref role="1OHxBS" node="3eP8ZudpjLM" resolve="fooIn1" />
+      <ref role="1OHyup" node="3eP8ZudpjMB" resolve="barIn" />
     </node>
     <node concept="1OHxBB" id="6jvQBgXEYd0" role="3SlQUq">
       <ref role="1OHyup" node="3EtQu_tLu6" resolve="datAccess" />
@@ -352,8 +352,8 @@
         <ref role="1OHyup" node="44Cv2OMFVPa" resolve="parent_c_port" />
       </node>
       <node concept="1OHxBB" id="44Cv2OMFVPq" role="1RU2Gb">
-        <ref role="1OHxBS" node="44Cv2OMFVIU" resolve="child_port_a" />
         <ref role="1OHyup" node="44Cv2OMFVOU" resolve="parent_a_port" />
+        <ref role="1OHxBS" node="44Cv2OMFVIU" resolve="child_port_a" />
       </node>
       <node concept="1OHxBB" id="44Cv2OMFVPw" role="1RU2Gb">
         <ref role="1OHyup" node="44Cv2OMFVP1" resolve="parent_b_port" />
