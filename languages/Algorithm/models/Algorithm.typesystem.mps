@@ -39,6 +39,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -568,6 +569,134 @@
           </node>
         </node>
       </node>
+      <node concept="1Dw8fO" id="hkK7ztNjl2" role="3cqZAp">
+        <node concept="3cpWsn" id="hkK7ztNjl3" role="1Duv9x">
+          <property role="TrG5h" value="i" />
+          <node concept="10Oyi0" id="hkK7ztNjl4" role="1tU5fm" />
+          <node concept="3cmrfG" id="hkK7ztNjl5" role="33vP2m">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="hkK7ztNjl6" role="2LFqv$">
+          <node concept="1Dw8fO" id="hkK7ztNjl7" role="3cqZAp">
+            <node concept="3cpWsn" id="hkK7ztNjl8" role="1Duv9x">
+              <property role="TrG5h" value="j" />
+              <node concept="10Oyi0" id="hkK7ztNjl9" role="1tU5fm" />
+              <node concept="3cpWs3" id="hkK7ztNjla" role="33vP2m">
+                <node concept="3cmrfG" id="hkK7ztNjlb" role="3uHU7w">
+                  <property role="3cmrfH" value="1" />
+                </node>
+                <node concept="37vLTw" id="hkK7ztNjlc" role="3uHU7B">
+                  <ref role="3cqZAo" node="hkK7ztNjl3" resolve="i" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="hkK7ztNjld" role="2LFqv$">
+              <node concept="3clFbJ" id="hkK7ztNjle" role="3cqZAp">
+                <node concept="2OqwBi" id="hkK7ztNjlf" role="3clFbw">
+                  <node concept="1y4W85" id="hkK7ztNGAg" role="2Oq$k0">
+                    <node concept="37vLTw" id="hkK7ztNGR8" role="1y58nS">
+                      <ref role="3cqZAo" node="hkK7ztNjl3" resolve="i" />
+                    </node>
+                    <node concept="2OqwBi" id="hkK7ztNjli" role="1y566C">
+                      <node concept="1YBJjd" id="hkK7ztNjlj" role="2Oq$k0">
+                        <ref role="1YBMHb" node="5bwHbMcf7LJ" resolve="functionBlockContainer" />
+                      </node>
+                      <node concept="3Tsc0h" id="hkK7ztNmGz" role="2OqNvi">
+                        <ref role="3TtcxE" to="yvgz:6jvQBgXFn54" resolve="triggers" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="hkK7ztNjll" role="2OqNvi">
+                    <ref role="37wK5l" to="ixp9:hkK7ztNhQC" resolve="equals" />
+                    <node concept="1y4W85" id="hkK7ztNJ01" role="37wK5m">
+                      <node concept="37vLTw" id="hkK7ztNJaw" role="1y58nS">
+                        <ref role="3cqZAo" node="hkK7ztNjl8" resolve="j" />
+                      </node>
+                      <node concept="2OqwBi" id="hkK7ztNjlo" role="1y566C">
+                        <node concept="1YBJjd" id="hkK7ztNjlp" role="2Oq$k0">
+                          <ref role="1YBMHb" node="5bwHbMcf7LJ" resolve="functionBlockContainer" />
+                        </node>
+                        <node concept="3Tsc0h" id="hkK7ztNHsC" role="2OqNvi">
+                          <ref role="3TtcxE" to="yvgz:6jvQBgXFn54" resolve="triggers" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="hkK7ztNjlr" role="3clFbx">
+                  <node concept="2MkqsV" id="hkK7ztNjls" role="3cqZAp">
+                    <node concept="Xl_RD" id="hkK7ztNjlt" role="2MkJ7o">
+                      <property role="Xl_RC" value="duplicate TriggerConnector" />
+                    </node>
+                    <node concept="1y4W85" id="hkK7ztNjlu" role="1urrMF">
+                      <node concept="37vLTw" id="hkK7ztNjlv" role="1y58nS">
+                        <ref role="3cqZAo" node="hkK7ztNjl8" resolve="j" />
+                      </node>
+                      <node concept="2OqwBi" id="hkK7ztNjlw" role="1y566C">
+                        <node concept="1YBJjd" id="hkK7ztNjlx" role="2Oq$k0">
+                          <ref role="1YBMHb" node="5bwHbMcf7LJ" resolve="functionBlockContainer" />
+                        </node>
+                        <node concept="3Tsc0h" id="hkK7ztNmSH" role="2OqNvi">
+                          <ref role="3TtcxE" to="yvgz:6jvQBgXFn54" resolve="triggers" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3eOVzh" id="hkK7ztNjlz" role="1Dwp0S">
+              <node concept="2OqwBi" id="hkK7ztNjl$" role="3uHU7w">
+                <node concept="2OqwBi" id="hkK7ztNjl_" role="2Oq$k0">
+                  <node concept="1YBJjd" id="hkK7ztNjlA" role="2Oq$k0">
+                    <ref role="1YBMHb" node="5bwHbMcf7LJ" resolve="functionBlockContainer" />
+                  </node>
+                  <node concept="3Tsc0h" id="hkK7ztNmF5" role="2OqNvi">
+                    <ref role="3TtcxE" to="yvgz:6jvQBgXFn54" resolve="triggers" />
+                  </node>
+                </node>
+                <node concept="34oBXx" id="hkK7ztNjlC" role="2OqNvi" />
+              </node>
+              <node concept="37vLTw" id="hkK7ztNjlD" role="3uHU7B">
+                <ref role="3cqZAo" node="hkK7ztNjl8" resolve="j" />
+              </node>
+            </node>
+            <node concept="3uNrnE" id="hkK7ztNjlE" role="1Dwrff">
+              <node concept="37vLTw" id="hkK7ztNjlF" role="2$L3a6">
+                <ref role="3cqZAo" node="hkK7ztNjl8" resolve="j" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3eOVzh" id="hkK7ztNjlG" role="1Dwp0S">
+          <node concept="3cpWsd" id="hkK7ztNjlH" role="3uHU7w">
+            <node concept="3cmrfG" id="hkK7ztNjlI" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="2OqwBi" id="hkK7ztNjlJ" role="3uHU7B">
+              <node concept="2OqwBi" id="hkK7ztNjlK" role="2Oq$k0">
+                <node concept="1YBJjd" id="hkK7ztNjlL" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5bwHbMcf7LJ" resolve="functionBlockContainer" />
+                </node>
+                <node concept="3Tsc0h" id="hkK7ztNk6w" role="2OqNvi">
+                  <ref role="3TtcxE" to="yvgz:6jvQBgXFn54" resolve="triggers" />
+                </node>
+              </node>
+              <node concept="34oBXx" id="hkK7ztNjlN" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="37vLTw" id="hkK7ztNjlO" role="3uHU7B">
+            <ref role="3cqZAo" node="hkK7ztNjl3" resolve="i" />
+          </node>
+        </node>
+        <node concept="3uNrnE" id="hkK7ztNjlP" role="1Dwrff">
+          <node concept="37vLTw" id="hkK7ztNjlQ" role="2$L3a6">
+            <ref role="3cqZAo" node="hkK7ztNjl3" resolve="i" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="hkK7ztNjdG" role="3cqZAp" />
     </node>
     <node concept="1YaCAy" id="5bwHbMcf7LJ" role="1YuTPh">
       <property role="TrG5h" value="functionBlockContainer" />
@@ -708,6 +837,45 @@
     <node concept="1YaCAy" id="5bwHbMch6fM" role="1YuTPh">
       <property role="TrG5h" value="dataBlockContainer" />
       <ref role="1YaFvo" to="yvgz:5o1iPWxUm1h" resolve="DataBlockContainer" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="hkK7ztHKmO">
+    <property role="TrG5h" value="check_TriggerConnector" />
+    <node concept="3clFbS" id="hkK7ztHKmP" role="18ibNy">
+      <node concept="3clFbJ" id="hkK7ztHKn0" role="3cqZAp">
+        <node concept="3clFbC" id="hkK7ztHKTt" role="3clFbw">
+          <node concept="2OqwBi" id="hkK7ztHLf4" role="3uHU7w">
+            <node concept="1YBJjd" id="hkK7ztHKZo" role="2Oq$k0">
+              <ref role="1YBMHb" node="hkK7ztHKmR" resolve="triggerConnector" />
+            </node>
+            <node concept="3TrEf2" id="hkK7ztHLg0" role="2OqNvi">
+              <ref role="3Tt5mk" to="yvgz:6jvQBgXFn51" resolve="port2" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="hkK7ztHKw5" role="3uHU7B">
+            <node concept="1YBJjd" id="hkK7ztHKnc" role="2Oq$k0">
+              <ref role="1YBMHb" node="hkK7ztHKmR" resolve="triggerConnector" />
+            </node>
+            <node concept="3TrEf2" id="hkK7ztHKAV" role="2OqNvi">
+              <ref role="3Tt5mk" to="yvgz:6jvQBgXFn4Z" resolve="port1" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="hkK7ztHKn2" role="3clFbx">
+          <node concept="2MkqsV" id="hkK7ztHLgz" role="3cqZAp">
+            <node concept="1YBJjd" id="hkK7ztHLoy" role="1urrMF">
+              <ref role="1YBMHb" node="hkK7ztHKmR" resolve="triggerConnector" />
+            </node>
+            <node concept="Xl_RD" id="hkK7ztHLo2" role="2MkJ7o">
+              <property role="Xl_RC" value="A 'TriggerConnector' cannot connect the same port" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="hkK7ztHKmR" role="1YuTPh">
+      <property role="TrG5h" value="triggerConnector" />
+      <ref role="1YaFvo" to="yvgz:6jvQBgXFn4Y" resolve="TriggerConnector" />
     </node>
   </node>
 </model>

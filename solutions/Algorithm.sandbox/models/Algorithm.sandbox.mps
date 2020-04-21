@@ -356,8 +356,8 @@
         <ref role="1OHyup" node="44Cv2OMFVOU" resolve="parent_a_port" />
       </node>
       <node concept="1OHxBB" id="44Cv2OMFVPw" role="1RU2Gb">
-        <ref role="1OHxBS" node="44Cv2OMFVJ9" resolve="child_port_b" />
         <ref role="1OHyup" node="44Cv2OMFVP1" resolve="parent_b_port" />
+        <ref role="1OHxBS" node="44Cv2OMFVJ9" resolve="child_port_b" />
       </node>
       <node concept="1OHxBU" id="44Cv2OMFVOU" role="1ptsVk">
         <property role="TrG5h" value="parent_a_port" />
