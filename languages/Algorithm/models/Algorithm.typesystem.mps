@@ -84,6 +84,7 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -450,6 +451,116 @@
             </node>
             <node concept="1YBJjd" id="5bwHbMceyHN" role="1urrMF">
               <ref role="1YBMHb" node="5bwHbMcexn4" resolve="dataConnector" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="hkK7ztSI8O" role="3cqZAp" />
+      <node concept="3clFbJ" id="hkK7ztSI9i" role="3cqZAp">
+        <node concept="3clFbS" id="hkK7ztSI9k" role="3clFbx">
+          <node concept="2MkqsV" id="hkK7ztSMUm" role="3cqZAp">
+            <node concept="Xl_RD" id="hkK7ztSMU_" role="2MkJ7o">
+              <property role="Xl_RC" value="A DataConnector cannot connect 2 'In' ports" />
+            </node>
+            <node concept="1YBJjd" id="hkK7ztSOlq" role="1urrMF">
+              <ref role="1YBMHb" node="5bwHbMcexn4" resolve="dataConnector" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="hkK7ztSL0d" role="3clFbw">
+          <node concept="2OqwBi" id="hkK7ztSMSq" role="3uHU7w">
+            <node concept="2OqwBi" id="hkK7ztSMSr" role="2Oq$k0">
+              <node concept="2OqwBi" id="hkK7ztSMSs" role="2Oq$k0">
+                <node concept="1YBJjd" id="hkK7ztSMSt" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5bwHbMcexn4" resolve="dataConnector" />
+                </node>
+                <node concept="3TrEf2" id="hkK7ztSOiW" role="2OqNvi">
+                  <ref role="3Tt5mk" to="yvgz:6po$YwiVFhL" resolve="port2" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="hkK7ztSMSv" role="2OqNvi">
+                <ref role="3TsBF5" to="yvgz:6po$YwiVCCu" resolve="direction" />
+              </node>
+            </node>
+            <node concept="21noJN" id="hkK7ztSMSw" role="2OqNvi">
+              <node concept="21nZrQ" id="hkK7ztSOkb" role="21noJM">
+                <ref role="21nZrZ" to="yvgz:6po$YwiVCCm" resolve="In" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="hkK7ztSNfq" role="3uHU7B">
+            <node concept="2OqwBi" id="hkK7ztSIHE" role="2Oq$k0">
+              <node concept="2OqwBi" id="hkK7ztSIiB" role="2Oq$k0">
+                <node concept="1YBJjd" id="hkK7ztSI9I" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5bwHbMcexn4" resolve="dataConnector" />
+                </node>
+                <node concept="3TrEf2" id="hkK7ztSIyq" role="2OqNvi">
+                  <ref role="3Tt5mk" to="yvgz:6po$YwiVCCg" resolve="port1" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="hkK7ztSIU0" role="2OqNvi">
+                <ref role="3TsBF5" to="yvgz:6po$YwiVCCu" resolve="direction" />
+              </node>
+            </node>
+            <node concept="21noJN" id="hkK7ztSNAN" role="2OqNvi">
+              <node concept="21nZrQ" id="hkK7ztSNS3" role="21noJM">
+                <ref role="21nZrZ" to="yvgz:6po$YwiVCCm" resolve="In" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="hkK7ztSODM" role="3cqZAp" />
+      <node concept="3clFbJ" id="hkK7ztSODN" role="3cqZAp">
+        <node concept="3clFbS" id="hkK7ztSODO" role="3clFbx">
+          <node concept="2MkqsV" id="hkK7ztSODP" role="3cqZAp">
+            <node concept="Xl_RD" id="hkK7ztSODQ" role="2MkJ7o">
+              <property role="Xl_RC" value="A DataConnector cannot connect 2 'Out' ports" />
+            </node>
+            <node concept="1YBJjd" id="hkK7ztSODR" role="1urrMF">
+              <ref role="1YBMHb" node="5bwHbMcexn4" resolve="dataConnector" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="hkK7ztSODS" role="3clFbw">
+          <node concept="2OqwBi" id="hkK7ztSODT" role="3uHU7w">
+            <node concept="2OqwBi" id="hkK7ztSODU" role="2Oq$k0">
+              <node concept="2OqwBi" id="hkK7ztSODV" role="2Oq$k0">
+                <node concept="1YBJjd" id="hkK7ztSODW" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5bwHbMcexn4" resolve="dataConnector" />
+                </node>
+                <node concept="3TrEf2" id="hkK7ztSODX" role="2OqNvi">
+                  <ref role="3Tt5mk" to="yvgz:6po$YwiVFhL" resolve="port2" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="hkK7ztSODY" role="2OqNvi">
+                <ref role="3TsBF5" to="yvgz:6po$YwiVCCu" resolve="direction" />
+              </node>
+            </node>
+            <node concept="21noJN" id="hkK7ztSODZ" role="2OqNvi">
+              <node concept="21nZrQ" id="hkK7ztSOUl" role="21noJM">
+                <ref role="21nZrZ" to="yvgz:6po$YwiVCCn" resolve="Out" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="hkK7ztSOE1" role="3uHU7B">
+            <node concept="2OqwBi" id="hkK7ztSOE2" role="2Oq$k0">
+              <node concept="2OqwBi" id="hkK7ztSOE3" role="2Oq$k0">
+                <node concept="1YBJjd" id="hkK7ztSOE4" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5bwHbMcexn4" resolve="dataConnector" />
+                </node>
+                <node concept="3TrEf2" id="hkK7ztSOE5" role="2OqNvi">
+                  <ref role="3Tt5mk" to="yvgz:6po$YwiVCCg" resolve="port1" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="hkK7ztSOE6" role="2OqNvi">
+                <ref role="3TsBF5" to="yvgz:6po$YwiVCCu" resolve="direction" />
+              </node>
+            </node>
+            <node concept="21noJN" id="hkK7ztSOE7" role="2OqNvi">
+              <node concept="21nZrQ" id="hkK7ztSOTZ" role="21noJM">
+                <ref role="21nZrZ" to="yvgz:6po$YwiVCCn" resolve="Out" />
+              </node>
             </node>
           </node>
         </node>
@@ -889,6 +1000,46 @@
             </node>
             <node concept="Xl_RD" id="hkK7ztHLo2" role="2MkJ7o">
               <property role="Xl_RC" value="A 'TriggerConnector' cannot connect the same port" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="hkK7ztSP7A" role="3cqZAp">
+        <node concept="3clFbS" id="hkK7ztSP7C" role="3clFbx">
+          <node concept="2MkqsV" id="hkK7ztSRiC" role="3cqZAp">
+            <node concept="Xl_RD" id="hkK7ztSRiR" role="2MkJ7o">
+              <property role="Xl_RC" value="A 'TriggerConnector' cannot connect ports of the same direction" />
+            </node>
+            <node concept="1YBJjd" id="hkK7ztSRk1" role="1urrMF">
+              <ref role="1YBMHb" node="hkK7ztHKmR" resolve="triggerConnector" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbC" id="hkK7ztSQ1b" role="3clFbw">
+          <node concept="2OqwBi" id="hkK7ztSQS9" role="3uHU7w">
+            <node concept="2OqwBi" id="hkK7ztSQs4" role="2Oq$k0">
+              <node concept="1YBJjd" id="hkK7ztSQ6y" role="2Oq$k0">
+                <ref role="1YBMHb" node="hkK7ztHKmR" resolve="triggerConnector" />
+              </node>
+              <node concept="3TrEf2" id="hkK7ztSQFL" role="2OqNvi">
+                <ref role="3Tt5mk" to="yvgz:6jvQBgXFn51" resolve="port2" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="hkK7ztSRhr" role="2OqNvi">
+              <ref role="3TsBF5" to="yvgz:3EtQu_tWxu" resolve="direction" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="hkK7ztSPEq" role="3uHU7B">
+            <node concept="2OqwBi" id="hkK7ztSPgU" role="2Oq$k0">
+              <node concept="1YBJjd" id="hkK7ztSP81" role="2Oq$k0">
+                <ref role="1YBMHb" node="hkK7ztHKmR" resolve="triggerConnector" />
+              </node>
+              <node concept="3TrEf2" id="hkK7ztSPwl" role="2OqNvi">
+                <ref role="3Tt5mk" to="yvgz:6jvQBgXFn4Z" resolve="port1" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="hkK7ztSPQc" role="2OqNvi">
+              <ref role="3TsBF5" to="yvgz:3EtQu_tWxu" resolve="direction" />
             </node>
           </node>
         </node>
