@@ -337,13 +337,40 @@
   <node concept="1u3Uyy" id="44Cv2OMEdIf">
     <property role="TrG5h" value="testDataContainer" />
     <node concept="1OHxBB" id="44Cv2OMIBDP" role="3SlQUq">
-      <ref role="1OHxBS" node="44Cv2OMIBDG" resolve="funcContainerPort" />
+      <ref role="1OHxBS" node="44Cv2OMIBDG" resolve="funcContPortA" />
       <ref role="1OHyup" node="44Cv2OMFVOU" resolve="parent_a_port" />
     </node>
+    <node concept="1OHxBB" id="4LsB5Tjq6Qi" role="3SlQUq">
+      <ref role="1OHxBS" node="4LsB5Tjq6Pd" resolve="funcContPortB" />
+      <ref role="1OHyup" node="44Cv2OMFVP1" resolve="parent_b_port" />
+    </node>
+    <node concept="1OHxBB" id="4LsB5Tjq6Qq" role="3SlQUq">
+      <ref role="1OHxBS" node="4LsB5Tjq6PG" resolve="funcContPortC" />
+      <ref role="1OHyup" node="44Cv2OMFVPa" resolve="parent_c_port" />
+    </node>
+    <node concept="1OHxBB" id="4LsB5Tjq6Qx" role="3SlQUq">
+      <ref role="1OHxBS" node="4LsB5Tjq6Q1" resolve="funcContPortD" />
+      <ref role="1OHyup" node="5QQcZL$Ii93" resolve="pInt" />
+    </node>
     <node concept="1OHxBU" id="44Cv2OMIBDG" role="2YOnzZ">
-      <property role="TrG5h" value="funcContainerPort" />
+      <property role="TrG5h" value="funcContPortA" />
       <property role="1OHxBQ" value="6po$YwiVCCm/In" />
       <node concept="10P55v" id="44Cv2OMIBDM" role="1OHwi9" />
+    </node>
+    <node concept="1OHxBU" id="4LsB5Tjq6Pd" role="2YOnzZ">
+      <property role="TrG5h" value="funcContPortB" />
+      <property role="1OHxBQ" value="6po$YwiVCCn/Out" />
+      <node concept="10P55v" id="4LsB5Tjq6Pl" role="1OHwi9" />
+    </node>
+    <node concept="1OHxBU" id="4LsB5Tjq6PG" role="2YOnzZ">
+      <property role="TrG5h" value="funcContPortC" />
+      <property role="1OHxBQ" value="6po$YwiVCCm/In" />
+      <node concept="10P55v" id="4LsB5Tjq6PQ" role="1OHwi9" />
+    </node>
+    <node concept="1OHxBU" id="4LsB5Tjq6Q1" role="2YOnzZ">
+      <property role="TrG5h" value="funcContPortD" />
+      <property role="1OHxBQ" value="6po$YwiVCCm/In" />
+      <node concept="10P55v" id="4LsB5Tjq6Qf" role="1OHwi9" />
     </node>
     <node concept="1RU2Ge" id="44Cv2OMEdIi" role="3SlQUm">
       <property role="TrG5h" value="parentContainer" />
@@ -356,8 +383,8 @@
         <ref role="1OHxBS" node="44Cv2OMFVIU" resolve="child_port_a" />
       </node>
       <node concept="1OHxBB" id="44Cv2OMFVPw" role="1RU2Gb">
-        <ref role="1OHyup" node="44Cv2OMFVP1" resolve="parent_b_port" />
         <ref role="1OHxBS" node="44Cv2OMFVJ9" resolve="child_port_b" />
+        <ref role="1OHyup" node="44Cv2OMFVP1" resolve="parent_b_port" />
       </node>
       <node concept="1OHxBU" id="44Cv2OMFVOU" role="1ptsVk">
         <property role="TrG5h" value="parent_a_port" />
@@ -390,6 +417,10 @@
           <ref role="1OHxBS" node="44Cv2OMFVIU" resolve="child_port_a" />
           <ref role="1OHyup" node="44Cv2OMEdIA" resolve="a_port" />
         </node>
+        <node concept="1OHxBB" id="4LsB5Tjq6OL" role="1RU2Gb">
+          <ref role="1OHxBS" node="44Cv2OMFVJ9" resolve="child_port_b" />
+          <ref role="1OHyup" node="44Cv2OMEdIH" resolve="b_port" />
+        </node>
         <node concept="2_B1M0" id="44Cv2OMEdIs" role="1RU2Gd">
           <property role="TrG5h" value="a" />
           <node concept="1OHxBU" id="44Cv2OMEdIA" role="1ptsVk">
@@ -421,7 +452,7 @@
       <node concept="1OHxBU" id="5QQcZL$Ii93" role="1ptsVk">
         <property role="TrG5h" value="pInt" />
         <property role="1OHxBQ" value="6po$YwiVCCm/In" />
-        <node concept="10Oyi0" id="5QQcZL$Ii97" role="1OHwi9" />
+        <node concept="10P55v" id="4LsB5Tjq6QD" role="1OHwi9" />
       </node>
     </node>
   </node>
