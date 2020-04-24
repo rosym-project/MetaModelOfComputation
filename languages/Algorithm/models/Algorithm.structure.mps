@@ -24,6 +24,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -147,6 +148,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="58QN4$b4wid" role="PzmwI">
       <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
+    </node>
+    <node concept="PrWs8" id="77WKAh08Juw" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
     <node concept="1TJgyj" id="6jvQBgXG1ad" role="1TKVEi">
       <property role="IQ2ns" value="7268768516385280653" />
@@ -281,9 +285,6 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="3EtQu_woI9" resolve="TriggerPortRef" />
     </node>
-    <node concept="PrWs8" id="71WlwW$ynsy" role="PzmwI">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3EtQu_woI9">
     <property role="EcuMT" value="65996431592360841" />
@@ -395,6 +396,61 @@
       <property role="20kJfa" value="index" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6po$YwiVCCi" resolve="DataPort" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="jovpCoJxUq">
+    <property role="EcuMT" value="349167071914761882" />
+    <property role="3GE5qa" value="definitions" />
+    <property role="TrG5h" value="LoopSchedulerBlock" />
+    <ref role="1TJDcQ" node="29RmJoXeePl" resolve="SchedulerBlock" />
+    <node concept="1TJgyj" id="77WKAgZUN$Y" role="1TKVEi">
+      <property role="IQ2ns" value="8213653556241840446" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="schedule" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="77WKAgZUMch" resolve="ScheduleStatement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="77WKAgZUMch">
+    <property role="EcuMT" value="8213653556241834769" />
+    <property role="3GE5qa" value="definitions.schedule" />
+    <property role="TrG5h" value="ScheduleStatement" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="77WKAgZUNex">
+    <property role="EcuMT" value="8213653556241839009" />
+    <property role="3GE5qa" value="definitions.schedule" />
+    <property role="TrG5h" value="TriggerStatement" />
+    <ref role="1TJDcQ" node="77WKAgZUMch" resolve="ScheduleStatement" />
+    <node concept="1TJgyj" id="77WKAh0azM6" role="1TKVEi">
+      <property role="IQ2ns" value="8213653556245970054" />
+      <property role="20kJfa" value="trigger" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6jvQBgXEYiM" resolve="TriggerPort" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="77WKAgZUNe$">
+    <property role="EcuMT" value="8213653556241839012" />
+    <property role="3GE5qa" value="definitions.schedule" />
+    <property role="TrG5h" value="WhileDoStatement" />
+    <property role="34LRSv" value="while" />
+    <ref role="1TJDcQ" node="77WKAgZUMch" resolve="ScheduleStatement" />
+    <node concept="1TJgyj" id="77WKAgZUNe_" role="1TKVEi">
+      <property role="IQ2ns" value="8213653556241839013" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="77WKAgZUMch" resolve="ScheduleStatement" />
+    </node>
+    <node concept="1TJgyj" id="77WKAgZUNeF" role="1TKVEi">
+      <property role="IQ2ns" value="8213653556241839019" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6po$YwiVCCi" resolve="DataPort" />
+    </node>
+    <node concept="PrWs8" id="77WKAh09CXL" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
 </model>
