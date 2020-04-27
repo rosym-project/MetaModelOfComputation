@@ -737,8 +737,8 @@
     </node>
   </node>
   <node concept="13MO4I" id="5Tr1VsJEoGm">
-    <property role="TrG5h" value="reduce_EmptyFunctionCall" />
-    <ref role="3gUMe" to="yvgz:29RmJoXeePh" resolve="EmptyFunctionBlock" />
+    <property role="TrG5h" value="reduce_DefaultFunctionCall" />
+    <ref role="3gUMe" to="yvgz:3eP8Zudp5G4" resolve="FunctionBlock" />
     <node concept="1N15co" id="58QN4$b6aGm" role="1s_3oS">
       <property role="TrG5h" value="parentFunction" />
       <node concept="3Tqbb2" id="58QN4$b6aNp" role="1N15GL">
@@ -847,7 +847,7 @@
     <node concept="3aamgX" id="5Tr1VsJKqPk" role="3aUrZf">
       <ref role="30HIoZ" to="yvgz:29RmJoXeePh" resolve="EmptyFunctionBlock" />
       <node concept="j$656" id="5Tr1VsJKqPo" role="1lVwrX">
-        <ref role="v9R2y" node="5Tr1VsJEoGm" resolve="reduce_EmptyFunctionCall" />
+        <ref role="v9R2y" node="5Tr1VsJEoGm" resolve="reduce_DefaultFunctionCall" />
         <node concept="v3LJS" id="7akAd_TzHr$" role="v9R3O">
           <ref role="v3LJV" node="58QN4$b6aw3" resolve="parentFunction" />
         </node>
