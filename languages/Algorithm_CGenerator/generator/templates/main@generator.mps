@@ -1155,6 +1155,27 @@
       <node concept="356sEK" id="44Cv2OMJqOx" role="383Ya9">
         <node concept="2EixSi" id="44Cv2OMJqOz" role="2EinRH" />
       </node>
+      <node concept="356sEK" id="w_xyS75laX" role="383Ya9">
+        <node concept="356sEF" id="w_xyS75laY" role="356sEH">
+          <property role="TrG5h" value="#ifdef __cplusplus" />
+        </node>
+        <node concept="2EixSi" id="w_xyS75laZ" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="w_xyS75liJ" role="383Ya9">
+        <node concept="356sEF" id="w_xyS75liK" role="356sEH">
+          <property role="TrG5h" value="extern &quot;C&quot; {" />
+        </node>
+        <node concept="2EixSi" id="w_xyS75liL" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="w_xyS75m4O" role="383Ya9">
+        <node concept="356sEF" id="w_xyS75m4P" role="356sEH">
+          <property role="TrG5h" value="#endif" />
+        </node>
+        <node concept="2EixSi" id="w_xyS75m4Q" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="w_xyS75lHb" role="383Ya9">
+        <node concept="2EixSi" id="w_xyS75lHd" role="2EinRH" />
+      </node>
       <node concept="356sEK" id="44Cv2OMJ9U_" role="383Ya9">
         <node concept="356sEF" id="44Cv2OMJ9UA" role="356sEH">
           <property role="TrG5h" value="/* define structs */" />
@@ -1226,6 +1247,27 @@
       </node>
       <node concept="356sEK" id="44Cv2OMJas1" role="383Ya9">
         <node concept="2EixSi" id="44Cv2OMJas3" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="w_xyS75mcM" role="383Ya9">
+        <node concept="356sEF" id="w_xyS75mcN" role="356sEH">
+          <property role="TrG5h" value="#ifdef __cplusplus" />
+        </node>
+        <node concept="2EixSi" id="w_xyS75mcO" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="w_xyS75mcP" role="383Ya9">
+        <node concept="356sEF" id="w_xyS75mcQ" role="356sEH">
+          <property role="TrG5h" value="}" />
+        </node>
+        <node concept="2EixSi" id="w_xyS75mcR" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="w_xyS75mcS" role="383Ya9">
+        <node concept="356sEF" id="w_xyS75mcT" role="356sEH">
+          <property role="TrG5h" value="#endif" />
+        </node>
+        <node concept="2EixSi" id="w_xyS75mcU" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="w_xyS75mBy" role="383Ya9">
+        <node concept="2EixSi" id="w_xyS75mB$" role="2EinRH" />
       </node>
       <node concept="356sEK" id="44Cv2OMJqOJ" role="383Ya9">
         <node concept="356sEF" id="44Cv2OMJqOK" role="356sEH">
