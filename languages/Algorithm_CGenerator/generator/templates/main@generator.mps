@@ -342,7 +342,7 @@
       </node>
       <node concept="356sEK" id="5Tr1VsJDuaY" role="383Ya9">
         <node concept="356sEF" id="5Tr1VsJDuaZ" role="356sEH">
-          <property role="TrG5h" value="/* funciton definitions */" />
+          <property role="TrG5h" value="/* definitions of contained functions and schedules */" />
         </node>
         <node concept="2EixSi" id="5Tr1VsJDub0" role="2EinRH" />
       </node>
@@ -374,13 +374,13 @@
       </node>
       <node concept="356sEK" id="58QN4$b2wH5" role="383Ya9">
         <node concept="356sEF" id="58QN4$b2wH6" role="356sEH">
-          <property role="TrG5h" value="/* Schedules */" />
+          <property role="TrG5h" value="/* definitions of root schedules */" />
         </node>
         <node concept="2EixSi" id="58QN4$b2wH7" role="2EinRH" />
       </node>
       <node concept="356sEK" id="w_xyS78dcF" role="383Ya9">
         <node concept="356sEF" id="w_xyS78dcG" role="356sEH">
-          <property role="TrG5h" value="container schedules" />
+          <property role="TrG5h" value="schedules" />
           <node concept="5jKBG" id="w_xyS78deP" role="lGtFl">
             <ref role="v9R2y" node="w_xyS78cNg" resolve="include_FBlockContainerDefinition" />
           </node>
@@ -409,53 +409,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="13MO4I" id="5Tr1VsJD$im">
-    <property role="TrG5h" value="reduce_EmptyFunctionDefinition" />
-    <ref role="3gUMe" to="yvgz:29RmJoXeePh" resolve="EmptyFunctionBlock" />
-    <node concept="356WMU" id="5Tr1VsJD$io" role="13RCb5">
-      <node concept="356sEK" id="2FsRs4zCSHt" role="383Ya9">
-        <node concept="2EixSi" id="2FsRs4zCSHv" role="2EinRH" />
-        <node concept="356sEF" id="5Tr1VsJNEUb" role="356sEH">
-          <property role="TrG5h" value="void " />
-        </node>
-        <node concept="356sEF" id="5Tr1VsJNEUg" role="356sEH">
-          <property role="TrG5h" value="functionName" />
-          <node concept="17Uvod" id="5Tr1VsJNEUm" role="lGtFl">
-            <property role="2qtEX9" value="name" />
-            <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
-            <node concept="3zFVjK" id="5Tr1VsJNEUn" role="3zH0cK">
-              <node concept="3clFbS" id="5Tr1VsJNEUo" role="2VODD2">
-                <node concept="3clFbF" id="5Tr1VsJNEYZ" role="3cqZAp">
-                  <node concept="2OqwBi" id="5Tr1VsJNFb3" role="3clFbG">
-                    <node concept="30H73N" id="5Tr1VsJNEYY" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="5Tr1VsJNFir" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="356sEF" id="5Tr1VsJLq3_" role="356sEH">
-          <property role="TrG5h" value="params" />
-          <node concept="5jKBG" id="5Tr1VsJM0XP" role="lGtFl">
-            <ref role="v9R2y" node="5Tr1VsJLpoy" resolve="include_FunctionDeclareArgs" />
-          </node>
-        </node>
-      </node>
-      <node concept="356sEK" id="2FsRs4zCYi6" role="383Ya9">
-        <node concept="356sEF" id="2FsRs4zCYi7" role="356sEH">
-          <property role="TrG5h" value="{}" />
-        </node>
-        <node concept="2EixSi" id="2FsRs4zCYi8" role="2EinRH" />
-      </node>
-      <node concept="356sEK" id="5Tr1VsJG9SQ" role="383Ya9">
-        <node concept="2EixSi" id="5Tr1VsJG9SS" role="2EinRH" />
-      </node>
-      <node concept="raruj" id="5Tr1VsJD$iu" role="lGtFl" />
     </node>
   </node>
   <node concept="13MO4I" id="5Tr1VsJDHgU">
@@ -814,8 +767,49 @@
     <node concept="3aamgX" id="5Tr1VsJKqPc" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="yvgz:29RmJoXeePh" resolve="EmptyFunctionBlock" />
-      <node concept="j$656" id="5Tr1VsJKqPg" role="1lVwrX">
-        <ref role="v9R2y" node="5Tr1VsJD$im" resolve="reduce_EmptyFunctionDefinition" />
+      <node concept="gft3U" id="w_xyS7aTk7" role="1lVwrX">
+        <node concept="356WMU" id="w_xyS7aTw_" role="gfFT$">
+          <node concept="356sEK" id="w_xyS7aTwB" role="383Ya9">
+            <node concept="2EixSi" id="w_xyS7aTwC" role="2EinRH" />
+            <node concept="356sEF" id="w_xyS7aTwD" role="356sEH">
+              <property role="TrG5h" value="void " />
+            </node>
+            <node concept="356sEF" id="w_xyS7aTwE" role="356sEH">
+              <property role="TrG5h" value="functionName" />
+              <node concept="17Uvod" id="w_xyS7aTwF" role="lGtFl">
+                <property role="2qtEX9" value="name" />
+                <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                <node concept="3zFVjK" id="w_xyS7aTwG" role="3zH0cK">
+                  <node concept="3clFbS" id="w_xyS7aTwH" role="2VODD2">
+                    <node concept="3clFbF" id="w_xyS7aTwI" role="3cqZAp">
+                      <node concept="2OqwBi" id="w_xyS7aTwJ" role="3clFbG">
+                        <node concept="30H73N" id="w_xyS7aTwK" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="w_xyS7aTwL" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="356sEF" id="w_xyS7aTwM" role="356sEH">
+              <property role="TrG5h" value="params" />
+              <node concept="5jKBG" id="w_xyS7aTwN" role="lGtFl">
+                <ref role="v9R2y" node="5Tr1VsJLpoy" resolve="include_FunctionDeclareArgs" />
+              </node>
+            </node>
+          </node>
+          <node concept="356sEK" id="w_xyS7aTwO" role="383Ya9">
+            <node concept="356sEF" id="w_xyS7aTwP" role="356sEH">
+              <property role="TrG5h" value="{}" />
+            </node>
+            <node concept="2EixSi" id="w_xyS7aTwQ" role="2EinRH" />
+          </node>
+          <node concept="356sEK" id="w_xyS7aTwR" role="383Ya9">
+            <node concept="2EixSi" id="w_xyS7aTwS" role="2EinRH" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -1233,9 +1227,50 @@
       </node>
       <node concept="356sEK" id="w_xyS77cps" role="383Ya9">
         <node concept="356sEF" id="w_xyS77cpt" role="356sEH">
-          <property role="TrG5h" value="/* function declarations */" />
+          <property role="TrG5h" value="/* declarations of contained functions and schedules */" />
         </node>
         <node concept="2EixSi" id="w_xyS77cpu" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="w_xyS7aJwP" role="383Ya9">
+        <node concept="356sEF" id="w_xyS7aJwQ" role="356sEH">
+          <property role="TrG5h" value="void functionName()" />
+          <node concept="1sPUBX" id="w_xyS7aSJ_" role="lGtFl">
+            <ref role="v9R2y" node="w_xyS7aKgB" resolve="switch_FunctionDeclaration" />
+          </node>
+        </node>
+        <node concept="2EixSi" id="w_xyS7aJwR" role="2EinRH" />
+        <node concept="1WS0z7" id="w_xyS7aJDb" role="lGtFl">
+          <node concept="3JmXsc" id="w_xyS7aJDc" role="3Jn$fo">
+            <node concept="3clFbS" id="w_xyS7aJDd" role="2VODD2">
+              <node concept="3clFbF" id="w_xyS7aJFX" role="3cqZAp">
+                <node concept="2OqwBi" id="w_xyS7aJUE" role="3clFbG">
+                  <node concept="30H73N" id="w_xyS7aJFW" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="w_xyS7aK7W" role="2OqNvi">
+                    <ref role="37wK5l" to="ixp9:w_xyS75A9A" resolve="getAllContainedFunctionBlocks" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="356sEK" id="w_xyS7b4ZG" role="383Ya9">
+        <node concept="2EixSi" id="w_xyS7b4ZI" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="w_xyS7b5cE" role="383Ya9">
+        <node concept="356sEF" id="w_xyS7b5cF" role="356sEH">
+          <property role="TrG5h" value="/* declarations of root schedules */" />
+        </node>
+        <node concept="2EixSi" id="w_xyS7b5cG" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="w_xyS7b5Va" role="383Ya9">
+        <node concept="356sEF" id="w_xyS7b5Vb" role="356sEH">
+          <property role="TrG5h" value="schedules" />
+          <node concept="5jKBG" id="w_xyS7b6qo" role="lGtFl">
+            <ref role="v9R2y" node="w_xyS7aRWf" resolve="include_FBlockContainerDeclaration" />
+          </node>
+        </node>
+        <node concept="2EixSi" id="w_xyS7b5Vc" role="2EinRH" />
       </node>
       <node concept="356sEK" id="44Cv2OMJas1" role="383Ya9">
         <node concept="2EixSi" id="44Cv2OMJas3" role="2EinRH" />
@@ -2611,6 +2646,161 @@
         </node>
       </node>
       <node concept="raruj" id="w_xyS78cNk" role="lGtFl" />
+    </node>
+  </node>
+  <node concept="jVnub" id="w_xyS7aKgB">
+    <property role="TrG5h" value="switch_FunctionDeclaration" />
+    <node concept="3aamgX" id="w_xyS7aKh8" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+      <node concept="j$656" id="w_xyS7aSiC" role="1lVwrX">
+        <ref role="v9R2y" node="w_xyS7aRWf" resolve="include_FBlockContainerDeclaration" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="w_xyS7aSJB" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="yvgz:29RmJoXeePh" resolve="EmptyFunctionBlock" />
+      <node concept="gft3U" id="w_xyS7aSQH" role="1lVwrX">
+        <node concept="356WMU" id="w_xyS7aSQL" role="gfFT$">
+          <node concept="356sEK" id="w_xyS7aSQN" role="383Ya9">
+            <node concept="2EixSi" id="w_xyS7aSQO" role="2EinRH" />
+            <node concept="356sEF" id="w_xyS7aSQP" role="356sEH">
+              <property role="TrG5h" value="void " />
+            </node>
+            <node concept="356sEF" id="w_xyS7aSQQ" role="356sEH">
+              <property role="TrG5h" value="functionName" />
+              <node concept="17Uvod" id="w_xyS7aSQR" role="lGtFl">
+                <property role="2qtEX9" value="name" />
+                <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                <node concept="3zFVjK" id="w_xyS7aSQS" role="3zH0cK">
+                  <node concept="3clFbS" id="w_xyS7aSQT" role="2VODD2">
+                    <node concept="3clFbF" id="w_xyS7aSQU" role="3cqZAp">
+                      <node concept="2OqwBi" id="w_xyS7aSQV" role="3clFbG">
+                        <node concept="30H73N" id="w_xyS7aSQW" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="w_xyS7aSQX" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="356sEF" id="w_xyS7aSQY" role="356sEH">
+              <property role="TrG5h" value="params" />
+              <node concept="5jKBG" id="w_xyS7aSQZ" role="lGtFl">
+                <ref role="v9R2y" node="5Tr1VsJLpoy" resolve="include_FunctionDeclareArgs" />
+              </node>
+            </node>
+            <node concept="356sEF" id="w_xyS7aT2J" role="356sEH">
+              <property role="TrG5h" value=";" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="w_xyS7aRWf">
+    <property role="TrG5h" value="include_FBlockContainerDeclaration" />
+    <ref role="3gUMe" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+    <node concept="356WMU" id="w_xyS7aRWg" role="13RCb5">
+      <node concept="356sEK" id="w_xyS7aRWh" role="383Ya9">
+        <node concept="356sEK" id="w_xyS7aTOu" role="356sEH">
+          <node concept="356sEF" id="w_xyS7aTOv" role="356sEH">
+            <property role="TrG5h" value="void " />
+          </node>
+          <node concept="356sEF" id="w_xyS7aTOw" role="356sEH">
+            <property role="TrG5h" value="functionName" />
+            <node concept="17Uvod" id="w_xyS7aTOx" role="lGtFl">
+              <property role="2qtEX9" value="name" />
+              <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+              <node concept="3zFVjK" id="w_xyS7aTOy" role="3zH0cK">
+                <node concept="3clFbS" id="w_xyS7aTOz" role="2VODD2">
+                  <node concept="3clFbF" id="w_xyS7aTO$" role="3cqZAp">
+                    <node concept="3cpWs3" id="w_xyS7aTO_" role="3clFbG">
+                      <node concept="2OqwBi" id="w_xyS7aTOA" role="3uHU7w">
+                        <node concept="30H73N" id="w_xyS7aTOB" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="w_xyS7aTOC" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
+                      <node concept="3cpWs3" id="w_xyS7aTOD" role="3uHU7B">
+                        <node concept="Xl_RD" id="w_xyS7aTOE" role="3uHU7w">
+                          <property role="Xl_RC" value="_" />
+                        </node>
+                        <node concept="2OqwBi" id="w_xyS7aTOF" role="3uHU7B">
+                          <node concept="2OqwBi" id="w_xyS7aTOG" role="2Oq$k0">
+                            <node concept="1psM6Z" id="w_xyS7aVD7" role="2OqNvi">
+                              <ref role="1psM6Y" node="w_xyS7aUNO" resolve="currentContainer" />
+                            </node>
+                            <node concept="1iwH7S" id="w_xyS7aVi7" role="2Oq$k0" />
+                          </node>
+                          <node concept="3TrcHB" id="w_xyS7aTOJ" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="356sEF" id="w_xyS7aTOK" role="356sEH">
+            <property role="TrG5h" value="(params)" />
+            <node concept="5jKBG" id="w_xyS7aTOL" role="lGtFl">
+              <ref role="v9R2y" node="5Tr1VsJLpoy" resolve="include_FunctionDeclareArgs" />
+              <node concept="3NFfHV" id="w_xyS7aTOM" role="5jGum">
+                <node concept="3clFbS" id="w_xyS7aTON" role="2VODD2">
+                  <node concept="3clFbF" id="w_xyS7aTOO" role="3cqZAp">
+                    <node concept="2OqwBi" id="w_xyS7aW2h" role="3clFbG">
+                      <node concept="1iwH7S" id="w_xyS7aVPE" role="2Oq$k0" />
+                      <node concept="1psM6Z" id="w_xyS7aWpD" role="2OqNvi">
+                        <ref role="1psM6Y" node="w_xyS7aUNO" resolve="currentContainer" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2EixSi" id="w_xyS7aTOR" role="2EinRH" />
+        </node>
+        <node concept="356sEF" id="w_xyS7aTCQ" role="356sEH">
+          <property role="TrG5h" value=";" />
+        </node>
+        <node concept="2EixSi" id="w_xyS7aRWj" role="2EinRH" />
+        <node concept="1ps_y7" id="w_xyS7aUNN" role="lGtFl">
+          <node concept="1ps_xZ" id="w_xyS7aUNO" role="1ps_xO">
+            <property role="TrG5h" value="currentContainer" />
+            <node concept="2jfdEK" id="w_xyS7aUNP" role="1ps_xN">
+              <node concept="3clFbS" id="w_xyS7aUNQ" role="2VODD2">
+                <node concept="3clFbF" id="w_xyS7aV4b" role="3cqZAp">
+                  <node concept="30H73N" id="w_xyS7aV4a" role="3clFbG" />
+                </node>
+              </node>
+            </node>
+            <node concept="3Tqbb2" id="w_xyS7aVci" role="1ps_xK">
+              <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+            </node>
+          </node>
+        </node>
+        <node concept="1WS0z7" id="w_xyS7aRWk" role="lGtFl">
+          <node concept="3JmXsc" id="w_xyS7aRWl" role="3Jn$fo">
+            <node concept="3clFbS" id="w_xyS7aRWm" role="2VODD2">
+              <node concept="3clFbF" id="w_xyS7aRWn" role="3cqZAp">
+                <node concept="2OqwBi" id="w_xyS7aRWo" role="3clFbG">
+                  <node concept="30H73N" id="w_xyS7aRWp" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="w_xyS7aRWq" role="2OqNvi">
+                    <ref role="3TtcxE" to="yvgz:4iWYoaWUTsh" resolve="scheduler_blocks" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="raruj" id="w_xyS7aRWx" role="lGtFl" />
     </node>
   </node>
 </model>
