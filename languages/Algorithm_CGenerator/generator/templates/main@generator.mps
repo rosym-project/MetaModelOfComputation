@@ -342,7 +342,7 @@
       </node>
       <node concept="356sEK" id="5Tr1VsJDuaY" role="383Ya9">
         <node concept="356sEF" id="5Tr1VsJDuaZ" role="356sEH">
-          <property role="TrG5h" value="/* declare functions */" />
+          <property role="TrG5h" value="/* define functions */" />
         </node>
         <node concept="2EixSi" id="5Tr1VsJDub0" role="2EinRH" />
       </node>
@@ -366,7 +366,7 @@
           </node>
         </node>
         <node concept="1sPUBX" id="44Cv2OMJ4Ui" role="lGtFl">
-          <ref role="v9R2y" node="5Tr1VsJKqPb" resolve="switch_FunctionDeclare" />
+          <ref role="v9R2y" node="5Tr1VsJKqPb" resolve="switch_FunctionDefinition" />
         </node>
       </node>
       <node concept="356sEK" id="5Tr1VsJD$ML" role="383Ya9">
@@ -436,7 +436,7 @@
     </node>
   </node>
   <node concept="13MO4I" id="5Tr1VsJD$im">
-    <property role="TrG5h" value="reduce_EmptyFunctionDeclaration" />
+    <property role="TrG5h" value="reduce_EmptyFunctionDefinition" />
     <ref role="3gUMe" to="yvgz:29RmJoXeePh" resolve="EmptyFunctionBlock" />
     <node concept="356WMU" id="5Tr1VsJD$io" role="13RCb5">
       <node concept="356sEK" id="2FsRs4zCSHt" role="383Ya9">
@@ -827,12 +827,12 @@
     </node>
   </node>
   <node concept="jVnub" id="5Tr1VsJKqPb">
-    <property role="TrG5h" value="switch_FunctionDeclare" />
+    <property role="TrG5h" value="switch_FunctionDefinition" />
     <node concept="3aamgX" id="5Tr1VsJKqPc" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="yvgz:29RmJoXeePh" resolve="EmptyFunctionBlock" />
       <node concept="j$656" id="5Tr1VsJKqPg" role="1lVwrX">
-        <ref role="v9R2y" node="5Tr1VsJD$im" resolve="reduce_EmptyFunctionDeclaration" />
+        <ref role="v9R2y" node="5Tr1VsJD$im" resolve="reduce_EmptyFunctionDefinition" />
       </node>
     </node>
   </node>
@@ -1178,7 +1178,7 @@
       </node>
       <node concept="356sEK" id="44Cv2OMJ9U_" role="383Ya9">
         <node concept="356sEF" id="44Cv2OMJ9UA" role="356sEH">
-          <property role="TrG5h" value="/* define structs */" />
+          <property role="TrG5h" value="/* declare structs */" />
         </node>
         <node concept="2EixSi" id="44Cv2OMJ9UB" role="2EinRH" />
       </node>
@@ -1244,6 +1244,15 @@
         <node concept="5jKBG" id="44Cv2OMKz_0" role="lGtFl">
           <ref role="v9R2y" node="44Cv2OMKz$s" resolve="include_DataBlockContainerDeclare" />
         </node>
+      </node>
+      <node concept="356sEK" id="w_xyS77ceh" role="383Ya9">
+        <node concept="2EixSi" id="w_xyS77cej" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="w_xyS77cps" role="383Ya9">
+        <node concept="356sEF" id="w_xyS77cpt" role="356sEH">
+          <property role="TrG5h" value="/* declare functions */" />
+        </node>
+        <node concept="2EixSi" id="w_xyS77cpu" role="2EinRH" />
       </node>
       <node concept="356sEK" id="44Cv2OMJas1" role="383Ya9">
         <node concept="2EixSi" id="44Cv2OMJas3" role="2EinRH" />
