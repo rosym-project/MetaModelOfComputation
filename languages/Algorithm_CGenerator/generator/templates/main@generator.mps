@@ -1234,9 +1234,6 @@
       <node concept="356sEK" id="w_xyS7aJwP" role="383Ya9">
         <node concept="356sEF" id="w_xyS7aJwQ" role="356sEH">
           <property role="TrG5h" value="void functionName()" />
-          <node concept="1sPUBX" id="w_xyS7aSJ_" role="lGtFl">
-            <ref role="v9R2y" node="w_xyS7aKgB" resolve="switch_FunctionDeclaration" />
-          </node>
         </node>
         <node concept="2EixSi" id="w_xyS7aJwR" role="2EinRH" />
         <node concept="1WS0z7" id="w_xyS7aJDb" role="lGtFl">
@@ -1252,6 +1249,9 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="1sPUBX" id="w_xyS7c2wV" role="lGtFl">
+          <ref role="v9R2y" node="w_xyS7aKgB" resolve="switch_FunctionDeclaration" />
         </node>
       </node>
       <node concept="356sEK" id="w_xyS7b4ZG" role="383Ya9">
