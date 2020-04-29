@@ -14,6 +14,10 @@
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
     </language>
     <language id="a8f70f9e-ef01-499f-885c-c79273fa1695" name="Algorithm">
+      <concept id="349167071911517046" name="Algorithm.structure.FixedSizeArrayDataBlock" flags="ng" index="slerG">
+        <property id="349167071911849189" name="size" index="sit5Z" />
+        <child id="349167071911517047" name="index" index="slerH" />
+      </concept>
       <concept id="349167071914761882" name="Algorithm.structure.LoopSchedulerBlock" flags="ng" index="spAc0">
         <child id="8213653556241840446" name="schedule" index="1e5ZHq" />
       </concept>
@@ -89,6 +93,11 @@
         <property role="1OHxBQ" value="6po$YwiVCCm/In" />
         <node concept="10Oyi0" id="3eP8ZudpjMH" role="1OHwi9" />
       </node>
+      <node concept="1OHxBU" id="70Myi4_EGbI" role="2YOnzZ">
+        <property role="TrG5h" value="barArrayIn" />
+        <property role="1OHxBQ" value="6po$YwiVCCm/In" />
+        <node concept="10Oyi0" id="70Myi4_EGbQ" role="1OHwi9" />
+      </node>
       <node concept="1OHxBU" id="3eP8ZudpjML" role="2YOnzZ">
         <property role="TrG5h" value="barOut" />
         <property role="1OHxBQ" value="6po$YwiVCCn/Out" />
@@ -129,10 +138,33 @@
         <property role="1OHxBQ" value="6po$YwiVCCq/InOut" />
         <node concept="10P_77" id="77WKAh0iVpg" role="1OHwi9" />
       </node>
+      <node concept="1OHxBU" id="70Myi4_EFYl" role="1ptsVk">
+        <property role="TrG5h" value="datArrayIndex" />
+        <property role="1OHxBQ" value="6po$YwiVCCq/InOut" />
+        <node concept="10Oyi0" id="70Myi4_EFYt" role="1OHwi9" />
+      </node>
+    </node>
+    <node concept="slerG" id="70Myi4_EFY7" role="3SlQUm">
+      <property role="TrG5h" value="myArray" />
+      <property role="sit5Z" value="2" />
+      <node concept="1OHxBU" id="70Myi4_EFYz" role="1ptsVk">
+        <property role="TrG5h" value="myArrayData" />
+        <property role="1OHxBQ" value="6po$YwiVCCq/InOut" />
+        <node concept="10Oyi0" id="70Myi4_EFYP" role="1OHwi9" />
+      </node>
+      <node concept="1OHxBU" id="70Myi4_EFY9" role="slerH">
+        <property role="TrG5h" value="myArrayIndex" />
+        <property role="1OHxBQ" value="6po$YwiVCCm/In" />
+        <node concept="10Oyi0" id="70Myi4_EFYw" role="1OHwi9" />
+      </node>
     </node>
     <node concept="1OHxBB" id="6jvQBgXES32" role="3SlQUq">
       <ref role="1OHxBS" node="3eP8ZudpjLM" resolve="fooIn1" />
       <ref role="1OHyup" node="3eP8ZudpjMB" resolve="barIn" />
+    </node>
+    <node concept="1OHxBB" id="70Myi4_EGbT" role="3SlQUq">
+      <ref role="1OHxBS" node="70Myi4_EFYz" resolve="myArrayData" />
+      <ref role="1OHyup" node="70Myi4_EGbI" resolve="barArrayIn" />
     </node>
     <node concept="1OHxBB" id="6jvQBgXEYd0" role="3SlQUq">
       <ref role="1OHyup" node="3EtQu_tLu6" resolve="datAccess" />
@@ -153,6 +185,14 @@
     <node concept="1OHxBB" id="77WKAh0iVqe" role="3SlQUq">
       <ref role="1OHxBS" node="77WKAh0iVp$" resolve="isRunning" />
       <ref role="1OHyup" node="77WKAh0iVpa" resolve="datIsRunning" />
+    </node>
+    <node concept="1OHxBB" id="70Myi4_EFYE" role="3SlQUq">
+      <ref role="1OHxBS" node="70Myi4_EFY9" resolve="myArrayIndex" />
+      <ref role="1OHyup" node="70Myi4_EFYl" resolve="datArrayIndex" />
+    </node>
+    <node concept="1OHxBB" id="70Myi4_EFYS" role="3SlQUq">
+      <ref role="1OHxBS" node="70Myi4_EFYz" resolve="myArrayData" />
+      <ref role="1OHyup" node="3EtQu_tLu6" resolve="datAccess" />
     </node>
     <node concept="1psEHa" id="6jvQBgXFtjz" role="1psEGK">
       <ref role="1psEGP" node="3EtQu_wAO$" resolve="fooSchedTrigger" />
