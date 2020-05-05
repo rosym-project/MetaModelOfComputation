@@ -93,6 +93,7 @@
       <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="ln" index="5jKBG">
         <child id="1510949579266801461" name="sourceNodeQuery" index="5jGum" />
       </concept>
+      <concept id="1202776937179" name="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" flags="lg" index="b5Tf3" />
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
       </concept>
@@ -1067,6 +1068,38 @@
           <property role="TrG5h" value="#endif" />
         </node>
         <node concept="2EixSi" id="w_xyS75m4Q" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="w_xyS7nMOa" role="383Ya9">
+        <node concept="2EixSi" id="w_xyS7nMOc" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="w_xyS7nNt1" role="383Ya9">
+        <node concept="356sEF" id="w_xyS7nNt2" role="356sEH">
+          <property role="TrG5h" value="/* include external headers */" />
+        </node>
+        <node concept="2EixSi" id="w_xyS7nNt3" role="2EinRH" />
+      </node>
+      <node concept="356sEK" id="w_xyS7nMZL" role="383Ya9">
+        <node concept="356sEF" id="w_xyS7nMZM" role="356sEH">
+          <property role="TrG5h" value="#include &quot;header.h&quot;" />
+        </node>
+        <node concept="2EixSi" id="w_xyS7nMZN" role="2EinRH" />
+        <node concept="1WS0z7" id="w_xyS7nNYq" role="lGtFl">
+          <node concept="3JmXsc" id="w_xyS7nNYr" role="3Jn$fo">
+            <node concept="3clFbS" id="w_xyS7nNYs" role="2VODD2">
+              <node concept="3clFbF" id="w_xyS7nO1f" role="3cqZAp">
+                <node concept="2OqwBi" id="w_xyS7nOfW" role="3clFbG">
+                  <node concept="30H73N" id="w_xyS7nO1e" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="w_xyS7nOtn" role="2OqNvi">
+                    <ref role="37wK5l" to="ixp9:w_xyS75A9A" resolve="getAllContainedFunctionBlocks" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1sPUBX" id="w_xyS7nPgb" role="lGtFl">
+          <ref role="v9R2y" node="w_xyS7nP1A" resolve="switch_FunctionHeaderInclude" />
+        </node>
       </node>
       <node concept="356sEK" id="w_xyS75lHb" role="383Ya9">
         <node concept="2EixSi" id="w_xyS75lHd" role="2EinRH" />
@@ -2821,6 +2854,14 @@
         </node>
       </node>
       <node concept="raruj" id="7k2VbbJDzzB" role="lGtFl" />
+    </node>
+  </node>
+  <node concept="jVnub" id="w_xyS7nP1A">
+    <property role="TrG5h" value="switch_FunctionHeaderInclude" />
+    <node concept="3aamgX" id="4cDC_xh4vl$" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="yvgz:3eP8Zudp5G4" resolve="FunctionBlock" />
+      <node concept="b5Tf3" id="4cDC_xh4vlC" role="1lVwrX" />
     </node>
   </node>
 </model>
