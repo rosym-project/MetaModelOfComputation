@@ -10,6 +10,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ixp9" ref="r:172690fd-5286-4218-b525-cadaaf47af22(Algorithm.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -1733,6 +1734,15 @@
   </node>
   <node concept="jVnub" id="58QN4$b28qm">
     <property role="TrG5h" value="switch_TypeRepresentation" />
+    <node concept="3aamgX" id="7k2VbbJCtGY" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="tpee:f_0P_4Y" resolve="BooleanType" />
+      <node concept="gft3U" id="7k2VbbJCtPC" role="1lVwrX">
+        <node concept="356sEF" id="7k2VbbJCtPK" role="gfFT$">
+          <property role="TrG5h" value="bool" />
+        </node>
+      </node>
+    </node>
     <node concept="gft3U" id="58QN4$b28xj" role="jxRDz">
       <node concept="356WMU" id="58QN4$b28xr" role="gfFT$">
         <node concept="356sEK" id="58QN4$b28xt" role="383Ya9">
