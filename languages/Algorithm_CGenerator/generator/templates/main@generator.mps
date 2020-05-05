@@ -2856,6 +2856,45 @@
       <node concept="raruj" id="7k2VbbJDzzB" role="lGtFl" />
     </node>
   </node>
+  <node concept="jVnub" id="3eOYxdwnT1a">
+    <property role="TrG5h" value="switch_TypeInitialization" />
+    <node concept="1N15co" id="3eOYxdwnT1b" role="1s_3oS">
+      <property role="TrG5h" value="variable" />
+      <node concept="17QB3L" id="3eOYxdwnT1n" role="1N15GL" />
+    </node>
+    <node concept="gft3U" id="3eOYxdwtrTE" role="jxRDz">
+      <node concept="356WMU" id="3eOYxdwtzxi" role="gfFT$">
+        <node concept="356sEK" id="3eOYxdwtzxm" role="383Ya9">
+          <node concept="356sEF" id="3eOYxdwtzxn" role="356sEH">
+            <property role="TrG5h" value="//" />
+          </node>
+          <node concept="356sEF" id="3eOYxdwtzxy" role="356sEH">
+            <property role="TrG5h" value=" No initialization for" />
+          </node>
+          <node concept="356sEF" id="3eOYxdwtzxD" role="356sEH">
+            <property role="TrG5h" value=" " />
+          </node>
+          <node concept="356sEF" id="3eOYxdwtzxN" role="356sEH">
+            <property role="TrG5h" value="variable" />
+            <node concept="17Uvod" id="3eOYxdwtzy0" role="lGtFl">
+              <property role="2qtEX9" value="name" />
+              <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+              <node concept="3zFVjK" id="3eOYxdwtzy1" role="3zH0cK">
+                <node concept="3clFbS" id="3eOYxdwtzy2" role="2VODD2">
+                  <node concept="3clFbF" id="3eOYxdwtzAJ" role="3cqZAp">
+                    <node concept="v3LJS" id="3eOYxdwtzAI" role="3clFbG">
+                      <ref role="v3LJV" node="3eOYxdwnT1b" resolve="variable" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2EixSi" id="3eOYxdwtzxo" role="2EinRH" />
+        </node>
+      </node>
+    </node>
+  </node>
   <node concept="jVnub" id="w_xyS7nP1A">
     <property role="TrG5h" value="switch_FunctionHeaderInclude" />
     <node concept="3aamgX" id="4cDC_xh4vl$" role="3aUrZf">
