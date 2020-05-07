@@ -401,13 +401,13 @@
   <node concept="1TIwiD" id="jovpCoJxUq">
     <property role="EcuMT" value="349167071914761882" />
     <property role="3GE5qa" value="definitions" />
-    <property role="TrG5h" value="LoopSchedulerBlock" />
+    <property role="TrG5h" value="StatementBasedSchedulerBlock" />
     <ref role="1TJDcQ" node="29RmJoXeePl" resolve="SchedulerBlock" />
     <node concept="1TJgyj" id="77WKAgZUN$Y" role="1TKVEi">
       <property role="IQ2ns" value="8213653556241840446" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="schedule" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="77WKAgZUMch" resolve="ScheduleStatement" />
     </node>
   </node>
@@ -440,7 +440,7 @@
       <property role="IQ2ns" value="8213653556241839013" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="body" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="77WKAgZUMch" resolve="ScheduleStatement" />
     </node>
     <node concept="1TJgyj" id="77WKAgZUNeF" role="1TKVEi">
@@ -451,6 +451,19 @@
     </node>
     <node concept="PrWs8" id="77WKAh09CXL" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7k2VbbJDHRY">
+    <property role="EcuMT" value="8431561705660014078" />
+    <property role="3GE5qa" value="definitions.schedule" />
+    <property role="TrG5h" value="ScheduleStatementList" />
+    <ref role="1TJDcQ" node="77WKAgZUMch" resolve="ScheduleStatement" />
+    <node concept="1TJgyj" id="7k2VbbJDHS2" role="1TKVEi">
+      <property role="IQ2ns" value="8431561705660014082" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="statements" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="77WKAgZUMch" resolve="ScheduleStatement" />
     </node>
   </node>
 </model>

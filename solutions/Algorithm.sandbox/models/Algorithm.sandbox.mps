@@ -14,11 +14,14 @@
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
     </language>
     <language id="a8f70f9e-ef01-499f-885c-c79273fa1695" name="Algorithm">
+      <concept id="8431561705660014078" name="Algorithm.structure.ScheduleStatementList" flags="ng" index="2qD35c">
+        <child id="8431561705660014082" name="statements" index="2qD3aK" />
+      </concept>
       <concept id="349167071911517046" name="Algorithm.structure.FixedSizeArrayDataBlock" flags="ng" index="slerG">
         <property id="349167071911849189" name="size" index="sit5Z" />
         <child id="349167071911517047" name="index" index="slerH" />
       </concept>
-      <concept id="349167071914761882" name="Algorithm.structure.LoopSchedulerBlock" flags="ng" index="spAc0">
+      <concept id="349167071914761882" name="Algorithm.structure.StatementBasedSchedulerBlock" flags="ng" index="spAc0">
         <child id="8213653556241840446" name="schedule" index="1e5ZHq" />
       </concept>
       <concept id="2483553733153713492" name="Algorithm.structure.DataBlock" flags="ng" index="vjVuy">
@@ -258,13 +261,18 @@
         <property role="1OHxBQ" value="6po$YwiVCCm/In" />
         <node concept="10P_77" id="77WKAh0iVp_" role="1OHwi9" />
       </node>
-      <node concept="1e5Z75" id="77WKAh0iVpL" role="1e5ZHq">
-        <ref role="LPJVy" node="77WKAh0iVpE" resolve="loopBar" />
-      </node>
-      <node concept="1e5Z70" id="77WKAh0iVpQ" role="1e5ZHq">
-        <ref role="1e5Z7f" node="77WKAh0iVp$" resolve="isRunning" />
-        <node concept="1e5Z75" id="77WKAh0iVpU" role="1e5Z71">
-          <ref role="LPJVy" node="77WKAh0iVpH" resolve="loopBaz" />
+      <node concept="2qD35c" id="7k2VbbJKv9h" role="1e5ZHq">
+        <node concept="1e5Z75" id="1W5BUKIdHHI" role="2qD3aK">
+          <ref role="LPJVy" node="77WKAh0iVpE" resolve="loopBar" />
+        </node>
+        <node concept="1e5Z70" id="1W5BUKIdHIa" role="2qD3aK">
+          <ref role="1e5Z7f" node="77WKAh0iVp$" resolve="isRunning" />
+          <node concept="1e5Z75" id="1W5BUKIdHIe" role="1e5Z71">
+            <ref role="LPJVy" node="77WKAh0iVpH" resolve="loopBaz" />
+          </node>
+        </node>
+        <node concept="1e5Z75" id="1W5BUKIeep7" role="2qD3aK">
+          <ref role="LPJVy" node="77WKAh0iVpE" resolve="loopBar" />
         </node>
       </node>
     </node>

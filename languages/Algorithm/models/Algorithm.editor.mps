@@ -995,11 +995,11 @@
   </node>
   <node concept="24kQdi" id="77WKAgZZ6Jy">
     <property role="3GE5qa" value="definitions" />
-    <ref role="1XX52x" to="yvgz:jovpCoJxUq" resolve="LoopSchedulerBlock" />
+    <ref role="1XX52x" to="yvgz:jovpCoJxUq" resolve="StatementBasedSchedulerBlock" />
     <node concept="3EZMnI" id="77WKAgZZ6J$" role="2wV5jI">
       <node concept="l2Vlx" id="77WKAgZZ6J_" role="2iSdaV" />
       <node concept="3F0ifn" id="77WKAgZZ6JA" role="3EZMnx">
-        <property role="3F0ifm" value="loop scheduler block" />
+        <property role="3F0ifm" value="statement based scheduler block" />
       </node>
       <node concept="3F0A7n" id="77WKAgZZ6JB" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -1087,22 +1087,18 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="3F2HdR" id="77WKAgZZ6JM" role="3EZMnx">
+        <node concept="3F1sOY" id="7k2VbbJGGiq" role="3EZMnx">
           <ref role="1NtTu8" to="yvgz:77WKAgZUN$Y" resolve="schedule" />
-          <node concept="l2Vlx" id="77WKAgZZ6JN" role="2czzBx" />
-          <node concept="pj6Ft" id="77WKAgZZ6JO" role="3F10Kt">
+          <node concept="ljvvj" id="1W5BUKIcmbe" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
-          <node concept="ljvvj" id="77WKAgZZ6JQ" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="lj46D" id="77WKAgZZ6TJ" role="3F10Kt">
+          <node concept="lj46D" id="7k2VbbJGGiQ" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="3F0ifn" id="77WKAgZZ6W8" role="3EZMnx">
+        <node concept="3F0ifn" id="7k2VbbJGGjr" role="3EZMnx">
           <property role="3F0ifm" value="}" />
-          <node concept="ljvvj" id="77WKAh04C0Q" role="3F10Kt">
+          <node concept="ljvvj" id="7k2VbbJKva3" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
@@ -1113,6 +1109,14 @@
           <property role="1413C4" value="body-brace" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7k2VbbJEaEY">
+    <property role="3GE5qa" value="definitions.schedule" />
+    <ref role="1XX52x" to="yvgz:7k2VbbJDHRY" resolve="ScheduleStatementList" />
+    <node concept="3F2HdR" id="7k2VbbJJfTV" role="2wV5jI">
+      <ref role="1NtTu8" to="yvgz:7k2VbbJDHS2" resolve="statements" />
+      <node concept="2iRkQZ" id="7k2VbbJJfTW" role="2czzBx" />
     </node>
   </node>
 </model>
