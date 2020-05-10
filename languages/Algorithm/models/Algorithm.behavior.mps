@@ -15,7 +15,7 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="yvgz" ref="r:3b411c10-569a-4299-9505-176144359d3b(Algorithm.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
   </imports>
   <registry>
@@ -189,6 +189,9 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1966870290088668520" name="jetbrains.mps.lang.smodel.structure.Enum_MembersOperation" flags="ng" index="2ViDtN" />
+      <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
+        <reference id="1966870290088668516" name="memberDeclaration" index="2ViDtZ" />
+      </concept>
       <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumerationMemberType" flags="in" index="2ZThk1">
         <reference id="1240170836027" name="enum" index="2ZWj4r" />
       </concept>
@@ -196,6 +199,9 @@
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
+      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
+        <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144195091934" name="jetbrains.mps.lang.smodel.structure.Node_IsRoleOperation" flags="nn" index="1BlSNk">
         <reference id="1144195362400" name="conceptOfParent" index="1BmUXE" />
@@ -2491,7 +2497,73 @@
       </node>
     </node>
     <node concept="13hLZK" id="w_xyS7dNj$" role="13h7CW">
-      <node concept="3clFbS" id="w_xyS7dNj_" role="2VODD2" />
+      <node concept="3clFbS" id="w_xyS7dNj_" role="2VODD2">
+        <node concept="3cpWs8" id="4cDC_xhgYak" role="3cqZAp">
+          <node concept="3cpWsn" id="4cDC_xhgYan" role="3cpWs9">
+            <property role="TrG5h" value="inTrig" />
+            <node concept="3Tqbb2" id="4cDC_xhgYaj" role="1tU5fm">
+              <ref role="ehGHo" to="yvgz:6jvQBgXEYiM" resolve="TriggerPort" />
+            </node>
+            <node concept="2ShNRf" id="4cDC_xhgYbl" role="33vP2m">
+              <node concept="3zrR0B" id="4cDC_xhgYbj" role="2ShVmc">
+                <node concept="3Tqbb2" id="4cDC_xhgYbk" role="3zrR0E">
+                  <ref role="ehGHo" to="yvgz:6jvQBgXEYiM" resolve="TriggerPort" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4cDC_xhh2pW" role="3cqZAp">
+          <node concept="37vLTI" id="4cDC_xhh3aI" role="3clFbG">
+            <node concept="Xl_RD" id="4cDC_xhh3dh" role="37vLTx">
+              <property role="Xl_RC" value="trigger" />
+            </node>
+            <node concept="2OqwBi" id="4cDC_xhh2Ee" role="37vLTJ">
+              <node concept="37vLTw" id="4cDC_xhh2pU" role="2Oq$k0">
+                <ref role="3cqZAo" node="4cDC_xhgYan" resolve="inTrig" />
+              </node>
+              <node concept="3TrcHB" id="4cDC_xhh2Mr" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4cDC_xhh3oI" role="3cqZAp">
+          <node concept="37vLTI" id="4cDC_xhh3Xm" role="3clFbG">
+            <node concept="2OqwBi" id="4cDC_xhh4tc" role="37vLTx">
+              <node concept="1XH99k" id="4cDC_xhh41j" role="2Oq$k0">
+                <ref role="1XH99l" to="yvgz:3EtQu_uj5g" resolve="TriggerPortDirection" />
+              </node>
+              <node concept="2ViDtV" id="4cDC_xhh4ua" role="2OqNvi">
+                <ref role="2ViDtZ" to="yvgz:3EtQu_uj5h" resolve="In" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="4cDC_xhh3F9" role="37vLTJ">
+              <node concept="37vLTw" id="4cDC_xhh3oG" role="2Oq$k0">
+                <ref role="3cqZAo" node="4cDC_xhgYan" resolve="inTrig" />
+              </node>
+              <node concept="3TrcHB" id="4cDC_xhh3NL" role="2OqNvi">
+                <ref role="3TsBF5" to="yvgz:3EtQu_tWxu" resolve="direction" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4cDC_xhgYc6" role="3cqZAp">
+          <node concept="2OqwBi" id="4cDC_xhh05x" role="3clFbG">
+            <node concept="2OqwBi" id="4cDC_xhgYkY" role="2Oq$k0">
+              <node concept="13iPFW" id="4cDC_xhgYc4" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="4cDC_xhgYv4" role="2OqNvi">
+                <ref role="3TtcxE" to="yvgz:3eP8Zudp5Gb" resolve="trigger_ports" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="4cDC_xhh1Wf" role="2OqNvi">
+              <node concept="37vLTw" id="4cDC_xhh268" role="25WWJ7">
+                <ref role="3cqZAo" node="4cDC_xhgYan" resolve="inTrig" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
