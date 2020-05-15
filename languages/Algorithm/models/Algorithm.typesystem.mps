@@ -1495,6 +1495,37 @@
   <node concept="18kY7G" id="hkK7ztHKmO">
     <property role="TrG5h" value="check_TriggerConnector" />
     <node concept="3clFbS" id="hkK7ztHKmP" role="18ibNy">
+      <node concept="3SKdUt" id="30EzaY024hH" role="3cqZAp">
+        <node concept="1PaTwC" id="30EzaY024hI" role="3ndbpf">
+          <node concept="3oM_SD" id="30EzaY024hK" role="1PaTwD">
+            <property role="3oM_SC" value="constraint" />
+          </node>
+          <node concept="3oM_SD" id="30EzaY024kI" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="30EzaY024kO" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="30EzaY024kV" role="1PaTwD">
+            <property role="3oM_SC" value="connecting" />
+          </node>
+          <node concept="3oM_SD" id="30EzaY024l3" role="1PaTwD">
+            <property role="3oM_SC" value="ports" />
+          </node>
+          <node concept="3oM_SD" id="30EzaY024lc" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="30EzaY024ky" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="30EzaY024k_" role="1PaTwD">
+            <property role="3oM_SC" value="same" />
+          </node>
+          <node concept="3oM_SD" id="30EzaY024kD" role="1PaTwD">
+            <property role="3oM_SC" value="block" />
+          </node>
+        </node>
+      </node>
       <node concept="3clFbJ" id="hkK7zu016O" role="3cqZAp">
         <node concept="3clFbS" id="hkK7zu016P" role="3clFbx">
           <node concept="2MkqsV" id="hkK7zu016Q" role="3cqZAp">
@@ -1571,6 +1602,20 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbH" id="30EzaY0244j" role="3cqZAp" />
+      <node concept="3SKdUt" id="30EzaY0241t" role="3cqZAp">
+        <node concept="1PaTwC" id="30EzaY0241u" role="3ndbpf">
+          <node concept="3oM_SD" id="30EzaY0241w" role="1PaTwD">
+            <property role="3oM_SC" value="port" />
+          </node>
+          <node concept="3oM_SD" id="30EzaY0244c" role="1PaTwD">
+            <property role="3oM_SC" value="direction" />
+          </node>
+          <node concept="3oM_SD" id="30EzaY0244f" role="1PaTwD">
+            <property role="3oM_SC" value="constraints" />
+          </node>
+        </node>
+      </node>
       <node concept="3clFbJ" id="hkK7zu06fh" role="3cqZAp">
         <node concept="3clFbS" id="hkK7zu06fj" role="3clFbx">
           <node concept="3clFbJ" id="hkK7zu0aX9" role="3cqZAp">
@@ -1588,7 +1633,6 @@
                   <ref role="1YBMHb" node="hkK7ztHKmR" resolve="triggerConnector" />
                 </node>
               </node>
-              <node concept="3clFbH" id="hkK7zu0aXa" role="3cqZAp" />
             </node>
             <node concept="3y3z36" id="hkK7zu0coq" role="3clFbw">
               <node concept="2OqwBi" id="hkK7zu0dcF" role="3uHU7w">
