@@ -2592,7 +2592,7 @@
           <node concept="356sEK" id="30EzaY06NZn" role="383Ya9">
             <node concept="356sEK" id="30EzaY06Oa6" role="356sEH">
               <node concept="356sEF" id="30EzaY06Oa7" role="356sEH">
-                <property role="TrG5h" value="functionCall();" />
+                <property role="TrG5h" value="functionCall()" />
                 <node concept="1sPUBX" id="30EzaY06Oa8" role="lGtFl">
                   <ref role="v9R2y" node="30EzaY02S3$" resolve="switch_FCallFromConnectedTrigPortParent" />
                   <node concept="3NFfHV" id="30EzaY06Oa9" role="1sPUBK">
@@ -2610,6 +2610,9 @@
                     <ref role="v3LJV" node="77WKAh0fTSi" resolve="parentFunction" />
                   </node>
                 </node>
+              </node>
+              <node concept="356sEF" id="4BrbVuPgw7h" role="356sEH">
+                <property role="TrG5h" value=";" />
               </node>
               <node concept="2EixSi" id="30EzaY06Oah" role="2EinRH" />
               <node concept="1WS0z7" id="30EzaY06Oai" role="lGtFl">
