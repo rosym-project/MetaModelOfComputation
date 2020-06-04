@@ -872,6 +872,12 @@
         </node>
         <node concept="2EixSi" id="w_xyS7nNt3" role="2EinRH" />
       </node>
+      <node concept="356sEK" id="4BrbVuPgluW" role="383Ya9">
+        <node concept="356sEF" id="4BrbVuPgluX" role="356sEH">
+          <property role="TrG5h" value="#include &lt;stdbool.h&gt;" />
+        </node>
+        <node concept="2EixSi" id="4BrbVuPgluY" role="2EinRH" />
+      </node>
       <node concept="356sEK" id="w_xyS7nMZL" role="383Ya9">
         <node concept="356sEF" id="w_xyS7nMZM" role="356sEH">
           <property role="TrG5h" value="#include &quot;header.h&quot;" />
