@@ -171,6 +171,7 @@
     <property role="EcuMT" value="9203943671252472483" />
     <property role="TrG5h" value="FunctionBlockContainer" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="function block container" />
     <ref role="1TJDcQ" node="3eP8Zudp5G4" resolve="FunctionBlock" />
     <node concept="1TJgyj" id="4iWYoaWUTsf" role="1TKVEi">
       <property role="IQ2ns" value="4953108030111323919" />
