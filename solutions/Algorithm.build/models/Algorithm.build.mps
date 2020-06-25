@@ -69,6 +69,9 @@
       </concept>
     </language>
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
+      <concept id="6592112598314586625" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginGroup" flags="ng" index="m$f5U">
+        <reference id="6592112598314586626" name="group" index="m$f5T" />
+      </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
@@ -81,13 +84,13 @@
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
         <child id="3570488090019868128" name="packagingType" index="pUk7w" />
       </concept>
-      <concept id="6592112598314499036" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginModule" flags="ng" index="m$_yB">
-        <reference id="6592112598314499037" name="target" index="m$_yA" />
-      </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
       <concept id="3570488090019868065" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_AutoPluginLayoutType" flags="ng" index="pUk6x" />
+      <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
+        <child id="1500819558095907806" name="modules" index="2G$12L" />
+      </concept>
       <concept id="1265949165890536423" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_ModuleJars" flags="ng" index="L2wRC">
         <reference id="1265949165890536425" name="module" index="L2wRA" />
       </concept>
@@ -171,157 +174,157 @@
       <node concept="m$_yC" id="55AzKcN284k" role="m$_yJ">
         <ref role="m$_y1" to="g0to:62bw8DmfoBS" resolve="com.dslfoundry.plaintextgen" />
       </node>
-      <node concept="m$_yB" id="6elPPFNPK9K" role="m$_yh">
-        <ref role="m$_yA" node="1byp$lDFZXj" resolve="Algorithm" />
-      </node>
-      <node concept="m$_yB" id="51TSWhYZIq_" role="m$_yh">
-        <ref role="m$_yA" node="51TSWhYZIpx" resolve="Algorithm_CGenerator" />
+      <node concept="m$f5U" id="55AzKcN4bc$" role="m$_yh">
+        <ref role="m$f5T" node="55AzKcN4ba4" resolve="algorithm" />
       </node>
     </node>
-    <node concept="1E1JtD" id="1byp$lDFZXj" role="3989C9">
-      <property role="BnDLt" value="true" />
-      <property role="TrG5h" value="Algorithm" />
-      <property role="3LESm3" value="a8f70f9e-ef01-499f-885c-c79273fa1695" />
-      <node concept="55IIr" id="1byp$lDFZXm" role="3LF7KH">
-        <node concept="2Ry0Ak" id="1byp$lDFZYe" role="iGT6I">
-          <property role="2Ry0Am" value="languages" />
-          <node concept="2Ry0Ak" id="1byp$lDFZYj" role="2Ry0An">
-            <property role="2Ry0Am" value="Algorithm" />
-            <node concept="2Ry0Ak" id="1byp$lDFZYo" role="2Ry0An">
-              <property role="2Ry0Am" value="Algorithm.mpl" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1SiIV0" id="1byp$lDFZYs" role="3bR37C">
-        <node concept="3bR9La" id="1byp$lDFZYt" role="1SiIV1">
-          <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
-        </node>
-      </node>
-      <node concept="1BupzO" id="1byp$lDFZYy" role="3bR31x">
-        <property role="3ZfqAx" value="models" />
-        <property role="1Hdu6h" value="true" />
-        <property role="1HemKv" value="true" />
-        <node concept="3LXTmp" id="1byp$lDFZYz" role="1HemKq">
-          <node concept="55IIr" id="1byp$lDFZYu" role="3LXTmr">
-            <node concept="2Ry0Ak" id="1byp$lDFZYv" role="iGT6I">
-              <property role="2Ry0Am" value="languages" />
-              <node concept="2Ry0Ak" id="1byp$lDFZYw" role="2Ry0An">
-                <property role="2Ry0Am" value="Algorithm" />
-                <node concept="2Ry0Ak" id="1byp$lDFZYx" role="2Ry0An">
-                  <property role="2Ry0Am" value="models" />
-                </node>
+    <node concept="2G$12M" id="55AzKcN4ba4" role="3989C9">
+      <property role="TrG5h" value="algorithm" />
+      <node concept="1E1JtD" id="1byp$lDFZXj" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="Algorithm" />
+        <property role="3LESm3" value="a8f70f9e-ef01-499f-885c-c79273fa1695" />
+        <node concept="55IIr" id="1byp$lDFZXm" role="3LF7KH">
+          <node concept="2Ry0Ak" id="1byp$lDFZYe" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="1byp$lDFZYj" role="2Ry0An">
+              <property role="2Ry0Am" value="Algorithm" />
+              <node concept="2Ry0Ak" id="1byp$lDFZYo" role="2Ry0An">
+                <property role="2Ry0Am" value="Algorithm.mpl" />
               </node>
             </node>
           </node>
-          <node concept="3qWCbU" id="1byp$lDFZY$" role="3LXTna">
-            <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+        </node>
+        <node concept="1SiIV0" id="1byp$lDFZYs" role="3bR37C">
+          <node concept="3bR9La" id="1byp$lDFZYt" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
           </node>
         </node>
-      </node>
-      <node concept="1SiIV0" id="7FkahUZo3ug" role="3bR37C">
-        <node concept="3bR9La" id="7FkahUZo3uh" role="1SiIV1">
-          <ref role="3bR37D" to="ffeo:3qkjbZn4_1I" resolve="jetbrains.mps.lang.constraints.rules.kinds" />
-        </node>
-      </node>
-      <node concept="1SiIV0" id="7FkahUZo3ui" role="3bR37C">
-        <node concept="3bR9La" id="7FkahUZo3uj" role="1SiIV1">
-          <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
-        </node>
-      </node>
-      <node concept="1SiIV0" id="7wiBUqZMTuD" role="3bR37C">
-        <node concept="1Busua" id="7wiBUqZMTuE" role="1SiIV1">
-          <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
-        </node>
-      </node>
-      <node concept="1SiIV0" id="4DVjLv4QM1s" role="3bR37C">
-        <node concept="3bR9La" id="4DVjLv4QM1t" role="1SiIV1">
-          <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-        </node>
-      </node>
-    </node>
-    <node concept="1E1JtD" id="51TSWhYZIpx" role="3989C9">
-      <property role="BnDLt" value="true" />
-      <property role="TrG5h" value="Algorithm_CGenerator" />
-      <property role="3LESm3" value="8d7c3baa-c6d4-442a-843a-34b7b957af1e" />
-      <node concept="55IIr" id="51TSWhYZIpz" role="3LF7KH">
-        <node concept="2Ry0Ak" id="51TSWhYZIqp" role="iGT6I">
-          <property role="2Ry0Am" value="languages" />
-          <node concept="2Ry0Ak" id="51TSWhYZIqu" role="2Ry0An">
-            <property role="2Ry0Am" value="Algorithm_CGenerator" />
-            <node concept="2Ry0Ak" id="51TSWhYZIqz" role="2Ry0An">
-              <property role="2Ry0Am" value="Algorithm_CGenerator.mpl" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1SiIV0" id="51TSWhYZIqH" role="3bR37C">
-        <node concept="3bR9La" id="51TSWhYZIqI" role="1SiIV1">
-          <ref role="3bR37D" node="1byp$lDFZXj" resolve="Algorithm" />
-        </node>
-      </node>
-      <node concept="1BupzO" id="51TSWhYZIqN" role="3bR31x">
-        <property role="3ZfqAx" value="models" />
-        <property role="1Hdu6h" value="true" />
-        <property role="1HemKv" value="true" />
-        <node concept="3LXTmp" id="51TSWhYZIqO" role="1HemKq">
-          <node concept="55IIr" id="51TSWhYZIqJ" role="3LXTmr">
-            <node concept="2Ry0Ak" id="51TSWhYZIqK" role="iGT6I">
-              <property role="2Ry0Am" value="languages" />
-              <node concept="2Ry0Ak" id="51TSWhYZIqL" role="2Ry0An">
-                <property role="2Ry0Am" value="Algorithm_CGenerator" />
-                <node concept="2Ry0Ak" id="51TSWhYZIqM" role="2Ry0An">
-                  <property role="2Ry0Am" value="models" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3qWCbU" id="51TSWhYZIqP" role="3LXTna">
-            <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-          </node>
-        </node>
-      </node>
-      <node concept="1yeLz9" id="51TSWhYZIqQ" role="1TViLv">
-        <property role="TrG5h" value="Algorithm_CGenerator#01" />
-        <property role="3LESm3" value="40039aa5-5dfd-4b77-8737-89f5a034d3fd" />
-        <node concept="1SiIV0" id="51TSWhYZIqR" role="3bR37C">
-          <node concept="3bR9La" id="51TSWhYZIqS" role="1SiIV1">
-            <ref role="3bR37D" node="1byp$lDFZXj" resolve="Algorithm" />
-          </node>
-        </node>
-        <node concept="1BupzO" id="51TSWhYZIqY" role="3bR31x">
-          <property role="3ZfqAx" value="generator/templates" />
+        <node concept="1BupzO" id="1byp$lDFZYy" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="51TSWhYZIqZ" role="1HemKq">
-            <node concept="55IIr" id="51TSWhYZIqT" role="3LXTmr">
-              <node concept="2Ry0Ak" id="51TSWhYZIqU" role="iGT6I">
+          <node concept="3LXTmp" id="1byp$lDFZYz" role="1HemKq">
+            <node concept="55IIr" id="1byp$lDFZYu" role="3LXTmr">
+              <node concept="2Ry0Ak" id="1byp$lDFZYv" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="51TSWhYZIqV" role="2Ry0An">
-                  <property role="2Ry0Am" value="Algorithm_CGenerator" />
-                  <node concept="2Ry0Ak" id="51TSWhYZIqW" role="2Ry0An">
-                    <property role="2Ry0Am" value="generator" />
-                    <node concept="2Ry0Ak" id="51TSWhYZIqX" role="2Ry0An">
-                      <property role="2Ry0Am" value="templates" />
-                    </node>
+                <node concept="2Ry0Ak" id="1byp$lDFZYw" role="2Ry0An">
+                  <property role="2Ry0Am" value="Algorithm" />
+                  <node concept="2Ry0Ak" id="1byp$lDFZYx" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="51TSWhYZIr0" role="3LXTna">
+            <node concept="3qWCbU" id="1byp$lDFZY$" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="55AzKcN283x" role="3bR37C">
-          <node concept="3bR9La" id="55AzKcN283y" role="1SiIV1">
-            <ref role="3bR37D" to="g0to:62bw8DmfoCB" resolve="com.dslfoundry.plaintextgen" />
+        <node concept="1SiIV0" id="7FkahUZo3ug" role="3bR37C">
+          <node concept="3bR9La" id="7FkahUZo3uh" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3qkjbZn4_1I" resolve="jetbrains.mps.lang.constraints.rules.kinds" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7FkahUZo3ui" role="3bR37C">
+          <node concept="3bR9La" id="7FkahUZo3uj" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7wiBUqZMTuD" role="3bR37C">
+          <node concept="1Busua" id="7wiBUqZMTuE" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4DVjLv4QM1s" role="3bR37C">
+          <node concept="3bR9La" id="4DVjLv4QM1t" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
       </node>
-      <node concept="1SiIV0" id="55AzKcN283r" role="3bR37C">
-        <node concept="3bR9La" id="55AzKcN283s" role="1SiIV1">
-          <ref role="3bR37D" to="g0to:62bw8DmfoCB" resolve="com.dslfoundry.plaintextgen" />
+      <node concept="1E1JtD" id="51TSWhYZIpx" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="Algorithm_CGenerator" />
+        <property role="3LESm3" value="8d7c3baa-c6d4-442a-843a-34b7b957af1e" />
+        <node concept="55IIr" id="51TSWhYZIpz" role="3LF7KH">
+          <node concept="2Ry0Ak" id="51TSWhYZIqp" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="51TSWhYZIqu" role="2Ry0An">
+              <property role="2Ry0Am" value="Algorithm_CGenerator" />
+              <node concept="2Ry0Ak" id="51TSWhYZIqz" role="2Ry0An">
+                <property role="2Ry0Am" value="Algorithm_CGenerator.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="51TSWhYZIqH" role="3bR37C">
+          <node concept="3bR9La" id="51TSWhYZIqI" role="1SiIV1">
+            <ref role="3bR37D" node="1byp$lDFZXj" resolve="Algorithm" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="51TSWhYZIqN" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="51TSWhYZIqO" role="1HemKq">
+            <node concept="55IIr" id="51TSWhYZIqJ" role="3LXTmr">
+              <node concept="2Ry0Ak" id="51TSWhYZIqK" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="51TSWhYZIqL" role="2Ry0An">
+                  <property role="2Ry0Am" value="Algorithm_CGenerator" />
+                  <node concept="2Ry0Ak" id="51TSWhYZIqM" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="51TSWhYZIqP" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1yeLz9" id="51TSWhYZIqQ" role="1TViLv">
+          <property role="TrG5h" value="Algorithm_CGenerator#01" />
+          <property role="3LESm3" value="40039aa5-5dfd-4b77-8737-89f5a034d3fd" />
+          <node concept="1SiIV0" id="51TSWhYZIqR" role="3bR37C">
+            <node concept="3bR9La" id="51TSWhYZIqS" role="1SiIV1">
+              <ref role="3bR37D" node="1byp$lDFZXj" resolve="Algorithm" />
+            </node>
+          </node>
+          <node concept="1BupzO" id="51TSWhYZIqY" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="51TSWhYZIqZ" role="1HemKq">
+              <node concept="55IIr" id="51TSWhYZIqT" role="3LXTmr">
+                <node concept="2Ry0Ak" id="51TSWhYZIqU" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="51TSWhYZIqV" role="2Ry0An">
+                    <property role="2Ry0Am" value="Algorithm_CGenerator" />
+                    <node concept="2Ry0Ak" id="51TSWhYZIqW" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="51TSWhYZIqX" role="2Ry0An">
+                        <property role="2Ry0Am" value="templates" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="51TSWhYZIr0" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
+          <node concept="1SiIV0" id="55AzKcN283x" role="3bR37C">
+            <node concept="3bR9La" id="55AzKcN283y" role="1SiIV1">
+              <ref role="3bR37D" to="g0to:62bw8DmfoCB" resolve="com.dslfoundry.plaintextgen" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="55AzKcN283r" role="3bR37C">
+          <node concept="3bR9La" id="55AzKcN283s" role="1SiIV1">
+            <ref role="3bR37D" to="g0to:62bw8DmfoCB" resolve="com.dslfoundry.plaintextgen" />
+          </node>
         </node>
       </node>
     </node>
@@ -395,7 +398,7 @@
               <property role="2Ry0Am" value="build" />
               <node concept="2Ry0Ak" id="55AzKcN3cpB" role="2Ry0An">
                 <property role="2Ry0Am" value="artifacts" />
-                <node concept="2Ry0Ak" id="55AzKcN3cpG" role="2Ry0An">
+                <node concept="2Ry0Ak" id="55AzKcN4r5G" role="2Ry0An">
                   <property role="2Ry0Am" value="com.dslfoundry.plaintextgen" />
                 </node>
               </node>
