@@ -460,7 +460,7 @@
           </node>
         </node>
         <node concept="5jKBG" id="2q_WWCjaEY1" role="lGtFl">
-          <ref role="v9R2y" node="2q_WWCjafsQ" resolve="include_InitDBlockContainerDef" />
+          <ref role="v9R2y" node="2q_WWCjafsQ" resolve="include_DBlockContainerInitDef" />
         </node>
       </node>
       <node concept="356sEK" id="44Cv2OMJAbC" role="383Ya9">
@@ -4170,7 +4170,7 @@
     </node>
   </node>
   <node concept="13MO4I" id="2q_WWCjafsQ">
-    <property role="TrG5h" value="include_InitDBlockContainerDef" />
+    <property role="TrG5h" value="include_DBlockContainerInitDef" />
     <ref role="3gUMe" to="yvgz:5o1iPWxUm1h" resolve="DataBlockContainer" />
     <node concept="356WMU" id="2q_WWCjafsX" role="13RCb5">
       <node concept="356sEK" id="2q_WWCjaf$4" role="383Ya9">
@@ -4360,16 +4360,79 @@
                         </node>
                         <node concept="3NFfHV" id="GiG$NNTf4N" role="1sPUBK">
                           <node concept="3clFbS" id="GiG$NNTf4O" role="2VODD2">
-                            <node concept="3clFbF" id="GiG$NNTf5_" role="3cqZAp">
-                              <node concept="2OqwBi" id="GiG$NNTfxm" role="3clFbG">
-                                <node concept="2OqwBi" id="GiG$NNTffE" role="2Oq$k0">
-                                  <node concept="1iwH7S" id="GiG$NNTf5$" role="2Oq$k0" />
-                                  <node concept="1psM6Z" id="GiG$NNTfmD" role="2OqNvi">
-                                    <ref role="1psM6Y" node="GiG$NNTaAW" resolve="currentPort" />
+                            <node concept="3cpWs8" id="224dIqn8JYi" role="3cqZAp">
+                              <node concept="3cpWsn" id="224dIqn8JYl" role="3cpWs9">
+                                <property role="TrG5h" value="portType" />
+                                <node concept="3Tqbb2" id="224dIqn8JYg" role="1tU5fm">
+                                  <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
+                                </node>
+                                <node concept="2OqwBi" id="224dIqn8KvP" role="33vP2m">
+                                  <node concept="2OqwBi" id="224dIqn8Kdv" role="2Oq$k0">
+                                    <node concept="1iwH7S" id="224dIqn8K0W" role="2Oq$k0" />
+                                    <node concept="1psM6Z" id="224dIqn8KiZ" role="2OqNvi">
+                                      <ref role="1psM6Y" node="GiG$NNTaAW" resolve="currentPort" />
+                                    </node>
+                                  </node>
+                                  <node concept="3TrEf2" id="224dIqn8KLe" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="yvgz:6po$YwiVDtx" resolve="type" />
                                   </node>
                                 </node>
-                                <node concept="3TrEf2" id="GiG$NNTfM6" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="yvgz:6po$YwiVDtx" resolve="type" />
+                              </node>
+                            </node>
+                            <node concept="3clFbJ" id="224dIqn8KP_" role="3cqZAp">
+                              <node concept="3clFbS" id="224dIqn8KPB" role="3clFbx">
+                                <node concept="3cpWs8" id="224dIqn8Lzs" role="3cqZAp">
+                                  <node concept="3cpWsn" id="224dIqn8Lzv" role="3cpWs9">
+                                    <property role="TrG5h" value="errMsg" />
+                                    <node concept="17QB3L" id="224dIqn8Lzq" role="1tU5fm" />
+                                    <node concept="Xl_RD" id="224dIqn8LD5" role="33vP2m">
+                                      <property role="Xl_RC" value="ports of array must be of ArrayType" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="2xdQw9" id="224dIqn8LxS" role="3cqZAp">
+                                  <property role="2xdLsb" value="gZ5fh_4/error" />
+                                  <node concept="37vLTw" id="224dIqn8LEG" role="9lYJi">
+                                    <ref role="3cqZAo" node="224dIqn8Lzv" resolve="errMsg" />
+                                  </node>
+                                  <node concept="2ShNRf" id="224dIqn8LF$" role="9lYJj">
+                                    <node concept="1pGfFk" id="224dIqn8MR3" role="2ShVmc">
+                                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                                      <node concept="37vLTw" id="224dIqn8N1f" role="37wK5m">
+                                        <ref role="3cqZAo" node="224dIqn8Lzv" resolve="errMsg" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3fqX7Q" id="224dIqn8Lnj" role="3clFbw">
+                                <node concept="2OqwBi" id="224dIqn8Lnl" role="3fr31v">
+                                  <node concept="37vLTw" id="224dIqn8Lnm" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="224dIqn8JYl" resolve="portType" />
+                                  </node>
+                                  <node concept="1mIQ4w" id="224dIqn8Lnn" role="2OqNvi">
+                                    <node concept="chp4Y" id="224dIqn8Lno" role="cj9EA">
+                                      <ref role="cht4Q" to="tpee:f_0Q1BR" resolve="ArrayType" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbF" id="GiG$NNTf5_" role="3cqZAp">
+                              <node concept="2OqwBi" id="224dIqn8Oro" role="3clFbG">
+                                <node concept="1eOMI4" id="224dIqn8NIj" role="2Oq$k0">
+                                  <node concept="1PxgMI" id="224dIqn8ObB" role="1eOMHV">
+                                    <property role="1BlNFB" value="true" />
+                                    <node concept="chp4Y" id="224dIqn8Od3" role="3oSUPX">
+                                      <ref role="cht4Q" to="tpee:f_0Q1BR" resolve="ArrayType" />
+                                    </node>
+                                    <node concept="37vLTw" id="224dIqn8NYv" role="1m5AlR">
+                                      <ref role="3cqZAo" node="224dIqn8JYl" resolve="portType" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3TrEf2" id="224dIqn8OMe" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="tpee:f_0Q1BS" resolve="componentType" />
                                 </node>
                               </node>
                             </node>
@@ -4386,29 +4449,6 @@
                               <node concept="30H73N" id="GiG$NNSYWE" role="2Oq$k0" />
                               <node concept="3Tsc0h" id="GiG$NNSZBL" role="2OqNvi">
                                 <ref role="3TtcxE" to="yvgz:6jvQBgXExiw" resolve="ports" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="1W57fq" id="GiG$NNT4Dx" role="lGtFl">
-                      <node concept="3IZrLx" id="GiG$NNT4Dy" role="3IZSJc">
-                        <node concept="3clFbS" id="GiG$NNT4Dz" role="2VODD2">
-                          <node concept="3clFbF" id="GiG$NNT4Mg" role="3cqZAp">
-                            <node concept="3fqX7Q" id="GiG$NNT6md" role="3clFbG">
-                              <node concept="2OqwBi" id="GiG$NNT6mf" role="3fr31v">
-                                <node concept="2OqwBi" id="GiG$NNT6mg" role="2Oq$k0">
-                                  <node concept="30H73N" id="GiG$NNT6mh" role="2Oq$k0" />
-                                  <node concept="3TrEf2" id="GiG$NNT6mi" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="yvgz:6po$YwiVDtx" resolve="type" />
-                                  </node>
-                                </node>
-                                <node concept="1mIQ4w" id="GiG$NNT6mj" role="2OqNvi">
-                                  <node concept="chp4Y" id="GiG$NNT6mk" role="cj9EA">
-                                    <ref role="cht4Q" to="tpee:f_0Q1BR" resolve="ArrayType" />
-                                  </node>
-                                </node>
                               </node>
                             </node>
                           </node>
