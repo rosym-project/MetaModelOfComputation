@@ -14,6 +14,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
         <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <property id="672037151186491528" name="presentation" index="1L1pqM" />
       </concept>
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
         <child id="3348158742936976577" name="members" index="25R1y" />
@@ -101,7 +102,7 @@
   <node concept="1TIwiD" id="29RmJoXeePh">
     <property role="EcuMT" value="2483553733153713489" />
     <property role="TrG5h" value="EmptyFunctionBlock" />
-    <property role="3GE5qa" value="definitions" />
+    <property role="3GE5qa" value="definitions.function" />
     <ref role="1TJDcQ" node="3eP8Zudp5G4" resolve="FunctionBlock" />
   </node>
   <node concept="1TIwiD" id="6po$YwiVCCf">
@@ -253,12 +254,12 @@
   <node concept="1TIwiD" id="3EtQu_tAJA">
     <property role="EcuMT" value="65996431591631846" />
     <property role="TrG5h" value="EmptySchedulerBlock" />
-    <property role="3GE5qa" value="definitions" />
+    <property role="3GE5qa" value="definitions.schedule" />
     <ref role="1TJDcQ" node="29RmJoXeePl" resolve="SchedulerBlock" />
   </node>
   <node concept="1TIwiD" id="3EtQu_tAJB">
     <property role="EcuMT" value="65996431591631847" />
-    <property role="3GE5qa" value="definitions" />
+    <property role="3GE5qa" value="definitions.data" />
     <property role="TrG5h" value="EmtpyDataBlock" />
     <ref role="1TJDcQ" node="29RmJoXeePk" resolve="DataBlock" />
   </node>
@@ -276,7 +277,7 @@
   </node>
   <node concept="1TIwiD" id="3EtQu_veq2">
     <property role="EcuMT" value="65996431592056450" />
-    <property role="3GE5qa" value="definitions" />
+    <property role="3GE5qa" value="definitions.schedule" />
     <property role="TrG5h" value="FixedDataFlowSchedulerBlock" />
     <ref role="1TJDcQ" node="29RmJoXeePl" resolve="SchedulerBlock" />
     <node concept="1TJgyj" id="3EtQu_veq3" role="1TKVEi">
@@ -383,7 +384,7 @@
   </node>
   <node concept="1TIwiD" id="jovpCoz9HQ">
     <property role="EcuMT" value="349167071911517046" />
-    <property role="3GE5qa" value="definitions" />
+    <property role="3GE5qa" value="definitions.data" />
     <property role="TrG5h" value="FixedSizeArrayDataBlock" />
     <ref role="1TJDcQ" node="29RmJoXeePk" resolve="DataBlock" />
     <node concept="1TJgyi" id="jovpCo$qN_" role="1TKVEl">
@@ -391,17 +392,10 @@
       <property role="TrG5h" value="size" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyj" id="jovpCoz9HR" role="1TKVEi">
-      <property role="IQ2ns" value="349167071911517047" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="index" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6po$YwiVCCi" resolve="DataPort" />
-    </node>
   </node>
   <node concept="1TIwiD" id="jovpCoJxUq">
     <property role="EcuMT" value="349167071914761882" />
-    <property role="3GE5qa" value="definitions" />
+    <property role="3GE5qa" value="definitions.schedule" />
     <property role="TrG5h" value="StatementBasedSchedulerBlock" />
     <ref role="1TJDcQ" node="29RmJoXeePl" resolve="SchedulerBlock" />
     <node concept="1TJgyj" id="77WKAgZUN$Y" role="1TKVEi">
@@ -469,7 +463,7 @@
   </node>
   <node concept="1TIwiD" id="3r7wy8H28rE">
     <property role="EcuMT" value="3947266681709561578" />
-    <property role="3GE5qa" value="definitions" />
+    <property role="3GE5qa" value="definitions.data" />
     <property role="TrG5h" value="RealConstantDataBlock" />
     <ref role="1TJDcQ" node="29RmJoXeePk" resolve="DataBlock" />
     <node concept="1TJgyi" id="3r7wy8H28rF" role="1TKVEl">
@@ -488,6 +482,69 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="29RmJoXeePk" resolve="DataBlock" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="Bfswhoo6oX">
+    <property role="EcuMT" value="706909029508605501" />
+    <property role="TrG5h" value="BinaryComparison" />
+    <property role="3GE5qa" value="definitions.function" />
+    <ref role="1TJDcQ" node="3eP8Zudp5G4" resolve="FunctionBlock" />
+    <node concept="1TJgyi" id="Bfswhoo6oY" role="1TKVEl">
+      <property role="IQ2nx" value="706909029508605502" />
+      <property role="TrG5h" value="comparion_type" />
+      <ref role="AX2Wp" node="Bfswhoocgt" resolve="BinaryComparisonType" />
+    </node>
+  </node>
+  <node concept="25R3W" id="Bfswhoocgt">
+    <property role="3F6X1D" value="706909029508629533" />
+    <property role="TrG5h" value="BinaryComparisonType" />
+    <property role="3GE5qa" value="definitions.function" />
+    <node concept="25R33" id="Bfswhoocgu" role="25R1y">
+      <property role="3tVfz5" value="706909029508629534" />
+      <property role="TrG5h" value="greater_than" />
+      <property role="1L1pqM" value="&gt;" />
+    </node>
+    <node concept="25R33" id="Bfswhoocgv" role="25R1y">
+      <property role="3tVfz5" value="706909029508629535" />
+      <property role="TrG5h" value="greater_than_or_equal" />
+      <property role="1L1pqM" value="&gt;=" />
+    </node>
+    <node concept="25R33" id="Bfswhoocgy" role="25R1y">
+      <property role="3tVfz5" value="706909029508629538" />
+      <property role="TrG5h" value="smaller_than" />
+      <property role="1L1pqM" value="&lt;" />
+    </node>
+    <node concept="25R33" id="BfswhoocgA" role="25R1y">
+      <property role="3tVfz5" value="706909029508629542" />
+      <property role="TrG5h" value="smaller_than_or_equal" />
+      <property role="1L1pqM" value="&lt;=" />
+    </node>
+    <node concept="25R33" id="BfswhoocgF" role="25R1y">
+      <property role="3tVfz5" value="706909029508629547" />
+      <property role="TrG5h" value="equal" />
+      <property role="1L1pqM" value="==" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="EZVvidFmZw">
+    <property role="EcuMT" value="774599295535771616" />
+    <property role="3GE5qa" value="definitions.function" />
+    <property role="TrG5h" value="ArrayAccess" />
+    <property role="R5$K7" value="true" />
+    <property role="34LRSv" value="array access" />
+    <ref role="1TJDcQ" node="3eP8Zudp5G4" resolve="FunctionBlock" />
+  </node>
+  <node concept="1TIwiD" id="EZVvidU528">
+    <property role="EcuMT" value="774599295539630216" />
+    <property role="3GE5qa" value="definitions.function" />
+    <property role="TrG5h" value="ArrayRead" />
+    <property role="34LRSv" value="array read" />
+    <ref role="1TJDcQ" node="EZVvidFmZw" resolve="ArrayAccess" />
+  </node>
+  <node concept="1TIwiD" id="EZVvidU529">
+    <property role="EcuMT" value="774599295539630217" />
+    <property role="3GE5qa" value="definitions.function" />
+    <property role="TrG5h" value="ArrayWrite" />
+    <property role="34LRSv" value="array write" />
+    <ref role="1TJDcQ" node="EZVvidFmZw" resolve="ArrayAccess" />
   </node>
 </model>
 
