@@ -491,12 +491,12 @@
     <node concept="1TJgyi" id="Bfswhoo6oY" role="1TKVEl">
       <property role="IQ2nx" value="706909029508605502" />
       <property role="TrG5h" value="comparion_type" />
-      <ref role="AX2Wp" node="Bfswhoocgt" resolve="BinaryComparisonType" />
+      <ref role="AX2Wp" node="Bfswhoocgt" resolve="BinaryComparisonOperation" />
     </node>
   </node>
   <node concept="25R3W" id="Bfswhoocgt">
     <property role="3F6X1D" value="706909029508629533" />
-    <property role="TrG5h" value="BinaryComparisonType" />
+    <property role="TrG5h" value="BinaryComparisonOperation" />
     <property role="3GE5qa" value="definitions.function" />
     <node concept="25R33" id="Bfswhoocgu" role="25R1y">
       <property role="3tVfz5" value="706909029508629534" />
@@ -528,23 +528,22 @@
     <property role="EcuMT" value="774599295535771616" />
     <property role="3GE5qa" value="definitions.function" />
     <property role="TrG5h" value="ArrayAccess" />
-    <property role="R5$K7" value="true" />
     <property role="34LRSv" value="array access" />
     <ref role="1TJDcQ" node="3eP8Zudp5G4" resolve="FunctionBlock" />
   </node>
-  <node concept="1TIwiD" id="EZVvidU528">
-    <property role="EcuMT" value="774599295539630216" />
-    <property role="3GE5qa" value="definitions.function" />
-    <property role="TrG5h" value="ArrayRead" />
-    <property role="34LRSv" value="array read" />
-    <ref role="1TJDcQ" node="EZVvidFmZw" resolve="ArrayAccess" />
-  </node>
-  <node concept="1TIwiD" id="EZVvidU529">
-    <property role="EcuMT" value="774599295539630217" />
-    <property role="3GE5qa" value="definitions.function" />
-    <property role="TrG5h" value="ArrayWrite" />
-    <property role="34LRSv" value="array write" />
-    <ref role="1TJDcQ" node="EZVvidFmZw" resolve="ArrayAccess" />
+  <node concept="1TIwiD" id="7wMoIgF4RlN">
+    <property role="EcuMT" value="8661093765501646195" />
+    <property role="3GE5qa" value="definitions.data" />
+    <property role="TrG5h" value="ReferenceType" />
+    <property role="34LRSv" value="*" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+    <node concept="1TJgyj" id="7wMoIgF4RlR" role="1TKVEi">
+      <property role="IQ2ns" value="8661093765501646199" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="componentType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
+    </node>
   </node>
 </model>
 
