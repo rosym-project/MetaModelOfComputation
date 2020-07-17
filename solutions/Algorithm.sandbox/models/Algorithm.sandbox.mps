@@ -141,32 +141,6 @@
         <property role="2_BrWT" value="3EtQu_uj5h/In" />
       </node>
     </node>
-    <node concept="274C8k" id="7wMoIgFoah5" role="3SlQUd">
-      <property role="TrG5h" value="myArrayAccess" />
-      <node concept="1pt3V6" id="7wMoIgFoah6" role="2YOnzW">
-        <property role="TrG5h" value="trigger" />
-        <property role="2_BrWT" value="3EtQu_uj5h/In" />
-      </node>
-      <node concept="1OHxBU" id="7wMoIgFoah7" role="2YOnzZ">
-        <property role="TrG5h" value="array_access" />
-        <property role="1OHxBQ" value="6po$YwiVCCq/InOut" />
-        <node concept="10Q1$e" id="7wMoIgFoah8" role="1OHwi9">
-          <node concept="10Oyi0" id="7wMoIgFoahB" role="10Q1$1" />
-        </node>
-      </node>
-      <node concept="1OHxBU" id="7wMoIgFoah9" role="2YOnzZ">
-        <property role="TrG5h" value="index" />
-        <property role="1OHxBQ" value="6po$YwiVCCm/In" />
-        <node concept="10Oyi0" id="7wMoIgFoaha" role="1OHwi9" />
-      </node>
-      <node concept="1OHxBU" id="7wMoIgFoahb" role="2YOnzZ">
-        <property role="TrG5h" value="access" />
-        <property role="1OHxBQ" value="6po$YwiVCCq/InOut" />
-        <node concept="1j8hun" id="7wMoIgFoahc" role="1OHwi9">
-          <node concept="10Oyi0" id="7wMoIgFoahE" role="1j8huj" />
-        </node>
-      </node>
-    </node>
     <node concept="2_B1M0" id="3EtQu_tLu1" role="3SlQUm">
       <property role="TrG5h" value="dat" />
       <node concept="1OHxBU" id="3EtQu_tLu6" role="1ptsVk">
@@ -235,8 +209,8 @@
       <ref role="1OHxBS" node="7wMoIgFoah9" resolve="index" />
     </node>
     <node concept="1OHxBB" id="70Myi4_EFYS" role="3SlQUq">
-      <ref role="1OHxBS" node="7wMoIgFoahb" resolve="access" />
       <ref role="1OHyup" node="3EtQu_tLu6" resolve="arrayData" />
+      <ref role="1OHxBS" node="7wMoIgFoahb" resolve="access" />
     </node>
     <node concept="1psEHa" id="6jvQBgXFtjz" role="1psEGK">
       <ref role="1psEGP" node="3EtQu_wAO$" resolve="fooSchedTrigger" />
@@ -263,8 +237,8 @@
       <ref role="1psEGP" node="3eP8ZudpjNK" resolve="bazTrigger" />
     </node>
     <node concept="1psEHa" id="EZVvidWYO3" role="1psEGK">
-      <ref role="1psEGP" node="7wMoIgFoah6" resolve="trigger" />
       <ref role="1psEHb" node="EZVvidWYrV" resolve="access array" />
+      <ref role="1psEGP" node="7wMoIgFoah6" resolve="trigger" />
     </node>
     <node concept="2__D7_" id="3EtQu_vAe7" role="3SlQUj">
       <property role="TrG5h" value="fooSched" />
@@ -346,6 +320,32 @@
     <node concept="1pt3V6" id="3eP8ZudpjMs" role="2YOnzW">
       <property role="TrG5h" value="foo-trigger" />
       <property role="2_BrWT" value="3EtQu_uj5h/In" />
+    </node>
+    <node concept="274C8k" id="7wMoIgFoah5" role="3SlQUd">
+      <property role="TrG5h" value="myArrayAccess" />
+      <node concept="1pt3V6" id="7wMoIgFoah6" role="2YOnzW">
+        <property role="TrG5h" value="trigger" />
+        <property role="2_BrWT" value="3EtQu_uj5h/In" />
+      </node>
+      <node concept="1OHxBU" id="7wMoIgFoah7" role="2YOnzZ">
+        <property role="TrG5h" value="array_access" />
+        <property role="1OHxBQ" value="6po$YwiVCCq/InOut" />
+        <node concept="10Q1$e" id="7wMoIgFoah8" role="1OHwi9">
+          <node concept="10Oyi0" id="7wMoIgFoahB" role="10Q1$1" />
+        </node>
+      </node>
+      <node concept="1OHxBU" id="7wMoIgFoah9" role="2YOnzZ">
+        <property role="TrG5h" value="index" />
+        <property role="1OHxBQ" value="6po$YwiVCCm/In" />
+        <node concept="10Oyi0" id="7wMoIgFoaha" role="1OHwi9" />
+      </node>
+      <node concept="1OHxBU" id="7wMoIgFoahb" role="2YOnzZ">
+        <property role="TrG5h" value="access" />
+        <property role="1OHxBQ" value="6po$YwiVCCq/InOut" />
+        <node concept="1j8hun" id="7wMoIgFoahc" role="1OHwi9">
+          <node concept="10Oyi0" id="7wMoIgFoahE" role="1j8huj" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1u3Uyy" id="6jvQBgXFODe">
