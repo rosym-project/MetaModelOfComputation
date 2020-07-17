@@ -3570,8 +3570,41 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="yvgz:7wMoIgF4RlN" resolve="ReferenceType" />
       <node concept="gft3U" id="7wMoIgF8tOv" role="1lVwrX">
-        <node concept="356sEF" id="7wMoIgF8tOB" role="gfFT$">
-          <property role="TrG5h" value="((void *) 0)" />
+        <node concept="356sEK" id="3HWqqualRLL" role="gfFT$">
+          <node concept="2EixSi" id="3HWqqualRLN" role="2EinRH" />
+          <node concept="356sEF" id="3HWqqualRLW" role="356sEH">
+            <property role="TrG5h" value="(" />
+          </node>
+          <node concept="356sEF" id="3HWqqualRM1" role="356sEH">
+            <property role="TrG5h" value="(" />
+          </node>
+          <node concept="356sEF" id="3HWqqualRM8" role="356sEH">
+            <property role="TrG5h" value="void" />
+            <node concept="1sPUBX" id="3HWqqualRMG" role="lGtFl">
+              <ref role="v9R2y" node="58QN4$b28qm" resolve="switch_TypeRepresentation" />
+              <node concept="3NFfHV" id="3HWqqualRMJ" role="1sPUBK">
+                <node concept="3clFbS" id="3HWqqualRMK" role="2VODD2">
+                  <node concept="3clFbF" id="3HWqqualROH" role="3cqZAp">
+                    <node concept="2OqwBi" id="3HWqqualS05" role="3clFbG">
+                      <node concept="30H73N" id="3HWqqualROG" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="3HWqqualSdt" role="2OqNvi">
+                        <ref role="3Tt5mk" to="yvgz:7wMoIgF4RlR" resolve="componentType" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="356sEF" id="3HWqqualRMh" role="356sEH">
+            <property role="TrG5h" value=" *" />
+          </node>
+          <node concept="356sEF" id="3HWqqualRMs" role="356sEH">
+            <property role="TrG5h" value=")" />
+          </node>
+          <node concept="356sEF" id="7wMoIgF8tOB" role="356sEH">
+            <property role="TrG5h" value=" 0)" />
+          </node>
         </node>
       </node>
     </node>
