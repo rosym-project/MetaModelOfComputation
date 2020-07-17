@@ -317,7 +317,7 @@
                 <ref role="3Tt5mk" to="yvgz:6po$YwiVCCg" resolve="port1" />
               </node>
             </node>
-            <node concept="3TrEf2" id="3HWqquaeYrO" role="2OqNvi">
+            <node concept="3TrEf2" id="3HWqquak4iH" role="2OqNvi">
               <ref role="3Tt5mk" to="yvgz:6po$YwiVDtx" resolve="type" />
             </node>
           </node>
@@ -332,7 +332,7 @@
                 <ref role="3Tt5mk" to="yvgz:6po$YwiVFhL" resolve="port2" />
               </node>
             </node>
-            <node concept="3TrEf2" id="3HWqquaeYQF" role="2OqNvi">
+            <node concept="3TrEf2" id="3HWqquak4k1" role="2OqNvi">
               <ref role="3Tt5mk" to="yvgz:6po$YwiVDtx" resolve="type" />
             </node>
           </node>
