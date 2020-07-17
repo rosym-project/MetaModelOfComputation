@@ -2071,7 +2071,7 @@
       <ref role="30HIoZ" to="tpee:f_0P_4Y" resolve="BooleanType" />
       <node concept="gft3U" id="7k2VbbJCtPC" role="1lVwrX">
         <node concept="356sEF" id="7k2VbbJCtPK" role="gfFT$">
-          <property role="TrG5h" value="bool" />
+          <property role="TrG5h" value="_Bool" />
         </node>
       </node>
     </node>
@@ -3496,7 +3496,7 @@
       <ref role="30HIoZ" to="tpee:f_0P_4Y" resolve="BooleanType" />
       <node concept="gft3U" id="2q_WWCj9swP" role="1lVwrX">
         <node concept="356sEF" id="GiG$NNQKmO" role="gfFT$">
-          <property role="TrG5h" value="true" />
+          <property role="TrG5h" value="1" />
         </node>
       </node>
     </node>
