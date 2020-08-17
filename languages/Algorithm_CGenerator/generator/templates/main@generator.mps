@@ -4413,6 +4413,40 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="3cpWs8" id="6a3lTkI2Stu" role="3cqZAp">
+                        <node concept="3cpWsn" id="6a3lTkI2Stx" role="3cpWs9">
+                          <property role="TrG5h" value="numDataPorts" />
+                          <node concept="10Oyi0" id="6a3lTkI2Sts" role="1tU5fm" />
+                          <node concept="2OqwBi" id="6a3lTkI2YZF" role="33vP2m">
+                            <node concept="2OqwBi" id="6a3lTkI2UuP" role="2Oq$k0">
+                              <node concept="37vLTw" id="6a3lTkI2TQc" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2K$u4kDbpvA" resolve="rootFBlockContainer" />
+                              </node>
+                              <node concept="3Tsc0h" id="6a3lTkI2Wwl" role="2OqNvi">
+                                <ref role="3TtcxE" to="yvgz:3eP8Zudp5G8" resolve="data_ports" />
+                              </node>
+                            </node>
+                            <node concept="34oBXx" id="6a3lTkI32eh" role="2OqNvi" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3cpWs8" id="6a3lTkI33Ox" role="3cqZAp">
+                        <node concept="3cpWsn" id="6a3lTkI33O$" role="3cpWs9">
+                          <property role="TrG5h" value="numTriggerPorts" />
+                          <node concept="10Oyi0" id="6a3lTkI33Ov" role="1tU5fm" />
+                          <node concept="2OqwBi" id="6a3lTkI39mR" role="33vP2m">
+                            <node concept="2OqwBi" id="6a3lTkI36zG" role="2Oq$k0">
+                              <node concept="37vLTw" id="6a3lTkI35aG" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2K$u4kDbpvA" resolve="rootFBlockContainer" />
+                              </node>
+                              <node concept="3Tsc0h" id="6a3lTkI3780" role="2OqNvi">
+                                <ref role="3TtcxE" to="yvgz:3eP8Zudp5Gb" resolve="trigger_ports" />
+                              </node>
+                            </node>
+                            <node concept="34oBXx" id="6a3lTkI3bxL" role="2OqNvi" />
+                          </node>
+                        </node>
+                      </node>
                       <node concept="2Gpval" id="6a3lTkI0uCb" role="3cqZAp">
                         <node concept="2GrKxI" id="6a3lTkI0uCd" role="2Gsz3X">
                           <property role="TrG5h" value="fBlock" />
@@ -4421,6 +4455,42 @@
                           <ref role="3cqZAo" node="6a3lTkHO_b0" resolve="functionBlocks" />
                         </node>
                         <node concept="3clFbS" id="6a3lTkI0uCh" role="2LFqv$">
+                          <node concept="3clFbF" id="6a3lTkI3h9W" role="3cqZAp">
+                            <node concept="d57v9" id="6a3lTkI3hEL" role="3clFbG">
+                              <node concept="2OqwBi" id="6a3lTkI3nmm" role="37vLTx">
+                                <node concept="2OqwBi" id="6a3lTkI3js9" role="2Oq$k0">
+                                  <node concept="2GrUjf" id="6a3lTkI3i2r" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="6a3lTkI0uCd" resolve="fBlock" />
+                                  </node>
+                                  <node concept="3Tsc0h" id="6a3lTkI3kyj" role="2OqNvi">
+                                    <ref role="3TtcxE" to="yvgz:3eP8Zudp5G8" resolve="data_ports" />
+                                  </node>
+                                </node>
+                                <node concept="34oBXx" id="6a3lTkI3pHt" role="2OqNvi" />
+                              </node>
+                              <node concept="37vLTw" id="6a3lTkI3h9U" role="37vLTJ">
+                                <ref role="3cqZAo" node="6a3lTkI2Stx" resolve="numDataPorts" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbF" id="6a3lTkI3rlL" role="3cqZAp">
+                            <node concept="d57v9" id="6a3lTkI3sqQ" role="3clFbG">
+                              <node concept="2OqwBi" id="6a3lTkI3xmq" role="37vLTx">
+                                <node concept="2OqwBi" id="6a3lTkI3tpP" role="2Oq$k0">
+                                  <node concept="2GrUjf" id="6a3lTkI3sNA" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="6a3lTkI0uCd" resolve="fBlock" />
+                                  </node>
+                                  <node concept="3Tsc0h" id="6a3lTkI3uO5" role="2OqNvi">
+                                    <ref role="3TtcxE" to="yvgz:3eP8Zudp5Gb" resolve="trigger_ports" />
+                                  </node>
+                                </node>
+                                <node concept="34oBXx" id="6a3lTkI3zzr" role="2OqNvi" />
+                              </node>
+                              <node concept="37vLTw" id="6a3lTkI3rlJ" role="37vLTJ">
+                                <ref role="3cqZAo" node="6a3lTkI33O$" resolve="numTriggerPorts" />
+                              </node>
+                            </node>
+                          </node>
                           <node concept="3clFbJ" id="6a3lTkHOJD7" role="3cqZAp">
                             <node concept="2OqwBi" id="6a3lTkHOK0E" role="3clFbw">
                               <node concept="2GrUjf" id="6a3lTkI0xHm" role="2Oq$k0">
@@ -4498,6 +4568,24 @@
                           <ref role="3cqZAo" node="6a3lTkHRfuG" resolve="dataBlocks" />
                         </node>
                         <node concept="3clFbS" id="6a3lTkI0z$x" role="2LFqv$">
+                          <node concept="3clFbF" id="6a3lTkI3D2Y" role="3cqZAp">
+                            <node concept="d57v9" id="6a3lTkI3EaO" role="3clFbG">
+                              <node concept="2OqwBi" id="6a3lTkI3Jzp" role="37vLTx">
+                                <node concept="2OqwBi" id="6a3lTkI3FdV" role="2Oq$k0">
+                                  <node concept="2GrUjf" id="6a3lTkI3EA_" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="6a3lTkI0z$t" resolve="dBlock" />
+                                  </node>
+                                  <node concept="3Tsc0h" id="6a3lTkI3GFc" role="2OqNvi">
+                                    <ref role="3TtcxE" to="yvgz:6jvQBgXExiw" resolve="ports" />
+                                  </node>
+                                </node>
+                                <node concept="34oBXx" id="6a3lTkI3My6" role="2OqNvi" />
+                              </node>
+                              <node concept="37vLTw" id="6a3lTkI3D2W" role="37vLTJ">
+                                <ref role="3cqZAo" node="6a3lTkI2Stx" resolve="numDataPorts" />
+                              </node>
+                            </node>
+                          </node>
                           <node concept="3clFbJ" id="6a3lTkHZ98$" role="3cqZAp">
                             <node concept="2OqwBi" id="6a3lTkHZ98_" role="3clFbw">
                               <node concept="2GrUjf" id="6a3lTkI0B9M" role="2Oq$k0">
@@ -4548,6 +4636,42 @@
                           <ref role="3cqZAo" node="6a3lTkHYQK$" resolve="schedulerBlocks" />
                         </node>
                         <node concept="3clFbS" id="6a3lTkI0KLy" role="2LFqv$">
+                          <node concept="3clFbF" id="6a3lTkI3Oiw" role="3cqZAp">
+                            <node concept="d57v9" id="6a3lTkI3PrB" role="3clFbG">
+                              <node concept="2OqwBi" id="6a3lTkI3Vte" role="37vLTx">
+                                <node concept="2OqwBi" id="6a3lTkI3QxO" role="2Oq$k0">
+                                  <node concept="2GrUjf" id="6a3lTkI3PSu" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="6a3lTkI0KLu" resolve="sBlock" />
+                                  </node>
+                                  <node concept="3Tsc0h" id="6a3lTkI3S1B" role="2OqNvi">
+                                    <ref role="3TtcxE" to="yvgz:6jvQBgXG1ad" resolve="data_ports" />
+                                  </node>
+                                </node>
+                                <node concept="34oBXx" id="6a3lTkI3XTy" role="2OqNvi" />
+                              </node>
+                              <node concept="37vLTw" id="6a3lTkI3Oiu" role="37vLTJ">
+                                <ref role="3cqZAo" node="6a3lTkI2Stx" resolve="numDataPorts" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbF" id="6a3lTkI3YPL" role="3cqZAp">
+                            <node concept="d57v9" id="6a3lTkI42mf" role="3clFbG">
+                              <node concept="2OqwBi" id="6a3lTkI47B2" role="37vLTx">
+                                <node concept="2OqwBi" id="6a3lTkI44l7" role="2Oq$k0">
+                                  <node concept="2GrUjf" id="6a3lTkI42Oc" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="6a3lTkI0KLu" resolve="sBlock" />
+                                  </node>
+                                  <node concept="3Tsc0h" id="6a3lTkI44Zw" role="2OqNvi">
+                                    <ref role="3TtcxE" to="yvgz:6po$YwiVEO5" resolve="trigger_ports" />
+                                  </node>
+                                </node>
+                                <node concept="34oBXx" id="6a3lTkI4asJ" role="2OqNvi" />
+                              </node>
+                              <node concept="37vLTw" id="6a3lTkI40Zo" role="37vLTJ">
+                                <ref role="3cqZAo" node="6a3lTkI33O$" resolve="numTriggerPorts" />
+                              </node>
+                            </node>
+                          </node>
                           <node concept="3clFbJ" id="6a3lTkHZdPZ" role="3cqZAp">
                             <node concept="2OqwBi" id="6a3lTkHZdQ0" role="3clFbw">
                               <node concept="2GrUjf" id="6a3lTkI0NFM" role="2Oq$k0">
@@ -4643,7 +4767,32 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbH" id="6a3lTkI0fDw" role="3cqZAp" />
+                      <node concept="2xdQw9" id="6a3lTkI3$5T" role="3cqZAp">
+                        <property role="2xdLsb" value="h1akgim/info" />
+                        <node concept="2YIFZM" id="6a3lTkI3$5U" role="9lYJi">
+                          <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                          <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                          <node concept="Xl_RD" id="6a3lTkI3$5V" role="37wK5m">
+                            <property role="Xl_RC" value="    Number of data ports: %d" />
+                          </node>
+                          <node concept="37vLTw" id="6a3lTkI3ALt" role="37wK5m">
+                            <ref role="3cqZAo" node="6a3lTkI2Stx" resolve="numDataPorts" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2xdQw9" id="6a3lTkI3$5X" role="3cqZAp">
+                        <property role="2xdLsb" value="h1akgim/info" />
+                        <node concept="2YIFZM" id="6a3lTkI3$5Y" role="9lYJi">
+                          <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                          <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                          <node concept="Xl_RD" id="6a3lTkI3$5Z" role="37wK5m">
+                            <property role="Xl_RC" value="    Number of trigger ports: %d" />
+                          </node>
+                          <node concept="37vLTw" id="6a3lTkI3Bdc" role="37wK5m">
+                            <ref role="3cqZAo" node="6a3lTkI33O$" resolve="numTriggerPorts" />
+                          </node>
+                        </node>
+                      </node>
                       <node concept="3clFbH" id="6a3lTkHOAuk" role="3cqZAp" />
                       <node concept="2xdQw9" id="2K$u4kDbqB4" role="3cqZAp">
                         <property role="2xdLsb" value="h1akgim/info" />
