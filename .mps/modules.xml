@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/Algorithm/Algorithm.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Algorithm_CGenerator/Algorithm_CGenerator.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Algorithm_CGeneratorNanoBlx/Algorithm_CGeneratorNanoBlx.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Algorithm.build/Algorithm.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Algorithm.sandbox/Algorithm.sandbox.msd" folder="" />
     </projectModules>
