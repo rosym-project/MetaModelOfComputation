@@ -185,9 +185,9 @@
     <node concept="1TJgyj" id="4iWYoaWUTsk" role="1TKVEi">
       <property role="IQ2ns" value="4953108030111323924" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="data_blocks" />
+      <property role="20kJfa" value="data_block_refs" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="29RmJoXeePk" resolve="DataBlock" />
+      <ref role="20lvS9" node="bStLry5qcm" resolve="DataBlockRef" />
     </node>
     <node concept="1TJgyj" id="4iWYoaWUTsh" role="1TKVEi">
       <property role="IQ2ns" value="4953108030111323921" />
@@ -479,6 +479,20 @@
     <property role="EcuMT" value="214051922466153238" />
     <property role="TrG5h" value="DataBlockRef" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4yqmu7tADnp" role="1TKVEi">
+      <property role="IQ2ns" value="5231592743764661721" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="ports" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6po$YwiVCCi" resolve="DataPort" />
+    </node>
+    <node concept="1TJgyj" id="4yqmu7tzYf0" role="1TKVEi">
+      <property role="IQ2ns" value="5231592743763960768" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="mappings" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="4yqmu7tzYeU" resolve="DataPortMapping" />
+    </node>
     <node concept="1TJgyj" id="bStLry5qcp" role="1TKVEi">
       <property role="IQ2ns" value="214051922466153241" />
       <property role="20kJfa" value="data" />
@@ -546,6 +560,23 @@
       <property role="20kJfa" value="componentType" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4yqmu7tzYeU">
+    <property role="EcuMT" value="5231592743763960762" />
+    <property role="TrG5h" value="DataPortMapping" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4yqmu7tzYeV" role="1TKVEi">
+      <property role="IQ2ns" value="5231592743763960763" />
+      <property role="20kJfa" value="referring" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6po$YwiVCCi" resolve="DataPort" />
+    </node>
+    <node concept="1TJgyj" id="4yqmu7tzYeX" role="1TKVEi">
+      <property role="IQ2ns" value="5231592743763960765" />
+      <property role="20kJfa" value="referred" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6po$YwiVCCi" resolve="DataPort" />
     </node>
   </node>
 </model>
