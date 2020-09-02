@@ -30,6 +30,17 @@
         <child id="65996431592056451" name="schedule" index="2__D7$" />
       </concept>
       <concept id="65996431591631847" name="Algorithm.structure.EmtpyDataBlock" flags="ng" index="2_B1M0" />
+      <concept id="8543820349781020515" name="Algorithm.structure.FunctionBlockContainerRef" flags="ng" index="VSz0O">
+        <reference id="8543820349781020516" name="fblock_container" index="VSz0N" />
+        <child id="8543820349783411980" name="trigger_ports" index="V2r9r" />
+        <child id="8543820349783411964" name="data_ports" index="V2reF" />
+        <child id="8543820349784875059" name="trigger_mappings" index="VfXX$" />
+        <child id="8543820349781020518" name="data_mappings" index="VSz0L" />
+      </concept>
+      <concept id="8543820349781685663" name="Algorithm.structure.TriggerPortMapping" flags="ng" index="VV0F8">
+        <reference id="8543820349781685666" name="referred" index="VV0FP" />
+        <reference id="8543820349781685664" name="referring" index="VV0FR" />
+      </concept>
       <concept id="3725923812855012100" name="Algorithm.structure.FunctionBlock" flags="ng" index="2YOnzN">
         <child id="3725923812855012107" name="trigger_ports" index="2YOnzW" />
         <child id="3725923812855012104" name="data_ports" index="2YOnzZ" />
@@ -42,6 +53,7 @@
         <property id="65996431591721054" name="direction" index="2_BrWT" />
       </concept>
       <concept id="9203943671252472483" name="Algorithm.structure.FunctionBlockContainer" flags="ng" index="1u3Uyy">
+        <child id="8543820349784292001" name="function_block_refs" index="VdcnQ" />
         <child id="7268768516385108292" name="triggers" index="1psEGK" />
         <child id="4953108030111323919" name="function_blocks" index="3SlQUd" />
         <child id="4953108030111323921" name="scheduler_blocks" index="3SlQUj" />
@@ -121,6 +133,11 @@
   </node>
   <node concept="1u3Uyy" id="4yqmu7tIGuS">
     <property role="TrG5h" value="test_function" />
+    <node concept="1OHxBU" id="7qhJPtdF_1g" role="2YOnzZ">
+      <property role="TrG5h" value="test_port_salt" />
+      <property role="1OHxBQ" value="6po$YwiVCCn/Out" />
+      <node concept="10P55v" id="7qhJPtdF_1m" role="1OHwi9" />
+    </node>
     <node concept="1OHxBB" id="4yqmu7tQyoq" role="3SlQUq">
       <ref role="1OHxBS" node="4yqmu7tQyn_" resolve="in_1" />
       <ref role="1OHyup" node="4yqmu7tQgq0" resolve="salt" />
@@ -128,6 +145,10 @@
     <node concept="1OHxBB" id="4yqmu7tQyoz" role="3SlQUq">
       <ref role="1OHxBS" node="4yqmu7tQynG" resolve="in_2" />
       <ref role="1OHyup" node="4yqmu7tQglC" resolve="pepper" />
+    </node>
+    <node concept="1OHxBB" id="7qhJPtdF_1p" role="3SlQUq">
+      <ref role="1OHxBS" node="7qhJPtdF_1g" resolve="test_port_salt" />
+      <ref role="1OHyup" node="4yqmu7tQgq0" resolve="salt" />
     </node>
     <node concept="3wVtg0" id="4yqmu7tMypb" role="3SlQUm">
       <ref role="3wVtgf" node="4yqmu7tqbw9" resolve="d_1" />
@@ -192,6 +213,55 @@
     <node concept="1pt3V6" id="4yqmu7tIGuT" role="2YOnzW">
       <property role="TrG5h" value="trigger" />
       <property role="2_BrWT" value="3EtQu_uj5h/In" />
+    </node>
+  </node>
+  <node concept="1u3Uyy" id="7qhJPtdzMEX">
+    <property role="TrG5h" value="test_function_2" />
+    <node concept="1psEHa" id="7qhJPtdzMF6" role="1psEGK">
+      <ref role="1psEHb" node="7qhJPtdzMF4" resolve="trigger" />
+      <ref role="1psEGP" node="7qhJPtdzMEY" resolve="trigger" />
+    </node>
+    <node concept="1psEHa" id="7qhJPtdHSKW" role="1psEGK">
+      <ref role="1psEHb" node="7qhJPtdHSKO" resolve="test out" />
+      <ref role="1psEGP" node="7qhJPtdHSKK" resolve="trigger" />
+    </node>
+    <node concept="2__D7_" id="7qhJPtdzMF1" role="3SlQUj">
+      <property role="TrG5h" value="sched" />
+      <node concept="2_qZNI" id="7qhJPtdHSKT" role="2__D7$">
+        <ref role="2_qZNH" node="7qhJPtdHSKO" resolve="test out" />
+      </node>
+      <node concept="1pt3V6" id="7qhJPtdzMF4" role="1OHzVH">
+        <property role="TrG5h" value="trigger" />
+        <property role="2_BrWT" value="3EtQu_uj5h/In" />
+      </node>
+      <node concept="1pt3V6" id="7qhJPtdHSKO" role="1OHzVH">
+        <property role="TrG5h" value="test out" />
+        <property role="2_BrWT" value="3EtQu_uj5i/Out" />
+      </node>
+    </node>
+    <node concept="1pt3V6" id="7qhJPtdzMEY" role="2YOnzW">
+      <property role="TrG5h" value="trigger" />
+      <property role="2_BrWT" value="3EtQu_uj5h/In" />
+    </node>
+    <node concept="VSz0O" id="7qhJPtdF_16" role="VdcnQ">
+      <ref role="VSz0N" node="4yqmu7tIGuS" resolve="test_function" />
+      <node concept="VV0F8" id="7qhJPtdHSKM" role="VfXX$">
+        <ref role="VV0FR" node="7qhJPtdHSKK" resolve="trigger" />
+        <ref role="VV0FP" node="4yqmu7tIGuT" resolve="trigger" />
+      </node>
+      <node concept="1OHxBU" id="7qhJPtdF_1w" role="V2reF">
+        <property role="TrG5h" value="salt_port" />
+        <property role="1OHxBQ" value="6po$YwiVCCn/Out" />
+        <node concept="10P55v" id="7qhJPtdF_1$" role="1OHwi9" />
+      </node>
+      <node concept="2l5rDr" id="7qhJPtdF_18" role="VSz0L">
+        <ref role="2l5rDs" node="7qhJPtdF_1g" resolve="test_port_salt" />
+        <ref role="2l5rDq" node="7qhJPtdF_1g" resolve="test_port_salt" />
+      </node>
+      <node concept="1pt3V6" id="7qhJPtdHSKK" role="V2r9r">
+        <property role="TrG5h" value="trigger" />
+        <property role="2_BrWT" value="3EtQu_uj5h/In" />
+      </node>
     </node>
   </node>
 </model>

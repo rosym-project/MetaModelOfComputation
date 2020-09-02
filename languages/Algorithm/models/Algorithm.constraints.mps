@@ -55,6 +55,7 @@
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
+        <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -67,6 +68,10 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
+        <child id="1206060619838" name="condition" index="3eO9$A" />
+        <child id="1206060644605" name="statementList" index="3eOfB_" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -289,6 +294,57 @@
                 </node>
               </node>
             </node>
+            <node concept="3eNFk2" id="7qhJPtdsTvp" role="3eNLev">
+              <node concept="2OqwBi" id="7qhJPtdsU3q" role="3eO9$A">
+                <node concept="2OqwBi" id="7qhJPtdsTS8" role="2Oq$k0">
+                  <node concept="2rP1CM" id="7qhJPtdsTIv" role="2Oq$k0" />
+                  <node concept="1mfA1w" id="7qhJPtdsU1A" role="2OqNvi" />
+                </node>
+                <node concept="1mIQ4w" id="7qhJPtdsU67" role="2OqNvi">
+                  <node concept="chp4Y" id="7qhJPtdsU7U" role="cj9EA">
+                    <ref role="cht4Q" to="yvgz:7qhJPtdsSXz" resolve="FunctionBlockContainerRef" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="7qhJPtdsTvr" role="3eOfB_">
+                <node concept="3cpWs8" id="7qhJPtdsUcj" role="3cqZAp">
+                  <node concept="3cpWsn" id="7qhJPtdsUcm" role="3cpWs9">
+                    <property role="TrG5h" value="contexParent" />
+                    <node concept="3Tqbb2" id="7qhJPtdsUci" role="1tU5fm">
+                      <ref role="ehGHo" to="yvgz:7qhJPtdsSXz" resolve="FunctionBlockContainerRef" />
+                    </node>
+                    <node concept="1PxgMI" id="7qhJPtdsULS" role="33vP2m">
+                      <property role="1BlNFB" value="true" />
+                      <node concept="chp4Y" id="7qhJPtdsUNZ" role="3oSUPX">
+                        <ref role="cht4Q" to="yvgz:7qhJPtdsSXz" resolve="FunctionBlockContainerRef" />
+                      </node>
+                      <node concept="2OqwBi" id="7qhJPtdsUAV" role="1m5AlR">
+                        <node concept="2rP1CM" id="7qhJPtdsUte" role="2Oq$k0" />
+                        <node concept="1mfA1w" id="7qhJPtdsUK4" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs6" id="7qhJPtdsXgS" role="3cqZAp">
+                  <node concept="2YIFZM" id="7qhJPtdsXgT" role="3cqZAk">
+                    <ref role="1Pybhc" to="o8zo:7ipADkTevLm" resolve="SimpleRoleScope" />
+                    <ref role="37wK5l" to="o8zo:6t3ylNOzI9Y" resolve="forNamedElements" />
+                    <node concept="2OqwBi" id="7qhJPtdsXgU" role="37wK5m">
+                      <node concept="37vLTw" id="7qhJPtdsXgV" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7qhJPtdsUcm" resolve="contexParent" />
+                      </node>
+                      <node concept="3TrEf2" id="7qhJPtdsXgW" role="2OqNvi">
+                        <ref role="3Tt5mk" to="yvgz:7qhJPtdsSX$" resolve="fblock_container" />
+                      </node>
+                    </node>
+                    <node concept="359W_D" id="7qhJPtdsXgX" role="37wK5m">
+                      <ref role="359W_E" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+                      <ref role="359W_F" to="yvgz:3eP8Zudp5G8" resolve="data_ports" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -378,6 +434,249 @@
                 </node>
                 <node concept="3cpWs6" id="4yqmu7tOlyZ" role="3cqZAp">
                   <node concept="10Nm6u" id="4yqmu7tOlz0" role="3cqZAk" />
+                </node>
+              </node>
+            </node>
+            <node concept="3eNFk2" id="7qhJPtdsV4G" role="3eNLev">
+              <node concept="2OqwBi" id="7qhJPtdsVPO" role="3eO9$A">
+                <node concept="2OqwBi" id="7qhJPtdsVpK" role="2Oq$k0">
+                  <node concept="2rP1CM" id="7qhJPtdsV8V" role="2Oq$k0" />
+                  <node concept="1mfA1w" id="7qhJPtdsV$p" role="2OqNvi" />
+                </node>
+                <node concept="1mIQ4w" id="7qhJPtdsVZk" role="2OqNvi">
+                  <node concept="chp4Y" id="7qhJPtdsW2B" role="cj9EA">
+                    <ref role="cht4Q" to="yvgz:7qhJPtdsSXz" resolve="FunctionBlockContainerRef" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="7qhJPtdsV4I" role="3eOfB_">
+                <node concept="3cpWs8" id="7qhJPtdsW6X" role="3cqZAp">
+                  <node concept="3cpWsn" id="7qhJPtdsW6Y" role="3cpWs9">
+                    <property role="TrG5h" value="contexParent" />
+                    <node concept="3Tqbb2" id="7qhJPtdsW6Z" role="1tU5fm">
+                      <ref role="ehGHo" to="yvgz:7qhJPtdsSXz" resolve="FunctionBlockContainerRef" />
+                    </node>
+                    <node concept="1PxgMI" id="7qhJPtdsW70" role="33vP2m">
+                      <property role="1BlNFB" value="true" />
+                      <node concept="chp4Y" id="7qhJPtdsW71" role="3oSUPX">
+                        <ref role="cht4Q" to="yvgz:7qhJPtdsSXz" resolve="FunctionBlockContainerRef" />
+                      </node>
+                      <node concept="2OqwBi" id="7qhJPtdsW72" role="1m5AlR">
+                        <node concept="2rP1CM" id="7qhJPtdsW73" role="2Oq$k0" />
+                        <node concept="1mfA1w" id="7qhJPtdsW74" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs6" id="7qhJPtdsWaC" role="3cqZAp">
+                  <node concept="2YIFZM" id="7qhJPtdsWqP" role="3cqZAk">
+                    <ref role="37wK5l" to="o8zo:6t3ylNOzI9Y" resolve="forNamedElements" />
+                    <ref role="1Pybhc" to="o8zo:7ipADkTevLm" resolve="SimpleRoleScope" />
+                    <node concept="2OqwBi" id="7qhJPtdsWE7" role="37wK5m">
+                      <node concept="37vLTw" id="7qhJPtdsWtM" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7qhJPtdsW6Y" resolve="contexParent" />
+                      </node>
+                      <node concept="3TrEf2" id="7qhJPtdsWRM" role="2OqNvi">
+                        <ref role="3Tt5mk" to="yvgz:7qhJPtdsSX$" resolve="fblock_container" />
+                      </node>
+                    </node>
+                    <node concept="359W_D" id="7qhJPtdsWZF" role="37wK5m">
+                      <ref role="359W_E" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+                      <ref role="359W_F" to="yvgz:3eP8Zudp5G8" resolve="data_ports" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7qhJPtdxxBm">
+    <ref role="1M2myG" to="yvgz:7qhJPtdvrmv" resolve="TriggerPortMapping" />
+    <node concept="1N5Pfh" id="7qhJPtdxxBn" role="1Mr941">
+      <ref role="1N5Vy1" to="yvgz:7qhJPtdvrmy" resolve="referred" />
+      <node concept="3dgokm" id="7qhJPtdxxDS" role="1N6uqs">
+        <node concept="3clFbS" id="7qhJPtdxxDT" role="2VODD2">
+          <node concept="3clFbJ" id="7qhJPtdxynq" role="3cqZAp">
+            <node concept="2OqwBi" id="7qhJPtdxynr" role="3clFbw">
+              <node concept="2OqwBi" id="7qhJPtdxyns" role="2Oq$k0">
+                <node concept="2rP1CM" id="7qhJPtdxynt" role="2Oq$k0" />
+                <node concept="1mfA1w" id="7qhJPtdxynu" role="2OqNvi" />
+              </node>
+              <node concept="1mIQ4w" id="7qhJPtdxynv" role="2OqNvi">
+                <node concept="chp4Y" id="7qhJPtdxyv2" role="cj9EA">
+                  <ref role="cht4Q" to="yvgz:7qhJPtdsSXz" resolve="FunctionBlockContainerRef" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="7qhJPtdxynx" role="3clFbx">
+              <node concept="3cpWs8" id="7qhJPtdxyny" role="3cqZAp">
+                <node concept="3cpWsn" id="7qhJPtdxynz" role="3cpWs9">
+                  <property role="TrG5h" value="contextParent" />
+                  <node concept="3Tqbb2" id="7qhJPtdxyn$" role="1tU5fm">
+                    <ref role="ehGHo" to="yvgz:7qhJPtdsSXz" resolve="FunctionBlockContainerRef" />
+                  </node>
+                  <node concept="1PxgMI" id="7qhJPtdxyn_" role="33vP2m">
+                    <property role="1BlNFB" value="true" />
+                    <node concept="chp4Y" id="7qhJPtdxySY" role="3oSUPX">
+                      <ref role="cht4Q" to="yvgz:7qhJPtdsSXz" resolve="FunctionBlockContainerRef" />
+                    </node>
+                    <node concept="2OqwBi" id="7qhJPtdxynB" role="1m5AlR">
+                      <node concept="2rP1CM" id="7qhJPtdxynC" role="2Oq$k0" />
+                      <node concept="1mfA1w" id="7qhJPtdxynD" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs6" id="7qhJPtdxynE" role="3cqZAp">
+                <node concept="2YIFZM" id="7qhJPtdxynF" role="3cqZAk">
+                  <ref role="1Pybhc" to="o8zo:7ipADkTevLm" resolve="SimpleRoleScope" />
+                  <ref role="37wK5l" to="o8zo:6t3ylNOzI9Y" resolve="forNamedElements" />
+                  <node concept="2OqwBi" id="7qhJPtdxynG" role="37wK5m">
+                    <node concept="37vLTw" id="7qhJPtdxynH" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7qhJPtdxynz" resolve="contextParent" />
+                    </node>
+                    <node concept="3TrEf2" id="7qhJPtdxzey" role="2OqNvi">
+                      <ref role="3Tt5mk" to="yvgz:7qhJPtdsSX$" resolve="fblock_container" />
+                    </node>
+                  </node>
+                  <node concept="359W_D" id="7qhJPtdxynJ" role="37wK5m">
+                    <ref role="359W_E" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+                    <ref role="359W_F" to="yvgz:3eP8Zudp5Gb" resolve="trigger_ports" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="9aQIb" id="7qhJPtdxynK" role="9aQIa">
+              <node concept="3clFbS" id="7qhJPtdxynL" role="9aQI4">
+                <node concept="3cpWs8" id="7qhJPtdxynM" role="3cqZAp">
+                  <node concept="3cpWsn" id="7qhJPtdxynN" role="3cpWs9">
+                    <property role="TrG5h" value="errMsg" />
+                    <node concept="17QB3L" id="7qhJPtdxynO" role="1tU5fm" />
+                    <node concept="3cpWs3" id="7qhJPtdxynP" role="33vP2m">
+                      <node concept="2OqwBi" id="7qhJPtdxynQ" role="3uHU7w">
+                        <node concept="2OqwBi" id="7qhJPtdxynR" role="2Oq$k0">
+                          <node concept="2rP1CM" id="7qhJPtdxynS" role="2Oq$k0" />
+                          <node concept="1mfA1w" id="7qhJPtdxynT" role="2OqNvi" />
+                        </node>
+                        <node concept="2yIwOk" id="7qhJPtdxynU" role="2OqNvi" />
+                      </node>
+                      <node concept="Xl_RD" id="7qhJPtdxynV" role="3uHU7B">
+                        <property role="Xl_RC" value="unexpected parent concept for TriggerPortMapping: " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2xdQw9" id="7qhJPtdxynW" role="3cqZAp">
+                  <property role="2xdLsb" value="gZ5fh_4/error" />
+                  <node concept="2ShNRf" id="7qhJPtdxynX" role="9lYJj">
+                    <node concept="1pGfFk" id="7qhJPtdxynY" role="2ShVmc">
+                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                      <node concept="37vLTw" id="7qhJPtdxynZ" role="37wK5m">
+                        <ref role="3cqZAo" node="7qhJPtdxynN" resolve="errMsg" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="7qhJPtdxyo0" role="9lYJi">
+                    <ref role="3cqZAo" node="7qhJPtdxynN" resolve="errMsg" />
+                  </node>
+                </node>
+                <node concept="3cpWs6" id="7qhJPtdxyo1" role="3cqZAp">
+                  <node concept="10Nm6u" id="7qhJPtdxyo2" role="3cqZAk" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1N5Pfh" id="7qhJPtdxyXN" role="1Mr941">
+      <ref role="1N5Vy1" to="yvgz:7qhJPtdvrmw" resolve="referring" />
+      <node concept="3dgokm" id="7qhJPtdxzhk" role="1N6uqs">
+        <node concept="3clFbS" id="7qhJPtdxzhl" role="2VODD2">
+          <node concept="3clFbJ" id="7qhJPtdxziy" role="3cqZAp">
+            <node concept="2OqwBi" id="7qhJPtdxziz" role="3clFbw">
+              <node concept="2OqwBi" id="7qhJPtdxzi$" role="2Oq$k0">
+                <node concept="2rP1CM" id="7qhJPtdxzi_" role="2Oq$k0" />
+                <node concept="1mfA1w" id="7qhJPtdxziA" role="2OqNvi" />
+              </node>
+              <node concept="1mIQ4w" id="7qhJPtdxziB" role="2OqNvi">
+                <node concept="chp4Y" id="7qhJPtdxziC" role="cj9EA">
+                  <ref role="cht4Q" to="yvgz:7qhJPtdsSXz" resolve="FunctionBlockContainerRef" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="7qhJPtdxziD" role="3clFbx">
+              <node concept="3cpWs8" id="7qhJPtdxziE" role="3cqZAp">
+                <node concept="3cpWsn" id="7qhJPtdxziF" role="3cpWs9">
+                  <property role="TrG5h" value="contextParent" />
+                  <node concept="3Tqbb2" id="7qhJPtdxziG" role="1tU5fm">
+                    <ref role="ehGHo" to="yvgz:7qhJPtdsSXz" resolve="FunctionBlockContainerRef" />
+                  </node>
+                  <node concept="1PxgMI" id="7qhJPtdxziH" role="33vP2m">
+                    <property role="1BlNFB" value="true" />
+                    <node concept="chp4Y" id="7qhJPtdxziI" role="3oSUPX">
+                      <ref role="cht4Q" to="yvgz:7qhJPtdsSXz" resolve="FunctionBlockContainerRef" />
+                    </node>
+                    <node concept="2OqwBi" id="7qhJPtdxziJ" role="1m5AlR">
+                      <node concept="2rP1CM" id="7qhJPtdxziK" role="2Oq$k0" />
+                      <node concept="1mfA1w" id="7qhJPtdxziL" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs6" id="7qhJPtdxziM" role="3cqZAp">
+                <node concept="2YIFZM" id="7qhJPtdxziN" role="3cqZAk">
+                  <ref role="37wK5l" to="o8zo:6t3ylNOzI9Y" resolve="forNamedElements" />
+                  <ref role="1Pybhc" to="o8zo:7ipADkTevLm" resolve="SimpleRoleScope" />
+                  <node concept="37vLTw" id="7qhJPtdxziP" role="37wK5m">
+                    <ref role="3cqZAo" node="7qhJPtdxziF" resolve="contextParent" />
+                  </node>
+                  <node concept="359W_D" id="7qhJPtdxziR" role="37wK5m">
+                    <ref role="359W_E" to="yvgz:7qhJPtdsSXz" resolve="FunctionBlockContainerRef" />
+                    <ref role="359W_F" to="yvgz:7qhJPtdA0Oc" resolve="trigger_ports" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="9aQIb" id="7qhJPtdxziS" role="9aQIa">
+              <node concept="3clFbS" id="7qhJPtdxziT" role="9aQI4">
+                <node concept="3cpWs8" id="7qhJPtdxziU" role="3cqZAp">
+                  <node concept="3cpWsn" id="7qhJPtdxziV" role="3cpWs9">
+                    <property role="TrG5h" value="errMsg" />
+                    <node concept="17QB3L" id="7qhJPtdxziW" role="1tU5fm" />
+                    <node concept="3cpWs3" id="7qhJPtdxziX" role="33vP2m">
+                      <node concept="2OqwBi" id="7qhJPtdxziY" role="3uHU7w">
+                        <node concept="2OqwBi" id="7qhJPtdxziZ" role="2Oq$k0">
+                          <node concept="2rP1CM" id="7qhJPtdxzj0" role="2Oq$k0" />
+                          <node concept="1mfA1w" id="7qhJPtdxzj1" role="2OqNvi" />
+                        </node>
+                        <node concept="2yIwOk" id="7qhJPtdxzj2" role="2OqNvi" />
+                      </node>
+                      <node concept="Xl_RD" id="7qhJPtdxzj3" role="3uHU7B">
+                        <property role="Xl_RC" value="unexpected parent concept for TriggerPortMapping: " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2xdQw9" id="7qhJPtdxzj4" role="3cqZAp">
+                  <property role="2xdLsb" value="gZ5fh_4/error" />
+                  <node concept="2ShNRf" id="7qhJPtdxzj5" role="9lYJj">
+                    <node concept="1pGfFk" id="7qhJPtdxzj6" role="2ShVmc">
+                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                      <node concept="37vLTw" id="7qhJPtdxzj7" role="37wK5m">
+                        <ref role="3cqZAo" node="7qhJPtdxziV" resolve="errMsg" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="7qhJPtdxzj8" role="9lYJi">
+                    <ref role="3cqZAo" node="7qhJPtdxziV" resolve="errMsg" />
+                  </node>
+                </node>
+                <node concept="3cpWs6" id="7qhJPtdxzj9" role="3cqZAp">
+                  <node concept="10Nm6u" id="7qhJPtdxzja" role="3cqZAk" />
                 </node>
               </node>
             </node>
