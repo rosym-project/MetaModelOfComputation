@@ -132,9 +132,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
-        <reference id="4705942098322467736" name="decl" index="21nZrZ" />
-      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
@@ -148,17 +145,6 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
-      </concept>
-      <concept id="2453008993612717253" name="jetbrains.mps.lang.smodel.structure.EnumSwitchCaseBody_Expression" flags="ng" index="3X5gDF">
-        <child id="2453008993612717254" name="expression" index="3X5gDC" />
-      </concept>
-      <concept id="2453008993612559843" name="jetbrains.mps.lang.smodel.structure.EnumSwitchCase" flags="ng" index="3X5Udd">
-        <child id="2453008993612717146" name="body" index="3X5gFO" />
-        <child id="2453008993612559844" name="members" index="3X5Uda" />
-      </concept>
-      <concept id="2453008993612559839" name="jetbrains.mps.lang.smodel.structure.EnumSwitchExpression" flags="ng" index="3X5UdL">
-        <child id="2453008993612714935" name="cases" index="3X5gkp" />
-        <child id="2453008993612559840" name="enumExpression" index="3X5Ude" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -1171,34 +1157,14 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F2HdR" id="7OFootZUk_U" role="3EZMnx">
-        <ref role="1NtTu8" to="yvgz:3eP8Zudp5G8" resolve="data_ports" />
-        <node concept="l2Vlx" id="7OFootZUk_V" role="2czzBx" />
-        <node concept="pj6Ft" id="7OFootZUk_W" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="ljvvj" id="7OFootZUk_Y" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="4$FPG" id="7OFootZUk_Z" role="4_6I_">
-          <node concept="3clFbS" id="7OFootZUkA0" role="2VODD2">
-            <node concept="3cpWs6" id="7OFootZUkA1" role="3cqZAp">
-              <node concept="2ShNRf" id="7OFootZUkA2" role="3cqZAk">
-                <node concept="3zrR0B" id="7OFootZUkA3" role="2ShVmc">
-                  <node concept="3Tqbb2" id="7OFootZUkA4" role="3zrR0E">
-                    <ref role="ehGHo" to="tpck:gw2VY9q" resolve="BaseConcept" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="lj46D" id="7OFootZUkQF" role="3F10Kt">
+      <node concept="PMmxH" id="1BzfE3HbrA$" role="3EZMnx">
+        <ref role="PMmxG" node="1BzfE3HbruT" resolve="FBlockDataPorts_Comp" />
+        <node concept="ljvvj" id="1BzfE3HbrBZ" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0ifn" id="7OFootZV$fl" role="3EZMnx">
-        <node concept="ljvvj" id="7OFootZV$gH" role="3F10Kt">
+      <node concept="3F0ifn" id="1BzfE3Hg8Xp" role="3EZMnx">
+        <node concept="ljvvj" id="1BzfE3Hg8YN" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -1214,16 +1180,9 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F2HdR" id="3EtQu_xWuV" role="3EZMnx">
-        <ref role="1NtTu8" to="yvgz:3eP8Zudp5Gb" resolve="trigger_ports" />
-        <node concept="l2Vlx" id="3EtQu_xWuW" role="2czzBx" />
-        <node concept="pj6Ft" id="3EtQu_xWuX" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="lj46D" id="3EtQu_xWuY" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="ljvvj" id="3EtQu_xWuZ" role="3F10Kt">
+      <node concept="PMmxH" id="1BzfE3Hg8UC" role="3EZMnx">
+        <ref role="PMmxG" node="1BzfE3Hg8Ol" resolve="FBlockTriggerPorts_Comp" />
+        <node concept="ljvvj" id="1BzfE3Hg8YP" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -1476,46 +1435,14 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="3F2HdR" id="4yqmu7tMyFQ" role="3EZMnx">
-          <ref role="1NtTu8" to="yvgz:4yqmu7tADnp" resolve="ports" />
-          <node concept="l2Vlx" id="4yqmu7tMyFR" role="2czzBx" />
-          <node concept="pj6Ft" id="4yqmu7tMyFS" role="3F10Kt">
-            <property role="VOm3f" value="true" />
+        <node concept="1iCGBv" id="1BzfE3HaqAD" role="3EZMnx">
+          <ref role="1NtTu8" to="yvgz:bStLry5qcp" resolve="data" />
+          <node concept="1sVBvm" id="1BzfE3HaqAG" role="1sWHZn">
+            <node concept="PMmxH" id="1BzfE3HaqAT" role="2wV5jI">
+              <ref role="PMmxG" node="1BzfE3Haq_S" resolve="DBlockDataPorts_Comp" />
+            </node>
           </node>
-          <node concept="lj46D" id="4yqmu7tMyFT" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="ljvvj" id="4yqmu7tMyFU" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F0ifn" id="4yqmu7tMyFV" role="3EZMnx">
-          <node concept="ljvvj" id="4yqmu7tMyFW" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F0ifn" id="4yqmu7tMyFX" role="3EZMnx">
-          <property role="3F0ifm" value="mappings" />
-        </node>
-        <node concept="3F0ifn" id="4yqmu7tMyFY" role="3EZMnx">
-          <property role="3F0ifm" value=":" />
-          <node concept="11L4FC" id="4yqmu7tMyFZ" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="ljvvj" id="4yqmu7tMyG0" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F2HdR" id="4yqmu7tMyG1" role="3EZMnx">
-          <ref role="1NtTu8" to="yvgz:4yqmu7tzYf0" resolve="mappings" />
-          <node concept="l2Vlx" id="4yqmu7tMyG2" role="2czzBx" />
-          <node concept="pj6Ft" id="4yqmu7tMyG3" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="lj46D" id="4yqmu7tMyG4" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="ljvvj" id="4yqmu7tMyG5" role="3F10Kt">
+          <node concept="lj46D" id="1BzfE3HaqAV" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
@@ -1990,84 +1917,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="4yqmu7tD3PZ">
-    <ref role="1XX52x" to="yvgz:4yqmu7tzYeU" resolve="DataPortMapping" />
-    <node concept="3EZMnI" id="4yqmu7tD3Q5" role="2wV5jI">
-      <node concept="l2Vlx" id="4yqmu7tD3Q6" role="2iSdaV" />
-      <node concept="3F0ifn" id="4yqmu7tD3Q7" role="3EZMnx">
-        <property role="3F0ifm" value="data mapping:" />
-      </node>
-      <node concept="1iCGBv" id="4yqmu7tD3Q9" role="3EZMnx">
-        <ref role="1NtTu8" to="yvgz:4yqmu7tzYeV" resolve="referring" />
-        <node concept="1sVBvm" id="4yqmu7tD3Qc" role="1sWHZn">
-          <node concept="PMmxH" id="4yqmu7tD3TO" role="2wV5jI">
-            <ref role="PMmxG" node="4yqmu7tD3Q_" resolve="DataPort_Comp" />
-          </node>
-        </node>
-      </node>
-      <node concept="1HlG4h" id="4yqmu7tF76G" role="3EZMnx">
-        <node concept="1HfYo3" id="4yqmu7tF76I" role="1HlULh">
-          <node concept="3TQlhw" id="4yqmu7tF76K" role="1Hhtcw">
-            <node concept="3clFbS" id="4yqmu7tF76M" role="2VODD2">
-              <node concept="3cpWs6" id="4yqmu7tGXYT" role="3cqZAp">
-                <node concept="3X5UdL" id="4yqmu7tF7kZ" role="3cqZAk">
-                  <node concept="3X5Udd" id="4yqmu7tF8kg" role="3X5gkp">
-                    <node concept="21nZrQ" id="4yqmu7tF8pl" role="3X5Uda">
-                      <ref role="21nZrZ" to="yvgz:6po$YwiVCCm" resolve="In" />
-                    </node>
-                    <node concept="3X5gDF" id="5CpI4wBFG3X" role="3X5gFO">
-                      <node concept="Xl_RD" id="5CpI4wBFG3W" role="3X5gDC">
-                        <property role="Xl_RC" value="→" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3X5Udd" id="4yqmu7tF8vn" role="3X5gkp">
-                    <node concept="21nZrQ" id="4yqmu7tF8KV" role="3X5Uda">
-                      <ref role="21nZrZ" to="yvgz:6po$YwiVCCn" resolve="Out" />
-                    </node>
-                    <node concept="3X5gDF" id="5CpI4wBFGxU" role="3X5gFO">
-                      <node concept="Xl_RD" id="5CpI4wBFGxT" role="3X5gDC">
-                        <property role="Xl_RC" value="←" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3X5Udd" id="4yqmu7tF8VD" role="3X5gkp">
-                    <node concept="21nZrQ" id="4yqmu7tF91h" role="3X5Uda">
-                      <ref role="21nZrZ" to="yvgz:6po$YwiVCCq" resolve="InOut" />
-                    </node>
-                    <node concept="3X5gDF" id="4yqmu7tF9aZ" role="3X5gFO">
-                      <node concept="Xl_RD" id="4yqmu7tF9aY" role="3X5gDC">
-                        <property role="Xl_RC" value="↔" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="4yqmu7tF82S" role="3X5Ude">
-                    <node concept="2OqwBi" id="4yqmu7tF7x_" role="2Oq$k0">
-                      <node concept="pncrf" id="4yqmu7tF7lG" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="4yqmu7tF7Jd" role="2OqNvi">
-                        <ref role="3Tt5mk" to="yvgz:4yqmu7tzYeX" resolve="referred" />
-                      </node>
-                    </node>
-                    <node concept="3TrcHB" id="4yqmu7tF8hq" role="2OqNvi">
-                      <ref role="3TsBF5" to="yvgz:6po$YwiVCCu" resolve="direction" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1iCGBv" id="4yqmu7tD3Qg" role="3EZMnx">
-        <ref role="1NtTu8" to="yvgz:4yqmu7tzYeX" resolve="referred" />
-        <node concept="1sVBvm" id="4yqmu7tD3Qj" role="1sWHZn">
-          <node concept="PMmxH" id="4yqmu7tD3TS" role="2wV5jI">
-            <ref role="PMmxG" node="4yqmu7tD3Q_" resolve="DataPort_Comp" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="PKFIW" id="4yqmu7tD3Q_">
     <property role="TrG5h" value="DataPort_Comp" />
     <ref role="1XX52x" to="yvgz:6po$YwiVCCi" resolve="DataPort" />
@@ -2112,74 +1961,6 @@
       <node concept="l2Vlx" id="7qhJPtdvrFG" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="7qhJPtdvrPx">
-    <ref role="1XX52x" to="yvgz:7qhJPtdvrmv" resolve="TriggerPortMapping" />
-    <node concept="3EZMnI" id="7qhJPtdvrPz" role="2wV5jI">
-      <node concept="l2Vlx" id="7qhJPtdvrP$" role="2iSdaV" />
-      <node concept="3F0ifn" id="7qhJPtdvrP_" role="3EZMnx">
-        <property role="3F0ifm" value="trigger mapping" />
-      </node>
-      <node concept="1iCGBv" id="7qhJPtdvrPB" role="3EZMnx">
-        <ref role="1NtTu8" to="yvgz:7qhJPtdvrmw" resolve="referring" />
-        <node concept="1sVBvm" id="7qhJPtdvrPE" role="1sWHZn">
-          <node concept="PMmxH" id="7qhJPtdvrQf" role="2wV5jI">
-            <ref role="PMmxG" node="7qhJPtdvrF_" resolve="TriggerPort_Comp" />
-          </node>
-        </node>
-      </node>
-      <node concept="1HlG4h" id="7qhJPtdvrR2" role="3EZMnx">
-        <node concept="1HfYo3" id="7qhJPtdvrR4" role="1HlULh">
-          <node concept="3TQlhw" id="7qhJPtdvrR6" role="1Hhtcw">
-            <node concept="3clFbS" id="7qhJPtdvrR8" role="2VODD2">
-              <node concept="3cpWs6" id="7qhJPtdvrW6" role="3cqZAp">
-                <node concept="3X5UdL" id="7qhJPtdvrW7" role="3cqZAk">
-                  <node concept="3X5Udd" id="7qhJPtdvrW8" role="3X5gkp">
-                    <node concept="21nZrQ" id="7qhJPtdvsto" role="3X5Uda">
-                      <ref role="21nZrZ" to="yvgz:3EtQu_uj5h" resolve="In" />
-                    </node>
-                    <node concept="3X5gDF" id="7qhJPtdvrWa" role="3X5gFO">
-                      <node concept="Xl_RD" id="7qhJPtdvrWb" role="3X5gDC">
-                        <property role="Xl_RC" value="→" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3X5Udd" id="7qhJPtdvrWc" role="3X5gkp">
-                    <node concept="21nZrQ" id="7qhJPtdvsuj" role="3X5Uda">
-                      <ref role="21nZrZ" to="yvgz:3EtQu_uj5i" resolve="Out" />
-                    </node>
-                    <node concept="3X5gDF" id="7qhJPtdvrWe" role="3X5gFO">
-                      <node concept="Xl_RD" id="7qhJPtdvrWf" role="3X5gDC">
-                        <property role="Xl_RC" value="←" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="7qhJPtdvrWk" role="3X5Ude">
-                    <node concept="2OqwBi" id="7qhJPtdvrWl" role="2Oq$k0">
-                      <node concept="pncrf" id="7qhJPtdvrWm" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="7qhJPtdvrWn" role="2OqNvi">
-                        <ref role="3Tt5mk" to="yvgz:7qhJPtdvrmy" resolve="referred" />
-                      </node>
-                    </node>
-                    <node concept="3TrcHB" id="7qhJPtdvsqu" role="2OqNvi">
-                      <ref role="3TsBF5" to="yvgz:3EtQu_tWxu" resolve="direction" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1iCGBv" id="7qhJPtdvrPI" role="3EZMnx">
-        <ref role="1NtTu8" to="yvgz:7qhJPtdvrmy" resolve="referred" />
-        <node concept="1sVBvm" id="7qhJPtdvrPL" role="1sWHZn">
-          <node concept="PMmxH" id="7qhJPtdvrQj" role="2wV5jI">
-            <ref role="PMmxG" node="7qhJPtdvrF_" resolve="TriggerPort_Comp" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="7qhJPtdA0gp">
     <ref role="1XX52x" to="yvgz:7qhJPtdsSXz" resolve="FunctionBlockContainerRef" />
     <node concept="3EZMnI" id="7qhJPtdB90t" role="2wV5jI">
@@ -2221,21 +2002,19 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="3F2HdR" id="7qhJPtdB90L" role="3EZMnx">
-          <ref role="1NtTu8" to="yvgz:7qhJPtdA0NW" resolve="data_ports" />
-          <node concept="l2Vlx" id="7qhJPtdB90M" role="2czzBx" />
-          <node concept="pj6Ft" id="7qhJPtdB90N" role="3F10Kt">
-            <property role="VOm3f" value="true" />
+        <node concept="1iCGBv" id="1BzfE3HbrvF" role="3EZMnx">
+          <ref role="1NtTu8" to="yvgz:7qhJPtdsSX$" resolve="fblock_container" />
+          <node concept="1sVBvm" id="1BzfE3HbrvI" role="1sWHZn">
+            <node concept="PMmxH" id="1BzfE3Hbrwf" role="2wV5jI">
+              <ref role="PMmxG" node="1BzfE3HbruT" resolve="FBlockDataPorts_Comp" />
+            </node>
           </node>
-          <node concept="lj46D" id="7qhJPtdB90O" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="ljvvj" id="7qhJPtdB90P" role="3F10Kt">
+          <node concept="ljvvj" id="1BzfE3Hbrwh" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="3F0ifn" id="7qhJPtdB90Q" role="3EZMnx">
-          <node concept="ljvvj" id="7qhJPtdB90R" role="3F10Kt">
+        <node concept="3F0ifn" id="1BzfE3HbrwL" role="3EZMnx">
+          <node concept="ljvvj" id="1BzfE3Hbrxg" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
@@ -2251,76 +2030,14 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="3F2HdR" id="7qhJPtdB90W" role="3EZMnx">
-          <ref role="1NtTu8" to="yvgz:7qhJPtdA0Oc" resolve="trigger_ports" />
-          <node concept="l2Vlx" id="7qhJPtdB90X" role="2czzBx" />
-          <node concept="pj6Ft" id="7qhJPtdB90Y" role="3F10Kt">
-            <property role="VOm3f" value="true" />
+        <node concept="1iCGBv" id="1BzfE3Hg8ZF" role="3EZMnx">
+          <ref role="1NtTu8" to="yvgz:7qhJPtdsSX$" resolve="fblock_container" />
+          <node concept="1sVBvm" id="1BzfE3Hg8ZH" role="1sWHZn">
+            <node concept="PMmxH" id="1BzfE3Hg90d" role="2wV5jI">
+              <ref role="PMmxG" node="1BzfE3Hg8Ol" resolve="FBlockTriggerPorts_Comp" />
+            </node>
           </node>
-          <node concept="lj46D" id="7qhJPtdB90Z" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="ljvvj" id="7qhJPtdB910" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F0ifn" id="7qhJPtdB911" role="3EZMnx">
-          <node concept="ljvvj" id="7qhJPtdB912" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F0ifn" id="7qhJPtdB913" role="3EZMnx">
-          <property role="3F0ifm" value="data_mappings" />
-        </node>
-        <node concept="3F0ifn" id="7qhJPtdB914" role="3EZMnx">
-          <property role="3F0ifm" value=":" />
-          <node concept="11L4FC" id="7qhJPtdB915" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="ljvvj" id="7qhJPtdB916" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F2HdR" id="7qhJPtdB917" role="3EZMnx">
-          <ref role="1NtTu8" to="yvgz:7qhJPtdsSXA" resolve="data_mappings" />
-          <node concept="l2Vlx" id="7qhJPtdB918" role="2czzBx" />
-          <node concept="pj6Ft" id="7qhJPtdB919" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="lj46D" id="7qhJPtdB91a" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="ljvvj" id="7qhJPtdB91b" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F0ifn" id="7qhJPtdF_ZY" role="3EZMnx">
-          <node concept="ljvvj" id="7qhJPtdF_ZZ" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F0ifn" id="7qhJPtdFA00" role="3EZMnx">
-          <property role="3F0ifm" value="trigger_mappings" />
-        </node>
-        <node concept="3F0ifn" id="7qhJPtdFA01" role="3EZMnx">
-          <property role="3F0ifm" value=":" />
-          <node concept="11L4FC" id="7qhJPtdFA02" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="ljvvj" id="7qhJPtdFA03" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F2HdR" id="7qhJPtdFA04" role="3EZMnx">
-          <ref role="1NtTu8" to="yvgz:7qhJPtdFA0N" resolve="trigger_mappings" />
-          <node concept="l2Vlx" id="7qhJPtdFA05" role="2czzBx" />
-          <node concept="pj6Ft" id="7qhJPtdFA06" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="lj46D" id="7qhJPtdFA07" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="ljvvj" id="7qhJPtdFA08" role="3F10Kt">
+          <node concept="ljvvj" id="1BzfE3Hg90f" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
@@ -2329,6 +2046,48 @@
         <property role="3F0ifm" value="}" />
         <node concept="3mYdg7" id="7qhJPtdB91d" role="3F10Kt">
           <property role="1413C4" value="body-brace" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="1BzfE3Haq_S">
+    <property role="TrG5h" value="DBlockDataPorts_Comp" />
+    <ref role="1XX52x" to="yvgz:29RmJoXeePk" resolve="DataBlock" />
+    <node concept="3EZMnI" id="1BzfE3Haq_U" role="2wV5jI">
+      <node concept="3F2HdR" id="1BzfE3HaqA6" role="3EZMnx">
+        <ref role="1NtTu8" to="yvgz:6jvQBgXExiw" resolve="ports" />
+        <node concept="l2Vlx" id="1BzfE3HaqAo" role="2czzBx" />
+        <node concept="pj6Ft" id="1BzfE3Hbrvf" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="1BzfE3HaqAX" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="1BzfE3HbruT">
+    <property role="TrG5h" value="FBlockDataPorts_Comp" />
+    <ref role="1XX52x" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+    <node concept="3EZMnI" id="1BzfE3HbruY" role="2wV5jI">
+      <node concept="l2Vlx" id="1BzfE3Hbrv4" role="2iSdaV" />
+      <node concept="3F2HdR" id="1BzfE3Hbrv7" role="3EZMnx">
+        <ref role="1NtTu8" to="yvgz:3eP8Zudp5G8" resolve="data_ports" />
+        <node concept="l2Vlx" id="1BzfE3Hbrv8" role="2czzBx" />
+        <node concept="pj6Ft" id="1BzfE3Hbrvb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="1BzfE3Hg8Ol">
+    <property role="TrG5h" value="FBlockTriggerPorts_Comp" />
+    <ref role="1XX52x" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+    <node concept="3EZMnI" id="1BzfE3Hg8Or" role="2wV5jI">
+      <node concept="l2Vlx" id="1BzfE3Hg8Os" role="2iSdaV" />
+      <node concept="3F2HdR" id="1BzfE3Hg8Ox" role="3EZMnx">
+        <ref role="1NtTu8" to="yvgz:3eP8Zudp5Gb" resolve="trigger_ports" />
+        <node concept="l2Vlx" id="1BzfE3Hg8Oz" role="2czzBx" />
+        <node concept="pj6Ft" id="1BzfE3Hg8OA" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
     </node>
