@@ -185,8 +185,8 @@
     <property role="EcuMT" value="7268768516385006770" />
     <property role="TrG5h" value="TriggerPort" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="6jvQBgXEYiN" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="4GEaPFYl_O4" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
     </node>
     <node concept="1TJgyi" id="3EtQu_tWxu" role="1TKVEl">
       <property role="IQ2nx" value="65996431591721054" />
