@@ -35,6 +35,7 @@
         <child id="7374807014778514693" name="trigger_ports" index="1OHzVH" />
       </concept>
       <concept id="2483553733153713489" name="Algorithm.structure.EmptyFunctionBlock" flags="ng" index="vjVuB" />
+      <concept id="2077603528172925392" name="Algorithm.structure.Library" flags="ng" index="2$3l2Q" />
       <concept id="65996431592360841" name="Algorithm.structure.TriggerPortRef" flags="ng" index="2_qZNI">
         <reference id="65996431592360842" name="trigger_port" index="2_qZNH" />
       </concept>
@@ -617,6 +618,9 @@
         <node concept="10P55v" id="4LsB5Tjq6QD" role="1OHwi9" />
       </node>
     </node>
+  </node>
+  <node concept="2$3l2Q" id="1Nl8mqSRVQv">
+    <property role="TrG5h" value="my_lib" />
   </node>
 </model>
 
