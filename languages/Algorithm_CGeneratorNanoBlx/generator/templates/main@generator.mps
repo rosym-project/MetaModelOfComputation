@@ -131,7 +131,7 @@
         <child id="5082088080656976323" name="newlineMarker" index="2EinRH" />
         <child id="1145195647825954802" name="words" index="356sEH" />
       </concept>
-      <concept id="1145195647825954793" name="com.dslfoundry.plaintextgen.structure.SpaceIndentedText" flags="ng" index="356sEQ">
+      <concept id="1145195647825954793" name="com.dslfoundry.plaintextgen.structure.IndentedText" flags="ng" index="356sEQ">
         <property id="5198309202558919052" name="indent" index="333NGx" />
       </concept>
       <concept id="1145195647825954788" name="com.dslfoundry.plaintextgen.structure.TextgenText" flags="ng" index="356sEV">
@@ -1365,10 +1365,7 @@
       </node>
       <node concept="356sEK" id="4yqmu7tQKdd" role="383Ya9">
         <node concept="356sEF" id="4yqmu7tQKde" role="356sEH">
-          <property role="TrG5h" value="void func_name(struct * nblx)" />
-        </node>
-        <node concept="356sEF" id="7qhJPtdY4tI" role="356sEH">
-          <property role="TrG5h" value=";" />
+          <property role="TrG5h" value="void func_name(struct * nblx);" />
         </node>
         <node concept="2EixSi" id="4yqmu7tQKdf" role="2EinRH" />
         <node concept="1WS0z7" id="4yqmu7tQKoq" role="lGtFl">
@@ -1405,6 +1402,9 @@
         </node>
         <node concept="1sPUBX" id="4yqmu7tR3eV" role="lGtFl">
           <ref role="v9R2y" node="7qhJPtdXTc6" resolve="switch_FunctionAndScheduleSignature" />
+          <node concept="3clFbT" id="JbcN75YnW" role="v9R3O">
+            <property role="3clFbU" value="true" />
+          </node>
         </node>
       </node>
       <node concept="356sEK" id="4yqmu7tQK9S" role="383Ya9">
@@ -1413,9 +1413,12 @@
       <node concept="356sEK" id="7qhJPtdWSh7" role="383Ya9">
         <node concept="2EixSi" id="7qhJPtdWSh9" role="2EinRH" />
         <node concept="356sEF" id="7qhJPtdXs71" role="356sEH">
-          <property role="TrG5h" value="void function_schedule()" />
+          <property role="TrG5h" value="void function_schedule();" />
           <node concept="1sPUBX" id="7qhJPtdY8L7" role="lGtFl">
             <ref role="v9R2y" node="7qhJPtdXTc6" resolve="switch_FunctionAndScheduleSignature" />
+            <node concept="3clFbT" id="JbcN75Yq$" role="v9R3O">
+              <property role="3clFbU" value="true" />
+            </node>
           </node>
         </node>
         <node concept="1WS0z7" id="7qhJPtdXsgO" role="lGtFl">
@@ -1431,9 +1434,6 @@
               </node>
             </node>
           </node>
-        </node>
-        <node concept="356sEF" id="7qhJPtdY8K7" role="356sEH">
-          <property role="TrG5h" value=";" />
         </node>
       </node>
       <node concept="356sEK" id="7qhJPtdXs73" role="383Ya9">
@@ -1504,6 +1504,7 @@
               <property role="TrG5h" value="type" />
               <node concept="1sPUBX" id="4yqmu7tR6XL" role="lGtFl">
                 <ref role="v9R2y" node="7qhJPtdXTc6" resolve="switch_FunctionAndScheduleSignature" />
+                <node concept="3clFbT" id="JbcN75YFe" role="v9R3O" />
               </node>
             </node>
             <node concept="356sEF" id="4yqmu7tR6Xx" role="356sEH">
@@ -1942,6 +1943,10 @@
   </node>
   <node concept="jVnub" id="7qhJPtdXTc6">
     <property role="TrG5h" value="switch_FunctionAndScheduleSignature" />
+    <node concept="1N15co" id="JbcN75XpQ" role="1s_3oS">
+      <property role="TrG5h" value="end_statement" />
+      <node concept="10P_77" id="JbcN75Xq0" role="1N15GL" />
+    </node>
     <node concept="3aamgX" id="7qhJPtdXTc7" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
@@ -1996,6 +2001,20 @@
             <property role="TrG5h" value=")" />
           </node>
           <node concept="2EixSi" id="7qhJPtdXTPB" role="2EinRH" />
+          <node concept="356sEF" id="JbcN75Xq5" role="356sEH">
+            <property role="TrG5h" value=";" />
+            <node concept="1W57fq" id="JbcN75Xxc" role="lGtFl">
+              <node concept="3IZrLx" id="JbcN75Xxd" role="3IZSJc">
+                <node concept="3clFbS" id="JbcN75Xxe" role="2VODD2">
+                  <node concept="3clFbF" id="JbcN75X_b" role="3cqZAp">
+                    <node concept="v3LJS" id="JbcN75X_a" role="3clFbG">
+                      <ref role="v3LJV" node="JbcN75XpQ" resolve="end_statement" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -2157,6 +2176,20 @@
           <node concept="356sEF" id="7qhJPtdXZlp" role="356sEH">
             <property role="TrG5h" value=")" />
           </node>
+          <node concept="356sEF" id="JbcN75XVU" role="356sEH">
+            <property role="TrG5h" value=";" />
+            <node concept="1W57fq" id="JbcN75XVV" role="lGtFl">
+              <node concept="3IZrLx" id="JbcN75XVW" role="3IZSJc">
+                <node concept="3clFbS" id="JbcN75XVX" role="2VODD2">
+                  <node concept="3clFbF" id="JbcN75XVY" role="3cqZAp">
+                    <node concept="v3LJS" id="JbcN75XVZ" role="3clFbG">
+                      <ref role="v3LJV" node="JbcN75XpQ" resolve="end_statement" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -2170,6 +2203,7 @@
           <property role="TrG5h" value="void container_schedule()" />
           <node concept="1sPUBX" id="7qhJPtdYdql" role="lGtFl">
             <ref role="v9R2y" node="7qhJPtdXTc6" resolve="switch_FunctionAndScheduleSignature" />
+            <node concept="3clFbT" id="JbcN75YJO" role="v9R3O" />
           </node>
         </node>
         <node concept="356sEF" id="7qhJPtdYdpT" role="356sEH">
