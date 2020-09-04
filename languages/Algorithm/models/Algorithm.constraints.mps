@@ -16,6 +16,7 @@
   <imports>
     <import index="prp3" ref="r:52ea8481-08b2-4cbd-ad9d-1b42825f7d09(jetbrains.mps.lang.constraints.rules.kinds.constraints)" />
     <import index="yvgz" ref="r:3b411c10-569a-4299-9505-176144359d3b(Algorithm.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
@@ -51,13 +52,13 @@
     <node concept="1N5Pfh" id="44Cv2OMFuaA" role="1Mr941">
       <ref role="1N5Vy1" to="yvgz:6po$YwiVCCg" resolve="port1" />
       <node concept="1dDu$B" id="44Cv2OMFud1" role="1N6uqs">
-        <ref role="1dDu$A" to="yvgz:6po$YwiVCCi" resolve="DataPort" />
+        <ref role="1dDu$A" to="tpee:4k3qd$cSlJ3" resolve="BaseVariableDeclaration" />
       </node>
     </node>
     <node concept="1N5Pfh" id="44Cv2OMFueD" role="1Mr941">
       <ref role="1N5Vy1" to="yvgz:6po$YwiVFhL" resolve="port2" />
       <node concept="1dDu$B" id="44Cv2OMFugj" role="1N6uqs">
-        <ref role="1dDu$A" to="yvgz:6po$YwiVCCi" resolve="DataPort" />
+        <ref role="1dDu$A" to="tpee:4k3qd$cSlJ3" resolve="BaseVariableDeclaration" />
       </node>
     </node>
   </node>
