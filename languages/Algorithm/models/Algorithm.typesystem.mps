@@ -7,8 +7,8 @@
   </languages>
   <imports>
     <import index="yvgz" ref="r:3b411c10-569a-4299-9505-176144359d3b(Algorithm.structure)" implicit="true" />
-    <import index="ixp9" ref="r:172690fd-5286-4218-b525-cadaaf47af22(Algorithm.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="ixp9" ref="r:172690fd-5286-4218-b525-cadaaf47af22(Algorithm.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
@@ -342,111 +342,6 @@
     <node concept="1YaCAy" id="WUr5EYI42N" role="1YuTPh">
       <property role="TrG5h" value="dataConnector" />
       <ref role="1YaFvo" to="yvgz:6po$YwiVCCf" resolve="DataConnector" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="5Tr1VsJGw_T">
-    <property role="TrG5h" value="check_FixedDataFlowSchedulerBlock" />
-    <property role="3GE5qa" value="definitions.schedule" />
-    <node concept="3clFbS" id="5Tr1VsJGw_U" role="18ibNy">
-      <node concept="3cpWs8" id="5Tr1VsJG_zw" role="3cqZAp">
-        <node concept="3cpWsn" id="5Tr1VsJG_zz" role="3cpWs9">
-          <property role="TrG5h" value="parentContainer" />
-          <node concept="3Tqbb2" id="5Tr1VsJG_zu" role="1tU5fm">
-            <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
-          </node>
-          <node concept="1PxgMI" id="5Tr1VsJGAbJ" role="33vP2m">
-            <property role="1BlNFB" value="true" />
-            <node concept="chp4Y" id="5Tr1VsJGAgx" role="3oSUPX">
-              <ref role="cht4Q" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
-            </node>
-            <node concept="2OqwBi" id="5Tr1VsJG_JZ" role="1m5AlR">
-              <node concept="1YBJjd" id="5Tr1VsJG_$F" role="2Oq$k0">
-                <ref role="1YBMHb" node="5Tr1VsJGw_W" resolve="fixedDataFlowSchedulerBlock" />
-              </node>
-              <node concept="1mfA1w" id="5Tr1VsJGA3y" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbF" id="5Tr1VsJGwA1" role="3cqZAp">
-        <node concept="2OqwBi" id="5Tr1VsJGyyP" role="3clFbG">
-          <node concept="2OqwBi" id="5Tr1VsJGwJe" role="2Oq$k0">
-            <node concept="1YBJjd" id="5Tr1VsJGwA0" role="2Oq$k0">
-              <ref role="1YBMHb" node="5Tr1VsJGw_W" resolve="fixedDataFlowSchedulerBlock" />
-            </node>
-            <node concept="3Tsc0h" id="5Tr1VsJGwUo" role="2OqNvi">
-              <ref role="3TtcxE" to="yvgz:3EtQu_veq3" resolve="schedule" />
-            </node>
-          </node>
-          <node concept="2es0OD" id="5Tr1VsJG$aF" role="2OqNvi">
-            <node concept="1bVj0M" id="5Tr1VsJG$aH" role="23t8la">
-              <node concept="3clFbS" id="5Tr1VsJG$aI" role="1bW5cS">
-                <node concept="3cpWs8" id="5Tr1VsJGBRr" role="3cqZAp">
-                  <node concept="3cpWsn" id="5Tr1VsJGBRs" role="3cpWs9">
-                    <property role="TrG5h" value="connectedTrigPorts" />
-                    <node concept="2I9FWS" id="5Tr1VsJGBRq" role="1tU5fm" />
-                    <node concept="2OqwBi" id="5Tr1VsJGABK" role="33vP2m">
-                      <node concept="37vLTw" id="5Tr1VsJGAkf" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5Tr1VsJG_zz" resolve="parentContainer" />
-                      </node>
-                      <node concept="2qgKlT" id="5Tr1VsJGAPk" role="2OqNvi">
-                        <ref role="37wK5l" to="ixp9:2RC7aVK84L5" resolve="findConnectedTriggerPorts" />
-                        <node concept="2OqwBi" id="5Tr1VsJGB7o" role="37wK5m">
-                          <node concept="37vLTw" id="5Tr1VsJGAW2" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5Tr1VsJG$aJ" resolve="trigPortRef" />
-                          </node>
-                          <node concept="3TrEf2" id="5Tr1VsJGBox" role="2OqNvi">
-                            <ref role="3Tt5mk" to="yvgz:3EtQu_woIa" resolve="trigger_port" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbJ" id="5Tr1VsJG$lH" role="3cqZAp">
-                  <node concept="3y3z36" id="5Tr1VsJGFeD" role="3clFbw">
-                    <node concept="3cmrfG" id="5Tr1VsJGFGq" role="3uHU7w">
-                      <property role="3cmrfH" value="1" />
-                    </node>
-                    <node concept="2OqwBi" id="5Tr1VsJG$_c" role="3uHU7B">
-                      <node concept="37vLTw" id="5Tr1VsJGCiD" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5Tr1VsJGBRs" resolve="connectedTrigPorts" />
-                      </node>
-                      <node concept="34oBXx" id="5Tr1VsJGDXz" role="2OqNvi" />
-                    </node>
-                  </node>
-                  <node concept="3clFbS" id="5Tr1VsJG$lJ" role="3clFbx">
-                    <node concept="2MkqsV" id="5Tr1VsJGIsI" role="3cqZAp">
-                      <node concept="37vLTw" id="5Tr1VsJGI_Q" role="1urrMF">
-                        <ref role="3cqZAo" node="5Tr1VsJG$aJ" resolve="trigPortRef" />
-                      </node>
-                      <node concept="3cpWs3" id="5Tr1VsJE5UC" role="2MkJ7o">
-                        <node concept="2OqwBi" id="5Tr1VsJE8jo" role="3uHU7w">
-                          <node concept="37vLTw" id="5Tr1VsJGGBG" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5Tr1VsJGBRs" resolve="connectedTrigPorts" />
-                          </node>
-                          <node concept="34oBXx" id="5Tr1VsJEaga" role="2OqNvi" />
-                        </node>
-                        <node concept="Xl_RD" id="5Tr1VsJE4_K" role="3uHU7B">
-                          <property role="Xl_RC" value="expected exactly 1 connected trigger port, found: " />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="Rh6nW" id="5Tr1VsJG$aJ" role="1bW2Oz">
-                <property role="TrG5h" value="trigPortRef" />
-                <node concept="2jxLKc" id="5Tr1VsJG$aK" role="1tU5fm" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="5Tr1VsJGw_W" role="1YuTPh">
-      <property role="TrG5h" value="fixedDataFlowSchedulerBlock" />
-      <ref role="1YaFvo" to="yvgz:3EtQu_veq2" resolve="FixedDataFlowSchedulerBlock" />
     </node>
   </node>
   <node concept="18kY7G" id="5bwHbMcexn1">

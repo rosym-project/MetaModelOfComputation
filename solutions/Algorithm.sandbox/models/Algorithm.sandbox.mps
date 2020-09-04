@@ -627,6 +627,27 @@
     <node concept="2_B1M1" id="1Nl8mqSVywK" role="2$cYEw">
       <property role="TrG5h" value="my_empty_sblx" />
     </node>
+    <node concept="2__D7_" id="1Nl8mqSVyWV" role="2$cYEw">
+      <property role="TrG5h" value="fooSched" />
+      <node concept="2_qZNI" id="1Nl8mqSVyXa" role="2__D7$">
+        <ref role="2_qZNH" node="1Nl8mqSVyX2" resolve="schedBar" />
+      </node>
+      <node concept="2_qZNI" id="1Nl8mqSVyXb" role="2__D7$">
+        <ref role="2_qZNH" node="1Nl8mqSVyX3" resolve="schedBaz" />
+      </node>
+      <node concept="1pt3V6" id="1Nl8mqSVyX1" role="1OHzVH">
+        <property role="TrG5h" value="fooSchedTrigger" />
+        <property role="2_BrWT" value="3EtQu_uj5h/In" />
+      </node>
+      <node concept="1pt3V6" id="1Nl8mqSVyX2" role="1OHzVH">
+        <property role="TrG5h" value="schedBar" />
+        <property role="2_BrWT" value="3EtQu_uj5i/Out" />
+      </node>
+      <node concept="1pt3V6" id="1Nl8mqSVyX3" role="1OHzVH">
+        <property role="TrG5h" value="schedBaz" />
+        <property role="2_BrWT" value="3EtQu_uj5i/Out" />
+      </node>
+    </node>
   </node>
 </model>
 
