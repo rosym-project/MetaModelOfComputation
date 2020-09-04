@@ -38,6 +38,9 @@
       <concept id="2077603528172925392" name="Algorithm.structure.Library" flags="ng" index="2$3l2Q">
         <child id="2077603528173865926" name="scheduler_blocks" index="2$cYEw" />
       </concept>
+      <concept id="2077603528175021362" name="Algorithm.structure.SchedulerBlockInst" flags="ng" index="2$bkLk">
+        <reference id="2077603528175021366" name="type" index="2$bkLg" />
+      </concept>
       <concept id="65996431592360841" name="Algorithm.structure.TriggerPortRef" flags="ng" index="2_qZNI">
         <reference id="65996431592360842" name="trigger_port" index="2_qZNH" />
       </concept>
@@ -95,6 +98,14 @@
   </registry>
   <node concept="1u3Uyy" id="6jvQBgXEDe_">
     <property role="TrG5h" value="foo" />
+    <node concept="2$bkLk" id="1Nl8mqT4hV6" role="3SlQUj">
+      <property role="TrG5h" value="fooSched" />
+      <ref role="2$bkLg" node="1Nl8mqSVyWV" resolve="fooSched" />
+    </node>
+    <node concept="2$bkLk" id="1Nl8mqT4hWr" role="3SlQUj">
+      <property role="TrG5h" value="loopSched" />
+      <ref role="2$bkLg" node="1Nl8mqSY6Jc" resolve="loopSched" />
+    </node>
     <node concept="vjVuB" id="6jvQBgXEKCo" role="3SlQUd">
       <property role="TrG5h" value="bar" />
       <node concept="1pt3V6" id="3eP8ZudpjMZ" role="2YOnzW">
@@ -201,8 +212,8 @@
       <ref role="1OHxBS" node="3eP8ZudpjNu" resolve="bazOut" />
     </node>
     <node concept="1OHxBB" id="77WKAh0iVqe" role="3SlQUq">
-      <ref role="1OHxBS" node="77WKAh0iVp$" resolve="isRunning" />
       <ref role="1OHyup" node="77WKAh0iVpa" resolve="datIsRunning" />
+      <ref role="1OHxBS" node="1Nl8mqSY6Jh" resolve="isRunning" />
     </node>
     <node concept="1OHxBB" id="EZVvidWYpu" role="3SlQUq">
       <ref role="1OHxBS" node="EZVvidHEQB" resolve="data" />
@@ -217,94 +228,32 @@
       <ref role="1OHxBS" node="7wMoIgFoahb" resolve="access" />
     </node>
     <node concept="1psEHa" id="6jvQBgXFtjz" role="1psEGK">
-      <ref role="1psEGP" node="3EtQu_wAO$" resolve="fooSchedTrigger" />
       <ref role="1psEHb" node="3eP8ZudpjMs" resolve="foo-trigger" />
+      <ref role="1psEGP" node="1Nl8mqSVyX1" resolve="fooSchedTrigger" />
     </node>
     <node concept="1psEHa" id="6jvQBgXFINn" role="1psEGK">
-      <ref role="1psEHb" node="3EtQu_wAOA" resolve="schedBar" />
       <ref role="1psEGP" node="3eP8ZudpjMZ" resolve="barTrigger" />
+      <ref role="1psEHb" node="1Nl8mqSVyX2" resolve="schedBar" />
     </node>
     <node concept="1psEHa" id="6jvQBgXFINq" role="1psEGK">
-      <ref role="1psEHb" node="3EtQu_wAOD" resolve="schedBaz" />
       <ref role="1psEGP" node="3eP8ZudpjNK" resolve="bazTrigger" />
+      <ref role="1psEHb" node="1Nl8mqSVyX3" resolve="schedBaz" />
     </node>
     <node concept="1psEHa" id="77WKAh0iVpW" role="1psEGK">
       <ref role="1psEHb" node="3eP8ZudpjMs" resolve="foo-trigger" />
-      <ref role="1psEGP" node="77WKAh0iVpC" resolve="loopSchedTrigger" />
+      <ref role="1psEGP" node="1Nl8mqSY6Jd" resolve="loopSchedTrigger" />
     </node>
     <node concept="1psEHa" id="77WKAh0iVq1" role="1psEGK">
-      <ref role="1psEHb" node="77WKAh0iVpE" resolve="loopBar" />
       <ref role="1psEGP" node="3eP8ZudpjMZ" resolve="barTrigger" />
+      <ref role="1psEHb" node="1Nl8mqSY6Je" resolve="loopBar" />
     </node>
     <node concept="1psEHa" id="77WKAh0iVq7" role="1psEGK">
-      <ref role="1psEHb" node="77WKAh0iVpH" resolve="loopBaz" />
       <ref role="1psEGP" node="3eP8ZudpjNK" resolve="bazTrigger" />
+      <ref role="1psEHb" node="1Nl8mqSY6Jf" resolve="loopBaz" />
     </node>
     <node concept="1psEHa" id="EZVvidWYO3" role="1psEGK">
-      <ref role="1psEHb" node="EZVvidWYrV" resolve="access array" />
       <ref role="1psEGP" node="7wMoIgFoah6" resolve="trigger" />
-    </node>
-    <node concept="2__D7_" id="3EtQu_vAe7" role="3SlQUj">
-      <property role="TrG5h" value="fooSched" />
-      <node concept="1pt3V6" id="3EtQu_wAO$" role="1OHzVH">
-        <property role="TrG5h" value="fooSchedTrigger" />
-        <property role="2_BrWT" value="3EtQu_uj5h/In" />
-      </node>
-      <node concept="1pt3V6" id="3EtQu_wAOA" role="1OHzVH">
-        <property role="TrG5h" value="schedBar" />
-        <property role="2_BrWT" value="3EtQu_uj5i/Out" />
-      </node>
-      <node concept="1pt3V6" id="3EtQu_wAOD" role="1OHzVH">
-        <property role="TrG5h" value="schedBaz" />
-        <property role="2_BrWT" value="3EtQu_uj5i/Out" />
-      </node>
-      <node concept="2_qZNI" id="3EtQu_xvpt" role="2__D7$">
-        <ref role="2_qZNH" node="3EtQu_wAOA" resolve="schedBar" />
-      </node>
-      <node concept="2_qZNI" id="3EtQu_xvpy" role="2__D7$">
-        <ref role="2_qZNH" node="3EtQu_wAOD" resolve="schedBaz" />
-      </node>
-    </node>
-    <node concept="spAc0" id="77WKAh0iVpr" role="3SlQUj">
-      <property role="TrG5h" value="loopSched" />
-      <node concept="1pt3V6" id="77WKAh0iVpC" role="1OHzVH">
-        <property role="TrG5h" value="loopSchedTrigger" />
-        <property role="2_BrWT" value="3EtQu_uj5h/In" />
-      </node>
-      <node concept="1pt3V6" id="77WKAh0iVpE" role="1OHzVH">
-        <property role="TrG5h" value="loopBar" />
-        <property role="2_BrWT" value="3EtQu_uj5i/Out" />
-      </node>
-      <node concept="1pt3V6" id="77WKAh0iVpH" role="1OHzVH">
-        <property role="TrG5h" value="loopBaz" />
-        <property role="2_BrWT" value="3EtQu_uj5i/Out" />
-      </node>
-      <node concept="1pt3V6" id="EZVvidWYrV" role="1OHzVH">
-        <property role="TrG5h" value="access array" />
-        <property role="2_BrWT" value="3EtQu_uj5i/Out" />
-      </node>
-      <node concept="1OHxBU" id="77WKAh0iVp$" role="1prWzT">
-        <property role="TrG5h" value="isRunning" />
-        <property role="1OHxBQ" value="6po$YwiVCCm/In" />
-        <node concept="10P_77" id="77WKAh0iVp_" role="1OHwi9" />
-      </node>
-      <node concept="2qD35c" id="7k2VbbJKv9h" role="1e5ZHq">
-        <node concept="1e5Z75" id="EZVvidWYLx" role="2qD3aK">
-          <ref role="LPJVy" node="EZVvidWYrV" resolve="access array" />
-        </node>
-        <node concept="1e5Z75" id="1W5BUKIdHHI" role="2qD3aK">
-          <ref role="LPJVy" node="77WKAh0iVpE" resolve="loopBar" />
-        </node>
-        <node concept="1e5Z70" id="1W5BUKIdHIa" role="2qD3aK">
-          <ref role="1e5Z7f" node="77WKAh0iVp$" resolve="isRunning" />
-          <node concept="1e5Z75" id="1W5BUKIdHIe" role="1e5Z71">
-            <ref role="LPJVy" node="77WKAh0iVpH" resolve="loopBaz" />
-          </node>
-        </node>
-        <node concept="1e5Z75" id="1W5BUKIeep7" role="2qD3aK">
-          <ref role="LPJVy" node="77WKAh0iVpE" resolve="loopBar" />
-        </node>
-      </node>
+      <ref role="1psEHb" node="1Nl8mqSY6Jg" resolve="access array" />
     </node>
     <node concept="1OHxBU" id="3eP8ZudpjLM" role="2YOnzZ">
       <property role="TrG5h" value="fooIn1" />
@@ -354,6 +303,10 @@
   </node>
   <node concept="1u3Uyy" id="6jvQBgXFODe">
     <property role="TrG5h" value="pController" />
+    <node concept="2$bkLk" id="1Nl8mqT4hXF" role="3SlQUj">
+      <property role="TrG5h" value="pSched" />
+      <ref role="2$bkLg" node="1Nl8mqSY6Lc" resolve="pSched" />
+    </node>
     <node concept="1pt3V6" id="3eP8ZudpjRd" role="2YOnzW">
       <property role="TrG5h" value="p-trigger" />
       <property role="2_BrWT" value="3EtQu_uj5h/In" />
@@ -452,15 +405,15 @@
     </node>
     <node concept="1psEHa" id="6jvQBgXFUxc" role="1psEGK">
       <ref role="1psEHb" node="3eP8ZudpjRd" resolve="p-trigger" />
-      <ref role="1psEGP" node="6F0tY7D9MDu" resolve="p-sched-trigger" />
+      <ref role="1psEGP" node="1Nl8mqSY6Ld" resolve="p-sched-trigger" />
     </node>
     <node concept="1psEHa" id="6jvQBgXFUxe" role="1psEGK">
-      <ref role="1psEHb" node="3EtQu_yvpg" resolve="kp" />
       <ref role="1psEGP" node="3eP8ZudpjPA" resolve="kp-trigger" />
+      <ref role="1psEHb" node="1Nl8mqSY6Lh" resolve="kp" />
     </node>
     <node concept="1psEHa" id="6AIJmsJYK3P" role="1psEGK">
-      <ref role="1psEHb" node="3EtQu_zmNR" resolve="compute-error" />
       <ref role="1psEGP" node="3eP8ZudpjOH" resolve="compute-error-trigger" />
+      <ref role="1psEHb" node="1Nl8mqSY6Lg" resolve="compute-error" />
     </node>
     <node concept="1OHxBB" id="6jvQBgXFUxq" role="3SlQUq">
       <ref role="1OHxBS" node="3EtQu_tLuD" resolve="errorAccess" />
@@ -477,27 +430,6 @@
     <node concept="1OHxBB" id="6jvQBgXFUzf" role="3SlQUq">
       <ref role="1OHxBS" node="3eP8ZudpjPk" resolve="kpOut" />
       <ref role="1OHyup" node="3eP8ZudpjQd" resolve="pActuation" />
-    </node>
-    <node concept="2__D7_" id="3EtQu_yvp8" role="3SlQUj">
-      <property role="TrG5h" value="pSched" />
-      <node concept="1pt3V6" id="6F0tY7D9MDu" role="1OHzVH">
-        <property role="TrG5h" value="p-sched-trigger" />
-        <property role="2_BrWT" value="3EtQu_uj5h/In" />
-      </node>
-      <node concept="2_qZNI" id="58QN4$b1Qwq" role="2__D7$">
-        <ref role="2_qZNH" node="3EtQu_zmNR" resolve="compute-error" />
-      </node>
-      <node concept="2_qZNI" id="3EtQu_yvpl" role="2__D7$">
-        <ref role="2_qZNH" node="3EtQu_yvpg" resolve="kp" />
-      </node>
-      <node concept="1pt3V6" id="3EtQu_zmNR" role="1OHzVH">
-        <property role="TrG5h" value="compute-error" />
-        <property role="2_BrWT" value="3EtQu_uj5i/Out" />
-      </node>
-      <node concept="1pt3V6" id="3EtQu_yvpg" role="1OHzVH">
-        <property role="TrG5h" value="kp" />
-        <property role="2_BrWT" value="3EtQu_uj5i/Out" />
-      </node>
     </node>
   </node>
   <node concept="1u3Uyy" id="44Cv2OMEdIf">
@@ -645,6 +577,71 @@
       </node>
       <node concept="1pt3V6" id="1Nl8mqSVyX3" role="1OHzVH">
         <property role="TrG5h" value="schedBaz" />
+        <property role="2_BrWT" value="3EtQu_uj5i/Out" />
+      </node>
+    </node>
+    <node concept="spAc0" id="1Nl8mqSY6Jc" role="2$cYEw">
+      <property role="TrG5h" value="loopSched" />
+      <node concept="1pt3V6" id="1Nl8mqSY6Jd" role="1OHzVH">
+        <property role="TrG5h" value="loopSchedTrigger" />
+        <property role="2_BrWT" value="3EtQu_uj5h/In" />
+      </node>
+      <node concept="1pt3V6" id="1Nl8mqSY6Je" role="1OHzVH">
+        <property role="TrG5h" value="loopBar" />
+        <property role="2_BrWT" value="3EtQu_uj5i/Out" />
+      </node>
+      <node concept="1pt3V6" id="1Nl8mqSY6Jf" role="1OHzVH">
+        <property role="TrG5h" value="loopBaz" />
+        <property role="2_BrWT" value="3EtQu_uj5i/Out" />
+      </node>
+      <node concept="1pt3V6" id="1Nl8mqSY6Jg" role="1OHzVH">
+        <property role="TrG5h" value="access array" />
+        <property role="2_BrWT" value="3EtQu_uj5i/Out" />
+      </node>
+      <node concept="1OHxBU" id="1Nl8mqSY6Jh" role="1prWzT">
+        <property role="TrG5h" value="isRunning" />
+        <property role="1OHxBQ" value="6po$YwiVCCm/In" />
+        <node concept="10P_77" id="1Nl8mqSY6Ji" role="1OHwi9" />
+      </node>
+      <node concept="2qD35c" id="1Nl8mqSY6Jj" role="1e5ZHq">
+        <node concept="1e5Z75" id="1Nl8mqSY6Jk" role="2qD3aK">
+          <ref role="LPJVy" node="1Nl8mqSY6Jg" resolve="access array" />
+        </node>
+        <node concept="1e5Z75" id="1Nl8mqSY6Jl" role="2qD3aK">
+          <ref role="LPJVy" node="1Nl8mqSY6Je" resolve="loopBar" />
+        </node>
+        <node concept="1e5Z70" id="1Nl8mqSY6Jm" role="2qD3aK">
+          <ref role="1e5Z7f" node="1Nl8mqSY6Jh" resolve="isRunning" />
+          <node concept="1e5Z75" id="1Nl8mqSY6Jn" role="1e5Z71">
+            <ref role="LPJVy" node="1Nl8mqSY6Jf" resolve="loopBaz" />
+          </node>
+        </node>
+        <node concept="1e5Z75" id="1Nl8mqSY6Jo" role="2qD3aK">
+          <ref role="LPJVy" node="1Nl8mqSY6Je" resolve="loopBar" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2$3l2Q" id="1Nl8mqSY6Lb">
+    <property role="TrG5h" value="controller_lib" />
+    <node concept="2__D7_" id="1Nl8mqSY6Lc" role="2$cYEw">
+      <property role="TrG5h" value="pSched" />
+      <node concept="1pt3V6" id="1Nl8mqSY6Ld" role="1OHzVH">
+        <property role="TrG5h" value="p-sched-trigger" />
+        <property role="2_BrWT" value="3EtQu_uj5h/In" />
+      </node>
+      <node concept="2_qZNI" id="1Nl8mqSY6Le" role="2__D7$">
+        <ref role="2_qZNH" node="1Nl8mqSY6Lg" resolve="compute-error" />
+      </node>
+      <node concept="2_qZNI" id="1Nl8mqSY6Lf" role="2__D7$">
+        <ref role="2_qZNH" node="1Nl8mqSY6Lh" resolve="kp" />
+      </node>
+      <node concept="1pt3V6" id="1Nl8mqSY6Lg" role="1OHzVH">
+        <property role="TrG5h" value="compute-error" />
+        <property role="2_BrWT" value="3EtQu_uj5i/Out" />
+      </node>
+      <node concept="1pt3V6" id="1Nl8mqSY6Lh" role="1OHzVH">
+        <property role="TrG5h" value="kp" />
         <property role="2_BrWT" value="3EtQu_uj5i/Out" />
       </node>
     </node>

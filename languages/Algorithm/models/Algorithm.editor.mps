@@ -1880,5 +1880,23 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="1Nl8mqSY6PQ">
+    <ref role="1XX52x" to="yvgz:1Nl8mqSY6OM" resolve="SchedulerBlockInst" />
+    <node concept="3EZMnI" id="1Nl8mqSY6PS" role="2wV5jI">
+      <node concept="1iCGBv" id="1Nl8mqSY6Q2" role="3EZMnx">
+        <ref role="1NtTu8" to="yvgz:1Nl8mqSY6OQ" resolve="type" />
+        <node concept="1sVBvm" id="1Nl8mqSY6Q4" role="1sWHZn">
+          <node concept="3F0A7n" id="1Nl8mqSY6Qe" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0A7n" id="1Nl8mqSY6Qr" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="l2Vlx" id="1Nl8mqSY6PV" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

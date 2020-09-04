@@ -233,7 +233,7 @@
         <child id="5082088080656976323" name="newlineMarker" index="2EinRH" />
         <child id="1145195647825954802" name="words" index="356sEH" />
       </concept>
-      <concept id="1145195647825954793" name="com.dslfoundry.plaintextgen.structure.SpaceIndentedText" flags="ng" index="356sEQ">
+      <concept id="1145195647825954793" name="com.dslfoundry.plaintextgen.structure.IndentedText" flags="ng" index="356sEQ">
         <property id="5198309202558919052" name="indent" index="333NGx" />
       </concept>
       <concept id="1145195647825954788" name="com.dslfoundry.plaintextgen.structure.TextgenText" flags="ng" index="356sEV">
@@ -3245,6 +3245,18 @@
               <node concept="1mfA1w" id="w_xyS78cO3" role="2OqNvi" />
             </node>
           </node>
+          <node concept="3NFfHV" id="1Nl8mqT4B9p" role="5jGum">
+            <node concept="3clFbS" id="1Nl8mqT4B9q" role="2VODD2">
+              <node concept="3clFbF" id="1Nl8mqT4BdQ" role="3cqZAp">
+                <node concept="2OqwBi" id="1Nl8mqT4BpN" role="3clFbG">
+                  <node concept="30H73N" id="1Nl8mqT4BdP" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="1Nl8mqT4BCj" role="2OqNvi">
+                    <ref role="3Tt5mk" to="yvgz:1Nl8mqSY6OQ" resolve="type" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="raruj" id="w_xyS78cNk" role="lGtFl" />
@@ -3312,7 +3324,12 @@
                 </node>
               </node>
             </node>
-            <node concept="30H73N" id="Nf75KMuepr" role="v9R3O" />
+            <node concept="2OqwBi" id="1Nl8mqT4tNE" role="v9R3O">
+              <node concept="30H73N" id="Nf75KMuepr" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1Nl8mqT4u2E" role="2OqNvi">
+                <ref role="3Tt5mk" to="yvgz:1Nl8mqSY6OQ" resolve="type" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="356sEF" id="w_xyS7aTCQ" role="356sEH">

@@ -193,7 +193,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="scheduler_blocks" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="29RmJoXeePl" resolve="SchedulerBlock" />
+      <ref role="20lvS9" node="1Nl8mqSY6OM" resolve="SchedulerBlockInst" />
     </node>
     <node concept="1TJgyj" id="4iWYoaWUTso" role="1TKVEi">
       <property role="IQ2ns" value="4953108030111323928" />
@@ -308,7 +308,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="scheduler_blocks" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="29RmJoXeePl" resolve="SchedulerBlock" />
+      <ref role="20lvS9" node="1Nl8mqSY6OM" resolve="SchedulerBlockInst" />
     </node>
     <node concept="1TJgyj" id="5o1iPWxUlYq" role="1TKVEi">
       <property role="IQ2ns" value="6197317434201431962" />
@@ -558,6 +558,20 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="scheduler_blocks" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="29RmJoXeePl" resolve="SchedulerBlock" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Nl8mqSY6OM">
+    <property role="EcuMT" value="2077603528175021362" />
+    <property role="TrG5h" value="SchedulerBlockInst" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1Nl8mqSY6ON" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
+    </node>
+    <node concept="1TJgyj" id="1Nl8mqSY6OQ" role="1TKVEi">
+      <property role="IQ2ns" value="2077603528175021366" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="29RmJoXeePl" resolve="SchedulerBlock" />
     </node>
   </node>
