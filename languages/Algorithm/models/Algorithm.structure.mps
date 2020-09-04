@@ -553,6 +553,13 @@
     <node concept="PrWs8" id="1Nl8mqSQ77h" role="PzmwI">
       <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
     </node>
+    <node concept="1TJgyj" id="1Nl8mqSTGJ6" role="1TKVEi">
+      <property role="IQ2ns" value="2077603528173865926" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="scheduler_blocks" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="29RmJoXeePl" resolve="SchedulerBlock" />
+    </node>
   </node>
 </model>
 

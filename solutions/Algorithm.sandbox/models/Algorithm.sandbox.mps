@@ -35,7 +35,9 @@
         <child id="7374807014778514693" name="trigger_ports" index="1OHzVH" />
       </concept>
       <concept id="2483553733153713489" name="Algorithm.structure.EmptyFunctionBlock" flags="ng" index="vjVuB" />
-      <concept id="2077603528172925392" name="Algorithm.structure.Library" flags="ng" index="2$3l2Q" />
+      <concept id="2077603528172925392" name="Algorithm.structure.Library" flags="ng" index="2$3l2Q">
+        <child id="2077603528173865926" name="scheduler_blocks" index="2$cYEw" />
+      </concept>
       <concept id="65996431592360841" name="Algorithm.structure.TriggerPortRef" flags="ng" index="2_qZNI">
         <reference id="65996431592360842" name="trigger_port" index="2_qZNH" />
       </concept>
@@ -43,6 +45,7 @@
         <child id="65996431592056451" name="schedule" index="2__D7$" />
       </concept>
       <concept id="65996431591631847" name="Algorithm.structure.EmtpyDataBlock" flags="ng" index="2_B1M0" />
+      <concept id="65996431591631846" name="Algorithm.structure.EmptySchedulerBlock" flags="ng" index="2_B1M1" />
       <concept id="3725923812855012100" name="Algorithm.structure.FunctionBlock" flags="ng" index="2YOnzN">
         <child id="3725923812855012107" name="trigger_ports" index="2YOnzW" />
         <child id="3725923812855012104" name="data_ports" index="2YOnzZ" />
@@ -621,6 +624,9 @@
   </node>
   <node concept="2$3l2Q" id="1Nl8mqSRVQv">
     <property role="TrG5h" value="my_lib" />
+    <node concept="2_B1M1" id="1Nl8mqSVywK" role="2$cYEw">
+      <property role="TrG5h" value="my_empty_sblx" />
+    </node>
   </node>
 </model>
 
