@@ -7,6 +7,7 @@
   <imports />
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534436861" name="jetbrains.mps.baseLanguage.structure.FloatType" flags="in" index="10OMs4" />
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -185,6 +186,104 @@
       <node concept="2_qZNI" id="77qtDttRy24" role="2__D7$">
         <ref role="2_qZNH" node="77qtDttRy1L" resolve="exit2" />
       </node>
+    </node>
+  </node>
+  <node concept="1u3Uyy" id="77qtDttRy2R">
+    <property role="TrG5h" value="PartialApplicationFun1" />
+    <node concept="1OHxBU" id="77qtDttRy6u" role="2YOnzZ">
+      <property role="TrG5h" value="y" />
+      <property role="1OHxBQ" value="6po$YwiVCCm/In" />
+      <node concept="10Oyi0" id="77qtDttRy6K" role="1tU5fm" />
+    </node>
+    <node concept="1OHxBU" id="77qtDttRy7s" role="2YOnzZ">
+      <property role="TrG5h" value="n" />
+      <property role="1OHxBQ" value="6po$YwiVCCn/Out" />
+      <node concept="10Oyi0" id="77qtDttRy7G" role="1tU5fm" />
+    </node>
+    <node concept="1psEHa" id="77qtDttRy5e" role="1psEGK">
+      <ref role="1psEHb" node="77qtDttRy2S" resolve="trigger" />
+      <ref role="1psEGP" node="77qtDttRy3t" resolve="trigger" />
+    </node>
+    <node concept="1OHxBB" id="77qtDttRy58" role="3SlQUq">
+      <ref role="1OHxBS" node="77qtDttRy3$" resolve="x" />
+      <ref role="1OHyup" node="77qtDttRy4Q" resolve="x" />
+    </node>
+    <node concept="1OHxBB" id="77qtDttRy6S" role="3SlQUq">
+      <ref role="1OHxBS" node="77qtDttRy3Q" resolve="y" />
+      <ref role="1OHyup" node="77qtDttRy6u" resolve="y" />
+    </node>
+    <node concept="1OHxBB" id="77qtDttRy7S" role="3SlQUq">
+      <ref role="1OHxBS" node="77qtDttRy4c" resolve="n" />
+      <ref role="1OHyup" node="77qtDttRy7s" resolve="n" />
+    </node>
+    <node concept="vjVuy" id="77qtDttRy4Q" role="3SlQUm">
+      <property role="TrG5h" value="x" />
+      <node concept="10Oyi0" id="77qtDttRy50" role="1tU5fm" />
+    </node>
+    <node concept="2Ptgr7" id="77qtDttRy4J" role="3SlQUd">
+      <property role="TrG5h" value="fun" />
+      <ref role="2PtgrV" node="77qtDttRy3s" resolve="Sample" />
+    </node>
+    <node concept="1pt3V6" id="77qtDttRy2S" role="2YOnzW">
+      <property role="TrG5h" value="trigger" />
+      <property role="2_BrWT" value="3EtQu_uj5h/In" />
+    </node>
+  </node>
+  <node concept="2$3l2Q" id="77qtDttRy3l">
+    <property role="TrG5h" value="PartialApplicationLib" />
+    <node concept="vjVuB" id="77qtDttRy3s" role="2PtZiJ">
+      <property role="TrG5h" value="Sample" />
+      <node concept="1OHxBU" id="77qtDttRy3$" role="2YOnzZ">
+        <property role="TrG5h" value="x" />
+        <property role="1OHxBQ" value="6po$YwiVCCm/In" />
+        <node concept="10Oyi0" id="77qtDttRy3I" role="1tU5fm" />
+      </node>
+      <node concept="1OHxBU" id="77qtDttRy3Q" role="2YOnzZ">
+        <property role="TrG5h" value="y" />
+        <property role="1OHxBQ" value="6po$YwiVCCm/In" />
+        <node concept="10Oyi0" id="77qtDttRy44" role="1tU5fm" />
+      </node>
+      <node concept="1OHxBU" id="77qtDttRy4c" role="2YOnzZ">
+        <property role="TrG5h" value="n" />
+        <property role="1OHxBQ" value="6po$YwiVCCn/Out" />
+        <node concept="10Oyi0" id="77qtDttRy4u" role="1tU5fm" />
+      </node>
+      <node concept="1pt3V6" id="77qtDttRy3t" role="2YOnzW">
+        <property role="TrG5h" value="trigger" />
+        <property role="2_BrWT" value="3EtQu_uj5h/In" />
+      </node>
+    </node>
+  </node>
+  <node concept="1u3Uyy" id="77qtDttRy5H">
+    <property role="TrG5h" value="PartialApplicationFun2" />
+    <node concept="1OHxBU" id="77qtDttRy87" role="2YOnzZ">
+      <property role="TrG5h" value="n" />
+      <property role="1OHxBQ" value="6po$YwiVCCn/Out" />
+      <node concept="10Oyi0" id="77qtDttRy8j" role="1tU5fm" />
+    </node>
+    <node concept="vjVuy" id="77qtDttRy66" role="3SlQUm">
+      <property role="TrG5h" value="y" />
+      <node concept="10Oyi0" id="77qtDttRy6g" role="1tU5fm" />
+    </node>
+    <node concept="2Ptgr7" id="77qtDttRy5M" role="3SlQUd">
+      <property role="TrG5h" value="fun" />
+      <ref role="2PtgrV" node="77qtDttRy2R" resolve="PartialApplicationFun1" />
+    </node>
+    <node concept="1pt3V6" id="77qtDttRy5I" role="2YOnzW">
+      <property role="TrG5h" value="trigger" />
+      <property role="2_BrWT" value="3EtQu_uj5h/In" />
+    </node>
+    <node concept="1psEHa" id="77qtDttRy5Q" role="1psEGK">
+      <ref role="1psEHb" node="77qtDttRy5I" resolve="trigger" />
+      <ref role="1psEGP" node="77qtDttRy2S" resolve="trigger" />
+    </node>
+    <node concept="1OHxBB" id="77qtDttRy70" role="3SlQUq">
+      <ref role="1OHxBS" node="77qtDttRy6u" resolve="y" />
+      <ref role="1OHyup" node="77qtDttRy66" resolve="y" />
+    </node>
+    <node concept="1OHxBB" id="77qtDttRy8r" role="3SlQUq">
+      <ref role="1OHxBS" node="77qtDttRy7s" resolve="n" />
+      <ref role="1OHyup" node="77qtDttRy87" resolve="n" />
     </node>
   </node>
 </model>
