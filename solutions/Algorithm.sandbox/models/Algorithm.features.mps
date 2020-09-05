@@ -163,5 +163,29 @@
       <ref role="1psEGP" node="77qtDttRxXh" resolve="trigger" />
     </node>
   </node>
+  <node concept="2$3l2Q" id="77qtDttRy1_">
+    <property role="TrG5h" value="MultipleExitPoints" />
+    <node concept="2__D7_" id="77qtDttRy1A" role="2$cYEw">
+      <property role="TrG5h" value="ScheduleWithTwoExitPoints" />
+      <node concept="1pt3V6" id="77qtDttRy1D" role="1OHzVH">
+        <property role="TrG5h" value="in" />
+        <property role="2_BrWT" value="3EtQu_uj5h/In" />
+      </node>
+      <node concept="1pt3V6" id="77qtDttRy1G" role="1OHzVH">
+        <property role="TrG5h" value="exit1" />
+        <property role="2_BrWT" value="3EtQu_uj5i/Out" />
+      </node>
+      <node concept="1pt3V6" id="77qtDttRy1L" role="1OHzVH">
+        <property role="TrG5h" value="exit2" />
+        <property role="2_BrWT" value="3EtQu_uj5i/Out" />
+      </node>
+      <node concept="2_qZNI" id="77qtDttRy1W" role="2__D7$">
+        <ref role="2_qZNH" node="77qtDttRy1G" resolve="exit1" />
+      </node>
+      <node concept="2_qZNI" id="77qtDttRy24" role="2__D7$">
+        <ref role="2_qZNH" node="77qtDttRy1L" resolve="exit2" />
+      </node>
+    </node>
+  </node>
 </model>
 
