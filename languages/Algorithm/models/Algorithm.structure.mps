@@ -147,7 +147,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="function_blocks" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="3eP8Zudp5G4" resolve="FunctionBlock" />
+      <ref role="20lvS9" node="4GEaPFYnMQt" resolve="FunctionBlockInst" />
     </node>
     <node concept="1TJgyj" id="4iWYoaWUTsk" role="1TKVEi">
       <property role="IQ2ns" value="4953108030111323924" />
