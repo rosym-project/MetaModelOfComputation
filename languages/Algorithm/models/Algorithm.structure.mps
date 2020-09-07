@@ -183,9 +183,9 @@
   </node>
   <node concept="1TIwiD" id="7YUYw4xHlaz">
     <property role="EcuMT" value="9203943671252472483" />
-    <property role="TrG5h" value="FunctionBlockContainer" />
+    <property role="TrG5h" value="ImperativeFunctionBlock" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="function block container" />
+    <property role="34LRSv" value="imperative function block" />
     <ref role="1TJDcQ" node="3eP8Zudp5G4" resolve="FunctionBlock" />
     <node concept="1TJgyj" id="4iWYoaWUTsf" role="1TKVEi">
       <property role="IQ2ns" value="4953108030111323919" />
@@ -543,6 +543,9 @@
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="29RmJoXeePe" resolve="AlgorithmBlock" />
+    </node>
+    <node concept="PrWs8" id="1whTsdr6UwG" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
     </node>
   </node>
 </model>

@@ -606,7 +606,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3EtQu_xWtD">
-    <ref role="1XX52x" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+    <ref role="1XX52x" to="yvgz:7YUYw4xHlaz" resolve="ImperativeFunctionBlock" />
     <node concept="3EZMnI" id="3EtQu_xWtF" role="2wV5jI">
       <node concept="l2Vlx" id="3EtQu_xWtG" role="2iSdaV" />
       <node concept="PMmxH" id="1m2Jxlzuoy7" role="3EZMnx">
@@ -630,7 +630,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="PMmxH" id="7OFootZUkmr" role="3EZMnx">
-          <ref role="PMmxG" node="7OFootZUkmp" resolve="FBlockContainer_Comp" />
+          <ref role="PMmxG" node="7OFootZUkmp" resolve="ImperativeFunctionBlock_Comp" />
           <node concept="ljvvj" id="7OFootZUkYh" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -923,8 +923,8 @@
     </node>
   </node>
   <node concept="PKFIW" id="7OFootZUkmp">
-    <property role="TrG5h" value="FBlockContainer_Comp" />
-    <ref role="1XX52x" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+    <property role="TrG5h" value="ImperativeFunctionBlock_Comp" />
+    <ref role="1XX52x" to="yvgz:7YUYw4xHlaz" resolve="ImperativeFunctionBlock" />
     <node concept="3EZMnI" id="7OFootZUkD6" role="2wV5jI">
       <node concept="3F0ifn" id="7OFootZUkGD" role="3EZMnx">
         <property role="3F0ifm" value="data ports" />
@@ -993,6 +993,36 @@
       </node>
       <node concept="3F0ifn" id="3EtQu_xWuE" role="3EZMnx">
         <node concept="ljvvj" id="3EtQu_xWuF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1whTsdr5s1r" role="3EZMnx">
+        <property role="3F0ifm" value="algorithm_blocks" />
+      </node>
+      <node concept="3F0ifn" id="1whTsdr5s1s" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="11L4FC" id="1whTsdr5s1t" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="1whTsdr5s1u" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="1whTsdr5s1v" role="3EZMnx">
+        <ref role="1NtTu8" to="yvgz:1whTsdr3JBw" resolve="algorithm_blocks" />
+        <node concept="l2Vlx" id="1whTsdr5s1w" role="2czzBx" />
+        <node concept="pj6Ft" id="1whTsdr5s1x" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="1whTsdr5s1y" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="1whTsdr5s1z" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1whTsdr5s1$" role="3EZMnx">
+        <node concept="ljvvj" id="1whTsdr5s1_" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>

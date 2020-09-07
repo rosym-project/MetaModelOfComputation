@@ -826,7 +826,7 @@
     </node>
     <node concept="1YaCAy" id="5bwHbMcf7LJ" role="1YuTPh">
       <property role="TrG5h" value="functionBlockContainer" />
-      <ref role="1YaFvo" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+      <ref role="1YaFvo" to="yvgz:7YUYw4xHlaz" resolve="ImperativeFunctionBlock" />
     </node>
   </node>
   <node concept="18kY7G" id="hkK7ztHKmO">
@@ -1274,12 +1274,12 @@
             <node concept="3cpWsn" id="4LsB5Tjqad5" role="3cpWs9">
               <property role="TrG5h" value="parent" />
               <node concept="3Tqbb2" id="4LsB5Tjqad0" role="1tU5fm">
-                <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+                <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="ImperativeFunctionBlock" />
               </node>
               <node concept="1PxgMI" id="4LsB5Tjqba0" role="33vP2m">
                 <property role="1BlNFB" value="true" />
                 <node concept="chp4Y" id="4LsB5Tjqbyl" role="3oSUPX">
-                  <ref role="cht4Q" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+                  <ref role="cht4Q" to="yvgz:7YUYw4xHlaz" resolve="ImperativeFunctionBlock" />
                 </node>
                 <node concept="2OqwBi" id="4LsB5Tjqao0" role="1m5AlR">
                   <node concept="1YBJjd" id="4LsB5Tjqadv" role="2Oq$k0">
@@ -1458,7 +1458,7 @@
           </node>
           <node concept="1mIQ4w" id="4LsB5Tjqa8Y" role="2OqNvi">
             <node concept="chp4Y" id="4LsB5TjqaaP" role="cj9EA">
-              <ref role="cht4Q" to="yvgz:7YUYw4xHlaz" resolve="FunctionBlockContainer" />
+              <ref role="cht4Q" to="yvgz:7YUYw4xHlaz" resolve="ImperativeFunctionBlock" />
             </node>
           </node>
         </node>
