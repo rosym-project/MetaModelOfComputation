@@ -97,6 +97,9 @@
       <concept id="9203943671252472483" name="Algorithm.structure.ImperativeFunctionBlock" flags="ng" index="1u3Uyy">
         <child id="1734419958731892874" name="algorithm_blocks" index="13BwP9" />
         <child id="7268768516385108292" name="triggers" index="1psEGK" />
+        <child id="4953108030111323919" name="function_blocks" index="3SlQUd" />
+        <child id="4953108030111323921" name="scheduler_blocks" index="3SlQUj" />
+        <child id="4953108030111323924" name="data_blocks" index="3SlQUm" />
         <child id="4953108030111323928" name="closures" index="3SlQUq" />
       </concept>
       <concept id="7374807014778505743" name="Algorithm.structure.DataConnector" flags="ng" index="1OHxBB">
@@ -614,6 +617,55 @@
       <node concept="1pt3V6" id="1whTsdsaFp7" role="2YOnzW">
         <property role="TrG5h" value="trigger" />
         <property role="2_BrWT" value="3EtQu_uj5h/In" />
+      </node>
+    </node>
+  </node>
+  <node concept="vjVuS" id="1whTsdslOEl">
+    <property role="TrG5h" value="predefined_fblock_algo" />
+    <node concept="2Ptgr7" id="1whTsdslOEm" role="2pAz8v">
+      <property role="TrG5h" value="fblx" />
+      <ref role="2PtgrV" node="1whTsdsaFp4" resolve="MyPredefinedFunctionBlock" />
+    </node>
+  </node>
+  <node concept="2$3l2Q" id="1whTsdstWBt">
+    <property role="TrG5h" value="imperative_fblx_lib" />
+    <node concept="1u3Uyy" id="1whTsdstWBu" role="2PtZiJ">
+      <property role="TrG5h" value="flat_fblx" />
+      <node concept="2Ptgr7" id="1whTsdstZwK" role="3SlQUd">
+        <property role="TrG5h" value="bar" />
+        <ref role="2PtgrV" node="4GEaPFYpqbo" resolve="bar" />
+      </node>
+      <node concept="2Ptgr7" id="1whTsdstZwT" role="3SlQUd">
+        <property role="TrG5h" value="baz" />
+        <ref role="2PtgrV" node="4GEaPFYpqcK" resolve="baz" />
+      </node>
+      <node concept="vjVuy" id="1whTsdstXsO" role="3SlQUm">
+        <property role="TrG5h" value="is_running" />
+        <node concept="10P_77" id="1whTsdsuJ03" role="1tU5fm" />
+      </node>
+      <node concept="1psEHa" id="1whTsdstWBI" role="1psEGK">
+        <ref role="1psEHb" node="1whTsdstWBv" resolve="trigger" />
+        <ref role="1psEGP" node="1Nl8mqSY6Jd" resolve="loopSchedTrigger" />
+      </node>
+      <node concept="1psEHa" id="1whTsdstZwZ" role="1psEGK">
+        <ref role="1psEGP" node="4GEaPFYpqbp" resolve="barTrigger" />
+        <ref role="1psEHb" node="1Nl8mqSY6Je" resolve="loopBar" />
+      </node>
+      <node concept="1psEHa" id="1whTsdstZx4" role="1psEGK">
+        <ref role="1psEGP" node="4GEaPFYpqcS" resolve="bazTrigger" />
+        <ref role="1psEHb" node="1Nl8mqSY6Jf" resolve="loopBaz" />
+      </node>
+      <node concept="2$bkLk" id="1whTsdsuIyK" role="3SlQUj">
+        <property role="TrG5h" value="sched" />
+        <ref role="2$bkLg" node="1Nl8mqSY6Jc" resolve="loopSched" />
+      </node>
+      <node concept="1pt3V6" id="1whTsdstWBv" role="2YOnzW">
+        <property role="TrG5h" value="trigger" />
+        <property role="2_BrWT" value="3EtQu_uj5h/In" />
+      </node>
+      <node concept="1OHxBB" id="1whTsdsuJ0f" role="3SlQUq">
+        <ref role="1OHxBS" node="1Nl8mqSY6Jh" resolve="isRunning" />
+        <ref role="1OHyup" node="1whTsdstXsO" resolve="is_running" />
       </node>
     </node>
   </node>
