@@ -572,7 +572,7 @@
           </node>
         </node>
         <node concept="3F0ifn" id="3EtQu_xHxd" role="3EZMnx">
-          <property role="3F0ifm" value="trigger_ports" />
+          <property role="3F0ifm" value="trigger_port" />
         </node>
         <node concept="3F0ifn" id="3EtQu_xHxe" role="3EZMnx">
           <property role="3F0ifm" value=":" />
@@ -582,6 +582,11 @@
         </node>
         <node concept="3F1sOY" id="1whTsdrntr9" role="3EZMnx">
           <ref role="1NtTu8" to="yvgz:3eP8Zudp5Gb" resolve="trigger_port" />
+        </node>
+        <node concept="3F0ifn" id="1whTsdrIevw" role="3EZMnx">
+          <node concept="ljvvj" id="1whTsdrIevx" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="3EtQu_xHxm" role="3EZMnx">
@@ -1396,6 +1401,11 @@
         </node>
         <node concept="3F1sOY" id="1whTsdrnt4g" role="3EZMnx">
           <ref role="1NtTu8" to="yvgz:3eP8Zudp5Gb" resolve="trigger_port" />
+        </node>
+        <node concept="3F0ifn" id="1whTsdrL0T3" role="3EZMnx">
+          <node concept="ljvvj" id="1whTsdrL0T4" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="EZVvidOU79" role="3EZMnx">
