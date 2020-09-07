@@ -60,10 +60,55 @@
   <node concept="1TIwiD" id="29RmJoXeePe">
     <property role="EcuMT" value="2483553733153713486" />
     <property role="TrG5h" value="AlgorithmBlock" />
-    <property role="R5$K7" value="true" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="29RmJoXeePf" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="1TJgyj" id="17L66asWE$a" role="1TKVEi">
+      <property role="IQ2ns" value="1292841379851053322" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="algorithm_blocks" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="17L66asWE$6" resolve="AlgorithmBlockInst" />
+    </node>
+    <node concept="1TJgyj" id="1m4TMuc7HkS" role="1TKVEi">
+      <property role="IQ2ns" value="1550618328762864952" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="function_blocks" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="4GEaPFYnMQt" resolve="FunctionBlockInst" />
+    </node>
+    <node concept="1TJgyj" id="1m4TMuc7HkT" role="1TKVEi">
+      <property role="IQ2ns" value="1550618328762864953" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="data_blocks" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="29RmJoXeePk" resolve="DataBlock" />
+    </node>
+    <node concept="1TJgyj" id="1m4TMuc7HkU" role="1TKVEi">
+      <property role="IQ2ns" value="1550618328762864954" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="scheduler_blocks" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1Nl8mqSY6OM" resolve="SchedulerBlockInst" />
+    </node>
+    <node concept="1TJgyj" id="1m4TMuc7HkV" role="1TKVEi">
+      <property role="IQ2ns" value="1550618328762864955" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="closures" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6po$YwiVCCf" resolve="DataConnector" />
+    </node>
+    <node concept="1TJgyj" id="1m4TMuc7HkW" role="1TKVEi">
+      <property role="IQ2ns" value="1550618328762864956" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="triggers" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6jvQBgXFn4Y" resolve="TriggerConnector" />
+    </node>
+    <node concept="PrWs8" id="1m4TMuc9nwb" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
+    </node>
+    <node concept="PrWs8" id="1m4TMucaQnS" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="29RmJoXeePk">
@@ -287,18 +332,6 @@
       <ref role="20lvS9" node="6jvQBgXFn4Y" resolve="TriggerConnector" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5o1iPWxU$71">
-    <property role="EcuMT" value="6197317434201489857" />
-    <property role="TrG5h" value="AlgorithmBlockContainer" />
-    <ref role="1TJDcQ" node="29RmJoXeePe" resolve="AlgorithmBlock" />
-    <node concept="1TJgyj" id="5o1iPWxU$72" role="1TKVEi">
-      <property role="IQ2ns" value="6197317434201489858" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="algorithm_blocks" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="29RmJoXeePe" resolve="AlgorithmBlock" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="3eP8Zudp5G4">
     <property role="EcuMT" value="3725923812855012100" />
     <property role="TrG5h" value="FunctionBlock" />
@@ -499,6 +532,17 @@
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3eP8Zudp5G4" resolve="FunctionBlock" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="17L66asWE$6">
+    <property role="EcuMT" value="1292841379851053318" />
+    <property role="TrG5h" value="AlgorithmBlockInst" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="17L66asWE$7" role="1TKVEi">
+      <property role="IQ2ns" value="1292841379851053319" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="29RmJoXeePe" resolve="AlgorithmBlock" />
     </node>
   </node>
 </model>
