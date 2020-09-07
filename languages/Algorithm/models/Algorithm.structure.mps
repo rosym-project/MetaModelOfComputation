@@ -28,6 +28,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -107,6 +108,12 @@
     <node concept="PrWs8" id="1m4TMuc9nwb" role="PzmwI">
       <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
     </node>
+    <node concept="PrWs8" id="1whTsdrhuVe" role="PzmwI">
+      <ref role="PrY4T" node="1whTsdr9Hcn" resolve="IDataPortProvider" />
+    </node>
+    <node concept="PrWs8" id="1whTsdrhuVv" role="PzmwI">
+      <ref role="PrY4T" node="1whTsdrdcrk" resolve="ITriggerPortProvider" />
+    </node>
     <node concept="PrWs8" id="1m4TMucaQnS" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
@@ -115,6 +122,9 @@
     <property role="EcuMT" value="2483553733153713492" />
     <property role="TrG5h" value="DataBlock" />
     <ref role="1TJDcQ" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
+    <node concept="PrWs8" id="1whTsdr9Hdz" role="PzmwI">
+      <ref role="PrY4T" node="1whTsdr9Hcn" resolve="IDataPortProvider" />
+    </node>
   </node>
   <node concept="25R3W" id="6po$YwiVCCl">
     <property role="3F6X1D" value="7374807014778505749" />
@@ -163,6 +173,12 @@
     <node concept="PrWs8" id="58QN4$b4wid" role="PzmwI">
       <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
     </node>
+    <node concept="PrWs8" id="1whTsdrcDxn" role="PzmwI">
+      <ref role="PrY4T" node="1whTsdr9Hcn" resolve="IDataPortProvider" />
+    </node>
+    <node concept="PrWs8" id="1whTsdrd$J0" role="PzmwI">
+      <ref role="PrY4T" node="1whTsdrdcrk" resolve="ITriggerPortProvider" />
+    </node>
     <node concept="PrWs8" id="77WKAh08Juw" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
@@ -186,6 +202,7 @@
     <property role="TrG5h" value="ImperativeFunctionBlock" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="imperative function block" />
+    <property role="3GE5qa" value="definitions.function" />
     <ref role="1TJDcQ" node="3eP8Zudp5G4" resolve="FunctionBlock" />
     <node concept="1TJgyj" id="4iWYoaWUTsf" role="1TKVEi">
       <property role="IQ2ns" value="4953108030111323919" />
@@ -347,12 +364,18 @@
     <node concept="1TJgyj" id="3eP8Zudp5Gb" role="1TKVEi">
       <property role="IQ2ns" value="3725923812855012107" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="trigger_ports" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20kJfa" value="trigger_port" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6jvQBgXEYiM" resolve="TriggerPort" />
     </node>
     <node concept="PrWs8" id="5Tr1VsJyfAp" role="PzmwI">
       <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
+    </node>
+    <node concept="PrWs8" id="1whTsdr9QGK" role="PzmwI">
+      <ref role="PrY4T" node="1whTsdr9Hcn" resolve="IDataPortProvider" />
+    </node>
+    <node concept="PrWs8" id="1whTsdrdfWW" role="PzmwI">
+      <ref role="PrY4T" node="1whTsdrdcrk" resolve="ITriggerPortProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="jovpCoJxUq">
@@ -478,6 +501,12 @@
     <node concept="PrWs8" id="1Nl8mqSY6ON" role="PzmwI">
       <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
     </node>
+    <node concept="PrWs8" id="1whTsdrcGvF" role="PzmwI">
+      <ref role="PrY4T" node="1whTsdr9Hcn" resolve="IDataPortProvider" />
+    </node>
+    <node concept="PrWs8" id="1whTsdrdEol" role="PzmwI">
+      <ref role="PrY4T" node="1whTsdrdcrk" resolve="ITriggerPortProvider" />
+    </node>
     <node concept="1TJgyj" id="1Nl8mqSY6OQ" role="1TKVEi">
       <property role="IQ2ns" value="2077603528175021366" />
       <property role="20kJfa" value="type" />
@@ -527,6 +556,12 @@
     <node concept="PrWs8" id="4GEaPFYnMQu" role="PzmwI">
       <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
     </node>
+    <node concept="PrWs8" id="1whTsdrauyE" role="PzmwI">
+      <ref role="PrY4T" node="1whTsdr9Hcn" resolve="IDataPortProvider" />
+    </node>
+    <node concept="PrWs8" id="1whTsdrdx7m" role="PzmwI">
+      <ref role="PrY4T" node="1whTsdrdcrk" resolve="ITriggerPortProvider" />
+    </node>
     <node concept="1TJgyj" id="4GEaPFYnMQx" role="1TKVEi">
       <property role="IQ2ns" value="5416189171681144225" />
       <property role="20kJfa" value="type" />
@@ -547,6 +582,20 @@
     <node concept="PrWs8" id="1whTsdr6UwG" role="PzmwI">
       <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
     </node>
+    <node concept="PrWs8" id="1whTsdrhuUM" role="PzmwI">
+      <ref role="PrY4T" node="1whTsdr9Hcn" resolve="IDataPortProvider" />
+    </node>
+    <node concept="PrWs8" id="1whTsdrhuUZ" role="PzmwI">
+      <ref role="PrY4T" node="1whTsdrdcrk" resolve="ITriggerPortProvider" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1whTsdr9Hcn">
+    <property role="EcuMT" value="1734419958725006103" />
+    <property role="TrG5h" value="IDataPortProvider" />
+  </node>
+  <node concept="PlHQZ" id="1whTsdrdcrk">
+    <property role="EcuMT" value="1734419958725920468" />
+    <property role="TrG5h" value="ITriggerPortProvider" />
   </node>
 </model>
 

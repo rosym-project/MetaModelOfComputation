@@ -579,22 +579,9 @@
           <node concept="11L4FC" id="3EtQu_xHxf" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
-          <node concept="ljvvj" id="3EtQu_xHxg" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
         </node>
-        <node concept="3F2HdR" id="3EtQu_xHxh" role="3EZMnx">
-          <ref role="1NtTu8" to="yvgz:3eP8Zudp5Gb" resolve="trigger_ports" />
-          <node concept="l2Vlx" id="3EtQu_xHxi" role="2czzBx" />
-          <node concept="pj6Ft" id="3EtQu_xHxj" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="lj46D" id="3EtQu_xHxk" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="ljvvj" id="3EtQu_xHxl" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
+        <node concept="3F1sOY" id="1whTsdrntr9" role="3EZMnx">
+          <ref role="1NtTu8" to="yvgz:3eP8Zudp5Gb" resolve="trigger_port" />
         </node>
       </node>
       <node concept="3F0ifn" id="3EtQu_xHxm" role="3EZMnx">
@@ -606,6 +593,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3EtQu_xWtD">
+    <property role="3GE5qa" value="definitions.function" />
     <ref role="1XX52x" to="yvgz:7YUYw4xHlaz" resolve="ImperativeFunctionBlock" />
     <node concept="3EZMnI" id="3EtQu_xWtF" role="2wV5jI">
       <node concept="l2Vlx" id="3EtQu_xWtG" role="2iSdaV" />
@@ -924,6 +912,7 @@
   </node>
   <node concept="PKFIW" id="7OFootZUkmp">
     <property role="TrG5h" value="ImperativeFunctionBlock_Comp" />
+    <property role="3GE5qa" value="definitions.function" />
     <ref role="1XX52x" to="yvgz:7YUYw4xHlaz" resolve="ImperativeFunctionBlock" />
     <node concept="3EZMnI" id="7OFootZUkD6" role="2wV5jI">
       <node concept="3F0ifn" id="7OFootZUkGD" role="3EZMnx">
@@ -967,57 +956,17 @@
         </node>
       </node>
       <node concept="3F0ifn" id="3EtQu_xWuR" role="3EZMnx">
-        <property role="3F0ifm" value="trigger_ports" />
+        <property role="3F0ifm" value="trigger_port" />
       </node>
       <node concept="3F0ifn" id="3EtQu_xWuS" role="3EZMnx">
         <property role="3F0ifm" value=":" />
         <node concept="11L4FC" id="3EtQu_xWuT" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="ljvvj" id="3EtQu_xWuU" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
       </node>
-      <node concept="3F2HdR" id="3EtQu_xWuV" role="3EZMnx">
-        <ref role="1NtTu8" to="yvgz:3eP8Zudp5Gb" resolve="trigger_ports" />
-        <node concept="l2Vlx" id="3EtQu_xWuW" role="2czzBx" />
-        <node concept="pj6Ft" id="3EtQu_xWuX" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="lj46D" id="3EtQu_xWuY" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="ljvvj" id="3EtQu_xWuZ" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="3EtQu_xWuE" role="3EZMnx">
-        <node concept="ljvvj" id="3EtQu_xWuF" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="1whTsdr5s1r" role="3EZMnx">
-        <property role="3F0ifm" value="algorithm_blocks" />
-      </node>
-      <node concept="3F0ifn" id="1whTsdr5s1s" role="3EZMnx">
-        <property role="3F0ifm" value=":" />
-        <node concept="11L4FC" id="1whTsdr5s1t" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="ljvvj" id="1whTsdr5s1u" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F2HdR" id="1whTsdr5s1v" role="3EZMnx">
-        <ref role="1NtTu8" to="yvgz:1whTsdr3JBw" resolve="algorithm_blocks" />
-        <node concept="l2Vlx" id="1whTsdr5s1w" role="2czzBx" />
-        <node concept="pj6Ft" id="1whTsdr5s1x" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="lj46D" id="1whTsdr5s1y" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="ljvvj" id="1whTsdr5s1z" role="3F10Kt">
+      <node concept="3F1sOY" id="1whTsdrntIA" role="3EZMnx">
+        <ref role="1NtTu8" to="yvgz:3eP8Zudp5Gb" resolve="trigger_port" />
+        <node concept="ljvvj" id="1whTsdrntT1" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -1407,29 +1356,16 @@
           </node>
         </node>
         <node concept="3F0ifn" id="EZVvidOU70" role="3EZMnx">
-          <property role="3F0ifm" value="trigger_ports" />
+          <property role="3F0ifm" value="trigger_port" />
         </node>
         <node concept="3F0ifn" id="EZVvidOU71" role="3EZMnx">
           <property role="3F0ifm" value=":" />
           <node concept="11L4FC" id="EZVvidOU72" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
-          <node concept="ljvvj" id="EZVvidOU73" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
         </node>
-        <node concept="3F2HdR" id="EZVvidOU74" role="3EZMnx">
-          <ref role="1NtTu8" to="yvgz:3eP8Zudp5Gb" resolve="trigger_ports" />
-          <node concept="l2Vlx" id="EZVvidOU75" role="2czzBx" />
-          <node concept="pj6Ft" id="EZVvidOU76" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="lj46D" id="EZVvidOU77" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="ljvvj" id="EZVvidOU78" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
+        <node concept="3F1sOY" id="1whTsdrnt4g" role="3EZMnx">
+          <ref role="1NtTu8" to="yvgz:3eP8Zudp5Gb" resolve="trigger_port" />
         </node>
       </node>
       <node concept="3F0ifn" id="EZVvidOU79" role="3EZMnx">
