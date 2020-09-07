@@ -21,6 +21,9 @@
     </language>
     <language id="a8f70f9e-ef01-499f-885c-c79273fa1695" name="Algorithm">
       <concept id="774599295535771616" name="Algorithm.structure.ArrayAccess" flags="ng" index="274C8k" />
+      <concept id="1292841379851053318" name="Algorithm.structure.AlgorithmBlockInst" flags="ng" index="2d0V5$">
+        <reference id="1292841379851053319" name="type" index="2d0V5_" />
+      </concept>
       <concept id="8431561705660014078" name="Algorithm.structure.ScheduleStatementList" flags="ng" index="2qD35c">
         <child id="8431561705660014082" name="statements" index="2qD3aK" />
       </concept>
@@ -38,6 +41,7 @@
       </concept>
       <concept id="2483553733153713489" name="Algorithm.structure.EmptyFunctionBlock" flags="ng" index="vjVuB" />
       <concept id="2483553733153713486" name="Algorithm.structure.AlgorithmBlock" flags="ng" index="vjVuS">
+        <child id="1292841379851053322" name="algorithm_blocks" index="2d0V5C" />
         <child id="1550618328762864956" name="triggers" index="2pAz8r" />
         <child id="1550618328762864955" name="closures" index="2pAz8s" />
         <child id="1550618328762864954" name="scheduler_blocks" index="2pAz8t" />
@@ -62,7 +66,7 @@
         <reference id="5416189171681144225" name="type" index="2PtgrV" />
       </concept>
       <concept id="3725923812855012100" name="Algorithm.structure.FunctionBlock" flags="ng" index="2YOnzN">
-        <child id="3725923812855012107" name="trigger_ports" index="2YOnzW" />
+        <child id="3725923812855012107" name="trigger_port" index="2YOnzW" />
         <child id="3725923812855012104" name="data_ports" index="2YOnzZ" />
       </concept>
       <concept id="8213653556241839012" name="Algorithm.structure.WhileDoStatement" flags="ng" index="1e5Z70">
@@ -82,7 +86,8 @@
       <concept id="7268768516385006770" name="Algorithm.structure.TriggerPort" flags="ng" index="1pt3V6">
         <property id="65996431591721054" name="direction" index="2_BrWT" />
       </concept>
-      <concept id="9203943671252472483" name="Algorithm.structure.FunctionBlockContainer" flags="ng" index="1u3Uyy">
+      <concept id="9203943671252472483" name="Algorithm.structure.ImperativeFunctionBlock" flags="ng" index="1u3Uyy">
+        <child id="1734419958731892874" name="algorithm_blocks" index="13BwP9" />
         <child id="7268768516385108292" name="triggers" index="1psEGK" />
         <child id="4953108030111323919" name="function_blocks" index="3SlQUd" />
         <child id="4953108030111323921" name="scheduler_blocks" index="3SlQUj" />
@@ -678,6 +683,117 @@
     <node concept="2Ptgr7" id="1whTsdr3nFD" role="2pAz8v">
       <property role="TrG5h" value="kp" />
       <ref role="2PtgrV" node="4GEaPFYprO_" resolve="kp" />
+    </node>
+  </node>
+  <node concept="2$3l2Q" id="1whTsdr3JyG">
+    <property role="TrG5h" value="controller_api" />
+    <node concept="1u3Uyy" id="1whTsdr3Jtd" role="2PtZiJ">
+      <property role="TrG5h" value="p_controller" />
+      <node concept="1pt3V6" id="1whTsdr3Jtl" role="2YOnzW">
+        <property role="TrG5h" value="trigger" />
+        <property role="2_BrWT" value="3EtQu_uj5h/In" />
+      </node>
+      <node concept="1OHxBU" id="1whTsdr3Jtm" role="2YOnzZ">
+        <property role="TrG5h" value="setpoint" />
+        <property role="1OHxBQ" value="6po$YwiVCCm/In" />
+        <node concept="10P55v" id="1whTsdr3Jtn" role="1tU5fm" />
+      </node>
+      <node concept="1OHxBU" id="1whTsdr3Jto" role="2YOnzZ">
+        <property role="TrG5h" value="measurement" />
+        <property role="1OHxBQ" value="6po$YwiVCCm/In" />
+        <node concept="10P55v" id="1whTsdr3Jtp" role="1tU5fm" />
+      </node>
+      <node concept="1OHxBU" id="1whTsdr3Jtq" role="2YOnzZ">
+        <property role="TrG5h" value="actuation" />
+        <property role="1OHxBQ" value="6po$YwiVCCn/Out" />
+        <node concept="10P55v" id="1whTsdr3Jtr" role="1tU5fm" />
+      </node>
+      <node concept="1OHxBU" id="1whTsdr3Jts" role="2YOnzZ">
+        <property role="TrG5h" value="gain" />
+        <property role="1OHxBQ" value="6po$YwiVCCq/InOut" />
+        <node concept="10P55v" id="1whTsdr3Jtt" role="1tU5fm" />
+      </node>
+      <node concept="1OHxBB" id="1whTsdr3Jtu" role="3SlQUq">
+        <ref role="1OHxBS" node="1whTsdr3Jtm" resolve="setpoint" />
+        <ref role="1OHyup" node="4GEaPFYprOw" resolve="setpoint" />
+      </node>
+      <node concept="1OHxBB" id="1whTsdr3Jtv" role="3SlQUq">
+        <ref role="1OHxBS" node="1whTsdr3Jto" resolve="measurement" />
+        <ref role="1OHyup" node="4GEaPFYprOu" resolve="measurement" />
+      </node>
+      <node concept="1psEHa" id="1whTsdr3Jtx" role="1psEGK">
+        <ref role="1psEHb" node="1whTsdr3Jtl" resolve="trigger" />
+        <ref role="1psEGP" node="1Nl8mqSY6Ld" resolve="pSchedTrigger" />
+      </node>
+      <node concept="1psEHa" id="1whTsdr3Jty" role="1psEGK">
+        <ref role="1psEGP" node="4GEaPFYprOA" resolve="kpTrigger" />
+        <ref role="1psEHb" node="1Nl8mqSY6Lh" resolve="kp" />
+      </node>
+      <node concept="1psEHa" id="1whTsdr3Jtz" role="1psEGK">
+        <ref role="1psEHb" node="1Nl8mqSY6Lg" resolve="computeError" />
+        <ref role="1psEGP" node="4GEaPFYprO$" resolve="computeErrorTrigger" />
+      </node>
+      <node concept="1OHxBB" id="1whTsdr3Jt_" role="3SlQUq">
+        <ref role="1OHxBS" node="1whTsdr3Jts" resolve="gain" />
+        <ref role="1OHyup" node="4GEaPFYprOB" resolve="kpGain" />
+      </node>
+      <node concept="1OHxBB" id="1whTsdrEvTH" role="3SlQUq">
+        <ref role="1OHxBS" node="1whTsdr3Jtq" resolve="actuation" />
+        <ref role="1OHyup" node="4GEaPFYprOF" resolve="kpOut" />
+      </node>
+      <node concept="2d0V5$" id="1whTsdrEvTk" role="13BwP9">
+        <property role="TrG5h" value="ctrl" />
+        <ref role="2d0V5_" node="1whTsdr3nFs" resolve="controller_algo" />
+      </node>
+    </node>
+  </node>
+  <node concept="vjVuS" id="1whTsdrEvUH">
+    <property role="TrG5h" value="nesting_lvl1" />
+    <node concept="2Ptgr7" id="1whTsdrIemw" role="2pAz8v">
+      <property role="TrG5h" value="lvl1" />
+      <ref role="2PtgrV" node="4GEaPFYpqbo" resolve="bar" />
+    </node>
+    <node concept="vjVuy" id="1whTsdrEvUL" role="2pAz8u">
+      <property role="TrG5h" value="lvl1" />
+      <node concept="10Oyi0" id="1whTsdrEvUT" role="1tU5fm" />
+    </node>
+  </node>
+  <node concept="vjVuS" id="1whTsdrEvVv">
+    <property role="TrG5h" value="nesting_lvl2" />
+    <node concept="vjVuy" id="1whTsdrIelB" role="2pAz8u">
+      <property role="TrG5h" value="lvl2" />
+      <node concept="10Oyi0" id="1whTsdrIelJ" role="1tU5fm" />
+    </node>
+    <node concept="2d0V5$" id="1whTsdrEvVw" role="2d0V5C">
+      <property role="TrG5h" value="lvl1" />
+      <ref role="2d0V5_" node="1whTsdrEvUH" resolve="nesting_lvl1" />
+    </node>
+    <node concept="2Ptgr7" id="1whTsdrIemB" role="2pAz8v">
+      <property role="TrG5h" value="lvl2" />
+      <ref role="2PtgrV" node="4GEaPFYpqcK" resolve="baz" />
+    </node>
+    <node concept="2$bkLk" id="1whTsdrIemE" role="2pAz8t">
+      <property role="TrG5h" value="lvl2" />
+      <ref role="2$bkLg" node="1Nl8mqSVyWV" resolve="fooSched" />
+    </node>
+  </node>
+  <node concept="vjVuS" id="1whTsdrIemj">
+    <property role="TrG5h" value="nesting_lvl3" />
+    <node concept="1psEHa" id="1whTsdrIemH" role="2pAz8r">
+      <ref role="1psEHb" node="1Nl8mqSVyX2" resolve="schedBar" />
+      <ref role="1psEGP" node="4GEaPFYpqbp" resolve="barTrigger" />
+    </node>
+    <node concept="1psEHa" id="1whTsdrIenl" role="2pAz8r">
+      <ref role="1psEHb" node="1Nl8mqSVyX3" resolve="schedBaz" />
+      <ref role="1psEGP" node="4GEaPFYpqcS" resolve="bazTrigger" />
+    </node>
+    <node concept="2d0V5$" id="1whTsdrIemk" role="2d0V5C">
+      <property role="TrG5h" value="lvl2" />
+      <ref role="2d0V5_" node="1whTsdrEvVv" resolve="nesting_lvl2" />
+    </node>
+    <node concept="1OHxBB" id="1whTsdrIemn" role="2pAz8s">
+      <ref role="1OHxBS" node="1whTsdrEvUL" resolve="lvl1" />
+      <ref role="1OHyup" node="1whTsdrIelB" resolve="lvl2" />
     </node>
   </node>
 </model>

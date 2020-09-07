@@ -204,6 +204,13 @@
     <property role="34LRSv" value="imperative function block" />
     <property role="3GE5qa" value="definitions.function" />
     <ref role="1TJDcQ" node="3eP8Zudp5G4" resolve="FunctionBlock" />
+    <node concept="1TJgyj" id="1whTsdrzYya" role="1TKVEi">
+      <property role="IQ2ns" value="1734419958731892874" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="algorithm_blocks" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="17L66asWE$6" resolve="AlgorithmBlockInst" />
+    </node>
     <node concept="1TJgyj" id="4iWYoaWUTsf" role="1TKVEi">
       <property role="IQ2ns" value="4953108030111323919" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
