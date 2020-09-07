@@ -15,6 +15,7 @@
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
       </concept>
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -62,6 +63,13 @@
         <child id="65996431592056451" name="schedule" index="2__D7$" />
       </concept>
       <concept id="65996431591631846" name="Algorithm.structure.EmptySchedulerBlock" flags="ng" index="2_B1M1" />
+      <concept id="8204000063695768669" name="Algorithm.structure.PredefinedFunctionBlock" flags="ng" index="G13Fa">
+        <property id="1550618328762367609" name="nblx" index="2p$X_u" />
+        <property id="8204000063695768670" name="module" index="G13F9" />
+        <property id="8204000063695768673" name="import" index="G13FQ" />
+        <property id="1455541779002196627" name="function" index="1h6pOq" />
+        <child id="1455541779003601248" name="properties" index="1h3eVD" />
+      </concept>
       <concept id="5416189171681144221" name="Algorithm.structure.FunctionBlockInst" flags="ng" index="2Ptgr7">
         <reference id="5416189171681144225" name="type" index="2PtgrV" />
       </concept>
@@ -567,6 +575,46 @@
     <node concept="1OHxBB" id="1whTsdrIemn" role="2pAz8s">
       <ref role="1OHxBS" node="1whTsdrEvUL" resolve="lvl1" />
       <ref role="1OHyup" node="1whTsdrIelB" resolve="lvl2" />
+    </node>
+  </node>
+  <node concept="2$3l2Q" id="1whTsdsaFoX">
+    <property role="TrG5h" value="predefined_fblock_lib" />
+    <node concept="G13Fa" id="1whTsdsaFp4" role="2PtZiJ">
+      <property role="TrG5h" value="MyPredefinedFunctionBlock" />
+      <property role="G13F9" value="my_ext_library" />
+      <property role="G13FQ" value="my_ext_library.functions.header" />
+      <property role="1h6pOq" value="my_fun" />
+      <property role="2p$X_u" value="my_fun_nblx" />
+      <node concept="19Szcq" id="1whTsdsdAVU" role="1h3eVD">
+        <property role="TrG5h" value="prop1" />
+        <node concept="10Q1$e" id="1whTsdsdAWb" role="1tU5fm">
+          <node concept="17QB3L" id="1whTsdsdAW4" role="10Q1$1" />
+        </node>
+      </node>
+      <node concept="1OHxBU" id="1whTsdsdAU9" role="2YOnzZ">
+        <property role="TrG5h" value="in1" />
+        <property role="1OHxBQ" value="6po$YwiVCCm/In" />
+        <node concept="10P55v" id="1whTsdsdAUl" role="1tU5fm" />
+      </node>
+      <node concept="1OHxBU" id="1whTsdsdAUr" role="2YOnzZ">
+        <property role="TrG5h" value="in2" />
+        <property role="1OHxBQ" value="6po$YwiVCCm/In" />
+        <node concept="10Q1$e" id="1whTsdsdAUO" role="1tU5fm">
+          <node concept="10Oyi0" id="1whTsdsdAUH" role="10Q1$1" />
+        </node>
+      </node>
+      <node concept="1OHxBU" id="1whTsdsdAV1" role="2YOnzZ">
+        <property role="TrG5h" value="out" />
+        <property role="1OHxBQ" value="6po$YwiVCCn/Out" />
+        <node concept="slerG" id="1whTsdsdAVq" role="1tU5fm">
+          <property role="sit5Z" value="2" />
+          <node concept="10P_77" id="1whTsdsdAVB" role="2ipnhG" />
+        </node>
+      </node>
+      <node concept="1pt3V6" id="1whTsdsaFp7" role="2YOnzW">
+        <property role="TrG5h" value="trigger" />
+        <property role="2_BrWT" value="3EtQu_uj5h/In" />
+      </node>
     </node>
   </node>
 </model>

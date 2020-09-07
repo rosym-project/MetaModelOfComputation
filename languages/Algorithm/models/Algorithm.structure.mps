@@ -21,6 +21,9 @@
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
+      <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
+        <property id="1083066089218" name="constraint" index="FLfZY" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
@@ -602,6 +605,51 @@
   <node concept="PlHQZ" id="1whTsdrdcrk">
     <property role="EcuMT" value="1734419958725920468" />
     <property role="TrG5h" value="ITriggerPortProvider" />
+  </node>
+  <node concept="1TIwiD" id="77qtDttR$Lt">
+    <property role="EcuMT" value="8204000063695768669" />
+    <property role="3GE5qa" value="definitions.function" />
+    <property role="TrG5h" value="PredefinedFunctionBlock" />
+    <ref role="1TJDcQ" node="3eP8Zudp5G4" resolve="FunctionBlock" />
+    <node concept="1TJgyi" id="77qtDttR$Lu" role="1TKVEl">
+      <property role="IQ2nx" value="8204000063695768670" />
+      <property role="TrG5h" value="module" />
+      <ref role="AX2Wp" node="1whTsds7Uka" resolve="ValidIdentifier" />
+    </node>
+    <node concept="1TJgyi" id="77qtDttR$Lx" role="1TKVEl">
+      <property role="IQ2nx" value="8204000063695768673" />
+      <property role="TrG5h" value="import" />
+      <ref role="AX2Wp" node="1whTsdsaFpe" resolve="FullyQualifiedName" />
+    </node>
+    <node concept="1TJgyi" id="1gN7S_5aCaj" role="1TKVEl">
+      <property role="IQ2nx" value="1455541779002196627" />
+      <property role="TrG5h" value="function" />
+      <ref role="AX2Wp" node="1whTsds7Uka" resolve="ValidIdentifier" />
+    </node>
+    <node concept="1TJgyi" id="1m4TMuc5NTT" role="1TKVEl">
+      <property role="IQ2nx" value="1550618328762367609" />
+      <property role="TrG5h" value="nblx" />
+      <ref role="AX2Wp" node="1whTsds7Uka" resolve="ValidIdentifier" />
+    </node>
+    <node concept="1TJgyj" id="1gN7S_5fZ5w" role="1TKVEi">
+      <property role="IQ2ns" value="1455541779003601248" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="properties" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="tpee:4k3qd$cSlJ3" resolve="BaseVariableDeclaration" />
+    </node>
+  </node>
+  <node concept="Az7Fb" id="1whTsds7Uka">
+    <property role="3F6X1D" value="1734419958741312778" />
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="ValidIdentifier" />
+    <property role="FLfZY" value="[a-zA-Z$[_]][a-zA-Z0-9$[_]]*" />
+  </node>
+  <node concept="Az7Fb" id="1whTsdsaFpe">
+    <property role="3F6X1D" value="1734419958742038094" />
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="FullyQualifiedName" />
+    <property role="FLfZY" value="[a-zA-Z$[_]][a-zA-Z0-9$[_][.]]*[a-zA-Z0-9$[_]]" />
   </node>
 </model>
 
