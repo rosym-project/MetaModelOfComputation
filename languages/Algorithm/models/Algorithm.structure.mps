@@ -200,7 +200,6 @@
   <node concept="1TIwiD" id="7YUYw4xHlaz">
     <property role="EcuMT" value="9203943671252472483" />
     <property role="TrG5h" value="ImperativeFunctionBlock" />
-    <property role="19KtqR" value="true" />
     <property role="34LRSv" value="imperative function block" />
     <property role="3GE5qa" value="definitions.function" />
     <ref role="1TJDcQ" node="3eP8Zudp5G4" resolve="FunctionBlock" />
