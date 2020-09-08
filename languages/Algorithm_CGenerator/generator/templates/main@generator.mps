@@ -3565,7 +3565,7 @@
               </node>
               <node concept="356sEK" id="1whTsdssFOB" role="383Ya9">
                 <node concept="356sEF" id="1whTsdssFOC" role="356sEH">
-                  <property role="TrG5h" value="composition" />
+                  <property role="TrG5h" value="ablx_composition" />
                   <node concept="5jKBG" id="1whTsdssFWe" role="lGtFl">
                     <ref role="v9R2y" node="1whTsdssvXH" resolve="include_AlgorithmComposition" />
                     <node concept="3NFfHV" id="1whTsdssGkC" role="5jGum">
@@ -3595,6 +3595,44 @@
                             <ref role="3TtcxE" to="yvgz:1whTsdrzYya" resolve="algorithm_blocks" />
                           </node>
                           <node concept="30H73N" id="1whTsdssGdc" role="2Oq$k0" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="356sEK" id="3_2CyPyZQA$" role="383Ya9">
+                <node concept="356sEF" id="3_2CyPyZQA_" role="356sEH">
+                  <property role="TrG5h" value="fblx_composition" />
+                  <node concept="5jKBG" id="3_2CyPyZQL9" role="lGtFl">
+                    <ref role="v9R2y" node="3_2CyPyZPsJ" resolve="include_FunctionComposition" />
+                    <node concept="3NFfHV" id="3_2CyPyZQSx" role="5jGum">
+                      <node concept="3clFbS" id="3_2CyPyZQSy" role="2VODD2">
+                        <node concept="3clFbF" id="3_2CyPyZQSD" role="3cqZAp">
+                          <node concept="2OqwBi" id="3_2CyPyZRV7" role="3clFbG">
+                            <node concept="30H73N" id="3_2CyPyZQSC" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="3_2CyPyZSf$" role="2OqNvi">
+                              <ref role="3Tt5mk" to="yvgz:4GEaPFYnMQx" resolve="type" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2EixSi" id="3_2CyPyZQAA" role="2EinRH" />
+                <node concept="356sEF" id="3_2CyPyZQLc" role="356sEH">
+                  <property role="TrG5h" value=";" />
+                </node>
+                <node concept="1WS0z7" id="3_2CyPyZQLi" role="lGtFl">
+                  <node concept="3JmXsc" id="3_2CyPyZQLl" role="3Jn$fo">
+                    <node concept="3clFbS" id="3_2CyPyZQLm" role="2VODD2">
+                      <node concept="3clFbF" id="3_2CyPyZQLs" role="3cqZAp">
+                        <node concept="2OqwBi" id="3_2CyPyZQLn" role="3clFbG">
+                          <node concept="3Tsc0h" id="3_2CyPyZQLq" role="2OqNvi">
+                            <ref role="3TtcxE" to="yvgz:4iWYoaWUTsf" resolve="function_blocks" />
+                          </node>
+                          <node concept="30H73N" id="3_2CyPyZQLr" role="2Oq$k0" />
                         </node>
                       </node>
                     </node>
@@ -3899,6 +3937,47 @@
         <node concept="2EixSi" id="1whTsdssvXZ" role="2EinRH" />
       </node>
       <node concept="raruj" id="1whTsdssw3E" role="lGtFl" />
+    </node>
+  </node>
+  <node concept="13MO4I" id="3_2CyPyZPsJ">
+    <property role="TrG5h" value="include_FunctionComposition" />
+    <ref role="3gUMe" to="yvgz:3eP8Zudp5G4" resolve="FunctionBlock" />
+    <node concept="356WMU" id="3_2CyPyZPsO" role="13RCb5">
+      <node concept="356sEK" id="3_2CyPyZPsQ" role="383Ya9">
+        <node concept="356sEF" id="3_2CyPyZPsR" role="356sEH">
+          <property role="TrG5h" value="const " />
+        </node>
+        <node concept="2EixSi" id="3_2CyPyZPsS" role="2EinRH" />
+        <node concept="356sEF" id="3_2CyPyZPsY" role="356sEH">
+          <property role="TrG5h" value="type" />
+          <node concept="5jKBG" id="3_2CyPyZPtc" role="lGtFl">
+            <ref role="v9R2y" node="1whTsdsq9ch" resolve="include_FunctionBlockType" />
+          </node>
+        </node>
+        <node concept="356sEF" id="3_2CyPyZPt1" role="356sEH">
+          <property role="TrG5h" value=" *" />
+        </node>
+        <node concept="356sEF" id="3_2CyPyZPt5" role="356sEH">
+          <property role="TrG5h" value="name" />
+          <node concept="17Uvod" id="3_2CyPyZPtj" role="lGtFl">
+            <property role="2qtEX9" value="name" />
+            <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+            <node concept="3zFVjK" id="3_2CyPyZPtk" role="3zH0cK">
+              <node concept="3clFbS" id="3_2CyPyZPtl" role="2VODD2">
+                <node concept="3clFbF" id="3_2CyPyZPxW" role="3cqZAp">
+                  <node concept="2OqwBi" id="3_2CyPyZPL$" role="3clFbG">
+                    <node concept="30H73N" id="3_2CyPyZPxV" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="3_2CyPyZQ5s" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="raruj" id="3_2CyPyZPsW" role="lGtFl" />
     </node>
   </node>
 </model>
