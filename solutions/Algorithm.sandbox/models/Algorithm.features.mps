@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="a8f70f9e-ef01-499f-885c-c79273fa1695" name="Algorithm" version="0" />
+    <engage id="8d7c3baa-c6d4-442a-843a-34b7b957af1e" name="Algorithm_CGenerator" />
   </languages>
   <imports />
   <registry>
