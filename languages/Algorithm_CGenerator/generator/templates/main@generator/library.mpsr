@@ -237,7 +237,7 @@
           </node>
         </node>
         <node concept="1sPUBX" id="1whTsdsqBUx" role="lGtFl">
-          <ref role="v9R2y" node="1whTsdsq8QZ" resolve="switch_LibraryNanoBlocks" />
+          <ref role="v9R2y" node="1whTsdsq8QZ" resolve="switch_NanoBlockDeclaration" />
         </node>
       </node>
       <node concept="356sEK" id="1whTsdsq8tm" role="383Ya9">

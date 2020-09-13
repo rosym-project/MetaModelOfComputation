@@ -30,7 +30,6 @@
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
-      <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="ln" index="5jKBG" />
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
         <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
       </concept>
@@ -261,15 +260,15 @@
       </node>
       <node concept="356sEK" id="1whTsdsof6i" role="383Ya9">
         <node concept="356sEF" id="1whTsdsofMM" role="356sEH">
-          <property role="TrG5h" value="// A-Block definition" />
+          <property role="TrG5h" value="/* A-Block declaration */" />
         </node>
         <node concept="2EixSi" id="1whTsdsof6k" role="2EinRH" />
       </node>
       <node concept="356sEK" id="1whTsdsofMP" role="383Ya9">
         <node concept="356sEF" id="1whTsdsofMQ" role="356sEH">
           <property role="TrG5h" value="struct algo_nbx {}" />
-          <node concept="5jKBG" id="1whTsdsogVN" role="lGtFl">
-            <ref role="v9R2y" node="1whTsdsogTT" resolve="include_AlgorithmBlockDefinition" />
+          <node concept="1sPUBX" id="7HPHKNlTwxQ" role="lGtFl">
+            <ref role="v9R2y" node="1whTsdsq8QZ" resolve="switch_NanoBlockDeclaration" />
           </node>
         </node>
         <node concept="2EixSi" id="1whTsdsofMR" role="2EinRH" />

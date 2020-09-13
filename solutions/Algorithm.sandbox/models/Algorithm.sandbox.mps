@@ -9,15 +9,24 @@
   <imports />
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1188220165133" name="jetbrains.mps.baseLanguage.structure.ArrayLiteral" flags="nn" index="2BsdOp">
+        <child id="1188220173759" name="item" index="2BsfMF" />
+      </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
       </concept>
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
     </language>
     <language id="a8f70f9e-ef01-499f-885c-c79273fa1695" name="Algorithm">
@@ -406,6 +415,20 @@
       <property role="TrG5h" value="my_variable_size_array" />
       <node concept="10Q1$e" id="1whTsdr01uL" role="1tU5fm">
         <node concept="10Oyi0" id="1whTsdr01uM" role="10Q1$1" />
+      </node>
+      <node concept="2BsdOp" id="7HPHKNlUkmB" role="33vP2m">
+        <node concept="3cmrfG" id="7HPHKNlUkmT" role="2BsfMF">
+          <property role="3cmrfH" value="1" />
+        </node>
+        <node concept="3cmrfG" id="7HPHKNlUknw" role="2BsfMF">
+          <property role="3cmrfH" value="2" />
+        </node>
+        <node concept="3cmrfG" id="7HPHKNlUknB" role="2BsfMF">
+          <property role="3cmrfH" value="3" />
+        </node>
+        <node concept="3cmrfG" id="7HPHKNlUkoz" role="2BsfMF">
+          <property role="3cmrfH" value="4" />
+        </node>
       </node>
     </node>
     <node concept="vjVuy" id="1whTsdr01uN" role="2pAz8u">

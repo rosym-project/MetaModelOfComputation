@@ -97,6 +97,12 @@
         <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="ImperativeFunctionBlock" />
       </node>
     </node>
+    <node concept="1N15co" id="7HPHKNlLU$T" role="1s_3oS">
+      <property role="TrG5h" value="instance" />
+      <node concept="3Tqbb2" id="7HPHKNlLUDq" role="1N15GL">
+        <ref role="ehGHo" to="yvgz:1Nl8mqSY6OM" resolve="SchedulerBlockInst" />
+      </node>
+    </node>
     <node concept="356WMU" id="5Tr1VsJDHh3" role="13RCb5">
       <node concept="356sEK" id="5Tr1VsJDHhb" role="383Ya9">
         <node concept="356sEF" id="5Tr1VsJDHhc" role="356sEH">
