@@ -412,7 +412,7 @@
       <ref role="30HIoZ" to="yvgz:7wMoIgF4RlN" resolve="ReferenceType" />
       <node concept="gft3U" id="7rbzb1SCBwC" role="1lVwrX">
         <node concept="356sEF" id="7rbzb1SCBwI" role="gfFT$">
-          <property role="TrG5h" value="NULL" />
+          <property role="TrG5h" value="((void *) 0)" />
           <node concept="1W57fq" id="7rbzb1SCBwM" role="lGtFl">
             <node concept="3IZrLx" id="7rbzb1SCBwN" role="3IZSJc">
               <node concept="3clFbS" id="7rbzb1SCBwO" role="2VODD2">

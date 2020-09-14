@@ -114,6 +114,9 @@
     <node concept="PrWs8" id="1whTsdrhuVe" role="PzmwI">
       <ref role="PrY4T" node="1whTsdr9Hcn" resolve="IDataPortProvider" />
     </node>
+    <node concept="PrWs8" id="4wr1ti7L_Yh" role="PzmwI">
+      <ref role="PrY4T" node="4wr1ti7LzU3" resolve="IDataConnectorProvider" />
+    </node>
     <node concept="PrWs8" id="1whTsdrhuVv" role="PzmwI">
       <ref role="PrY4T" node="1whTsdrdcrk" resolve="ITriggerPortProvider" />
     </node>
@@ -650,6 +653,10 @@
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="FullyQualifiedName" />
     <property role="FLfZY" value="[a-zA-Z$[_]][a-zA-Z0-9$[_][.]]*[a-zA-Z0-9$[_]]" />
+  </node>
+  <node concept="PlHQZ" id="4wr1ti7LzU3">
+    <property role="EcuMT" value="5195753005471121027" />
+    <property role="TrG5h" value="IDataConnectorProvider" />
   </node>
 </model>
 

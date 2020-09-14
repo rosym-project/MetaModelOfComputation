@@ -21,9 +21,6 @@
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
-      <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="ln" index="5jKBG">
-        <child id="1510949579266801461" name="sourceNodeQuery" index="5jGum" />
-      </concept>
       <concept id="1202776937179" name="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" flags="lg" index="b5Tf3" />
       <concept id="1177093525992" name="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" flags="lg" index="gft3U">
         <child id="1177093586806" name="templateNode" index="gfFT$" />
@@ -43,7 +40,9 @@
       <concept id="1167327847730" name="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" flags="lg" index="3aamgX">
         <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
       </concept>
-      <concept id="982871510068000147" name="jetbrains.mps.lang.generator.structure.TemplateSwitchMacro" flags="lg" index="1sPUBX" />
+      <concept id="982871510068000147" name="jetbrains.mps.lang.generator.structure.TemplateSwitchMacro" flags="lg" index="1sPUBX">
+        <child id="982871510068000158" name="sourceNodeQuery" index="1sPUBK" />
+      </concept>
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
       <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
@@ -119,7 +118,7 @@
                 <node concept="356sEF" id="1whTsdsohRP" role="356sEH">
                   <property role="TrG5h" value="data_block" />
                   <node concept="1sPUBX" id="7HPHKNlSYse" role="lGtFl">
-                    <ref role="v9R2y" node="7HPHKNlSMmS" resolve="switch_VariableDeclaration" />
+                    <ref role="v9R2y" node="7HPHKNlSMmS" resolve="switch_NanoBlockMemberDeclaration" />
                   </node>
                 </node>
                 <node concept="356sEF" id="7HPHKNlSYmh" role="356sEH">
@@ -153,14 +152,14 @@
               <node concept="356sEK" id="1whTsdspnw2" role="383Ya9">
                 <node concept="356sEF" id="1whTsdspxp0" role="356sEH">
                   <property role="TrG5h" value="ablx_composition" />
-                  <node concept="5jKBG" id="1whTsdsswWO" role="lGtFl">
-                    <ref role="v9R2y" node="1whTsdssvXH" resolve="include_AlgorithmComposition" />
-                    <node concept="3NFfHV" id="1whTsdssxem" role="5jGum">
-                      <node concept="3clFbS" id="1whTsdssxen" role="2VODD2">
-                        <node concept="3clFbF" id="1whTsdssxgw" role="3cqZAp">
-                          <node concept="2OqwBi" id="1whTsdssxtF" role="3clFbG">
-                            <node concept="30H73N" id="1whTsdssxgv" role="2Oq$k0" />
-                            <node concept="3TrEf2" id="1whTsdssxJc" role="2OqNvi">
+                  <node concept="1sPUBX" id="4wr1ti7SHUA" role="lGtFl">
+                    <ref role="v9R2y" node="7HPHKNlSMmS" resolve="switch_NanoBlockMemberDeclaration" />
+                    <node concept="3NFfHV" id="4wr1ti7SHUD" role="1sPUBK">
+                      <node concept="3clFbS" id="4wr1ti7SHUE" role="2VODD2">
+                        <node concept="3clFbF" id="4wr1ti7SHUL" role="3cqZAp">
+                          <node concept="2OqwBi" id="4wr1ti7SI7P" role="3clFbG">
+                            <node concept="30H73N" id="4wr1ti7SHUK" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="4wr1ti7SIqz" role="2OqNvi">
                               <ref role="3Tt5mk" to="yvgz:17L66asWE$7" resolve="type" />
                             </node>
                           </node>
@@ -191,14 +190,14 @@
               <node concept="356sEK" id="49XNbRQz1mA" role="383Ya9">
                 <node concept="356sEF" id="49XNbRQz1mB" role="356sEH">
                   <property role="TrG5h" value="fblx_composition" />
-                  <node concept="5jKBG" id="49XNbRQz1Go" role="lGtFl">
-                    <ref role="v9R2y" node="3_2CyPyZPsJ" resolve="include_FunctionComposition" />
-                    <node concept="3NFfHV" id="49XNbRQz1NK" role="5jGum">
-                      <node concept="3clFbS" id="49XNbRQz1NL" role="2VODD2">
-                        <node concept="3clFbF" id="49XNbRQz1PS" role="3cqZAp">
-                          <node concept="2OqwBi" id="49XNbRQz22I" role="3clFbG">
-                            <node concept="30H73N" id="49XNbRQz1PR" role="2Oq$k0" />
-                            <node concept="3TrEf2" id="49XNbRQz2jG" role="2OqNvi">
+                  <node concept="1sPUBX" id="4wr1ti7Sugf" role="lGtFl">
+                    <ref role="v9R2y" node="7HPHKNlSMmS" resolve="switch_NanoBlockMemberDeclaration" />
+                    <node concept="3NFfHV" id="4wr1ti7Sugo" role="1sPUBK">
+                      <node concept="3clFbS" id="4wr1ti7Sugp" role="2VODD2">
+                        <node concept="3clFbF" id="4wr1ti7Sugw" role="3cqZAp">
+                          <node concept="2OqwBi" id="4wr1ti7Surq" role="3clFbG">
+                            <node concept="30H73N" id="4wr1ti7Sugv" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="4wr1ti7SuGo" role="2OqNvi">
                               <ref role="3Tt5mk" to="yvgz:4GEaPFYnMQx" resolve="type" />
                             </node>
                           </node>
@@ -267,8 +266,8 @@
               <node concept="356sEK" id="3_2CyPyZDXL" role="383Ya9">
                 <node concept="356sEF" id="3_2CyPyZE8$" role="356sEH">
                   <property role="TrG5h" value="port" />
-                  <node concept="5jKBG" id="3_2CyPyZE8F" role="lGtFl">
-                    <ref role="v9R2y" node="7k2VbbJCSho" resolve="include_FunctionDeclareArg" />
+                  <node concept="1sPUBX" id="4wr1ti7T9Up" role="lGtFl">
+                    <ref role="v9R2y" node="7HPHKNlSMmS" resolve="switch_NanoBlockMemberDeclaration" />
                   </node>
                 </node>
                 <node concept="356sEF" id="3_2CyPyZE8A" role="356sEH">
@@ -302,14 +301,14 @@
               <node concept="356sEK" id="1whTsdssFOB" role="383Ya9">
                 <node concept="356sEF" id="1whTsdssFOC" role="356sEH">
                   <property role="TrG5h" value="ablx_composition" />
-                  <node concept="5jKBG" id="1whTsdssFWe" role="lGtFl">
-                    <ref role="v9R2y" node="1whTsdssvXH" resolve="include_AlgorithmComposition" />
-                    <node concept="3NFfHV" id="1whTsdssGkC" role="5jGum">
-                      <node concept="3clFbS" id="1whTsdssGkD" role="2VODD2">
-                        <node concept="3clFbF" id="1whTsdssGkM" role="3cqZAp">
-                          <node concept="2OqwBi" id="1whTsdssGxX" role="3clFbG">
-                            <node concept="30H73N" id="1whTsdssGkL" role="2Oq$k0" />
-                            <node concept="3TrEf2" id="1whTsdssGN4" role="2OqNvi">
+                  <node concept="1sPUBX" id="4wr1ti7SIxt" role="lGtFl">
+                    <ref role="v9R2y" node="7HPHKNlSMmS" resolve="switch_NanoBlockMemberDeclaration" />
+                    <node concept="3NFfHV" id="4wr1ti7SIxv" role="1sPUBK">
+                      <node concept="3clFbS" id="4wr1ti7SIxw" role="2VODD2">
+                        <node concept="3clFbF" id="4wr1ti7SIzr" role="3cqZAp">
+                          <node concept="2OqwBi" id="4wr1ti7SIKv" role="3clFbG">
+                            <node concept="30H73N" id="4wr1ti7SIzq" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="4wr1ti7SJ1F" role="2OqNvi">
                               <ref role="3Tt5mk" to="yvgz:17L66asWE$7" resolve="type" />
                             </node>
                           </node>
@@ -340,14 +339,14 @@
               <node concept="356sEK" id="3_2CyPyZQA$" role="383Ya9">
                 <node concept="356sEF" id="3_2CyPyZQA_" role="356sEH">
                   <property role="TrG5h" value="fblx_composition" />
-                  <node concept="5jKBG" id="3_2CyPyZQL9" role="lGtFl">
-                    <ref role="v9R2y" node="3_2CyPyZPsJ" resolve="include_FunctionComposition" />
-                    <node concept="3NFfHV" id="3_2CyPyZQSx" role="5jGum">
-                      <node concept="3clFbS" id="3_2CyPyZQSy" role="2VODD2">
-                        <node concept="3clFbF" id="3_2CyPyZQSD" role="3cqZAp">
-                          <node concept="2OqwBi" id="3_2CyPyZRV7" role="3clFbG">
-                            <node concept="30H73N" id="3_2CyPyZQSC" role="2Oq$k0" />
-                            <node concept="3TrEf2" id="3_2CyPyZSf$" role="2OqNvi">
+                  <node concept="1sPUBX" id="4wr1ti7SuOS" role="lGtFl">
+                    <ref role="v9R2y" node="7HPHKNlSMmS" resolve="switch_NanoBlockMemberDeclaration" />
+                    <node concept="3NFfHV" id="4wr1ti7SuOU" role="1sPUBK">
+                      <node concept="3clFbS" id="4wr1ti7SuOV" role="2VODD2">
+                        <node concept="3clFbF" id="4wr1ti7SuP2" role="3cqZAp">
+                          <node concept="2OqwBi" id="4wr1ti7SuZW" role="3clFbG">
+                            <node concept="30H73N" id="4wr1ti7SuP1" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="4wr1ti7SvgU" role="2OqNvi">
                               <ref role="3Tt5mk" to="yvgz:4GEaPFYnMQx" resolve="type" />
                             </node>
                           </node>
@@ -419,8 +418,8 @@
               <node concept="356sEK" id="1whTsdsq9PQ" role="383Ya9">
                 <node concept="356sEF" id="1whTsdsq9PR" role="356sEH">
                   <property role="TrG5h" value="port" />
-                  <node concept="5jKBG" id="1whTsdsqagR" role="lGtFl">
-                    <ref role="v9R2y" node="7k2VbbJCSho" resolve="include_FunctionDeclareArg" />
+                  <node concept="1sPUBX" id="4wr1ti7T9UK" role="lGtFl">
+                    <ref role="v9R2y" node="7HPHKNlSMmS" resolve="switch_NanoBlockMemberDeclaration" />
                   </node>
                 </node>
                 <node concept="356sEF" id="1whTsdsqtZ4" role="356sEH">

@@ -6,6 +6,7 @@
       <modulePath path="$PROJECT_DIR$/languages/Algorithm_CGenerator/Algorithm_CGenerator.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Algorithm.build/Algorithm.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Algorithm.sandbox/Algorithm.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/../mps-plaintextgen/languages/com.dslfoundry.plaintextgen/com.dslfoundry.plaintextgen.mpl" folder="" />
     </projectModules>
   </component>
 </project>
