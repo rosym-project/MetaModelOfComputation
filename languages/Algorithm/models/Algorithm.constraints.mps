@@ -37,15 +37,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="1M2fIO" id="5jlbthjIqiE">
-    <ref role="1M2myG" to="yvgz:3EtQu_woI9" resolve="TriggerPortRef" />
-    <node concept="1N5Pfh" id="71WlwW$ynkC" role="1Mr941">
-      <ref role="1N5Vy1" to="yvgz:3EtQu_woIa" resolve="trigger_port" />
-      <node concept="1dDu$B" id="71WlwW$ynnI" role="1N6uqs">
-        <ref role="1dDu$A" to="yvgz:6jvQBgXEYiM" resolve="TriggerPort" />
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="44Cv2OMFua_">
     <ref role="1M2myG" to="yvgz:6po$YwiVCCf" resolve="DataConnector" />
     <node concept="1N5Pfh" id="44Cv2OMFuaA" role="1Mr941">
