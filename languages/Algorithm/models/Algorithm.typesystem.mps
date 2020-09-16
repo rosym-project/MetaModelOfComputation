@@ -1171,15 +1171,7 @@
                                   <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
                                   <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                                   <node concept="Xl_RD" id="6kCUnuCCk" role="37wK5m">
-                                    <property role="Xl_RC" value="unconnected data connection '%s (%s) -&gt; %s'" />
-                                  </node>
-                                  <node concept="2OqwBi" id="6kCUnuCCl" role="37wK5m">
-                                    <node concept="37vLTw" id="6kCUnuIIW" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="6kCUnuH7D" resolve="instance" />
-                                    </node>
-                                    <node concept="3TrcHB" id="6kCUnuCCn" role="2OqNvi">
-                                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                    </node>
+                                    <property role="Xl_RC" value="unconnected data connection '(%s) %s -&gt; (%s) %s'" />
                                   </node>
                                   <node concept="2OqwBi" id="6kCUnuCCo" role="37wK5m">
                                     <node concept="2OqwBi" id="6kCUnuCCp" role="2Oq$k0">
@@ -1194,11 +1186,27 @@
                                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                     </node>
                                   </node>
+                                  <node concept="2OqwBi" id="6kCUnuCCl" role="37wK5m">
+                                    <node concept="37vLTw" id="6kCUnuIIW" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="6kCUnuH7D" resolve="instance" />
+                                    </node>
+                                    <node concept="3TrcHB" id="6kCUnuCCn" role="2OqNvi">
+                                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                    </node>
+                                  </node>
                                   <node concept="2OqwBi" id="6kCUnuCCt" role="37wK5m">
                                     <node concept="37vLTw" id="6kCUnuCCu" role="2Oq$k0">
                                       <ref role="3cqZAo" node="6kCUnuChG" resolve="dPort" />
                                     </node>
-                                    <node concept="3TrcHB" id="6kCUnuCCv" role="2OqNvi">
+                                    <node concept="3TrEf2" id="3f5hl3ABK6M" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" resolve="type" />
+                                    </node>
+                                  </node>
+                                  <node concept="2OqwBi" id="3f5hl3ABLgc" role="37wK5m">
+                                    <node concept="37vLTw" id="3f5hl3ABKmG" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="6kCUnuChG" resolve="dPort" />
+                                    </node>
+                                    <node concept="3TrcHB" id="3f5hl3ABLAB" role="2OqNvi">
                                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                     </node>
                                   </node>
@@ -1461,15 +1469,7 @@
                                   <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                                   <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
                                   <node concept="Xl_RD" id="6VQU7bzwPXP" role="37wK5m">
-                                    <property role="Xl_RC" value="unconnected trigger connection '%s (%s) -&gt; %s'" />
-                                  </node>
-                                  <node concept="2OqwBi" id="6VQU7bzwPXQ" role="37wK5m">
-                                    <node concept="37vLTw" id="6kCUnuT5W" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="6kCUnuKXo" resolve="instance" />
-                                    </node>
-                                    <node concept="3TrcHB" id="6VQU7bzwPXS" role="2OqNvi">
-                                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                    </node>
+                                    <property role="Xl_RC" value="unconnected trigger connection '(%s) %s -&gt; %s'" />
                                   </node>
                                   <node concept="2OqwBi" id="6VQU7bzwPXT" role="37wK5m">
                                     <node concept="2OqwBi" id="6VQU7bzwPXU" role="2Oq$k0">
@@ -1481,6 +1481,14 @@
                                       </node>
                                     </node>
                                     <node concept="3TrcHB" id="6VQU7bzwPXX" role="2OqNvi">
+                                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                    </node>
+                                  </node>
+                                  <node concept="2OqwBi" id="6VQU7bzwPXQ" role="37wK5m">
+                                    <node concept="37vLTw" id="6kCUnuT5W" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="6kCUnuKXo" resolve="instance" />
+                                    </node>
+                                    <node concept="3TrcHB" id="6VQU7bzwPXS" role="2OqNvi">
                                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                     </node>
                                   </node>
