@@ -22,9 +22,22 @@
       </concept>
     </language>
     <language id="a8f70f9e-ef01-499f-885c-c79273fa1695" name="Algorithm">
+      <concept id="7995833768567805407" name="Algorithm.structure.DataConnection" flags="ng" index="2cu7QH" />
       <concept id="1292841379851053318" name="Algorithm.structure.AlgorithmBlockInst" flags="ng" index="2d0V5$">
         <reference id="1292841379851053319" name="type" index="2d0V5_" />
       </concept>
+      <concept id="7995833768580493688" name="Algorithm.structure.ITriggerConnectorProvider" flags="ng" index="2dDH$a">
+        <child id="1550618328762864956" name="triggers" index="2pAz8r" />
+      </concept>
+      <concept id="7995833768579682031" name="Algorithm.structure.IConnector" flags="ng" index="2dHiqt">
+        <child id="7995833768579682034" name="connection2" index="2dHiq0" />
+        <child id="7995833768579682032" name="connection1" index="2dHiq2" />
+      </concept>
+      <concept id="7995833768579660154" name="Algorithm.structure.IConnection" flags="ng" index="2dHp48">
+        <reference id="7995833768567805408" name="instance" index="2cu7Qi" />
+        <reference id="1779622228161425" name="port" index="2mI24v" />
+      </concept>
+      <concept id="7995833768577507008" name="Algorithm.structure.TriggerConnection" flags="ng" index="2dP7qM" />
       <concept id="2483553733153713492" name="Algorithm.structure.DataBlock" flags="ng" index="vjVuy" />
       <concept id="2483553733153713493" name="Algorithm.structure.SchedulerBlock" flags="ng" index="vjVuz">
         <child id="7374807014778514693" name="trigger_ports" index="1OHzVH" />
@@ -32,8 +45,6 @@
       <concept id="2483553733153713489" name="Algorithm.structure.EmptyFunctionBlock" flags="ng" index="vjVuB" />
       <concept id="2483553733153713486" name="Algorithm.structure.AlgorithmBlock" flags="ng" index="vjVuS">
         <child id="1292841379851053322" name="algorithm_blocks" index="2d0V5C" />
-        <child id="1550618328762864956" name="triggers" index="2pAz8r" />
-        <child id="1550618328762864955" name="closures" index="2pAz8s" />
         <child id="1550618328762864954" name="scheduler_blocks" index="2pAz8t" />
         <child id="1550618328762864953" name="data_blocks" index="2pAz8u" />
         <child id="1550618328762864952" name="function_blocks" index="2pAz8v" />
@@ -58,17 +69,14 @@
         <child id="3725923812855012107" name="trigger_port" index="2YOnzW" />
         <child id="3725923812855012104" name="data_ports" index="2YOnzZ" />
       </concept>
-      <concept id="7268768516385108286" name="Algorithm.structure.TriggerConnector" flags="ng" index="1psEHa">
-        <reference id="7268768516385108289" name="port2" index="1psEGP" />
-        <reference id="7268768516385108287" name="port1" index="1psEHb" />
+      <concept id="5195753005471121027" name="Algorithm.structure.IDataConnectorProvider" flags="ng" index="3fRjHn">
+        <child id="1550618328762864955" name="closures" index="2pAz8s" />
       </concept>
+      <concept id="7268768516385108286" name="Algorithm.structure.TriggerConnector" flags="ng" index="1psEHa" />
       <concept id="7268768516385006770" name="Algorithm.structure.TriggerPort" flags="ng" index="1pt3V6">
         <property id="65996431591721054" name="direction" index="2_BrWT" />
       </concept>
-      <concept id="7374807014778505743" name="Algorithm.structure.DataConnector" flags="ng" index="1OHxBB">
-        <reference id="7374807014778505744" name="port1" index="1OHxBS" />
-        <reference id="7374807014778516593" name="port2" index="1OHyup" />
-      </concept>
+      <concept id="7374807014778505743" name="Algorithm.structure.DataConnector" flags="ng" index="1OHxBB" />
       <concept id="7374807014778505746" name="Algorithm.structure.DataPort" flags="ng" index="1OHxBU">
         <property id="7374807014778505758" name="direction" index="1OHxBQ" />
       </concept>
@@ -169,91 +177,175 @@
       </node>
     </node>
   </node>
-  <node concept="vjVuS" id="1whTsds7RPR">
+  <node concept="vjVuS" id="6VQU7bzwxqO">
     <property role="TrG5h" value="GenericsAlgo" />
-    <node concept="1psEHa" id="1whTsds7RQv" role="2pAz8r">
-      <ref role="1psEHb" node="77qtDttRxWd" resolve="out" />
-      <ref role="1psEGP" node="77qtDttRxXX" resolve="trigger" />
+    <node concept="1psEHa" id="6kCUn6RLG" role="2pAz8r">
+      <node concept="2dP7qM" id="6kCUn6RLH" role="2dHiq2">
+        <ref role="2cu7Qi" node="6VQU7bzwxrB" resolve="doubleSched" />
+        <ref role="2mI24v" node="77qtDttRxWd" resolve="out" />
+      </node>
+      <node concept="2dP7qM" id="6kCUn6RLI" role="2dHiq0">
+        <ref role="2cu7Qi" node="6VQU7bzwxqR" resolve="doubleFun" />
+        <ref role="2mI24v" node="77qtDttRxXX" resolve="trigger" />
+      </node>
     </node>
-    <node concept="1psEHa" id="1whTsds7RQF" role="2pAz8r">
-      <ref role="1psEGP" node="77qtDttRxXh" resolve="trigger" />
-      <ref role="1psEHb" node="77qtDttRxWd" resolve="out" />
+    <node concept="1psEHa" id="6kCUnabrV" role="2pAz8r">
+      <node concept="2dP7qM" id="6kCUnabrW" role="2dHiq2">
+        <ref role="2cu7Qi" node="6VQU7bzwxrH" resolve="floatSched" />
+        <ref role="2mI24v" node="77qtDttRxWd" resolve="out" />
+      </node>
+      <node concept="2dP7qM" id="6kCUnabrX" role="2dHiq0">
+        <ref role="2cu7Qi" node="6VQU7bzwxqX" resolve="floatFun" />
+        <ref role="2mI24v" node="77qtDttRxXh" resolve="trigger" />
+      </node>
     </node>
-    <node concept="1OHxBB" id="1whTsds7RQk" role="2pAz8s">
-      <ref role="1OHxBS" node="77qtDttRxYc" resolve="out" />
-      <ref role="1OHyup" node="1whTsds7RPY" resolve="doubleData" />
+    <node concept="1OHxBB" id="6kCUn1gW9" role="2pAz8s">
+      <node concept="2cu7QH" id="6kCUn1gWa" role="2dHiq2">
+        <ref role="2cu7Qi" node="6VQU7bzwxqR" resolve="doubleFun" />
+        <ref role="2mI24v" node="77qtDttRxYc" resolve="out" />
+      </node>
+      <node concept="2cu7QH" id="6kCUn1gWb" role="2dHiq0">
+        <ref role="2cu7Qi" node="6VQU7bzwxr1" resolve="doubleData" />
+        <ref role="2mI24v" node="6VQU7bzwxr1" resolve="doubleData" />
+      </node>
     </node>
-    <node concept="1OHxBB" id="1whTsds7RQl" role="2pAz8s">
-      <ref role="1OHxBS" node="77qtDttRxXm" resolve="out" />
-      <ref role="1OHyup" node="1whTsds7RQ0" resolve="floatData" />
+    <node concept="1OHxBB" id="6kCUn1gWj" role="2pAz8s">
+      <node concept="2cu7QH" id="6kCUn1gWk" role="2dHiq2">
+        <ref role="2cu7Qi" node="6VQU7bzwxqX" resolve="floatFun" />
+        <ref role="2mI24v" node="77qtDttRxXm" resolve="out" />
+      </node>
+      <node concept="2cu7QH" id="6kCUn1gWl" role="2dHiq0">
+        <ref role="2mI24v" node="6VQU7bzwxrk" resolve="floatData" />
+        <ref role="2cu7Qi" node="6VQU7bzwxrk" resolve="floatData" />
+      </node>
     </node>
-    <node concept="2$bkLk" id="1whTsds7RQe" role="2pAz8t">
-      <property role="TrG5h" value="doubleSchedule" />
+    <node concept="2$bkLk" id="6VQU7bzwxrB" role="2pAz8t">
+      <property role="TrG5h" value="doubleSched" />
       <ref role="2$bkLg" node="77qtDttRxW3" resolve="GenericsControlFlow" />
     </node>
-    <node concept="2$bkLk" id="1whTsds7RQf" role="2pAz8t">
-      <property role="TrG5h" value="floatSchedule" />
+    <node concept="2$bkLk" id="6VQU7bzwxrH" role="2pAz8t">
+      <property role="TrG5h" value="floatSched" />
       <ref role="2$bkLg" node="77qtDttRxW3" resolve="GenericsControlFlow" />
     </node>
-    <node concept="vjVuy" id="1whTsds7RPY" role="2pAz8u">
+    <node concept="vjVuy" id="6VQU7bzwxr1" role="2pAz8u">
       <property role="TrG5h" value="doubleData" />
-      <node concept="10P55v" id="1whTsds7RPZ" role="1tU5fm" />
+      <node concept="10P55v" id="6VQU7bzwxr7" role="1tU5fm" />
     </node>
-    <node concept="vjVuy" id="1whTsds7RQ0" role="2pAz8u">
+    <node concept="vjVuy" id="6VQU7bzwxrk" role="2pAz8u">
       <property role="TrG5h" value="floatData" />
-      <node concept="10OMs4" id="1whTsds7RQ1" role="1tU5fm" />
+      <node concept="10OMs4" id="6VQU7bzwxrs" role="1tU5fm" />
     </node>
-    <node concept="2Ptgr7" id="1whTsds7RPS" role="2pAz8v">
+    <node concept="2Ptgr7" id="6VQU7bzwxqR" role="2pAz8v">
       <property role="TrG5h" value="doubleFun" />
       <ref role="2PtgrV" node="77qtDttRxXW" resolve="SampleDouble" />
     </node>
-    <node concept="2Ptgr7" id="1whTsds7RPT" role="2pAz8v">
+    <node concept="2Ptgr7" id="6VQU7bzwxqX" role="2pAz8v">
       <property role="TrG5h" value="floatFun" />
       <ref role="2PtgrV" node="77qtDttRxXg" resolve="SampleFloat" />
     </node>
   </node>
-  <node concept="vjVuS" id="1whTsds7Sob">
+  <node concept="vjVuS" id="6kCUnadgH">
     <property role="TrG5h" value="PartialApplicationAlgo1" />
-    <node concept="1OHxBB" id="1whTsds7So_" role="2pAz8s">
-      <ref role="1OHxBS" node="1whTsds7Soq" resolve="x" />
-      <ref role="1OHyup" node="77qtDttRy3$" resolve="x" />
+    <node concept="1psEHa" id="6kCUnnon5" role="2pAz8r">
+      <node concept="2dP7qM" id="6kCUnnon6" role="2dHiq2">
+        <ref role="2cu7Qi" node="6kCUnnlO2" resolve="partial" />
+        <ref role="2mI24v" node="77qtDttRxWd" resolve="out" />
+      </node>
+      <node concept="2dP7qM" id="6kCUnnon7" role="2dHiq0">
+        <ref role="2cu7Qi" node="6kCUnadgK" resolve="fun" />
+        <ref role="2mI24v" node="77qtDttRy3t" resolve="trigger" />
+      </node>
     </node>
-    <node concept="2Ptgr7" id="1whTsds7Soy" role="2pAz8v">
-      <property role="TrG5h" value="fun" />
-      <ref role="2PtgrV" node="77qtDttRy3s" resolve="Sample" />
+    <node concept="2$bkLk" id="6kCUnnlO2" role="2pAz8t">
+      <property role="TrG5h" value="partial" />
+      <ref role="2$bkLg" node="77qtDttRxW3" resolve="GenericsControlFlow" />
     </node>
-    <node concept="vjVuy" id="1whTsds7Soq" role="2pAz8u">
+    <node concept="1OHxBB" id="6kCUnadhj" role="2pAz8s">
+      <node concept="2cu7QH" id="6kCUnadhk" role="2dHiq2">
+        <ref role="2cu7Qi" node="6kCUnadgK" resolve="fun" />
+        <ref role="2mI24v" node="77qtDttRy3$" resolve="x" />
+      </node>
+      <node concept="2cu7QH" id="6kCUnadhl" role="2dHiq0">
+        <ref role="2cu7Qi" node="6kCUnadgN" resolve="x" />
+        <ref role="2mI24v" node="6kCUnadgN" resolve="x" />
+      </node>
+    </node>
+    <node concept="1OHxBB" id="6kCUnadi9" role="2pAz8s">
+      <node concept="2cu7QH" id="6kCUnadia" role="2dHiq2">
+        <ref role="2cu7Qi" node="6kCUnadgK" resolve="fun" />
+        <ref role="2mI24v" node="77qtDttRy3Q" resolve="y" />
+      </node>
+      <node concept="2cu7QH" id="6kCUnadib" role="2dHiq0">
+        <ref role="2cu7Qi" node="6kCUnadhz" resolve="y" />
+        <ref role="2mI24v" node="6kCUnadhz" resolve="y" />
+      </node>
+    </node>
+    <node concept="1OHxBB" id="6kCUnnlNI" role="2pAz8s">
+      <node concept="2cu7QH" id="6kCUnnlNJ" role="2dHiq2">
+        <ref role="2cu7Qi" node="6kCUnadgK" resolve="fun" />
+        <ref role="2mI24v" node="77qtDttRy4c" resolve="n" />
+      </node>
+      <node concept="2cu7QH" id="6kCUnnlNK" role="2dHiq0">
+        <ref role="2cu7Qi" node="6kCUnadhP" resolve="n" />
+        <ref role="2mI24v" node="6kCUnadhP" resolve="n" />
+      </node>
+    </node>
+    <node concept="vjVuy" id="6kCUnadgN" role="2pAz8u">
       <property role="TrG5h" value="x" />
-      <node concept="10Oyi0" id="1whTsds7Sor" role="1tU5fm" />
-      <node concept="3cmrfG" id="1whTsds7Sqz" role="33vP2m">
+      <node concept="10Oyi0" id="6kCUnadgT" role="1tU5fm" />
+      <node concept="3cmrfG" id="6kCUnadh9" role="33vP2m">
         <property role="3cmrfH" value="42" />
       </node>
     </node>
-  </node>
-  <node concept="vjVuS" id="1whTsds7Sp7">
-    <property role="TrG5h" value="PartialApplicationAlgo2" />
-    <node concept="vjVuy" id="1whTsds7Spj" role="2pAz8u">
+    <node concept="vjVuy" id="6kCUnadhz" role="2pAz8u">
       <property role="TrG5h" value="y" />
-      <node concept="10Oyi0" id="1whTsds7Spr" role="1tU5fm" />
-      <node concept="3cmrfG" id="1whTsds7SqS" role="33vP2m">
+      <node concept="10Oyi0" id="6kCUnadhG" role="1tU5fm" />
+    </node>
+    <node concept="vjVuy" id="6kCUnadhP" role="2pAz8u">
+      <property role="TrG5h" value="n" />
+      <node concept="10Oyi0" id="6kCUnadi0" role="1tU5fm" />
+    </node>
+    <node concept="2Ptgr7" id="6kCUnadgK" role="2pAz8v">
+      <property role="TrG5h" value="fun" />
+      <ref role="2PtgrV" node="77qtDttRy3s" resolve="Sample" />
+    </node>
+  </node>
+  <node concept="vjVuS" id="6kCUnnonk">
+    <property role="TrG5h" value="PartialApplicationAlgo2" />
+    <node concept="1OHxBB" id="6kCUnnoo4" role="2pAz8s">
+      <node concept="2cu7QH" id="6kCUnnoo5" role="2dHiq2">
+        <ref role="2cu7Qi" node="6kCUnnonl" resolve="part" />
+        <ref role="2mI24v" node="6kCUnadhz" resolve="y" />
+      </node>
+      <node concept="2cu7QH" id="6kCUnnoo6" role="2dHiq0">
+        <ref role="2cu7Qi" node="6kCUnnonn" resolve="y" />
+        <ref role="2mI24v" node="6kCUnnonn" resolve="y" />
+      </node>
+    </node>
+    <node concept="1OHxBB" id="6kCUnnooe" role="2pAz8s">
+      <node concept="2cu7QH" id="6kCUnnoof" role="2dHiq2">
+        <ref role="2cu7Qi" node="6kCUnnonl" resolve="part" />
+        <ref role="2mI24v" node="6kCUnadhP" resolve="n" />
+      </node>
+      <node concept="2cu7QH" id="6kCUnnoog" role="2dHiq0">
+        <ref role="2cu7Qi" node="6kCUnnon$" resolve="n" />
+        <ref role="2mI24v" node="6kCUnnon$" resolve="n" />
+      </node>
+    </node>
+    <node concept="vjVuy" id="6kCUnnonn" role="2pAz8u">
+      <property role="TrG5h" value="y" />
+      <node concept="10Oyi0" id="6kCUnnont" role="1tU5fm" />
+      <node concept="3cmrfG" id="6kCUnnonU" role="33vP2m">
         <property role="3cmrfH" value="43" />
       </node>
     </node>
-    <node concept="vjVuy" id="1whTsds7Sr4" role="2pAz8u">
+    <node concept="vjVuy" id="6kCUnnon$" role="2pAz8u">
       <property role="TrG5h" value="n" />
-      <node concept="10Oyi0" id="1whTsds7Sri" role="1tU5fm" />
+      <node concept="10Oyi0" id="6kCUnnonG" role="1tU5fm" />
     </node>
-    <node concept="2d0V5$" id="1whTsds7Sp8" role="2d0V5C">
+    <node concept="2d0V5$" id="6kCUnnonl" role="2d0V5C">
       <property role="TrG5h" value="part" />
-      <ref role="2d0V5_" node="1whTsds7Sob" resolve="PartialApplicationAlgo1" />
-    </node>
-    <node concept="1OHxBB" id="1whTsds7Spz" role="2pAz8s">
-      <ref role="1OHxBS" node="1whTsds7Spj" resolve="y" />
-      <ref role="1OHyup" node="77qtDttRy3Q" resolve="y" />
-    </node>
-    <node concept="1OHxBB" id="1whTsds7Srq" role="2pAz8s">
-      <ref role="1OHxBS" node="1whTsds7Sr4" resolve="n" />
-      <ref role="1OHyup" node="77qtDttRy4c" resolve="n" />
+      <ref role="2d0V5_" node="6kCUnadgH" resolve="PartialApplicationAlgo1" />
     </node>
   </node>
 </model>

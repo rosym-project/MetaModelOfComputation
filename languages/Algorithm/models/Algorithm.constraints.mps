@@ -46,7 +46,6 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -67,6 +66,10 @@
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
+      <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
+      <concept id="6702802731807420587" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAParent" flags="ig" index="9SLcT" />
+      <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
+      <concept id="4303308395523096213" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_childConcept" flags="ng" index="2DD5aU" />
       <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
       <concept id="8401916545537438642" name="jetbrains.mps.lang.constraints.structure.InheritedNodeScopeFactory" flags="ng" index="1dDu$B">
         <reference id="8401916545537438643" name="kind" index="1dDu$A" />
@@ -74,6 +77,8 @@
       <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="6702802731807532712" name="canBeParent" index="9SGkU" />
+        <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213100494875" name="referent" index="1Mr941" />
       </concept>
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
@@ -100,6 +105,9 @@
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
+        <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
+      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
       </concept>
@@ -166,7 +174,7 @@
   <node concept="1M2fIO" id="6VQU7bz38AS">
     <ref role="1M2myG" to="yvgz:6VQU7byzDMj" resolve="DataConnection" />
     <node concept="1N5Pfh" id="6VQU7bz38AT" role="1Mr941">
-      <ref role="1N5Vy1" to="yvgz:6VQU7byzDny" resolve="port" />
+      <ref role="1N5Vy1" to="yvgz:6kCUmJBeh" resolve="port" />
       <node concept="3dgokm" id="6VQU7bz38Dw" role="1N6uqs">
         <node concept="3clFbS" id="6VQU7bz38Dx" role="2VODD2">
           <node concept="3cpWs8" id="6VQU7by$al_" role="3cqZAp">
@@ -232,7 +240,6 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbH" id="6VQU7bz9HEJ" role="3cqZAp" />
                 </node>
                 <node concept="2OqwBi" id="6VQU7bz9Lcn" role="3clFbw">
                   <node concept="37vLTw" id="6VQU7bz9IKB" role="2Oq$k0">
@@ -272,7 +279,7 @@
   <node concept="1M2fIO" id="6VQU7bz8F7J">
     <ref role="1M2myG" to="yvgz:6VQU7bz8DV0" resolve="TriggerConnection" />
     <node concept="1N5Pfh" id="6VQU7bz8F7K" role="1Mr941">
-      <ref role="1N5Vy1" to="yvgz:6VQU7bz8DV3" resolve="port" />
+      <ref role="1N5Vy1" to="yvgz:6kCUmJBeh" resolve="port" />
       <node concept="3dgokm" id="6VQU7bz8Fan" role="1N6uqs">
         <node concept="3clFbS" id="6VQU7bz8Fao" role="2VODD2">
           <node concept="3cpWs8" id="6VQU7bz8Ffn" role="3cqZAp">
@@ -367,6 +374,41 @@
               <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
               <node concept="37vLTw" id="6VQU7bz8FfL" role="37wK5m">
                 <ref role="3cqZAo" node="6VQU7bz8Ffo" resolve="ports" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6kCUmR$Oi">
+    <ref role="1M2myG" to="yvgz:6po$YwiVCCf" resolve="DataConnector" />
+    <node concept="9SLcT" id="6kCUmR$Oj" role="9SGkU">
+      <node concept="3clFbS" id="6kCUmR$Ok" role="2VODD2">
+        <node concept="3clFbF" id="6kCUmR$Sg" role="3cqZAp">
+          <node concept="2OqwBi" id="6kCUmR_aF" role="3clFbG">
+            <node concept="2DD5aU" id="6kCUmR$Sf" role="2Oq$k0" />
+            <node concept="3O6GUB" id="6kCUmR_qH" role="2OqNvi">
+              <node concept="chp4Y" id="6kCUmR_xQ" role="3QVz_e">
+                <ref role="cht4Q" to="yvgz:6VQU7byzDMj" resolve="DataConnection" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6kCUndwWJ">
+    <property role="3GE5qa" value="bpc" />
+    <ref role="1M2myG" to="yvgz:6kCUmJBdL" resolve="IPort" />
+    <node concept="9S07l" id="6kCUndwWK" role="9Vyp8">
+      <node concept="3clFbS" id="6kCUndwWL" role="2VODD2">
+        <node concept="3clFbF" id="6kCUndx1a" role="3cqZAp">
+          <node concept="2OqwBi" id="6kCUndx9M" role="3clFbG">
+            <node concept="nLn13" id="6kCUndx19" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="6kCUndxjl" role="2OqNvi">
+              <node concept="chp4Y" id="6kCUndxpg" role="cj9EA">
+                <ref role="cht4Q" to="yvgz:6VQU7bz8WKx" resolve="IBlock" />
               </node>
             </node>
           </node>

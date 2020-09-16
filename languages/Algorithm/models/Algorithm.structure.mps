@@ -128,6 +128,9 @@
     <node concept="PrWs8" id="6VQU7bz90mK" role="PzmwI">
       <ref role="PrY4T" node="6VQU7bz8WKx" resolve="IBlock" />
     </node>
+    <node concept="PrWs8" id="6kCUmJBe9" role="PzmwI">
+      <ref role="PrY4T" node="6kCUmJBdL" resolve="IPort" />
+    </node>
   </node>
   <node concept="25R3W" id="6po$YwiVCCl">
     <property role="3F6X1D" value="7374807014778505749" />
@@ -155,19 +158,8 @@
     <property role="EcuMT" value="7374807014778505743" />
     <property role="TrG5h" value="DataConnector" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6VQU7byBc6h" role="1TKVEi">
-      <property role="IQ2ns" value="7995833768568734097" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="connection1" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6VQU7byzDMj" resolve="DataConnection" />
-    </node>
-    <node concept="1TJgyj" id="6VQU7byBc6j" role="1TKVEi">
-      <property role="IQ2ns" value="7995833768568734099" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="connection2" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6VQU7byzDMj" resolve="DataConnection" />
+    <node concept="PrWs8" id="6kCUmR$Oe" role="PzmwI">
+      <ref role="PrY4T" node="6VQU7bzgWVJ" resolve="IConnector" />
     </node>
   </node>
   <node concept="1TIwiD" id="29RmJoXeePl">
@@ -250,8 +242,8 @@
     <property role="EcuMT" value="7268768516385006770" />
     <property role="TrG5h" value="TriggerPort" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="4GEaPFYl_O4" role="PzmwI">
-      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
+    <node concept="PrWs8" id="6kCUmJUY5" role="PzmwI">
+      <ref role="PrY4T" node="6kCUmJBdL" resolve="IPort" />
     </node>
     <node concept="1TJgyi" id="3EtQu_tWxu" role="1TKVEl">
       <property role="IQ2nx" value="65996431591721054" />
@@ -263,19 +255,8 @@
     <property role="EcuMT" value="7268768516385108286" />
     <property role="TrG5h" value="TriggerConnector" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6VQU7bzgICZ" role="1TKVEi">
-      <property role="IQ2ns" value="7995833768579623487" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="connection1" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6VQU7bz8DV0" resolve="TriggerConnection" />
-    </node>
-    <node concept="1TJgyj" id="6VQU7bzgID3" role="1TKVEi">
-      <property role="IQ2ns" value="7995833768579623491" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="connection2" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6VQU7bz8DV0" resolve="TriggerConnection" />
+    <node concept="PrWs8" id="6kCUn1hvj" role="PzmwI">
+      <ref role="PrY4T" node="6VQU7bzgWVJ" resolve="IConnector" />
     </node>
   </node>
   <node concept="1TIwiD" id="3EtQu_tAGN">
@@ -520,6 +501,9 @@
       <property role="TrG5h" value="direction" />
       <ref role="AX2Wp" node="6po$YwiVCCl" resolve="DataPortDirection" />
     </node>
+    <node concept="PrWs8" id="6kCUmJBef" role="PzmwI">
+      <ref role="PrY4T" node="6kCUmJBdL" resolve="IPort" />
+    </node>
   </node>
   <node concept="1TIwiD" id="jovpCoz9HQ">
     <property role="EcuMT" value="349167071911517046" />
@@ -661,12 +645,6 @@
   <node concept="1TIwiD" id="6VQU7byzDMj">
     <property role="TrG5h" value="DataConnection" />
     <property role="EcuMT" value="7995833768567805407" />
-    <node concept="1TJgyj" id="6VQU7byzDny" role="1TKVEi">
-      <property role="IQ2ns" value="7995833768567805410" />
-      <property role="20kJfa" value="port" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="tpee:4k3qd$cSlJ3" resolve="BaseVariableDeclaration" />
-    </node>
     <node concept="PrWs8" id="6VQU7bzgY7t" role="PzmwI">
       <ref role="PrY4T" node="6VQU7bzgR_U" resolve="IConnection" />
     </node>
@@ -675,12 +653,6 @@
     <property role="EcuMT" value="7995833768577507008" />
     <property role="TrG5h" value="TriggerConnection" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6VQU7bz8DV3" role="1TKVEi">
-      <property role="IQ2ns" value="7995833768577507011" />
-      <property role="20kJfa" value="port" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6jvQBgXEYiM" resolve="TriggerPort" />
-    </node>
     <node concept="PrWs8" id="6VQU7bzh63O" role="PzmwI">
       <ref role="PrY4T" node="6VQU7bzgR_U" resolve="IConnection" />
     </node>
@@ -702,6 +674,12 @@
       <property role="20kJfa" value="instance" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6VQU7byzDnu" resolve="IBlockInstance" />
+    </node>
+    <node concept="1TJgyj" id="6kCUmJBeh" role="1TKVEi">
+      <property role="IQ2ns" value="1779622228161425" />
+      <property role="20kJfa" value="port" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6kCUmJBdL" resolve="IPort" />
     </node>
   </node>
   <node concept="PlHQZ" id="6VQU7bzgWVJ">
@@ -732,6 +710,14 @@
       <property role="20kJfa" value="triggers" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6jvQBgXFn4Y" resolve="TriggerConnector" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6kCUmJBdL">
+    <property role="EcuMT" value="1779622228161393" />
+    <property role="3GE5qa" value="bpc" />
+    <property role="TrG5h" value="IPort" />
+    <node concept="PrWs8" id="6kCUmJEBd" role="PrDN$">
+      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
     </node>
   </node>
 </model>
