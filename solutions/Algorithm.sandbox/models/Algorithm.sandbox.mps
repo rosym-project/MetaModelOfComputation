@@ -422,8 +422,8 @@
         <ref role="2mI24v" node="1Nl8mqSVyX2" resolve="schedBar" />
       </node>
       <node concept="2dP7qM" id="3f5hl3B329Y" role="2dHiq0">
-        <ref role="2cu7Qi" node="1whTsdrIemw" resolve="lvl1" />
         <ref role="2mI24v" node="4GEaPFYpqbp" resolve="barTrigger" />
+        <ref role="2cu7Qi" node="1whTsdrIemw" resolve="lvl1" />
       </node>
     </node>
     <node concept="1psEHa" id="3f5hl3BpWKi" role="2pAz8r">

@@ -181,8 +181,8 @@
     <property role="TrG5h" value="GenericsAlgo" />
     <node concept="1psEHa" id="6kCUn6RLG" role="2pAz8r">
       <node concept="2dP7qM" id="6kCUn6RLH" role="2dHiq2">
-        <ref role="2cu7Qi" node="6VQU7bzwxrB" resolve="doubleSched" />
         <ref role="2mI24v" node="77qtDttRxWd" resolve="out" />
+        <ref role="2cu7Qi" node="6VQU7bzwxrB" resolve="doubleSched" />
       </node>
       <node concept="2dP7qM" id="6kCUn6RLI" role="2dHiq0">
         <ref role="2cu7Qi" node="6VQU7bzwxqR" resolve="doubleFun" />
