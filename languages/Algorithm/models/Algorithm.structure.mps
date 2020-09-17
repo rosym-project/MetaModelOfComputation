@@ -108,10 +108,10 @@
     <node concept="PrWs8" id="6VQU7bzk4Y0" role="PzmwI">
       <ref role="PrY4T" node="6VQU7bzk35S" resolve="ITriggerConnectorProvider" />
     </node>
-    <node concept="PrWs8" id="6VQU7bz90nc" role="PzmwI">
-      <ref role="PrY4T" node="6VQU7bz8WKx" resolve="IBlock" />
+    <node concept="PrWs8" id="25NPq6I$wvp" role="PzmwI">
+      <ref role="PrY4T" node="25NPq6Iy244" resolve="IInstanceContainer" />
     </node>
-    <node concept="PrWs8" id="1m4TMucaQnS" role="PzmwI">
+    <node concept="PrWs8" id="5EJxvOOOlA7" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
@@ -237,6 +237,9 @@
     <node concept="PrWs8" id="6VQU7bzkn1K" role="PzmwI">
       <ref role="PrY4T" node="6VQU7bzk35S" resolve="ITriggerConnectorProvider" />
     </node>
+    <node concept="PrWs8" id="25NPq6I$wvB" role="PzmwI">
+      <ref role="PrY4T" node="25NPq6Iy244" resolve="IInstanceContainer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6jvQBgXEYiM">
     <property role="EcuMT" value="7268768516385006770" />
@@ -320,11 +323,17 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1Nl8mqSY6OM" resolve="SchedulerBlockInst" />
     </node>
+    <node concept="PrWs8" id="5EJxvOOQ7a_" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
     <node concept="PrWs8" id="6VQU7bzk35T" role="PzmwI">
       <ref role="PrY4T" node="4wr1ti7LzU3" resolve="IDataConnectorProvider" />
     </node>
     <node concept="PrWs8" id="6VQU7bzkn1X" role="PzmwI">
       <ref role="PrY4T" node="6VQU7bzk35S" resolve="ITriggerConnectorProvider" />
+    </node>
+    <node concept="PrWs8" id="25NPq6I$wvL" role="PzmwI">
+      <ref role="PrY4T" node="25NPq6Iy244" resolve="IInstanceContainer" />
     </node>
   </node>
   <node concept="1TIwiD" id="3eP8Zudp5G4">
@@ -718,6 +727,14 @@
     <property role="TrG5h" value="IPort" />
     <node concept="PrWs8" id="6kCUmJEBd" role="PrDN$">
       <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="25NPq6Iy244">
+    <property role="EcuMT" value="2410505115967955204" />
+    <property role="3GE5qa" value="bpc" />
+    <property role="TrG5h" value="IInstanceContainer" />
+    <node concept="PrWs8" id="5EJxvOOnlGN" role="PrDN$">
+      <ref role="PrY4T" node="6VQU7bz8WKx" resolve="IBlock" />
     </node>
   </node>
 </model>

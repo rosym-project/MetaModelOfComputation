@@ -475,5 +475,23 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="25NPq6Iy247">
+    <property role="3GE5qa" value="bpc" />
+    <ref role="1M2myG" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
+    <node concept="9S07l" id="25NPq6Iy248" role="9Vyp8">
+      <node concept="3clFbS" id="25NPq6Iy249" role="2VODD2">
+        <node concept="3clFbF" id="25NPq6Iy285" role="3cqZAp">
+          <node concept="2OqwBi" id="25NPq6Iy2jP" role="3clFbG">
+            <node concept="nLn13" id="25NPq6Iy284" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="25NPq6Iy2pP" role="2OqNvi">
+              <node concept="chp4Y" id="25NPq6Iy2vK" role="cj9EA">
+                <ref role="cht4Q" to="yvgz:25NPq6Iy244" resolve="IInstanceContainer" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

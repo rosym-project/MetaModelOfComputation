@@ -198,7 +198,7 @@
         <property role="3F0ifm" value="connect" />
       </node>
       <node concept="3F0ifn" id="6VQU7bzgJ6K" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
+        <property role="3F0ifm" value="( " />
         <node concept="11L4FC" id="6VQU7bzgJ6L" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -222,7 +222,7 @@
         <ref role="1NtTu8" to="yvgz:6VQU7bzgWVM" resolve="connection2" />
       </node>
       <node concept="3F0ifn" id="6VQU7bzgJ6Y" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
+        <property role="3F0ifm" value=" )" />
         <node concept="11L4FC" id="6VQU7bzgJ6Z" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
