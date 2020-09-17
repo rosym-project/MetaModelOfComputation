@@ -22,18 +22,32 @@
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
       <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="ln" index="5jKBG" />
+      <concept id="5015072279636592410" name="jetbrains.mps.lang.generator.structure.VarMacro_ValueQuery" flags="in" index="2jfdEK" />
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj" />
       <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ng" index="v9R3L">
         <reference id="1722980698497626483" name="template" index="v9R2y" />
+        <child id="1722980698497626405" name="actualArgument" index="v9R3O" />
       </concept>
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1092059087312" name="jetbrains.mps.lang.generator.structure.TemplateDeclaration" flags="ig" index="13MO4I">
         <reference id="1168285871518" name="applicableConcept" index="3gUMe" />
         <child id="1092060348987" name="contentNode" index="13RCb5" />
       </concept>
+      <concept id="1048903277984099206" name="jetbrains.mps.lang.generator.structure.VarDeclaration" flags="ng" index="1ps_xZ">
+        <child id="1048903277984099210" name="value" index="1ps_xN" />
+      </concept>
+      <concept id="1048903277984099198" name="jetbrains.mps.lang.generator.structure.VarMacro2" flags="lg" index="1ps_y7">
+        <child id="1048903277984099213" name="variables" index="1ps_xO" />
+      </concept>
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
+      </concept>
+    </language>
+    <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
+      <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
+      <concept id="1048903277984174662" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_VarRef2" flags="nn" index="1psM6Z">
+        <reference id="1048903277984174663" name="vardecl" index="1psM6Y" />
       </concept>
     </language>
     <language id="990507d3-3527-4c54-bfe9-0ca3c9c6247a" name="com.dslfoundry.plaintextgen">
@@ -87,9 +101,27 @@
         </node>
         <node concept="5jKBG" id="w_xyS78cNY" role="lGtFl">
           <ref role="v9R2y" node="58QN4$b2$hR" resolve="include_SchedulerBlockDefinition" />
+          <node concept="2OqwBi" id="5EJxvOPAsQr" role="v9R3O">
+            <node concept="1iwH7S" id="5EJxvOPAsNk" role="2Oq$k0" />
+            <node concept="1psM6Z" id="5EJxvOPAsRz" role="2OqNvi">
+              <ref role="1psM6Y" node="5EJxvOPAsA1" resolve="fblock" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="raruj" id="w_xyS78cNk" role="lGtFl" />
+      <node concept="1ps_y7" id="5EJxvOPAsA0" role="lGtFl">
+        <node concept="1ps_xZ" id="5EJxvOPAsA1" role="1ps_xO">
+          <property role="TrG5h" value="fblock" />
+          <node concept="2jfdEK" id="5EJxvOPAsA2" role="1ps_xN">
+            <node concept="3clFbS" id="5EJxvOPAsA3" role="2VODD2">
+              <node concept="3clFbF" id="5EJxvOPAsHi" role="3cqZAp">
+                <node concept="30H73N" id="5EJxvOPAsHh" role="3clFbG" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

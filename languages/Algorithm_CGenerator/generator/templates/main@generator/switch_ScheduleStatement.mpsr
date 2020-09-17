@@ -3,7 +3,7 @@
   <persistence version="9" />
   <imports>
     <import index="yvgz" ref="r:3b411c10-569a-4299-9505-176144359d3b(Algorithm.structure)" implicit="true" />
-    <import index="ixp9" ref="r:172690fd-5286-4218-b525-cadaaf47af22(Algorithm.behavior)" implicit="true" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -20,12 +20,15 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
-        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
+      <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="ln" index="5jKBG">
+        <child id="1510949579266801461" name="sourceNodeQuery" index="5jGum" />
+      </concept>
       <concept id="1177093525992" name="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" flags="lg" index="gft3U">
         <child id="1177093586806" name="templateNode" index="gfFT$" />
       </concept>
@@ -51,9 +54,7 @@
       <concept id="982871510064032177" name="jetbrains.mps.lang.generator.structure.IParameterizedTemplate" flags="ng" index="1s_3nv">
         <child id="982871510064032342" name="parameter" index="1s_3oS" />
       </concept>
-      <concept id="982871510068000147" name="jetbrains.mps.lang.generator.structure.TemplateSwitchMacro" flags="lg" index="1sPUBX">
-        <child id="982871510068000158" name="sourceNodeQuery" index="1sPUBK" />
-      </concept>
+      <concept id="982871510068000147" name="jetbrains.mps.lang.generator.structure.TemplateSwitchMacro" flags="lg" index="1sPUBX" />
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
       <concept id="1805153994415891174" name="jetbrains.mps.lang.generator.structure.TemplateParameterDeclaration" flags="ng" index="1N15co">
         <child id="1805153994415893199" name="type" index="1N15GL" />
@@ -76,8 +77,9 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
+        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -100,9 +102,27 @@
   <node concept="jVnub" id="77WKAh0fz3F">
     <property role="TrG5h" value="switch_ScheduleStatement" />
     <node concept="1N15co" id="77WKAh0fTSi" role="1s_3oS">
-      <property role="TrG5h" value="parentFunction" />
+      <property role="TrG5h" value="containerRoot" />
       <node concept="3Tqbb2" id="77WKAh0fTSq" role="1N15GL">
-        <ref role="ehGHo" to="yvgz:7YUYw4xHlaz" resolve="ImperativeFunctionBlock" />
+        <ref role="ehGHo" to="yvgz:25NPq6Iy244" resolve="IInstanceContainer" />
+      </node>
+    </node>
+    <node concept="1N15co" id="22$kc$4O8yc" role="1s_3oS">
+      <property role="TrG5h" value="instance" />
+      <node concept="3Tqbb2" id="22$kc$4O8yd" role="1N15GL">
+        <ref role="ehGHo" to="yvgz:1Nl8mqSY6OM" resolve="SchedulerBlockInst" />
+      </node>
+    </node>
+    <node concept="1N15co" id="22$kc$4O8ye" role="1s_3oS">
+      <property role="TrG5h" value="instancePathMap" />
+      <node concept="3uibUv" id="22$kc$4O8yf" role="1N15GL">
+        <ref role="3uigEE" to="33ny:~HashMap" resolve="HashMap" />
+        <node concept="3Tqbb2" id="22$kc$4O8yg" role="11_B2D">
+          <ref role="ehGHo" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
+        </node>
+        <node concept="2I9FWS" id="22$kc$4O8yh" role="11_B2D">
+          <ref role="2I9WkF" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
+        </node>
       </node>
     </node>
     <node concept="3aamgX" id="1W5BUKIe5TG" role="3aUrZf">
@@ -132,7 +152,13 @@
             <node concept="1sPUBX" id="1W5BUKIepUx" role="lGtFl">
               <ref role="v9R2y" node="77WKAh0fz3F" resolve="switch_ScheduleStatement" />
               <node concept="v3LJS" id="1W5BUKIepUz" role="v9R3O">
-                <ref role="v3LJV" node="77WKAh0fTSi" resolve="parentFunction" />
+                <ref role="v3LJV" node="77WKAh0fTSi" resolve="containerRoot" />
+              </node>
+              <node concept="v3LJS" id="22$kc$4OAhH" role="v9R3O">
+                <ref role="v3LJV" node="22$kc$4O8yc" resolve="instance" />
+              </node>
+              <node concept="v3LJS" id="22$kc$4OAi$" role="v9R3O">
+                <ref role="v3LJV" node="22$kc$4O8ye" resolve="instancePathMap" />
               </node>
             </node>
           </node>
@@ -145,7 +171,13 @@
       <node concept="j$656" id="77WKAh0hVVZ" role="1lVwrX">
         <ref role="v9R2y" node="77WKAh0hUI7" resolve="reduce_WhileDoStatement" />
         <node concept="v3LJS" id="77WKAh0hVW2" role="v9R3O">
-          <ref role="v3LJV" node="77WKAh0fTSi" resolve="parentFunction" />
+          <ref role="v3LJV" node="77WKAh0fTSi" resolve="containerRoot" />
+        </node>
+        <node concept="v3LJS" id="22$kc$4O_JA" role="v9R3O">
+          <ref role="v3LJV" node="22$kc$4O8yc" resolve="instance" />
+        </node>
+        <node concept="v3LJS" id="22$kc$4OA1b" role="v9R3O">
+          <ref role="v3LJV" node="22$kc$4O8ye" resolve="instancePathMap" />
         </node>
       </node>
     </node>
@@ -153,54 +185,34 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="yvgz:77WKAgZUNex" resolve="TriggerStatement" />
       <node concept="gft3U" id="77WKAh0hrwW" role="1lVwrX">
-        <node concept="356WMU" id="77WKAh0hrx2" role="gfFT$">
-          <node concept="356sEK" id="30EzaY06NZn" role="383Ya9">
-            <node concept="356sEK" id="30EzaY06Oa6" role="356sEH">
-              <node concept="356sEF" id="30EzaY06Oa7" role="356sEH">
-                <property role="TrG5h" value="functionCall();" />
-                <node concept="1sPUBX" id="30EzaY06Oa8" role="lGtFl">
-                  <ref role="v9R2y" node="30EzaY02S3$" resolve="switch_FCallFromConnectedTrigPortParent" />
-                  <node concept="3NFfHV" id="30EzaY06Oa9" role="1sPUBK">
-                    <node concept="3clFbS" id="30EzaY06Oaa" role="2VODD2">
-                      <node concept="3clFbF" id="30EzaY06Oab" role="3cqZAp">
-                        <node concept="2OqwBi" id="30EzaY06Oac" role="3clFbG">
-                          <node concept="30H73N" id="30EzaY06Oad" role="2Oq$k0" />
-                          <node concept="1mfA1w" id="30EzaY06Oae" role="2OqNvi" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="30H73N" id="30EzaY06Oaf" role="v9R3O" />
-                  <node concept="v3LJS" id="30EzaY06Oag" role="v9R3O">
-                    <ref role="v3LJV" node="77WKAh0fTSi" resolve="parentFunction" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2EixSi" id="30EzaY06Oah" role="2EinRH" />
-              <node concept="1WS0z7" id="30EzaY06Oai" role="lGtFl">
-                <node concept="3JmXsc" id="30EzaY06Oaj" role="3Jn$fo">
-                  <node concept="3clFbS" id="30EzaY06Oak" role="2VODD2">
-                    <node concept="3clFbF" id="30EzaY06Oal" role="3cqZAp">
-                      <node concept="2OqwBi" id="30EzaY06Oam" role="3clFbG">
-                        <node concept="v3LJS" id="30EzaY06Oan" role="2Oq$k0">
-                          <ref role="v3LJV" node="77WKAh0fTSi" resolve="parentFunction" />
-                        </node>
-                        <node concept="2qgKlT" id="30EzaY06Oao" role="2OqNvi">
-                          <ref role="37wK5l" to="ixp9:2RC7aVK84L5" resolve="findConnectedTriggerPorts" />
-                          <node concept="2OqwBi" id="30EzaY06Oap" role="37wK5m">
-                            <node concept="30H73N" id="30EzaY06Oaq" role="2Oq$k0" />
-                            <node concept="3TrEf2" id="30EzaY06Pao" role="2OqNvi">
-                              <ref role="3Tt5mk" to="yvgz:77WKAh0azM6" resolve="trigger" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
+        <node concept="356sEK" id="22$kc$4OAjS" role="gfFT$">
+          <node concept="356sEF" id="22$kc$4OAjT" role="356sEH">
+            <property role="TrG5h" value="functioncall();" />
+          </node>
+          <node concept="2EixSi" id="22$kc$4OAjU" role="2EinRH" />
+          <node concept="5jKBG" id="22$kc$4OAk0" role="lGtFl">
+            <ref role="v9R2y" node="22$kc$4ObpY" resolve="include_TriggerFunctionCall" />
+            <node concept="3NFfHV" id="22$kc$4OAk3" role="5jGum">
+              <node concept="3clFbS" id="22$kc$4OAk4" role="2VODD2">
+                <node concept="3clFbF" id="22$kc$4OAm0" role="3cqZAp">
+                  <node concept="2OqwBi" id="22$kc$4OAwu" role="3clFbG">
+                    <node concept="30H73N" id="22$kc$4OAlZ" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="22$kc$4OAES" role="2OqNvi">
+                      <ref role="3Tt5mk" to="yvgz:77WKAh0azM6" resolve="trigger" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="2EixSi" id="30EzaY06NZp" role="2EinRH" />
+            <node concept="v3LJS" id="22$kc$4OBc6" role="v9R3O">
+              <ref role="v3LJV" node="77WKAh0fTSi" resolve="containerRoot" />
+            </node>
+            <node concept="v3LJS" id="22$kc$4OBed" role="v9R3O">
+              <ref role="v3LJV" node="22$kc$4O8yc" resolve="instance" />
+            </node>
+            <node concept="v3LJS" id="22$kc$4OBjO" role="v9R3O">
+              <ref role="v3LJV" node="22$kc$4O8ye" resolve="instancePathMap" />
+            </node>
           </node>
         </node>
       </node>
