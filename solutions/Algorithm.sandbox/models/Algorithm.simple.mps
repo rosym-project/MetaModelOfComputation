@@ -306,8 +306,8 @@
         <ref role="2mI24v" node="77qtDttRxWd" resolve="out" />
       </node>
       <node concept="2dP7qM" id="6kCUn6RLI" role="2dHiq0">
-        <ref role="2cu7Qi" node="22$kc$4yD5l" resolve="doubleFun" />
         <ref role="2mI24v" node="77qtDttRxXX" resolve="trigger" />
+        <ref role="2cu7Qi" node="22$kc$4yD5l" resolve="doubleFun" />
       </node>
     </node>
     <node concept="1psEHa" id="6kCUnabrV" role="2pAz8r">

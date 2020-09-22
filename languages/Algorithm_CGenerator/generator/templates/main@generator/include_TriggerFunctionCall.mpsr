@@ -145,9 +145,9 @@
     <property role="TrG5h" value="include_TriggerFunctionCall" />
     <ref role="3gUMe" to="yvgz:6jvQBgXEYiM" resolve="TriggerPort" />
     <node concept="1N15co" id="22$kc$4Obq_" role="1s_3oS">
-      <property role="TrG5h" value="containerRoot" />
+      <property role="TrG5h" value="container" />
       <node concept="3Tqbb2" id="22$kc$4ObqA" role="1N15GL">
-        <ref role="ehGHo" to="yvgz:25NPq6Iy244" resolve="IInstanceContainer" />
+        <ref role="ehGHo" to="yvgz:6VQU7bz8WKx" resolve="IBlock" />
       </node>
     </node>
     <node concept="1N15co" id="22$kc$4OgUc" role="1s_3oS">
@@ -193,7 +193,7 @@
               <node concept="3clFbF" id="22$kc$4Oezd" role="3cqZAp">
                 <node concept="2OqwBi" id="22$kc$4OeM9" role="3clFbG">
                   <node concept="v3LJS" id="22$kc$4Oezc" role="2Oq$k0">
-                    <ref role="v3LJV" node="22$kc$4Obq_" resolve="containerRoot" />
+                    <ref role="v3LJV" node="22$kc$4Obq_" resolve="container" />
                   </node>
                   <node concept="1mIQ4w" id="22$kc$4Of0h" role="2OqNvi">
                     <node concept="chp4Y" id="22$kc$4Of6I" role="cj9EA">
@@ -207,7 +207,7 @@
           <node concept="gft3U" id="22$kc$4OfbQ" role="UU_$l">
             <node concept="356sEK" id="22$kc$4OfhT" role="gfFT$">
               <node concept="356sEF" id="22$kc$4OfhU" role="356sEH">
-                <property role="TrG5h" value="/* container root '" />
+                <property role="TrG5h" value="/* container '" />
               </node>
               <node concept="356sEF" id="22$kc$4OfhV" role="356sEH">
                 <property role="TrG5h" value="name" />
@@ -219,9 +219,9 @@
                       <node concept="3clFbF" id="22$kc$4OfhZ" role="3cqZAp">
                         <node concept="2OqwBi" id="22$kc$4Ofi0" role="3clFbG">
                           <node concept="v3LJS" id="22$kc$4Ofi1" role="2Oq$k0">
-                            <ref role="v3LJV" node="22$kc$4Obq_" resolve="containerRoot" />
+                            <ref role="v3LJV" node="22$kc$4Obq_" resolve="container" />
                           </node>
-                          <node concept="3TrcHB" id="22$kc$4Ofi2" role="2OqNvi">
+                          <node concept="3TrcHB" id="lAqQFbc3JP" role="2OqNvi">
                             <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                           </node>
                         </node>
@@ -231,9 +231,33 @@
                 </node>
               </node>
               <node concept="356sEF" id="22$kc$4Ofi3" role="356sEH">
-                <property role="TrG5h" value="' does not implement ITriggerConnetorProvider */" />
+                <property role="TrG5h" value="' does not provide trigger connectors, skipping '" />
+              </node>
+              <node concept="356sEF" id="lAqQFbhuc_" role="356sEH">
+                <property role="TrG5h" value="name" />
+                <node concept="17Uvod" id="lAqQFbhucL" role="lGtFl">
+                  <property role="2qtEX9" value="name" />
+                  <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                  <node concept="3zFVjK" id="lAqQFbhucM" role="3zH0cK">
+                    <node concept="3clFbS" id="lAqQFbhucN" role="2VODD2">
+                      <node concept="3clFbF" id="lAqQFbhuhq" role="3cqZAp">
+                        <node concept="2OqwBi" id="lAqQFbhuwe" role="3clFbG">
+                          <node concept="v3LJS" id="lAqQFbhuhp" role="2Oq$k0">
+                            <ref role="v3LJV" node="22$kc$4OgUc" resolve="instance" />
+                          </node>
+                          <node concept="3TrcHB" id="lAqQFbhwcM" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="2EixSi" id="22$kc$4Ofi4" role="2EinRH" />
+              <node concept="356sEF" id="lAqQFbhwoj" role="356sEH">
+                <property role="TrG5h" value="' */" />
+              </node>
             </node>
           </node>
         </node>
@@ -249,7 +273,7 @@
                         <ref role="cht4Q" to="yvgz:6VQU7bzk35S" resolve="ITriggerConnectorProvider" />
                       </node>
                       <node concept="v3LJS" id="22$kc$4OggN" role="1m5AlR">
-                        <ref role="v3LJV" node="22$kc$4Obq_" resolve="containerRoot" />
+                        <ref role="v3LJV" node="22$kc$4Obq_" resolve="container" />
                       </node>
                     </node>
                   </node>
@@ -290,7 +314,10 @@
             </node>
           </node>
           <node concept="v3LJS" id="22$kc$4OlhO" role="v9R3O">
-            <ref role="v3LJV" node="22$kc$4Obq_" resolve="containerRoot" />
+            <ref role="v3LJV" node="22$kc$4Obq_" resolve="container" />
+          </node>
+          <node concept="v3LJS" id="149sRE9261s" role="v9R3O">
+            <ref role="v3LJV" node="22$kc$4OgUc" resolve="instance" />
           </node>
           <node concept="30H73N" id="22$kc$4OmIt" role="v9R3O" />
           <node concept="v3LJS" id="22$kc$4OmLR" role="v9R3O">

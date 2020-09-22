@@ -4,17 +4,12 @@
   <imports>
     <import index="yvgz" ref="r:3b411c10-569a-4299-9505-176144359d3b(Algorithm.structure)" implicit="true" />
     <import index="ixp9" ref="r:172690fd-5286-4218-b525-cadaaf47af22(Algorithm.behavior)" implicit="true" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
-      </concept>
-      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
-        <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -67,12 +62,6 @@
       </concept>
       <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
     </language>
-    <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
-      <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
-      <concept id="1048903277984174662" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_VarRef2" flags="nn" index="1psM6Z">
-        <reference id="1048903277984174663" name="vardecl" index="1psM6Y" />
-      </concept>
-    </language>
     <language id="990507d3-3527-4c54-bfe9-0ca3c9c6247a" name="com.dslfoundry.plaintextgen">
       <concept id="5082088080656902716" name="com.dslfoundry.plaintextgen.structure.NewlineMarker" flags="ng" index="2EixSi" />
       <concept id="1145195647825954804" name="com.dslfoundry.plaintextgen.structure.word" flags="ng" index="356sEF" />
@@ -90,12 +79,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
-        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
-      </concept>
-      <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
-        <child id="1145567471833" name="createdType" index="2T96Bj" />
-      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -116,9 +99,9 @@
     <property role="TrG5h" value="include_SchedulerBlockDefinition" />
     <ref role="3gUMe" to="yvgz:1Nl8mqSY6OM" resolve="SchedulerBlockInst" />
     <node concept="1N15co" id="5EJxvOPAnvc" role="1s_3oS">
-      <property role="TrG5h" value="containerRoot" />
+      <property role="TrG5h" value="container" />
       <node concept="3Tqbb2" id="5EJxvOPAnzk" role="1N15GL">
-        <ref role="ehGHo" to="yvgz:25NPq6Iy244" resolve="IInstanceContainer" />
+        <ref role="ehGHo" to="yvgz:6VQU7bz8WKx" resolve="IBlock" />
       </node>
     </node>
     <node concept="356WMU" id="58QN4$b2$hW" role="13RCb5">
@@ -128,10 +111,7 @@
           <node concept="5jKBG" id="22$kc$4KMRA" role="lGtFl">
             <ref role="v9R2y" node="22$kc$4K6j9" resolve="include_SchedulerBlockSignature" />
             <node concept="v3LJS" id="22$kc$4KMRD" role="v9R3O">
-              <ref role="v3LJV" node="5EJxvOPAnvc" resolve="containerRoot" />
-            </node>
-            <node concept="1mL9RQ" id="22$kc$4KRUb" role="v9R3O">
-              <ref role="1mL9RD" node="22$kc$4KOnO" resolve="pathToSBlockInst" />
+              <ref role="v3LJV" node="5EJxvOPAnvc" resolve="container" />
             </node>
             <node concept="3clFbT" id="22$kc$4M5wB" role="v9R3O" />
           </node>
@@ -152,7 +132,7 @@
             <node concept="1sPUBX" id="7akAd_Tw_9B" role="lGtFl">
               <ref role="v9R2y" node="5Tr1VsJJAo1" resolve="switch_SchedulerBlock" />
               <node concept="v3LJS" id="5EJxvOPAt3Q" role="v9R3O">
-                <ref role="v3LJV" node="5EJxvOPAnvc" resolve="containerRoot" />
+                <ref role="v3LJV" node="5EJxvOPAnvc" resolve="container" />
               </node>
               <node concept="30H73N" id="7HPHKNlLZTv" role="v9R3O" />
               <node concept="1mL9RQ" id="22$kc$4MsjW" role="v9R3O">
@@ -192,40 +172,12 @@
             <node concept="3clFbS" id="22$kc$4KMXs" role="2VODD2">
               <node concept="3clFbF" id="22$kc$4KN3d" role="3cqZAp">
                 <node concept="2OqwBi" id="22$kc$4KNEA" role="3clFbG">
-                  <node concept="v3LJS" id="22$kc$4KNvQ" role="2Oq$k0">
-                    <ref role="v3LJV" node="5EJxvOPAnvc" resolve="containerRoot" />
+                  <node concept="v3LJS" id="lAqQFbc11f" role="2Oq$k0">
+                    <ref role="v3LJV" node="5EJxvOPAnvc" resolve="container" />
                   </node>
                   <node concept="2qgKlT" id="22$kc$4KNZx" role="2OqNvi">
                     <ref role="37wK5l" to="ixp9:6XnyaZET_SN" resolve="getContainedInstancesAndPaths" />
                     <node concept="3clFbT" id="22$kc$4KO91" role="37wK5m" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1ps_xZ" id="22$kc$4KOnO" role="1ps_xO">
-          <property role="TrG5h" value="pathToSBlockInst" />
-          <node concept="2jfdEK" id="22$kc$4KOnP" role="1ps_xN">
-            <node concept="3clFbS" id="22$kc$4KOnQ" role="2VODD2">
-              <node concept="3clFbF" id="22$kc$4KO_o" role="3cqZAp">
-                <node concept="2OqwBi" id="22$kc$4KP99" role="3clFbG">
-                  <node concept="2OqwBi" id="22$kc$4KOHT" role="2Oq$k0">
-                    <node concept="1iwH7S" id="22$kc$4KO_n" role="2Oq$k0" />
-                    <node concept="1psM6Z" id="22$kc$4KOQu" role="2OqNvi">
-                      <ref role="1psM6Y" node="22$kc$4KMXq" resolve="instancePathMap" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="22$kc$4KPZS" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~HashMap.getOrDefault(java.lang.Object,java.lang.Object)" resolve="getOrDefault" />
-                    <node concept="30H73N" id="22$kc$4KQwa" role="37wK5m" />
-                    <node concept="2ShNRf" id="22$kc$4KRDo" role="37wK5m">
-                      <node concept="2T8Vx0" id="22$kc$4KRDm" role="2ShVmc">
-                        <node concept="2I9FWS" id="22$kc$4KRDn" role="2T96Bj">
-                          <ref role="2I9WkF" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
-                        </node>
-                      </node>
-                    </node>
                   </node>
                 </node>
               </node>
