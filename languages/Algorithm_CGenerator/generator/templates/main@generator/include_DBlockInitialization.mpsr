@@ -3,8 +3,8 @@
   <persistence version="9" />
   <imports>
     <import index="yvgz" ref="r:3b411c10-569a-4299-9505-176144359d3b(Algorithm.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -75,6 +75,27 @@
     <property role="TrG5h" value="include_DBlockInitialization" />
     <ref role="3gUMe" to="yvgz:29RmJoXeePk" resolve="DataBlock" />
     <node concept="356sEK" id="2$DyP_pXNTj" role="13RCb5">
+      <node concept="356sEF" id="lAqQFbyR8W" role="356sEH">
+        <property role="TrG5h" value="type" />
+        <node concept="1sPUBX" id="lAqQFbyRli" role="lGtFl">
+          <ref role="v9R2y" node="58QN4$b28qm" resolve="switch_TypeRepresentation" />
+          <node concept="3NFfHV" id="lAqQFbyRlk" role="1sPUBK">
+            <node concept="3clFbS" id="lAqQFbyRll" role="2VODD2">
+              <node concept="3clFbF" id="lAqQFbyRng" role="3cqZAp">
+                <node concept="2OqwBi" id="lAqQFbyRu7" role="3clFbG">
+                  <node concept="30H73N" id="lAqQFbyRnf" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="lAqQFbyRwx" role="2OqNvi">
+                    <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" resolve="type" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="356sEF" id="lAqQFbyQWD" role="356sEH">
+        <property role="TrG5h" value=" " />
+      </node>
       <node concept="356sEF" id="7rbzb1SBNa3" role="356sEH">
         <property role="TrG5h" value="name" />
         <node concept="17Uvod" id="7rbzb1SBNa9" role="lGtFl">

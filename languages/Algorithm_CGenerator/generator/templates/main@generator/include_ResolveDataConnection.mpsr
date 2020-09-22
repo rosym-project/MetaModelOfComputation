@@ -173,7 +173,7 @@
       <node concept="356sEF" id="lAqQFbj87u" role="356sEH">
         <property role="TrG5h" value="*" />
         <node concept="1sPUBX" id="lAqQFbj8eI" role="lGtFl">
-          <ref role="v9R2y" node="7_kk17YMIhF" resolve="switch_DereferenceByDataType" />
+          <ref role="v9R2y" node="7_kk17YMIhF" resolve="switch_DerefOperatorByType" />
           <node concept="3NFfHV" id="lAqQFbj8eK" role="1sPUBK">
             <node concept="3clFbS" id="lAqQFbj8eL" role="2VODD2">
               <node concept="3clFbF" id="lAqQFbj8gG" role="3cqZAp">
