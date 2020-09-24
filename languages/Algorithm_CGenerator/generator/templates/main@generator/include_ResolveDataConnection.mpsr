@@ -17,6 +17,7 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -168,10 +169,25 @@
         </node>
       </node>
     </node>
+    <node concept="1N15co" id="4g2eXcpm3tb" role="1s_3oS">
+      <property role="TrG5h" value="doDereference" />
+      <node concept="10P_77" id="4g2eXcpm40b" role="1N15GL" />
+    </node>
     <node concept="356sEK" id="1qoNQbRklyd" role="13RCb5">
       <node concept="2EixSi" id="1qoNQbRklyf" role="2EinRH" />
       <node concept="356sEF" id="lAqQFbj87u" role="356sEH">
         <property role="TrG5h" value="*" />
+        <node concept="1W57fq" id="4g2eXcpm40_" role="lGtFl">
+          <node concept="3IZrLx" id="4g2eXcpm40A" role="3IZSJc">
+            <node concept="3clFbS" id="4g2eXcpm40B" role="2VODD2">
+              <node concept="3clFbF" id="4g2eXcpm44M" role="3cqZAp">
+                <node concept="v3LJS" id="4g2eXcpm44L" role="3clFbG">
+                  <ref role="v3LJV" node="4g2eXcpm3tb" resolve="doDereference" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="1sPUBX" id="lAqQFbj8eI" role="lGtFl">
           <ref role="v9R2y" node="7_kk17YMIhF" resolve="switch_DerefOperatorByType" />
           <node concept="3NFfHV" id="lAqQFbj8eK" role="1sPUBK">

@@ -208,36 +208,6 @@
         </node>
       </node>
     </node>
-    <node concept="3aamgX" id="7wMoIgF8t1G" role="3aUrZf">
-      <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="yvgz:7wMoIgF4RlN" resolve="ReferenceType" />
-      <node concept="gft3U" id="7wMoIgF8tb7" role="1lVwrX">
-        <node concept="356sEK" id="7wMoIgF8tbi" role="gfFT$">
-          <node concept="2EixSi" id="7wMoIgF8tbk" role="2EinRH" />
-          <node concept="356sEF" id="7wMoIgF8tbf" role="356sEH">
-            <property role="TrG5h" value="type" />
-            <node concept="1sPUBX" id="7wMoIgF8tgg" role="lGtFl">
-              <ref role="v9R2y" node="58QN4$b28qm" resolve="switch_TypeRepresentation" />
-              <node concept="3NFfHV" id="7wMoIgF8tgj" role="1sPUBK">
-                <node concept="3clFbS" id="7wMoIgF8tgk" role="2VODD2">
-                  <node concept="3clFbF" id="7wMoIgF8tih" role="3cqZAp">
-                    <node concept="2OqwBi" id="7wMoIgF8tty" role="3clFbG">
-                      <node concept="30H73N" id="7wMoIgF8tig" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="7wMoIgF8tDo" role="2OqNvi">
-                        <ref role="3Tt5mk" to="yvgz:7wMoIgF4RlR" resolve="componentType" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="356sEF" id="7wMoIgF8tbt" role="356sEH">
-            <property role="TrG5h" value=" *" />
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
 </model>
 
