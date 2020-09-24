@@ -733,11 +733,5 @@
     <property role="EcuMT" value="389116524237416537" />
     <property role="TrG5h" value="INanoBlxProvider" />
   </node>
-  <node concept="1TIwiD" id="2OeEX$$Qs25">
-    <property role="EcuMT" value="3246721330495209605" />
-    <property role="3GE5qa" value="definitions.data" />
-    <property role="TrG5h" value="Reference" />
-    <ref role="1TJDcQ" to="tpee:4Lb$w0Yiqs4" resolve="BaseVariableReference" />
-  </node>
 </model>
 
