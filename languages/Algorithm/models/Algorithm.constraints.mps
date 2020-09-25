@@ -536,5 +536,14 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="6MmDa_$4UvU">
+    <ref role="1M2myG" to="yvgz:6MmDa_zAmFs" resolve="PropertyConfiguration" />
+    <node concept="1N5Pfh" id="6MmDa_$4UvV" role="1Mr941">
+      <ref role="1N5Vy1" to="yvgz:6MmDa_zAmFx" resolve="property" />
+      <node concept="1dDu$B" id="6MmDa_$4UX2" role="1N6uqs">
+        <ref role="1dDu$A" to="tpee:4k3qd$cSlJ3" resolve="BaseVariableDeclaration" />
+      </node>
+    </node>
+  </node>
 </model>
 

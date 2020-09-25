@@ -153,12 +153,16 @@
       <concept id="1174650418652" name="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" flags="nn" index="1YBJjd">
         <reference id="1174650432090" name="applicableNode" index="1YBMHb" />
       </concept>
+      <concept id="1174657487114" name="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" flags="nn" index="1Z2H0r">
+        <child id="1174657509053" name="term" index="1Z2MuG" />
+      </concept>
       <concept id="1174658326157" name="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" flags="nn" index="1Z5TYs" />
       <concept id="1174660718586" name="jetbrains.mps.lang.typesystem.structure.AbstractEquationStatement" flags="nn" index="1Zf1VF">
         <property id="1206359757216" name="checkOnly" index="3wDh2S" />
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
         <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
       </concept>
+      <concept id="1174663118805" name="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement" flags="nn" index="1ZobV4" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="4705942098322609812" name="jetbrains.mps.lang.smodel.structure.EnumMember_IsOperation" flags="ng" index="21noJN">
@@ -1643,6 +1647,60 @@
     <node concept="1YaCAy" id="2OeEX$_7uiy" role="1YuTPh">
       <property role="TrG5h" value="dataConnector" />
       <ref role="1YaFvo" to="yvgz:6po$YwiVCCf" resolve="DataConnector" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="6MmDa_zAmVw">
+    <property role="TrG5h" value="typeof_PropertyConfiguration" />
+    <node concept="3clFbS" id="6MmDa_zAmVx" role="18ibNy">
+      <node concept="1Z5TYs" id="6MmDa_zAn5R" role="3cqZAp">
+        <node concept="mw_s8" id="6MmDa_zAn69" role="1ZfhKB">
+          <node concept="2OqwBi" id="6MmDa_zAnuV" role="mwGJk">
+            <node concept="2OqwBi" id="6MmDa_zAncV" role="2Oq$k0">
+              <node concept="1YBJjd" id="6MmDa_zAn67" role="2Oq$k0">
+                <ref role="1YBMHb" node="6MmDa_zAmVz" resolve="attributeConfiguration" />
+              </node>
+              <node concept="3TrEf2" id="6MmDa_zAnkb" role="2OqNvi">
+                <ref role="3Tt5mk" to="yvgz:6MmDa_zAmFx" resolve="attribute" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="6MmDa_zAnE_" role="2OqNvi">
+              <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" resolve="type" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6MmDa_zAn5U" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6MmDa_zAmVB" role="mwGJk">
+            <node concept="1YBJjd" id="6MmDa_zAmXr" role="1Z2MuG">
+              <ref role="1YBMHb" node="6MmDa_zAmVz" resolve="attributeConfiguration" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1ZobV4" id="6MmDa_zAo3x" role="3cqZAp">
+        <node concept="mw_s8" id="6MmDa_zAo3V" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6MmDa_zAo3R" role="mwGJk">
+            <node concept="2OqwBi" id="6MmDa_zAobK" role="1Z2MuG">
+              <node concept="1YBJjd" id="6MmDa_zAo4c" role="2Oq$k0">
+                <ref role="1YBMHb" node="6MmDa_zAmVz" resolve="attributeConfiguration" />
+              </node>
+              <node concept="3TrEf2" id="6MmDa_zAonS" role="2OqNvi">
+                <ref role="3Tt5mk" to="yvgz:6MmDa_zAmFv" resolve="value" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6MmDa_zAop5" role="1ZfhKB">
+          <node concept="1Z2H0r" id="6MmDa_zAop1" role="mwGJk">
+            <node concept="1YBJjd" id="6MmDa_zAopm" role="1Z2MuG">
+              <ref role="1YBMHb" node="6MmDa_zAmVz" resolve="attributeConfiguration" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6MmDa_zAmVz" role="1YuTPh">
+      <property role="TrG5h" value="attributeConfiguration" />
+      <ref role="1YaFvo" to="yvgz:6MmDa_zAmFs" resolve="AttributeConfiguration" />
     </node>
   </node>
 </model>
