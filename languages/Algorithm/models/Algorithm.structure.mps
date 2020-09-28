@@ -352,6 +352,13 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6jvQBgXEYiM" resolve="TriggerPort" />
     </node>
+    <node concept="1TJgyj" id="1gN7S_5fZ5w" role="1TKVEi">
+      <property role="IQ2ns" value="1455541779003601248" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="attributes" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="tpee:4k3qd$cSlJ3" resolve="BaseVariableDeclaration" />
+    </node>
     <node concept="PrWs8" id="6VQU7bz9lHK" role="PzmwI">
       <ref role="PrY4T" node="6VQU7bz8WKx" resolve="IBlock" />
     </node>
@@ -607,13 +614,6 @@
       <property role="IQ2nx" value="1550618328762367609" />
       <property role="TrG5h" value="nblx" />
       <ref role="AX2Wp" node="1whTsds7Uka" resolve="ValidIdentifier" />
-    </node>
-    <node concept="1TJgyj" id="1gN7S_5fZ5w" role="1TKVEi">
-      <property role="IQ2ns" value="1455541779003601248" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="attributes" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" to="tpee:4k3qd$cSlJ3" resolve="BaseVariableDeclaration" />
     </node>
   </node>
   <node concept="Az7Fb" id="1whTsds7Uka">
