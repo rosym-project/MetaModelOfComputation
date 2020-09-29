@@ -71,9 +71,6 @@
       <concept id="2077603528175021362" name="Algorithm.structure.SchedulerBlockInst" flags="ng" index="2$bkLk">
         <reference id="2077603528175021366" name="type" index="2$bkLg" />
       </concept>
-      <concept id="65996431592360841" name="Algorithm.structure.TriggerPortRef" flags="ng" index="2_qZNI">
-        <reference id="65996431592360842" name="trigger_port" index="2_qZNH" />
-      </concept>
       <concept id="65996431592056450" name="Algorithm.structure.FixedDataFlowSchedulerBlock" flags="ng" index="2__D7_">
         <child id="65996431592056451" name="schedule" index="2__D7$" />
       </concept>
@@ -185,11 +182,11 @@
     </node>
     <node concept="2__D7_" id="1Nl8mqSVyWV" role="2$cYEw">
       <property role="TrG5h" value="fooSched" />
-      <node concept="2_qZNI" id="1Nl8mqSVyXa" role="2__D7$">
-        <ref role="2_qZNH" node="1Nl8mqSVyX2" resolve="schedBar" />
+      <node concept="1e5Z75" id="3fay3NODU92" role="2__D7$">
+        <ref role="LPJVy" node="1Nl8mqSVyX2" resolve="schedBar" />
       </node>
-      <node concept="2_qZNI" id="1Nl8mqSVyXb" role="2__D7$">
-        <ref role="2_qZNH" node="1Nl8mqSVyX3" resolve="schedBaz" />
+      <node concept="1e5Z75" id="3fay3NODU9c" role="2__D7$">
+        <ref role="LPJVy" node="1Nl8mqSVyX3" resolve="schedBaz" />
       </node>
       <node concept="1pt3V6" id="1Nl8mqSVyX1" role="1OHzVH">
         <property role="TrG5h" value="fooSchedTrigger" />
@@ -250,8 +247,8 @@
     <property role="TrG5h" value="GenericsLib" />
     <node concept="2__D7_" id="77qtDttRxW3" role="2$cYEw">
       <property role="TrG5h" value="GenericsControlFlow" />
-      <node concept="2_qZNI" id="77qtDttRxWi" role="2__D7$">
-        <ref role="2_qZNH" node="77qtDttRxWd" resolve="out" />
+      <node concept="1e5Z75" id="3fay3NODU9x" role="2__D7$">
+        <ref role="LPJVy" node="77qtDttRxWd" resolve="out" />
       </node>
       <node concept="1pt3V6" id="77qtDttRxWa" role="1OHzVH">
         <property role="TrG5h" value="in" />
