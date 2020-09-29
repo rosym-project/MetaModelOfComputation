@@ -180,8 +180,8 @@
                     <node concept="3clFbF" id="22$kc$4OohZ" role="3cqZAp">
                       <node concept="2OqwBi" id="22$kc$4Ooso" role="3clFbG">
                         <node concept="30H73N" id="22$kc$4OohY" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="22$kc$4OoDS" role="2OqNvi">
-                          <ref role="3Tt5mk" to="yvgz:3EtQu_woIa" resolve="trigger_port" />
+                        <node concept="3TrEf2" id="3fay3NOD957" role="2OqNvi">
+                          <ref role="3Tt5mk" to="yvgz:77WKAh0azM6" resolve="trigger" />
                         </node>
                       </node>
                     </node>

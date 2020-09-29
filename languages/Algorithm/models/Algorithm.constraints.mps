@@ -152,15 +152,6 @@
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
     </language>
   </registry>
-  <node concept="1M2fIO" id="5jlbthjIqiE">
-    <ref role="1M2myG" to="yvgz:3EtQu_woI9" resolve="TriggerPortRef" />
-    <node concept="1N5Pfh" id="71WlwW$ynkC" role="1Mr941">
-      <ref role="1N5Vy1" to="yvgz:3EtQu_woIa" resolve="trigger_port" />
-      <node concept="1dDu$B" id="71WlwW$ynnI" role="1N6uqs">
-        <ref role="1dDu$A" to="yvgz:6jvQBgXEYiM" resolve="TriggerPort" />
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="77WKAh0bnsc">
     <property role="3GE5qa" value="definitions.schedule" />
     <ref role="1M2myG" to="yvgz:77WKAgZUNex" resolve="TriggerStatement" />
@@ -537,9 +528,9 @@
     </node>
   </node>
   <node concept="1M2fIO" id="6MmDa_$4UvU">
-    <ref role="1M2myG" to="yvgz:6MmDa_zAmFs" resolve="PropertyConfiguration" />
+    <ref role="1M2myG" to="yvgz:6MmDa_zAmFs" resolve="AttributeConfiguration" />
     <node concept="1N5Pfh" id="6MmDa_$4UvV" role="1Mr941">
-      <ref role="1N5Vy1" to="yvgz:6MmDa_zAmFx" resolve="property" />
+      <ref role="1N5Vy1" to="yvgz:6MmDa_zAmFx" resolve="attribute" />
       <node concept="1dDu$B" id="6MmDa_$4UX2" role="1N6uqs">
         <ref role="1dDu$A" to="tpee:4k3qd$cSlJ3" resolve="BaseVariableDeclaration" />
       </node>

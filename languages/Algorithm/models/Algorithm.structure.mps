@@ -298,18 +298,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="schedule" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="3EtQu_woI9" resolve="TriggerPortRef" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3EtQu_woI9">
-    <property role="EcuMT" value="65996431592360841" />
-    <property role="TrG5h" value="TriggerPortRef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="3EtQu_woIa" role="1TKVEi">
-      <property role="20lbJX" value="fLJekj4/1" />
-      <property role="IQ2ns" value="65996431592360842" />
-      <property role="20kJfa" value="trigger_port" />
-      <ref role="20lvS9" node="6jvQBgXEYiM" resolve="TriggerPort" />
+      <ref role="20lvS9" node="77WKAgZUNex" resolve="TriggerStatement" />
     </node>
   </node>
   <node concept="1TIwiD" id="5o1iPWxUlYn">
