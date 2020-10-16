@@ -14,6 +14,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -460,15 +461,27 @@
             </node>
           </node>
         </node>
-        <node concept="3fqX7Q" id="EZVvidHCY8" role="3clFbw">
-          <node concept="2OqwBi" id="EZVvidHCYa" role="3fr31v">
-            <node concept="1mIQ4w" id="EZVvidHCYc" role="2OqNvi">
-              <node concept="chp4Y" id="EZVvidHCYd" role="cj9EA">
-                <ref role="cht4Q" to="tpee:f_0Q1BR" resolve="ArrayType" />
+        <node concept="22lmx$" id="5SweSwB3tWA" role="3clFbw">
+          <node concept="2OqwBi" id="5SweSwB3ud2" role="3uHU7w">
+            <node concept="37vLTw" id="5SweSwB3u1W" role="2Oq$k0">
+              <ref role="3cqZAo" node="EZVvidJ9b6" resolve="arrayPortType" />
+            </node>
+            <node concept="1mIQ4w" id="5SweSwB3unt" role="2OqNvi">
+              <node concept="chp4Y" id="5SweSwB3uol" role="cj9EA">
+                <ref role="cht4Q" to="yvgz:jovpCoz9HQ" resolve="FixedSizeArrayType" />
               </node>
             </node>
-            <node concept="37vLTw" id="KylwmuBIP3" role="2Oq$k0">
-              <ref role="3cqZAo" node="EZVvidJ9b6" resolve="arrayPortType" />
+          </node>
+          <node concept="3fqX7Q" id="EZVvidHCY8" role="3uHU7B">
+            <node concept="2OqwBi" id="EZVvidHCYa" role="3fr31v">
+              <node concept="1mIQ4w" id="EZVvidHCYc" role="2OqNvi">
+                <node concept="chp4Y" id="EZVvidHCYd" role="cj9EA">
+                  <ref role="cht4Q" to="tpee:f_0Q1BR" resolve="ArrayType" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="KylwmuBIP3" role="2Oq$k0">
+                <ref role="3cqZAo" node="EZVvidJ9b6" resolve="arrayPortType" />
+              </node>
             </node>
           </node>
         </node>

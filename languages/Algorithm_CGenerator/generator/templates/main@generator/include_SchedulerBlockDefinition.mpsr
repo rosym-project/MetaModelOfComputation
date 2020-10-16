@@ -101,7 +101,7 @@
     <node concept="1N15co" id="5EJxvOPAnvc" role="1s_3oS">
       <property role="TrG5h" value="container" />
       <node concept="3Tqbb2" id="5EJxvOPAnzk" role="1N15GL">
-        <ref role="ehGHo" to="yvgz:6VQU7bz8WKx" resolve="IBlock" />
+        <ref role="ehGHo" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
       </node>
     </node>
     <node concept="356WMU" id="58QN4$b2$hW" role="13RCb5">
@@ -172,8 +172,13 @@
             <node concept="3clFbS" id="22$kc$4KMXs" role="2VODD2">
               <node concept="3clFbF" id="22$kc$4KN3d" role="3cqZAp">
                 <node concept="2OqwBi" id="22$kc$4KNEA" role="3clFbG">
-                  <node concept="v3LJS" id="lAqQFbc11f" role="2Oq$k0">
-                    <ref role="v3LJV" node="5EJxvOPAnvc" resolve="container" />
+                  <node concept="2OqwBi" id="36nMB0LGcyV" role="2Oq$k0">
+                    <node concept="v3LJS" id="lAqQFbc11f" role="2Oq$k0">
+                      <ref role="v3LJV" node="5EJxvOPAnvc" resolve="container" />
+                    </node>
+                    <node concept="2qgKlT" id="36nMB0LGcHU" role="2OqNvi">
+                      <ref role="37wK5l" to="ixp9:6VQU7byzDnK" resolve="getType" />
+                    </node>
                   </node>
                   <node concept="2qgKlT" id="22$kc$4KNZx" role="2OqNvi">
                     <ref role="37wK5l" to="ixp9:6XnyaZET_SN" resolve="getContainedInstancesAndPaths" />

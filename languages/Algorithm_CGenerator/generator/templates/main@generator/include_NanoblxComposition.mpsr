@@ -137,7 +137,7 @@
     <node concept="1N15co" id="149sRE91FFI" role="1s_3oS">
       <property role="TrG5h" value="rootBlock" />
       <node concept="3Tqbb2" id="149sRE91FFW" role="1N15GL">
-        <ref role="ehGHo" to="yvgz:6VQU7bz8WKx" resolve="IBlock" />
+        <ref role="ehGHo" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
       </node>
     </node>
     <node concept="1N15co" id="149sRE91FNt" role="1s_3oS">

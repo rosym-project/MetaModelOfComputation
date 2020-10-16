@@ -15,6 +15,7 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -35,6 +36,9 @@
         <child id="1167340453568" name="reductionMappingRule" index="3aUrZf" />
       </concept>
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj" />
+      <concept id="5005282049925926521" name="jetbrains.mps.lang.generator.structure.TemplateArgumentParameterExpression" flags="nn" index="v3LJS">
+        <reference id="5005282049925926522" name="parameter" index="v3LJV" />
+      </concept>
       <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ng" index="v9R3L">
         <reference id="1722980698497626483" name="template" index="v9R2y" />
       </concept>
@@ -64,11 +68,17 @@
       <concept id="1048903277984099198" name="jetbrains.mps.lang.generator.structure.VarMacro2" flags="lg" index="1ps_y7">
         <child id="1048903277984099213" name="variables" index="1ps_xO" />
       </concept>
+      <concept id="982871510064032177" name="jetbrains.mps.lang.generator.structure.IParameterizedTemplate" flags="ng" index="1s_3nv">
+        <child id="982871510064032342" name="parameter" index="1s_3oS" />
+      </concept>
       <concept id="982871510068000147" name="jetbrains.mps.lang.generator.structure.TemplateSwitchMacro" flags="lg" index="1sPUBX">
         <child id="982871510068000158" name="sourceNodeQuery" index="1sPUBK" />
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167945743726" name="jetbrains.mps.lang.generator.structure.IfMacro_Condition" flags="in" index="3IZrLx" />
+      <concept id="1805153994415891174" name="jetbrains.mps.lang.generator.structure.TemplateParameterDeclaration" flags="ng" index="1N15co">
+        <child id="1805153994415893199" name="type" index="1N15GL" />
+      </concept>
       <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
       <concept id="1118773211870" name="jetbrains.mps.lang.generator.structure.IfMacro" flags="ln" index="1W57fq">
         <child id="1167945861827" name="conditionFunction" index="3IZSJc" />
@@ -130,6 +140,10 @@
   </registry>
   <node concept="jVnub" id="7HPHKNlSMmS">
     <property role="TrG5h" value="switch_NanoBlockMemberDeclaration" />
+    <node concept="1N15co" id="48IOVVnbvq4" role="1s_3oS">
+      <property role="TrG5h" value="name" />
+      <node concept="17QB3L" id="48IOVVnbvIm" role="1N15GL" />
+    </node>
     <node concept="3aamgX" id="7HPHKNlSMAb" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="yvgz:29RmJoXeePk" resolve="DataBlock" />
@@ -675,9 +689,6 @@
       <ref role="30HIoZ" to="yvgz:3eP8Zudp5G4" resolve="FunctionBlock" />
       <node concept="gft3U" id="4wr1ti7SsZQ" role="1lVwrX">
         <node concept="356sEK" id="4wr1ti7StiG" role="gfFT$">
-          <node concept="356sEF" id="4wr1ti7StiH" role="356sEH">
-            <property role="TrG5h" value="const " />
-          </node>
           <node concept="2EixSi" id="4wr1ti7StiI" role="2EinRH" />
           <node concept="356sEF" id="4wr1ti7StiJ" role="356sEH">
             <property role="TrG5h" value="type" />
@@ -686,7 +697,7 @@
             </node>
           </node>
           <node concept="356sEF" id="4wr1ti7StiL" role="356sEH">
-            <property role="TrG5h" value=" *" />
+            <property role="TrG5h" value=" " />
           </node>
           <node concept="356sEF" id="4wr1ti7StiM" role="356sEH">
             <property role="TrG5h" value="name" />
@@ -696,11 +707,8 @@
               <node concept="3zFVjK" id="4wr1ti7StiO" role="3zH0cK">
                 <node concept="3clFbS" id="4wr1ti7StiP" role="2VODD2">
                   <node concept="3clFbF" id="4wr1ti7StiQ" role="3cqZAp">
-                    <node concept="2OqwBi" id="4wr1ti7StiR" role="3clFbG">
-                      <node concept="30H73N" id="4wr1ti7StiS" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="4wr1ti7StiT" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
+                    <node concept="v3LJS" id="48IOVVnbxHw" role="3clFbG">
+                      <ref role="v3LJV" node="48IOVVnbvq4" resolve="name" />
                     </node>
                   </node>
                 </node>
@@ -718,9 +726,6 @@
       <ref role="30HIoZ" to="yvgz:29RmJoXeePe" resolve="AlgorithmBlock" />
       <node concept="gft3U" id="4wr1ti7SHft" role="1lVwrX">
         <node concept="356sEK" id="4wr1ti7SHf_" role="gfFT$">
-          <node concept="356sEF" id="4wr1ti7SHfA" role="356sEH">
-            <property role="TrG5h" value="const " />
-          </node>
           <node concept="356sEF" id="4wr1ti7SHfB" role="356sEH">
             <property role="TrG5h" value="type" />
             <node concept="1sPUBX" id="4wr1ti7SHfC" role="lGtFl">
@@ -728,7 +733,7 @@
             </node>
           </node>
           <node concept="356sEF" id="4wr1ti7SHfD" role="356sEH">
-            <property role="TrG5h" value=" *" />
+            <property role="TrG5h" value=" " />
           </node>
           <node concept="356sEF" id="4wr1ti7SHfE" role="356sEH">
             <property role="TrG5h" value="name" />
@@ -738,11 +743,8 @@
               <node concept="3zFVjK" id="4wr1ti7SHfG" role="3zH0cK">
                 <node concept="3clFbS" id="4wr1ti7SHfH" role="2VODD2">
                   <node concept="3clFbF" id="4wr1ti7SHfI" role="3cqZAp">
-                    <node concept="2OqwBi" id="4wr1ti7SHfJ" role="3clFbG">
-                      <node concept="30H73N" id="4wr1ti7SHfK" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="4wr1ti7SHfL" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
+                    <node concept="v3LJS" id="48IOVVnbxSe" role="3clFbG">
+                      <ref role="v3LJV" node="48IOVVnbvq4" resolve="name" />
                     </node>
                   </node>
                 </node>

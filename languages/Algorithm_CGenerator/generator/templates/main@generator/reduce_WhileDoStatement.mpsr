@@ -97,7 +97,7 @@
     <node concept="1N15co" id="77WKAh0hUTJ" role="1s_3oS">
       <property role="TrG5h" value="containerRoot" />
       <node concept="3Tqbb2" id="77WKAh0hUTW" role="1N15GL">
-        <ref role="ehGHo" to="yvgz:6VQU7bz8WKx" resolve="IBlock" />
+        <ref role="ehGHo" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
       </node>
     </node>
     <node concept="1N15co" id="22$kc$4O_c8" role="1s_3oS">
