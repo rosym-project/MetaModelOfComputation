@@ -3,8 +3,8 @@
   <persistence version="9" />
   <imports>
     <import index="yvgz" ref="r:3b411c10-569a-4299-9505-176144359d3b(Algorithm.structure)" implicit="true" />
-    <import index="ixp9" ref="r:172690fd-5286-4218-b525-cadaaf47af22(Algorithm.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="ixp9" ref="r:172690fd-5286-4218-b525-cadaaf47af22(Algorithm.behavior)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -54,6 +54,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -130,11 +133,14 @@
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -160,6 +166,139 @@
   </registry>
   <node concept="jVnub" id="30EzaY02S3$">
     <property role="TrG5h" value="switch_FCallFromConnectedBlock" />
+    <node concept="3aamgX" id="GSvCluUK4y" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="yvgz:29RmJoXeePe" resolve="AlgorithmBlock" />
+      <node concept="gft3U" id="GSvCluUOXI" role="1lVwrX">
+        <node concept="356sEK" id="GSvCluUOXW" role="gfFT$">
+          <node concept="2EixSi" id="GSvCluUOXY" role="2EinRH" />
+          <node concept="356sEF" id="GSvCluUOXT" role="356sEH">
+            <property role="TrG5h" value="algorithm" />
+            <node concept="17Uvod" id="GSvCluUOZ3" role="lGtFl">
+              <property role="2qtEX9" value="name" />
+              <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+              <node concept="3zFVjK" id="GSvCluUOZ4" role="3zH0cK">
+                <node concept="3clFbS" id="GSvCluUOZ5" role="2VODD2">
+                  <node concept="3clFbF" id="GSvCluUP3J" role="3cqZAp">
+                    <node concept="2OqwBi" id="GSvCluUPll" role="3clFbG">
+                      <node concept="30H73N" id="GSvCluUP3I" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="GSvCluUPUE" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="356sEF" id="GSvCluUOY7" role="356sEH">
+            <property role="TrG5h" value="_" />
+          </node>
+          <node concept="356sEF" id="GSvCluUOYc" role="356sEH">
+            <property role="TrG5h" value="schedule" />
+            <node concept="17Uvod" id="3nBocIz9grr" role="lGtFl">
+              <property role="2qtEX9" value="name" />
+              <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+              <node concept="3zFVjK" id="3nBocIz9grs" role="3zH0cK">
+                <node concept="3clFbS" id="3nBocIz9grt" role="2VODD2">
+                  <node concept="3clFbF" id="3nBocIz9gwb" role="3cqZAp">
+                    <node concept="2OqwBi" id="3nBocIz9kZi" role="3clFbG">
+                      <node concept="1eOMI4" id="3nBocIz9koU" role="2Oq$k0">
+                        <node concept="1PxgMI" id="3nBocIz9j0H" role="1eOMHV">
+                          <property role="1BlNFB" value="true" />
+                          <node concept="chp4Y" id="3nBocIz9jDz" role="3oSUPX">
+                            <ref role="cht4Q" to="yvgz:29RmJoXeePl" resolve="SchedulerBlock" />
+                          </node>
+                          <node concept="2OqwBi" id="3nBocIz9hSC" role="1m5AlR">
+                            <node concept="2OqwBi" id="3nBocIz9gI_" role="2Oq$k0">
+                              <node concept="v3LJS" id="3nBocIz9gwa" role="2Oq$k0">
+                                <ref role="v3LJV" node="3f5hl3BvlSZ" resolve="targetConnection" />
+                              </node>
+                              <node concept="3TrEf2" id="3nBocIz9hpZ" role="2OqNvi">
+                                <ref role="3Tt5mk" to="yvgz:6kCUmJBeh" resolve="port" />
+                              </node>
+                            </node>
+                            <node concept="1mfA1w" id="3nBocIz9iFq" role="2OqNvi" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3TrcHB" id="3nBocIz9l_J" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="356sEF" id="GSvCluUOYj" role="356sEH">
+            <property role="TrG5h" value="(" />
+          </node>
+          <node concept="356sEF" id="3nBocIz9nZe" role="356sEH">
+            <property role="TrG5h" value="&amp;" />
+          </node>
+          <node concept="356sEF" id="GSvCluUOYs" role="356sEH">
+            <property role="TrG5h" value="composition" />
+            <node concept="5jKBG" id="3nBocIz9nZ6" role="lGtFl">
+              <ref role="v9R2y" node="149sRE91FFj" resolve="include_NanoblxComposition" />
+              <node concept="3NFfHV" id="3nBocIz9o9r" role="5jGum">
+                <node concept="3clFbS" id="3nBocIz9o9s" role="2VODD2">
+                  <node concept="3clFbF" id="3nBocIz9obB" role="3cqZAp">
+                    <node concept="2OqwBi" id="3nBocIz9okz" role="3clFbG">
+                      <node concept="v3LJS" id="3nBocIz9obA" role="2Oq$k0">
+                        <ref role="v3LJV" node="3f5hl3BvlSZ" resolve="targetConnection" />
+                      </node>
+                      <node concept="3TrEf2" id="3nBocIz9pht" role="2OqNvi">
+                        <ref role="3Tt5mk" to="yvgz:6VQU7byzDnw" resolve="instance" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="v3LJS" id="3nBocIz9pZN" role="v9R3O">
+                <ref role="v3LJV" node="149sRE925GI" resolve="originInstance" />
+              </node>
+              <node concept="v3LJS" id="3nBocIz9q0b" role="v9R3O">
+                <ref role="v3LJV" node="3f5hl3Bvlf_" resolve="containerRoot" />
+              </node>
+              <node concept="v3LJS" id="3nBocIz9q1f" role="v9R3O">
+                <ref role="v3LJV" node="22$kc$4MtW7" resolve="instancePathMap" />
+              </node>
+            </node>
+          </node>
+          <node concept="356sEF" id="GSvCluUOYB" role="356sEH">
+            <property role="TrG5h" value=")" />
+          </node>
+          <node concept="356sEF" id="GSvCluUOYO" role="356sEH">
+            <property role="TrG5h" value=";" />
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="GSvCluUKmw" role="30HLyM">
+        <node concept="3clFbS" id="GSvCluUKmx" role="2VODD2">
+          <node concept="3clFbF" id="GSvCluUKqv" role="3cqZAp">
+            <node concept="2OqwBi" id="GSvCluUN$u" role="3clFbG">
+              <node concept="2OqwBi" id="GSvCluUMSA" role="2Oq$k0">
+                <node concept="2OqwBi" id="GSvCluUK$G" role="2Oq$k0">
+                  <node concept="v3LJS" id="GSvCluUKqu" role="2Oq$k0">
+                    <ref role="v3LJV" node="3f5hl3BvlSZ" resolve="targetConnection" />
+                  </node>
+                  <node concept="3TrEf2" id="GSvCluUM_6" role="2OqNvi">
+                    <ref role="3Tt5mk" to="yvgz:6kCUmJBeh" resolve="port" />
+                  </node>
+                </node>
+                <node concept="1mfA1w" id="GSvCluUNen" role="2OqNvi" />
+              </node>
+              <node concept="1mIQ4w" id="GSvCluUOqh" role="2OqNvi">
+                <node concept="chp4Y" id="GSvCluUOFa" role="cj9EA">
+                  <ref role="cht4Q" to="yvgz:29RmJoXeePl" resolve="SchedulerBlock" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="30EzaY0351R" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="yvgz:29RmJoXeePl" resolve="SchedulerBlock" />
