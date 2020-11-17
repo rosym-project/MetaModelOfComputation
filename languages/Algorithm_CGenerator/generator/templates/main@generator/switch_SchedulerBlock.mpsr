@@ -256,7 +256,7 @@
     <node concept="1N15co" id="58QN4$b5Yt7" role="1s_3oS">
       <property role="TrG5h" value="container" />
       <node concept="3Tqbb2" id="58QN4$b5Ytf" role="1N15GL">
-        <ref role="ehGHo" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
+        <ref role="ehGHo" to="yvgz:6VQU7bz8WKx" resolve="IBlock" />
       </node>
     </node>
     <node concept="1N15co" id="7HPHKNlKOLc" role="1s_3oS">

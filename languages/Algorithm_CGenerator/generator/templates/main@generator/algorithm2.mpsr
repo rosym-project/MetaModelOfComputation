@@ -63,26 +63,6 @@
         <reference id="1048903277984174663" name="vardecl" index="1psM6Y" />
       </concept>
     </language>
-    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
-      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
-        <reference id="5455284157994012188" name="link" index="2pIpSl" />
-        <child id="1595412875168045827" name="initValue" index="28nt2d" />
-      </concept>
-      <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
-        <reference id="5455284157993911078" name="property" index="2pJxcJ" />
-        <child id="1595412875168045201" name="initValue" index="28ntcv" />
-      </concept>
-      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
-        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
-      </concept>
-      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
-        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
-        <child id="5455284157993911099" name="values" index="2pJxcM" />
-      </concept>
-      <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
-        <child id="8182547171709752112" name="expression" index="36biLW" />
-      </concept>
-    </language>
     <language id="990507d3-3527-4c54-bfe9-0ca3c9c6247a" name="com.dslfoundry.plaintextgen">
       <concept id="5082088080656902716" name="com.dslfoundry.plaintextgen.structure.NewlineMarker" flags="ng" index="2EixSi" />
       <concept id="1145195647825954804" name="com.dslfoundry.plaintextgen.structure.word" flags="ng" index="356sEF" />
@@ -192,7 +172,7 @@
         </node>
         <node concept="5jKBG" id="22$kc$4zUxh" role="lGtFl">
           <ref role="v9R2y" node="58QN4$b2$hR" resolve="include_SchedulerBlockDefinition" />
-          <node concept="1mL9RQ" id="22$kc$4zUO1" role="v9R3O">
+          <node concept="1mL9RQ" id="2x_L7KOwmY2" role="v9R3O">
             <ref role="1mL9RD" node="5EJxvOPAomP" resolve="algo" />
           </node>
         </node>
@@ -417,24 +397,8 @@
           <property role="TrG5h" value="algo" />
           <node concept="2jfdEK" id="5EJxvOPAomQ" role="1ps_xN">
             <node concept="3clFbS" id="5EJxvOPAomR" role="2VODD2">
-              <node concept="3clFbF" id="5EJxvOPAoEc" role="3cqZAp">
-                <node concept="2pJPEk" id="36nMB0LGd8y" role="3clFbG">
-                  <node concept="2pJPED" id="36nMB0LGddf" role="2pJPEn">
-                    <ref role="2pJxaS" to="yvgz:17L66asWE$6" resolve="AlgorithmBlockInst" />
-                    <node concept="2pJxcG" id="36nMB0LGdj1" role="2pJxcM">
-                      <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                      <node concept="Xl_RD" id="36nMB0LGdkc" role="28ntcv">
-                        <property role="Xl_RC" value="nbx" />
-                      </node>
-                    </node>
-                    <node concept="2pIpSj" id="36nMB0LGdrd" role="2pJxcM">
-                      <ref role="2pIpSl" to="yvgz:17L66asWE$7" resolve="type" />
-                      <node concept="36biLy" id="36nMB0LGds0" role="28nt2d">
-                        <node concept="30H73N" id="36nMB0LGdsN" role="36biLW" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
+              <node concept="3clFbF" id="2x_L7KOwmDK" role="3cqZAp">
+                <node concept="30H73N" id="2x_L7KOwmDB" role="3clFbG" />
               </node>
             </node>
           </node>
