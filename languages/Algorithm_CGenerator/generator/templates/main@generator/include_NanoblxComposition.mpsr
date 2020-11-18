@@ -304,11 +304,8 @@
         </node>
         <node concept="gft3U" id="2Bt1O9IELtB" role="UU_$l">
           <node concept="356sEK" id="2Bt1O9IELtM" role="gfFT$">
-            <node concept="356sEF" id="2Bt1O9IELu5" role="356sEH">
-              <property role="TrG5h" value="(" />
-            </node>
             <node concept="356sEF" id="2Bt1O9IELtY" role="356sEH">
-              <property role="TrG5h" value="*" />
+              <property role="TrG5h" value="(*" />
               <node concept="1W57fq" id="2Bt1O9IENBt" role="lGtFl">
                 <node concept="3IZrLx" id="2Bt1O9IENBu" role="3IZSJc">
                   <node concept="3clFbS" id="2Bt1O9IENBv" role="2VODD2">
@@ -346,6 +343,19 @@
             </node>
             <node concept="356sEF" id="2Bt1O9IELuf" role="356sEH">
               <property role="TrG5h" value=")" />
+              <node concept="1W57fq" id="2Bt1O9IMQaL" role="lGtFl">
+                <node concept="3IZrLx" id="2Bt1O9IMQaM" role="3IZSJc">
+                  <node concept="3clFbS" id="2Bt1O9IMQaN" role="2VODD2">
+                    <node concept="3clFbF" id="2Bt1O9IMQiq" role="3cqZAp">
+                      <node concept="3fqX7Q" id="2Bt1O9IMQio" role="3clFbG">
+                        <node concept="v3LJS" id="2Bt1O9IMQqj" role="3fr31v">
+                          <ref role="v3LJV" node="4nkIe$AAa2I" resolve="wantPointer" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="2EixSi" id="2Bt1O9IELtO" role="2EinRH" />
           </node>
