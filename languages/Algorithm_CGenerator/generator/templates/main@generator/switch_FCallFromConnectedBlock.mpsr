@@ -258,7 +258,7 @@
                 </node>
               </node>
               <node concept="v3LJS" id="3nBocIz9pZN" role="v9R3O">
-                <ref role="v3LJV" node="149sRE925GI" resolve="originInstance" />
+                <ref role="v3LJV" node="149sRE925GI" resolve="originSchedInst" />
               </node>
               <node concept="v3LJS" id="3nBocIz9q0b" role="v9R3O">
                 <ref role="v3LJV" node="3f5hl3Bvlf_" resolve="containerRoot" />
@@ -457,7 +457,7 @@
                 </node>
               </node>
               <node concept="v3LJS" id="7Zc5PB_SQXA" role="v9R3O">
-                <ref role="v3LJV" node="149sRE925GI" resolve="originInstance" />
+                <ref role="v3LJV" node="149sRE925GI" resolve="originSchedInst" />
               </node>
               <node concept="v3LJS" id="7Zc5PB_SQXV" role="v9R3O">
                 <ref role="v3LJV" node="3f5hl3Bvlf_" resolve="containerRoot" />
@@ -517,7 +517,7 @@
             <node concept="5jKBG" id="36nMB0LF93I" role="lGtFl">
               <ref role="v9R2y" node="149sRE91FFj" resolve="include_NanoblxComposition" />
               <node concept="v3LJS" id="36nMB0LF9Ve" role="v9R3O">
-                <ref role="v3LJV" node="149sRE925GI" resolve="originInstance" />
+                <ref role="v3LJV" node="149sRE925GI" resolve="originSchedInst" />
               </node>
               <node concept="v3LJS" id="36nMB0LF9V$" role="v9R3O">
                 <ref role="v3LJV" node="3f5hl3Bvlf_" resolve="containerRoot" />
@@ -561,9 +561,9 @@
       </node>
     </node>
     <node concept="1N15co" id="149sRE925GI" role="1s_3oS">
-      <property role="TrG5h" value="originInstance" />
+      <property role="TrG5h" value="originSchedInst" />
       <node concept="3Tqbb2" id="149sRE925Rw" role="1N15GL">
-        <ref role="ehGHo" to="yvgz:6VQU7byzDnu" resolve="IBlockInstance" />
+        <ref role="ehGHo" to="yvgz:1Nl8mqSY6OM" resolve="SchedulerBlockInst" />
       </node>
     </node>
     <node concept="1N15co" id="3f5hl3BvlSZ" role="1s_3oS">
@@ -630,7 +630,7 @@
                 </node>
               </node>
               <node concept="v3LJS" id="149sRE991pc" role="v9R3O">
-                <ref role="v3LJV" node="149sRE925GI" resolve="originInstance" />
+                <ref role="v3LJV" node="149sRE925GI" resolve="originSchedInst" />
               </node>
               <node concept="v3LJS" id="149sRE991Vc" role="v9R3O">
                 <ref role="v3LJV" node="3f5hl3Bvlf_" resolve="containerRoot" />
