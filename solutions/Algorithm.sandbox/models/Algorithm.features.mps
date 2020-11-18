@@ -56,9 +56,6 @@
       <concept id="2077603528175021362" name="Algorithm.structure.SchedulerBlockInst" flags="ng" index="2$bkLk">
         <reference id="2077603528175021366" name="type" index="2$bkLg" />
       </concept>
-      <concept id="65996431592360841" name="Algorithm.structure.TriggerPortRef" flags="ng" index="2_qZNI">
-        <reference id="65996431592360842" name="trigger_port" index="2_qZNH" />
-      </concept>
       <concept id="65996431592056450" name="Algorithm.structure.FixedDataFlowSchedulerBlock" flags="ng" index="2__D7_">
         <child id="65996431592056451" name="schedule" index="2__D7$" />
       </concept>
@@ -68,6 +65,9 @@
       <concept id="3725923812855012100" name="Algorithm.structure.FunctionBlock" flags="ng" index="2YOnzN">
         <child id="3725923812855012107" name="trigger_port" index="2YOnzW" />
         <child id="3725923812855012104" name="data_ports" index="2YOnzZ" />
+      </concept>
+      <concept id="8213653556241839009" name="Algorithm.structure.TriggerStatement" flags="ng" index="1e5Z75">
+        <reference id="8213653556245970054" name="trigger" index="LPJVy" />
       </concept>
       <concept id="5195753005471121027" name="Algorithm.structure.IDataConnectorProvider" flags="ng" index="3fRjHn">
         <child id="1550618328762864955" name="closures" index="2pAz8s" />
@@ -91,8 +91,8 @@
     <property role="TrG5h" value="GenericsLib" />
     <node concept="2__D7_" id="77qtDttRxW3" role="2$cYEw">
       <property role="TrG5h" value="GenericsControlFlow" />
-      <node concept="2_qZNI" id="77qtDttRxWi" role="2__D7$">
-        <ref role="2_qZNH" node="77qtDttRxWd" resolve="out" />
+      <node concept="1e5Z75" id="1RcvbWEuZbV" role="2__D7$">
+        <ref role="LPJVy" node="77qtDttRxWd" resolve="out" />
       </node>
       <node concept="1pt3V6" id="77qtDttRxWa" role="1OHzVH">
         <property role="TrG5h" value="in" />
@@ -132,6 +132,12 @@
     <property role="TrG5h" value="MultipleExitPoints" />
     <node concept="2__D7_" id="77qtDttRy1A" role="2$cYEw">
       <property role="TrG5h" value="ScheduleWithTwoExitPoints" />
+      <node concept="1e5Z75" id="1RcvbWEuZc7" role="2__D7$">
+        <ref role="LPJVy" node="77qtDttRy1G" resolve="exit1" />
+      </node>
+      <node concept="1e5Z75" id="1RcvbWEuZcd" role="2__D7$">
+        <ref role="LPJVy" node="77qtDttRy1L" resolve="exit2" />
+      </node>
       <node concept="1pt3V6" id="77qtDttRy1D" role="1OHzVH">
         <property role="TrG5h" value="in" />
         <property role="2_BrWT" value="3EtQu_uj5h/In" />
@@ -143,12 +149,6 @@
       <node concept="1pt3V6" id="77qtDttRy1L" role="1OHzVH">
         <property role="TrG5h" value="exit2" />
         <property role="2_BrWT" value="3EtQu_uj5i/Out" />
-      </node>
-      <node concept="2_qZNI" id="77qtDttRy1W" role="2__D7$">
-        <ref role="2_qZNH" node="77qtDttRy1G" resolve="exit1" />
-      </node>
-      <node concept="2_qZNI" id="77qtDttRy24" role="2__D7$">
-        <ref role="2_qZNH" node="77qtDttRy1L" resolve="exit2" />
       </node>
     </node>
   </node>

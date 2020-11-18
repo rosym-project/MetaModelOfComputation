@@ -269,15 +269,6 @@
               <node concept="3clFbT" id="4nkIe$AA9zX" role="v9R3O">
                 <property role="3clFbU" value="true" />
               </node>
-              <node concept="v3LJS" id="5bARvk3RqMZ" role="v9R3O">
-                <ref role="v3LJV" node="149sRE925GI" resolve="originInstance" />
-              </node>
-              <node concept="v3LJS" id="5bARvk3RqNa" role="v9R3O">
-                <ref role="v3LJV" node="3f5hl3Bvlf_" resolve="containerRoot" />
-              </node>
-              <node concept="v3LJS" id="5bARvk3RqNl" role="v9R3O">
-                <ref role="v3LJV" node="22$kc$4MtW7" resolve="instancePathMap" />
-              </node>
             </node>
           </node>
           <node concept="356sEF" id="GSvCluUOYB" role="356sEH">

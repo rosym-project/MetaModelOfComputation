@@ -585,7 +585,7 @@
     <property role="TrG5h" value="PredefinedFunctionBlock" />
     <ref role="1TJDcQ" node="3eP8Zudp5G4" resolve="FunctionBlock" />
     <node concept="PrWs8" id="5bARvk3XvfF" role="PzmwI">
-      <ref role="PrY4T" node="5bARvk3XvfB" resolve="IImported" />
+      <ref role="PrY4T" node="5bARvk3XvfB" resolve="IPredefinedImport" />
     </node>
   </node>
   <node concept="Az7Fb" id="1whTsds7Uka">
@@ -708,7 +708,7 @@
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="29RmJoXeePe" resolve="AlgorithmBlock" />
     <node concept="PrWs8" id="5bARvk3XvfC" role="PzmwI">
-      <ref role="PrY4T" node="5bARvk3XvfB" resolve="IImported" />
+      <ref role="PrY4T" node="5bARvk3XvfB" resolve="IPredefinedImport" />
     </node>
   </node>
   <node concept="1TIwiD" id="2OeEX$$Qs25">
@@ -737,7 +737,7 @@
   </node>
   <node concept="PlHQZ" id="5bARvk3XvfB">
     <property role="EcuMT" value="5973706000156718055" />
-    <property role="TrG5h" value="IImported" />
+    <property role="TrG5h" value="IPredefinedImport" />
     <node concept="1TJgyi" id="77qtDttR$Lu" role="1TKVEl">
       <property role="IQ2nx" value="8204000063695768670" />
       <property role="TrG5h" value="module" />
