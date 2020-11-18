@@ -584,25 +584,8 @@
     <property role="3GE5qa" value="definitions.function" />
     <property role="TrG5h" value="PredefinedFunctionBlock" />
     <ref role="1TJDcQ" node="3eP8Zudp5G4" resolve="FunctionBlock" />
-    <node concept="1TJgyi" id="77qtDttR$Lu" role="1TKVEl">
-      <property role="IQ2nx" value="8204000063695768670" />
-      <property role="TrG5h" value="module" />
-      <ref role="AX2Wp" node="1whTsds7Uka" resolve="ValidIdentifier" />
-    </node>
-    <node concept="1TJgyi" id="77qtDttR$Lx" role="1TKVEl">
-      <property role="IQ2nx" value="8204000063695768673" />
-      <property role="TrG5h" value="import" />
-      <ref role="AX2Wp" node="1whTsdsaFpe" resolve="FullyQualifiedName" />
-    </node>
-    <node concept="1TJgyi" id="1gN7S_5aCaj" role="1TKVEl">
-      <property role="IQ2nx" value="1455541779002196627" />
-      <property role="TrG5h" value="function" />
-      <ref role="AX2Wp" node="1whTsds7Uka" resolve="ValidIdentifier" />
-    </node>
-    <node concept="1TJgyi" id="1m4TMuc5NTT" role="1TKVEl">
-      <property role="IQ2nx" value="1550618328762367609" />
-      <property role="TrG5h" value="nblx" />
-      <ref role="AX2Wp" node="1whTsds7Uka" resolve="ValidIdentifier" />
+    <node concept="PrWs8" id="5bARvk3XvfF" role="PzmwI">
+      <ref role="PrY4T" node="5bARvk3XvfB" resolve="IImported" />
     </node>
   </node>
   <node concept="Az7Fb" id="1whTsds7Uka">
@@ -724,6 +707,9 @@
     <property role="TrG5h" value="PredefinedAlgorithmBlock" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="29RmJoXeePe" resolve="AlgorithmBlock" />
+    <node concept="PrWs8" id="5bARvk3XvfC" role="PzmwI">
+      <ref role="PrY4T" node="5bARvk3XvfB" resolve="IImported" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2OeEX$$Qs25">
     <property role="EcuMT" value="3246721330495209605" />
@@ -747,6 +733,30 @@
       <property role="20kJfa" value="attribute" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="tpee:4k3qd$cSlJ3" resolve="BaseVariableDeclaration" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5bARvk3XvfB">
+    <property role="EcuMT" value="5973706000156718055" />
+    <property role="TrG5h" value="IImported" />
+    <node concept="1TJgyi" id="77qtDttR$Lu" role="1TKVEl">
+      <property role="IQ2nx" value="8204000063695768670" />
+      <property role="TrG5h" value="module" />
+      <ref role="AX2Wp" node="1whTsds7Uka" resolve="ValidIdentifier" />
+    </node>
+    <node concept="1TJgyi" id="77qtDttR$Lx" role="1TKVEl">
+      <property role="IQ2nx" value="8204000063695768673" />
+      <property role="TrG5h" value="import" />
+      <ref role="AX2Wp" node="1whTsdsaFpe" resolve="FullyQualifiedName" />
+    </node>
+    <node concept="1TJgyi" id="1gN7S_5aCaj" role="1TKVEl">
+      <property role="IQ2nx" value="1455541779002196627" />
+      <property role="TrG5h" value="function" />
+      <ref role="AX2Wp" node="1whTsds7Uka" resolve="ValidIdentifier" />
+    </node>
+    <node concept="1TJgyi" id="1m4TMuc5NTT" role="1TKVEl">
+      <property role="IQ2nx" value="1550618328762367609" />
+      <property role="TrG5h" value="nblx" />
+      <ref role="AX2Wp" node="1whTsds7Uka" resolve="ValidIdentifier" />
     </node>
   </node>
 </model>
