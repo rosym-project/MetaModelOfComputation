@@ -759,5 +759,18 @@
       <ref role="AX2Wp" node="1whTsds7Uka" resolve="ValidIdentifier" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7gTXDndPKuu">
+    <property role="EcuMT" value="8374996105336129438" />
+    <property role="3GE5qa" value="definitions.schedule" />
+    <property role="TrG5h" value="PredefinedSBlockInst" />
+    <ref role="1TJDcQ" node="1Nl8mqSY6OM" resolve="SchedulerBlockInst" />
+    <node concept="1TJgyj" id="7gTXDndPKuv" role="1TKVEi">
+      <property role="IQ2ns" value="8374996105336129439" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="schedule" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="29RmJoXeePl" resolve="SchedulerBlock" />
+    </node>
+  </node>
 </model>
 

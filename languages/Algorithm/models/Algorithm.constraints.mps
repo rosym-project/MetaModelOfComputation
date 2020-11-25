@@ -120,10 +120,18 @@
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1144195091934" name="jetbrains.mps.lang.smodel.structure.Node_IsRoleOperation" flags="nn" index="1BlSNk">
+        <reference id="1144195362400" name="conceptOfParent" index="1BmUXE" />
+        <reference id="1144195396777" name="linkInParent" index="1Bn3mz" />
+      </concept>
       <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
         <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
       </concept>
@@ -533,6 +541,72 @@
       <ref role="1N5Vy1" to="yvgz:6MmDa_zAmFx" resolve="attribute" />
       <node concept="1dDu$B" id="6MmDa_$4UX2" role="1N6uqs">
         <ref role="1dDu$A" to="tpee:4k3qd$cSlJ3" resolve="BaseVariableDeclaration" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7gTXDndPKuz">
+    <property role="3GE5qa" value="definitions.schedule" />
+    <ref role="1M2myG" to="yvgz:7gTXDndPKuu" resolve="PredefinedSBlockInst" />
+    <node concept="1N5Pfh" id="7gTXDndPLi2" role="1Mr941">
+      <ref role="1N5Vy1" to="yvgz:1Nl8mqSY6OQ" resolve="type" />
+      <node concept="3dgokm" id="7gTXDndPLlE" role="1N6uqs">
+        <node concept="3clFbS" id="7gTXDndPLlG" role="2VODD2">
+          <node concept="3clFbF" id="7gTXDndPL$Z" role="3cqZAp">
+            <node concept="2YIFZM" id="7gTXDndPLDy" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:6t3ylNOzI9Y" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:7ipADkTevLm" resolve="SimpleRoleScope" />
+              <node concept="3kakTB" id="7gTXDndPNAl" role="37wK5m" />
+              <node concept="359W_D" id="7gTXDndPOi4" role="37wK5m">
+                <ref role="359W_E" to="yvgz:7gTXDndPKuu" resolve="PredefinedSBlockInst" />
+                <ref role="359W_F" to="yvgz:7gTXDndPKuv" resolve="schedule" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7gTXDndPO$q">
+    <property role="3GE5qa" value="definitions.algorithm" />
+    <ref role="1M2myG" to="yvgz:53CmqhFLVUv" resolve="PredefinedAlgorithmBlock" />
+    <node concept="9SLcT" id="7gTXDndPO$r" role="9SGkU">
+      <node concept="3clFbS" id="7gTXDndPO$s" role="2VODD2">
+        <node concept="3clFbJ" id="7gTXDndPOD_" role="3cqZAp">
+          <node concept="3clFbS" id="7gTXDndPODB" role="3clFbx">
+            <node concept="3clFbJ" id="7gTXDndPP5Z" role="3cqZAp">
+              <node concept="3clFbS" id="7gTXDndPP61" role="3clFbx">
+                <node concept="3cpWs6" id="7gTXDndPPOm" role="3cqZAp">
+                  <node concept="3clFbT" id="7gTXDndPPPb" role="3cqZAk">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7gTXDndPPpg" role="3clFbw">
+                <node concept="2DD5aU" id="7gTXDndPPaj" role="2Oq$k0" />
+                <node concept="3O6GUB" id="7gTXDndPPDu" role="2OqNvi">
+                  <node concept="chp4Y" id="7gTXDndPPH5" role="3QVz_e">
+                    <ref role="cht4Q" to="yvgz:7gTXDndPKuu" resolve="PredefinedSBlockInst" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="7gTXDndPPQ6" role="3cqZAp">
+              <node concept="3clFbT" id="7gTXDndPPQr" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7gTXDne9YOi" role="3clFbw">
+            <node concept="2H4GUG" id="7gTXDne9YFe" role="2Oq$k0" />
+            <node concept="1BlSNk" id="7gTXDne9YYl" role="2OqNvi">
+              <ref role="1BmUXE" to="yvgz:53CmqhFLVUv" resolve="PredefinedAlgorithmBlock" />
+              <ref role="1Bn3mz" to="yvgz:1m4TMuc7HkU" resolve="scheduler_blocks" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7gTXDndPOCo" role="3cqZAp">
+          <node concept="3clFbT" id="7gTXDndPOCn" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
